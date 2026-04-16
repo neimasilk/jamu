@@ -1,0 +1,2353 @@
+{
+  "multi_target_plants": {
+    "Sida rhombifolia": {
+      "num_categories": 9,
+      "categories": [
+        "digestive",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "injury",
+        "musculoskeletal",
+        "neoplasm",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 26,
+      "num_compounds": 19
+    },
+    "Kaempferia galanga": {
+      "num_categories": 8,
+      "categories": [
+        "digestive",
+        "eye",
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 16,
+      "num_compounds": 8
+    },
+    "Coleus atropurpureus": {
+      "num_categories": 8,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "ear",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "respiratory",
+        "symptom"
+      ],
+      "num_diseases": 12,
+      "num_compounds": 0
+    },
+    "Hydrocotyle asiatica": {
+      "num_categories": 8,
+      "categories": [
+        "circulatory",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal",
+        "nervous",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 22,
+      "num_compounds": 0
+    },
+    "Zingiber officinale": {
+      "num_categories": 8,
+      "categories": [
+        "digestive",
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "pregnancy",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 27,
+      "num_compounds": 438
+    },
+    "Nigella sativum": {
+      "num_categories": 8,
+      "categories": [
+        "digestive",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 20,
+      "num_compounds": 0
+    },
+    "Curcuma longa": {
+      "num_categories": 8,
+      "categories": [
+        "digestive",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "pregnancy",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 22,
+      "num_compounds": 177
+    },
+    "Hibiscus rosa-sinensis": {
+      "num_categories": 7,
+      "categories": [
+        "eye",
+        "genitourinary",
+        "infectious",
+        "neoplasm",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 18,
+      "num_compounds": 20
+    },
+    "Dryobalanops aromatica": {
+      "num_categories": 7,
+      "categories": [
+        "digestive",
+        "eye",
+        "infectious",
+        "neoplasm",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 12,
+      "num_compounds": 0
+    },
+    "Gmelina villosa": {
+      "num_categories": 7,
+      "categories": [
+        "blood",
+        "circulatory",
+        "ear",
+        "musculoskeletal",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 10,
+      "num_compounds": 0
+    },
+    "Emilia sonchifolia": {
+      "num_categories": 7,
+      "categories": [
+        "digestive",
+        "ear",
+        "eye",
+        "infectious",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Punica granatum": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 11,
+      "num_compounds": 259
+    },
+    "Morinda citrifolia": {
+      "num_categories": 7,
+      "categories": [
+        "digestive",
+        "endocrine",
+        "infectious",
+        "nervous",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 22,
+      "num_compounds": 113
+    },
+    "Alstonia scholaris": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "endocrine",
+        "infectious",
+        "pregnancy",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 17,
+      "num_compounds": 2
+    },
+    "Blumea balsamifera": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "endocrine",
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "symptom"
+      ],
+      "num_diseases": 17,
+      "num_compounds": 0
+    },
+    "Datura metel": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "ear",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 17,
+      "num_compounds": 34
+    },
+    "Pogostemon heyneanus": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "infectious",
+        "musculoskeletal",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 11,
+      "num_compounds": 0
+    },
+    "Sesbania grandiflora": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "genitourinary",
+        "infectious",
+        "injury",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 18,
+      "num_compounds": 1
+    },
+    "Crinum asiaticum": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 15,
+      "num_compounds": 0
+    },
+    "Averrhoa bilimbi": {
+      "num_categories": 7,
+      "categories": [
+        "endocrine",
+        "eye",
+        "infectious",
+        "musculoskeletal",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 14,
+      "num_compounds": 18
+    },
+    "Hedyotis capitellata": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "infectious",
+        "injury",
+        "musculoskeletal",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 12,
+      "num_compounds": 0
+    },
+    "Calophyllum inophyllum": {
+      "num_categories": 7,
+      "categories": [
+        "circulatory",
+        "eye",
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "pregnancy",
+        "skin"
+      ],
+      "num_diseases": 11,
+      "num_compounds": 0
+    },
+    "Erythrina variegata": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "injury",
+        "neoplasm",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 10,
+      "num_compounds": 0
+    },
+    "Citrus aurantifolia": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "nervous",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Gendarussa vulgaris": {
+      "num_categories": 6,
+      "categories": [
+        "genitourinary",
+        "infectious",
+        "injury",
+        "musculoskeletal",
+        "respiratory",
+        "symptom"
+      ],
+      "num_diseases": 16,
+      "num_compounds": 0
+    },
+    "Morinda elliptica": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "infectious",
+        "nervous",
+        "pregnancy",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Piper fragile": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "musculoskeletal",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 12,
+      "num_compounds": 0
+    },
+    "Ervatamia coronaria": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "eye",
+        "nervous",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 7,
+      "num_compounds": 0
+    },
+    "Gastrochilus panduratum": {
+      "num_categories": 6,
+      "categories": [
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 9,
+      "num_compounds": 0
+    },
+    "Phyllanthus niruri": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "injury",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 16,
+      "num_compounds": 27
+    },
+    "Coleus amboinicus": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "infectious",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Oxalis corniculata": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "endocrine",
+        "eye",
+        "infectious",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 12,
+      "num_compounds": 0
+    },
+    "Bryophyllum pinnatum": {
+      "num_categories": 6,
+      "categories": [
+        "eye",
+        "musculoskeletal",
+        "neoplasm",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Plumbago indica": {
+      "num_categories": 6,
+      "categories": [
+        "endocrine",
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "respiratory",
+        "symptom"
+      ],
+      "num_diseases": 9,
+      "num_compounds": 0
+    },
+    "Brucea javanica": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "injury",
+        "musculoskeletal",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 13,
+      "num_compounds": 0
+    },
+    "Euphorbia tirucalli": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "infectious",
+        "injury",
+        "neoplasm",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 13,
+      "num_compounds": 20
+    },
+    "Allium ascalonium": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "eye",
+        "genitourinary",
+        "infectious",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 9,
+      "num_compounds": 0
+    },
+    "Lawsonia inermis": {
+      "num_categories": 6,
+      "categories": [
+        "eye",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "skin"
+      ],
+      "num_diseases": 13,
+      "num_compounds": 89
+    },
+    "Cocos nucifera": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "infectious",
+        "musculoskeletal",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 18,
+      "num_compounds": 187
+    },
+    "Euphorbia hirta": {
+      "num_categories": 6,
+      "categories": [
+        "eye",
+        "infectious",
+        "injury",
+        "neoplasm",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 59
+    },
+    "Fibraurea chloroleuca": {
+      "num_categories": 6,
+      "categories": [
+        "endocrine",
+        "eye",
+        "infectious",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 8,
+      "num_compounds": 0
+    },
+    "Clerodendrum serratum": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "respiratory",
+        "symptom"
+      ],
+      "num_diseases": 10,
+      "num_compounds": 0
+    },
+    "Musa sapientum": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "infectious",
+        "pregnancy",
+        "respiratory",
+        "skin"
+      ],
+      "num_diseases": 22,
+      "num_compounds": 0
+    },
+    "Moringa oleifera": {
+      "num_categories": 6,
+      "categories": [
+        "circulatory",
+        "endocrine",
+        "infectious",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 21,
+      "num_compounds": 106
+    },
+    "Phyllanthus urinaria": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "infectious",
+        "injury",
+        "respiratory",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 14,
+      "num_compounds": 0
+    },
+    "Piper betle": {
+      "num_categories": 6,
+      "categories": [
+        "digestive",
+        "ear",
+        "genitourinary",
+        "infectious",
+        "pregnancy",
+        "skin"
+      ],
+      "num_diseases": 18,
+      "num_compounds": 0
+    },
+    "Plumbago zeylanica": {
+      "num_categories": 6,
+      "categories": [
+        "infectious",
+        "musculoskeletal",
+        "neoplasm",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 13,
+      "num_compounds": 0
+    },
+    "Pterocarpus santalinus": {
+      "num_categories": 5,
+      "categories": [
+        "circulatory",
+        "digestive",
+        "genitourinary",
+        "infectious",
+        "musculoskeletal"
+      ],
+      "num_diseases": 13,
+      "num_compounds": 32
+    },
+    "Eurycoma longifolia": {
+      "num_categories": 5,
+      "categories": [
+        "infectious",
+        "musculoskeletal",
+        "pregnancy",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 11,
+      "num_compounds": 1
+    },
+    "Tacca palmata": {
+      "num_categories": 5,
+      "categories": [
+        "digestive",
+        "injury",
+        "neoplasm",
+        "skin",
+        "symptom"
+      ],
+      "num_diseases": 9,
+      "num_compounds": 0
+    }
+  },
+  "promiscuous_compounds": {
+    "CALCIUM": {
+      "num_plants": 123,
+      "num_activities": 28,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus manihot",
+        "Abrus precatorius",
+        "Acacia catechu",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Aegle marmelos"
+      ],
+      "activities": [
+        "AntiPMS",
+        "Antiallergic",
+        "Antianxiety",
+        "Antiarrhythmic",
+        "Antiarthritic",
+        "Antiatherosclerotic",
+        "Anticlimacteric",
+        "Antidepressant",
+        "Antidote (Aluminum)",
+        "Antidote (Lead)"
+      ]
+    },
+    "IRON": {
+      "num_plants": 115,
+      "num_activities": 6,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus manihot",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Alocasia macrorrhiza"
+      ],
+      "activities": [
+        "Antiakathisic",
+        "Antianemic",
+        "Anticanker",
+        "Anticheilitic",
+        "Antimenorrhagic",
+        "Prooxidant"
+      ]
+    },
+    "FIBER": {
+      "num_plants": 106,
+      "num_activities": 15,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Abrus precatorius",
+        "Acacia catechu",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Aegle marmelos",
+        "Alocasia macrorrhiza",
+        "Aloe vera"
+      ],
+      "activities": [
+        "Angiotensin-Receptor-Blocker",
+        "Antidiabetic",
+        "Antihypertensive",
+        "Antiobesity",
+        "Antitumor",
+        "Antiulcer",
+        "Beta-Blocker",
+        "Cancer-Preventive",
+        "Cardioprotective",
+        "Diuretic"
+      ]
+    },
+    "BETA-SITOSTEROL": {
+      "num_plants": 105,
+      "num_activities": 46,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Abrus precatorius",
+        "Achyranthes bidentata",
+        "Ageratum conyzoides",
+        "Aglaia odorata",
+        "Aloe vera",
+        "Amaranthus spinosus",
+        "Anacardium occidentale"
+      ],
+      "activities": [
+        "Androgenic",
+        "Angiogenic",
+        "Anorexic",
+        "Antiadenomic",
+        "Antiandrogenic",
+        "Antibacterial",
+        "Anticancer (Breast)",
+        "Anticancer (Cervix)",
+        "Anticancer (Lung)",
+        "Antiedemic"
+      ]
+    },
+    "PHOSPHORUS": {
+      "num_plants": 104,
+      "num_activities": 4,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abrus precatorius",
+        "Acacia catechu",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Alocasia macrorrhiza",
+        "Aloe vera"
+      ],
+      "activities": [
+        "Antiosteoporotic",
+        "Anxiolytic",
+        "Immunostimulant",
+        "Osteogenic"
+      ]
+    },
+    "POTASSIUM": {
+      "num_plants": 97,
+      "num_activities": 14,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Aegle marmelos",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Amaranthus sp",
+        "Amaranthus spinosus",
+        "Amomum xanthioides"
+      ],
+      "activities": [
+        "Angiotensin-Receptor-Blocker",
+        "Antiarrhythmic",
+        "Antidepressant",
+        "Antifatigue",
+        "Antihypertensive",
+        "Antispasmodic",
+        "Antistroke",
+        "Anxiolytic",
+        "Beta-Blocker",
+        "Cardioprotective"
+      ]
+    },
+    "OLEIC-ACID": {
+      "num_plants": 97,
+      "num_activities": 18,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Ageratum conyzoides",
+        "Aleurites moluccana",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Anamirta cocculus"
+      ],
+      "activities": [
+        "5-Alpha-Reductase-Inhibitor",
+        "Allergenic",
+        "Alpha-Reductase-Inhibitor",
+        "Anemiagenic",
+        "Antialopecic",
+        "Antiandrogenic",
+        "Antiinflammatory",
+        "Antileukotriene-D4",
+        "Cancer-Preventive",
+        "Choleretic"
+      ]
+    },
+    "ASCORBIC-ACID": {
+      "num_plants": 96,
+      "num_activities": 109,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Acorus calamus",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Alpinia galanga"
+      ],
+      "activities": [
+        "Acidulant",
+        "Aldose-Reductase-Inhibitor",
+        "Analgesic",
+        "Angiotensin-Receptor-Blocker",
+        "AntiAGE",
+        "AntiCFS",
+        "AntiCTS",
+        "AntiCrohn's",
+        "AntiLyme",
+        "AntiRaynaud's"
+      ]
+    },
+    "PALMITIC-ACID": {
+      "num_plants": 94,
+      "num_activities": 13,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Acorus calamus",
+        "Ageratum conyzoides",
+        "Aleurites moluccana",
+        "Aloe vera",
+        "Anacardium occidentale"
+      ],
+      "activities": [
+        "5-Alpha-Reductase-Inhibitor",
+        "Antialopecic",
+        "Antiandrogenic",
+        "Antifibrinolytic",
+        "Antioxidant",
+        "FLavor",
+        "Hemolytic",
+        "Hypercholesterolemic",
+        "Lubricant",
+        "Nematicide"
+      ]
+    },
+    "LINOLEIC-ACID": {
+      "num_plants": 92,
+      "num_activities": 27,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Ageratum conyzoides",
+        "Aleurites moluccana",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Anamirta cocculus",
+        "Ananas comosus"
+      ],
+      "activities": [
+        "5-Alpha-Reductase-Inhibitor",
+        "AntiMS",
+        "Antiacne",
+        "Antialopecic",
+        "Antianaphylactic",
+        "Antiandrogenic",
+        "Antiarteriosclerotic",
+        "Antiarthritic",
+        "Anticoronary",
+        "Antieczemic"
+      ]
+    },
+    "RIBOFLAVIN": {
+      "num_plants": 91,
+      "num_activities": 15,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aegle marmelos",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Amaranthus spinosus",
+        "Amorphophallus campanulatus"
+      ],
+      "activities": [
+        "AntiLyme",
+        "Antiarabiflavinotic",
+        "Anticarpal-Tunnel",
+        "Anticataract",
+        "Anticephalagic",
+        "Anticervicaldysplasic",
+        "Anticheilitic",
+        "Antidecubitic",
+        "Antiglossitic",
+        "Antikeratitic"
+      ]
+    },
+    "THIAMIN": {
+      "num_plants": 90,
+      "num_activities": 31,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Amaranthus spinosus"
+      ],
+      "activities": [
+        "Analgesic",
+        "AntiLyme",
+        "Antialcoholic",
+        "Antialzheimeran",
+        "Antianorectic",
+        "Antibackache",
+        "Antiberiberi",
+        "Anticanker",
+        "Anticardiospasmic",
+        "Anticataract"
+      ]
+    },
+    "BETA-CAROTENE": {
+      "num_plants": 89,
+      "num_activities": 52,
+      "plants": [
+        "",
+        "Acacia farnesiana",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Amaranthus spinosus",
+        "Amorphophallus campanulatus"
+      ],
+      "activities": [
+        "Allergenic",
+        "Androgenic?",
+        "AntiPMS",
+        "Antiacne",
+        "Antiaging",
+        "Antiarthritic",
+        "Antiasthmatic",
+        "Anticancer",
+        "Anticarcinomic",
+        "Anticervicaldysplasic"
+      ]
+    },
+    "NIACIN": {
+      "num_plants": 85,
+      "num_activities": 39,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aegle marmelos",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Amaranthus spinosus",
+        "Amorphophallus campanulatus"
+      ],
+      "activities": [
+        "Allergenic",
+        "AntiLyme",
+        "AntiMeniere's",
+        "AntiRaynaud's",
+        "Antiacrodynic",
+        "Antiallergic",
+        "Antialzheimeran",
+        "Antiamblyopic",
+        "Antianginal",
+        "Anticataract"
+      ]
+    },
+    "MAGNESIUM": {
+      "num_plants": 85,
+      "num_activities": 64,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus manihot",
+        "Acacia catechu",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Amaranthus sp",
+        "Amomum xanthioides"
+      ],
+      "activities": [
+        "AntiCFS",
+        "AntiLyme",
+        "AntiMS",
+        "AntiPMS",
+        "AntiRaynaud's",
+        "Antiaggregant",
+        "Antialcoholic",
+        "Antianginal",
+        "Antianorectic",
+        "Antianxiety"
+      ]
+    },
+    "COPPER": {
+      "num_plants": 85,
+      "num_activities": 12,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus manihot",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Alocasia macrorrhiza",
+        "Amaranthus sp",
+        "Amomum xanthioides",
+        "Amorphophallus campanulatus",
+        "Anacardium occidentale"
+      ],
+      "activities": [
+        "Antianemic",
+        "Antiarthritic",
+        "Antidiabetic",
+        "Antifatigue",
+        "Antiinflammatory",
+        "Antinociceptive",
+        "Antiosteoporotic",
+        "Cardioprotective",
+        "Contraceptive",
+        "Hypocholesterolemic"
+      ]
+    },
+    "MANGANESE": {
+      "num_plants": 82,
+      "num_activities": 13,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia catechu",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Amomum xanthioides",
+        "Amorphophallus campanulatus",
+        "Anacardium occidentale"
+      ],
+      "activities": [
+        "AntiPMS",
+        "Antialcoholic",
+        "Antianemic",
+        "Antiarthritic",
+        "Antidiabetic",
+        "Antidiscotic",
+        "Antidyskinetic",
+        "Antiepileptic",
+        "Antiosteoporotic",
+        "Antiototic"
+      ]
+    },
+    "ZINC": {
+      "num_plants": 81,
+      "num_activities": 76,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus manihot",
+        "Achyranthes bidentata",
+        "Acorus calamus",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Amaranthus sp",
+        "Amomum xanthioides",
+        "Amorphophallus campanulatus"
+      ],
+      "activities": [
+        "ACE-Inhibitor",
+        "Analgesic",
+        "AntiBPH",
+        "AntiCrohn's",
+        "AntiHIV",
+        "Antiacne",
+        "Antiacrodermatitic",
+        "Antialcoholic",
+        "Antialopecic",
+        "Antialzheimeran"
+      ]
+    },
+    "STEARIC-ACID": {
+      "num_plants": 77,
+      "num_activities": 8,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Aleurites moluccana",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Anamirta cocculus",
+        "Ananas comosus",
+        "Annona muricata"
+      ],
+      "activities": [
+        "5-Alpha-Reductase-Inhibitor",
+        "Cosmetic",
+        "FLavor",
+        "Hypocholesterolemic",
+        "Lubricant",
+        "Perfumery",
+        "Propecic",
+        "Suppository"
+      ]
+    },
+    "Stigmasterol": {
+      "num_plants": 69,
+      "num_activities": 12,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Achyranthes bidentata",
+        "Ageratum conyzoides",
+        "Aloe vera",
+        "Amaranthus spinosus",
+        "Ananas comosus"
+      ],
+      "activities": [
+        "Antihepatotoxic",
+        "Antiinflammatory",
+        "Antinociceptive",
+        "Antiophidic",
+        "Antioxidant",
+        "Antiviral",
+        "Artemicide",
+        "Cancer-Preventive",
+        "Estrogenic",
+        "Hypocholesterolemic"
+      ]
+    },
+    "QUERCETIN": {
+      "num_plants": 58,
+      "num_activities": 156,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Acacia catechu",
+        "Ageratum conyzoides",
+        "Anastatica hierochuntica",
+        "Apium graveolens",
+        "Arachis hypogaea",
+        "Artemisia annua",
+        "Caesalpinia pulcherrima"
+      ],
+      "activities": [
+        "11B-HSD-Inhibitor",
+        "5-Lipoxygenase-Inhibitor",
+        "ATPase-Inhibitor",
+        "Aldehyde-Oxidase-Inhibitor",
+        "Aldose-Reductase-Inhibitor",
+        "Allelochemic",
+        "Allergenic",
+        "Analgesic",
+        "AntiCrohn's",
+        "AntiGTF"
+      ]
+    },
+    "MYRISTIC-ACID": {
+      "num_plants": 56,
+      "num_activities": 6,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Annona muricata",
+        "Annona reticulata",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antioxidant",
+        "Cancer-Preventive",
+        "Cosmetic",
+        "Hypercholesterolemic",
+        "Lubricant",
+        "Nematicide"
+      ]
+    },
+    "GLUCOSE": {
+      "num_plants": 52,
+      "num_activities": 7,
+      "plants": [
+        "",
+        "Acacia catechu",
+        "Achyranthes aspera",
+        "Alocasia macrorrhiza",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Annona muricata",
+        "Annona squamosa"
+      ],
+      "activities": [
+        "Acetylcholinergic",
+        "Antiedemic",
+        "Antihepatotoxic",
+        "Antiketotic",
+        "Antivaricose",
+        "Hyperglycemic",
+        "Memory-Enhancer"
+      ]
+    },
+    "TANNIN": {
+      "num_plants": 50,
+      "num_activities": 33,
+      "plants": [
+        "Acacia catechu",
+        "Acalypha indica",
+        "Acorus calamus",
+        "Aegle marmelos",
+        "Aleurites moluccana",
+        "Anacardium occidentale",
+        "Annona muricata",
+        "Annona reticulata",
+        "Annona squamosa",
+        "Areca catechu"
+      ],
+      "activities": [
+        "Anthelmintic",
+        "AntiHIV",
+        "Antibacterial",
+        "Anticancer",
+        "Anticariogenic",
+        "Antidiarrheic",
+        "Antidysenteric",
+        "Antihepatotoxic",
+        "Antihypertensive",
+        "Antilipolytic"
+      ]
+    },
+    "Rutin": {
+      "num_plants": 48,
+      "num_activities": 84,
+      "plants": [
+        "",
+        "Acacia catechu",
+        "Acacia farnesiana",
+        "Amaranthus sp",
+        "Amaranthus spinosus",
+        "Anastatica hierochuntica",
+        "Apium graveolens",
+        "Arachis hypogaea",
+        "Artemisia vulgaris",
+        "Averrhoa bilimbi"
+      ],
+      "activities": [
+        "5-HT-Inhibitor",
+        "Aldehyde-Oxidase-Inhibitor",
+        "Aldose-Reductase-Inhibitor",
+        "Allelochemic",
+        "AntiCVI",
+        "Antiaggregant",
+        "Antiallergic",
+        "Antiapoplectic",
+        "Antiatherogenic",
+        "Antiatherosclerotic"
+      ]
+    },
+    "LYSINE": {
+      "num_plants": 47,
+      "num_activities": 4,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Annona muricata",
+        "Annona reticulata"
+      ],
+      "activities": [
+        "Antialkalotic",
+        "Antiherpetic",
+        "Essential",
+        "Hypoarginanemic"
+      ]
+    },
+    "GLUTAMIC-ACID": {
+      "num_plants": 46,
+      "num_activities": 8,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antialkali?",
+        "Antiepileptic",
+        "Antihyperammonemic",
+        "Antilithic",
+        "Antiprostatitic",
+        "Antiretardation",
+        "Anxiolytic",
+        "Neurotoxic"
+      ]
+    },
+    "METHIONINE": {
+      "num_plants": 46,
+      "num_activities": 15,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Annona muricata",
+        "Annona reticulata"
+      ],
+      "activities": [
+        "Anticataract",
+        "Antidote (Acetaminophen)",
+        "Antidote (Paracetamol)",
+        "Antieczemic",
+        "Antihepatotic",
+        "Antioxidant",
+        "Antiparkinsonian",
+        "Cancer-Preventive",
+        "Emetic",
+        "Essential"
+      ]
+    },
+    "ARGININE": {
+      "num_plants": 46,
+      "num_activities": 14,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Annona squamosa"
+      ],
+      "activities": [
+        "Antidiabetic?",
+        "Antiencephalopathic",
+        "Antihepatitic",
+        "Antihypertensive",
+        "Antiimpotence",
+        "Antiinfertility",
+        "Antioxidant?",
+        "Aphrodisiac",
+        "Diuretic",
+        "Hypoammonemic"
+      ]
+    },
+    "ALANINE": {
+      "num_plants": 46,
+      "num_activities": 3,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Apium graveolens"
+      ],
+      "activities": [
+        "Antioxidant",
+        "Cancer-Preventive",
+        "Oxidant"
+      ]
+    },
+    "GLYCINE": {
+      "num_plants": 45,
+      "num_activities": 12,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antiacid",
+        "Antialdosteronic",
+        "Antidote (Hypoglycin-A)",
+        "Antiencephalopathic",
+        "Antigastritic",
+        "Antiprostatitic",
+        "Antipruritic",
+        "Antisickling",
+        "Antiulcer",
+        "Cancer-Preventive"
+      ]
+    },
+    "ASPARTIC-ACID": {
+      "num_plants": 45,
+      "num_activities": 3,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Apium graveolens"
+      ],
+      "activities": [
+        "Antimorphinic",
+        "Neuroexcitant",
+        "Roborant"
+      ]
+    },
+    "TYROSINE": {
+      "num_plants": 45,
+      "num_activities": 7,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Abrus precatorius",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens"
+      ],
+      "activities": [
+        "Antidepressant?",
+        "Antiencephalopathic",
+        "Antiparkinsonian",
+        "Antiphenylketonuric",
+        "Antiulcer",
+        "Cancer-Preventive",
+        "Monoamine-Precursor"
+      ]
+    },
+    "Kaempferol": {
+      "num_plants": 44,
+      "num_activities": 68,
+      "plants": [
+        "",
+        "Abelmoschus moschatus",
+        "Acacia catechu",
+        "Acacia farnesiana",
+        "Acalypha indica",
+        "Ageratum conyzoides",
+        "Apium graveolens",
+        "Artemisia annua",
+        "Calendula officinalis",
+        "Capsicum frutescens"
+      ],
+      "activities": [
+        "11B-HSD-Inhibitor",
+        "5-Lipoxygenase-Inhibitor",
+        "Aldose-Reductase-Inhibitor",
+        "Antiaflatoxin",
+        "Antiaggregant",
+        "Antiallergic",
+        "Antibacterial",
+        "Anticancer",
+        "Antifertility",
+        "Antigingivitic"
+      ]
+    },
+    "ALPHA-PINENE": {
+      "num_plants": 44,
+      "num_activities": 28,
+      "plants": [
+        "Acorus calamus",
+        "Ageratum conyzoides",
+        "Alpinia galanga",
+        "Amomum xanthioides",
+        "Annona squamosa",
+        "Apium graveolens",
+        "Artemisia annua",
+        "Artemisia vulgaris",
+        "Capsicum annuum",
+        "Centella asiatica"
+      ],
+      "activities": [
+        "Allelochemic",
+        "Allergenic",
+        "Antiacne",
+        "Antibacterial",
+        "Antifeedant",
+        "Antiflu",
+        "Antiinflammatory",
+        "Antipneumonic",
+        "Antiseptic",
+        "Antispasmodic"
+      ]
+    },
+    "CAFFEIC-ACID": {
+      "num_plants": 44,
+      "num_activities": 87,
+      "plants": [
+        "",
+        "Ananas comosus",
+        "Annona muricata",
+        "Apium graveolens",
+        "Arachis hypogaea",
+        "Calendula officinalis",
+        "Capsicum annuum",
+        "Capsicum frutescens",
+        "Carica papaya",
+        "Ceiba pentandra"
+      ],
+      "activities": [
+        "Aldose-Reductase-Inhibitor",
+        "Allergenic",
+        "Analgesic",
+        "AntiHIV",
+        "AntiLegionella",
+        "Antiadenoviral",
+        "Antiaggregant",
+        "Antiaging",
+        "Antiatherogenic",
+        "Antibacterial"
+      ]
+    },
+    "VALINE": {
+      "num_plants": 44,
+      "num_activities": 3,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antiencephalopathic",
+        "Essential",
+        "FLavor"
+      ]
+    },
+    "HISTIDINE": {
+      "num_plants": 44,
+      "num_activities": 7,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antiarteriosclerotic",
+        "Antinephritic",
+        "Antioxidant",
+        "Antiulcer",
+        "Antiuremic",
+        "Essential",
+        "Oxidant"
+      ]
+    },
+    "THREONINE": {
+      "num_plants": 44,
+      "num_activities": 4,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Anastatica hierochuntica",
+        "Apium graveolens"
+      ],
+      "activities": [
+        "Antioxidant?",
+        "Antiulcer",
+        "Essential",
+        "FLavor"
+      ]
+    },
+    "LIMONENE": {
+      "num_plants": 43,
+      "num_activities": 60,
+      "plants": [
+        "Acorus calamus",
+        "Alpinia galanga",
+        "Anacardium occidentale",
+        "Annona squamosa",
+        "Apium graveolens",
+        "Artemisia annua",
+        "Bidens pilosa",
+        "Capsicum annuum",
+        "Capsicum frutescens",
+        "Carthamus tinctorius"
+      ],
+      "activities": [
+        "AChE-Inhibitor",
+        "Acaricide",
+        "Allelochemic",
+        "Allergenic",
+        "Antiacetylcholinesterase",
+        "Antiadenomic",
+        "Antialzheimeran?",
+        "Antiasthmatic",
+        "Antibacterial",
+        "Anticancer"
+      ]
+    },
+    "PHENYLALANINE": {
+      "num_plants": 42,
+      "num_activities": 7,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "AntiADD",
+        "Antidepressant",
+        "Antiparkinsonian",
+        "Antisickling",
+        "Antivitiligic",
+        "Monoamine-Precursor",
+        "Tremorigenic"
+      ]
+    },
+    "ISOLEUCINE": {
+      "num_plants": 42,
+      "num_activities": 3,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Aloe vera",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Antiencephalopathic?",
+        "Antipellagric",
+        "Essential"
+      ]
+    },
+    "BETA-PINENE": {
+      "num_plants": 41,
+      "num_activities": 13,
+      "plants": [
+        "Acorus calamus",
+        "Ageratum conyzoides",
+        "Alpinia galanga",
+        "Annona squamosa",
+        "Apium graveolens",
+        "Artemisia annua",
+        "Artemisia vulgaris",
+        "Capsicum annuum",
+        "Capsicum frutescens",
+        "Centella asiatica"
+      ],
+      "activities": [
+        "Allergenic",
+        "Antiinflammatory",
+        "Antiseptic",
+        "Antispasmodic",
+        "Candidicide",
+        "FLavor",
+        "Herbicide",
+        "Insectifuge",
+        "Irritant",
+        "Perfumery"
+      ]
+    },
+    "STARCH": {
+      "num_plants": 41,
+      "num_activities": 5,
+      "plants": [
+        "Abelmoschus esculentus",
+        "Abelmoschus moschatus",
+        "Acorus calamus",
+        "Aegle marmelos",
+        "Alocasia macrorrhiza",
+        "Alpinia galanga",
+        "Amorphophallus campanulatus",
+        "Ananas comosus",
+        "Carthamus tinctorius",
+        "Coix lacryma-jobi"
+      ],
+      "activities": [
+        "Absorbent",
+        "Antidote (Iodine)",
+        "Antinesidioblastosic",
+        "Emollient",
+        "Poultice"
+      ]
+    },
+    "TRYPTOPHAN": {
+      "num_plants": 41,
+      "num_activities": 29,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acacia farnesiana",
+        "Alpinia galanga",
+        "Amaranthus sp",
+        "Anacardium occidentale",
+        "Annona muricata",
+        "Annona reticulata",
+        "Annona squamosa",
+        "Apium graveolens"
+      ],
+      "activities": [
+        "Analgesic",
+        "Antianxiety",
+        "Antidementia",
+        "Antidepressant",
+        "Antidyskinetic",
+        "Antihypertensive",
+        "Antiinsomniac",
+        "Antimanic",
+        "Antimenopausal",
+        "Antimigraine"
+      ]
+    },
+    "OXALIC-ACID": {
+      "num_plants": 40,
+      "num_activities": 9,
+      "plants": [
+        "",
+        "Abelmoschus esculentus",
+        "Acorus calamus",
+        "Alocasia macrorrhiza",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Apium graveolens",
+        "Averrhoa carambola",
+        "Brassica juncea",
+        "Capsicum annuum"
+      ],
+      "activities": [
+        "Acaricide",
+        "Antiseptic",
+        "CNS-Paralytic",
+        "Fatal",
+        "Hemostatic",
+        "Irritant",
+        "Pesticide",
+        "Renotoxic",
+        "Varroacide"
+      ]
+    },
+    "BORON": {
+      "num_plants": 38,
+      "num_activities": 4,
+      "plants": [
+        "",
+        "Acacia catechu",
+        "Alocasia macrorrhiza",
+        "Amorphophallus campanulatus",
+        "Anacardium occidentale",
+        "Ananas comosus",
+        "Annona muricata",
+        "Annona squamosa",
+        "Apium graveolens",
+        "Arachis hypogaea"
+      ],
+      "activities": [
+        "Androgenic",
+        "Antiosteoarthritic",
+        "Antiosteoporotic",
+        "Estrogenic"
+      ]
+    },
+    "BETULIN": {
+      "num_plants": 37,
+      "num_activities": 12,
+      "plants": [
+        "Acanthus ilicifolius",
+        "Aerva lanata",
+        "Alstonia scholaris",
+        "Careya arborea",
+        "Cassia siamea",
+        "Clerodendrum inerme",
+        "Clinacanthus nutans",
+        "Derris trifoliata",
+        "Desmodium pulchellum",
+        "Dicliptera roxburghiana"
+      ],
+      "activities": [
+        "AntiHIV",
+        "Anticarcinomic",
+        "Antifeedant",
+        "Antiflu",
+        "Antiinflammatory",
+        "Antitumor",
+        "Antiviral",
+        "Aphidifuge",
+        "Cytotoxic",
+        "Hypolipemic"
+      ]
+    },
+    "CHROMIUM": {
+      "num_plants": 37,
+      "num_activities": 22,
+      "plants": [
+        "",
+        "Aloe vera",
+        "Anacardium occidentale",
+        "Apium graveolens",
+        "Arachis hypogaea",
+        "Artemisia vulgaris",
+        "Boehmeria nivea",
+        "Capsicum annuum",
+        "Capsicum frutescens",
+        "Carica papaya"
+      ],
+      "activities": [
+        "Amphiglycemic?",
+        "AntiAGE",
+        "AntiCFS",
+        "Antiacne",
+        "Antiaging",
+        "Antiatherosclerotic",
+        "Anticorneotic",
+        "Antidiabetic",
+        "Antidote (Lead)",
+        "Antifatigue"
+      ]
+    },
+    "BETULINIC-ACID": {
+      "num_plants": 36,
+      "num_activities": 18,
+      "plants": [
+        "Alstonia scholaris",
+        "Careya arborea",
+        "Cassia obtusifolia",
+        "Centella asiatica",
+        "Claoxylon polot",
+        "Crateva religiosa",
+        "Diospyros argentea",
+        "Diospyros kaki",
+        "Diospyros wallichii",
+        "Eurya acuminata"
+      ],
+      "activities": [
+        "Anthelmintic",
+        "AntiHIV",
+        "Antibacterial",
+        "Anticancer",
+        "Anticarcinomic",
+        "Antiedemic",
+        "Antiinflammatory",
+        "Antileukemic",
+        "Antimalarial",
+        "Antimelanomic"
+      ]
+    }
+  },
+  "similar_plant_pairs": [
+    {
+      "plant1": "Piper sumatranum",
+      "plant2": "Piper pedicellosum",
+      "shared_diseases": 6,
+      "jaccard": 1.0,
+      "union_size": 6
+    },
+    {
+      "plant1": "Phyllanthus niruri",
+      "plant2": "Phyllanthus urinaria",
+      "shared_diseases": 13,
+      "jaccard": 0.765,
+      "union_size": 17
+    },
+    {
+      "plant1": "Samadera indica",
+      "plant2": "Quassia indica",
+      "shared_diseases": 5,
+      "jaccard": 0.556,
+      "union_size": 9
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Mallotus paniculatus",
+      "shared_diseases": 5,
+      "jaccard": 0.455,
+      "union_size": 11
+    },
+    {
+      "plant1": "Merremia peltata",
+      "plant2": "Allium ascalonium",
+      "shared_diseases": 5,
+      "jaccard": 0.417,
+      "union_size": 12
+    },
+    {
+      "plant1": "Clerodendrum serratum",
+      "plant2": "Vernonia cinerea",
+      "shared_diseases": 5,
+      "jaccard": 0.385,
+      "union_size": 13
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Leucas zeylanica",
+      "shared_diseases": 6,
+      "jaccard": 0.375,
+      "union_size": 16
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Physalis minima",
+      "shared_diseases": 5,
+      "jaccard": 0.357,
+      "union_size": 14
+    },
+    {
+      "plant1": "Leucas zeylanica",
+      "plant2": "Physalis minima",
+      "shared_diseases": 5,
+      "jaccard": 0.357,
+      "union_size": 14
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Tinospora tuberculata",
+      "shared_diseases": 6,
+      "jaccard": 0.353,
+      "union_size": 17
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Piper fragile",
+      "shared_diseases": 7,
+      "jaccard": 0.318,
+      "union_size": 22
+    },
+    {
+      "plant1": "Gendarussa vulgaris",
+      "plant2": "Gastrochilus panduratum",
+      "shared_diseases": 6,
+      "jaccard": 0.316,
+      "union_size": 19
+    },
+    {
+      "plant1": "Plumbago indica",
+      "plant2": "Plumbago zeylanica",
+      "shared_diseases": 5,
+      "jaccard": 0.294,
+      "union_size": 17
+    },
+    {
+      "plant1": "Aleurites moluccana",
+      "plant2": "Urena lobata",
+      "shared_diseases": 6,
+      "jaccard": 0.273,
+      "union_size": 22
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Aristolochia sp.",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Psidium guajava",
+      "plant2": "Wedelia biflora",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Plumeria acutifolia",
+      "plant2": "Wedelia biflora",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Moringa oleifera",
+      "plant2": "Physalis minima",
+      "shared_diseases": 6,
+      "jaccard": 0.261,
+      "union_size": 23
+    },
+    {
+      "plant1": "Aleurites moluccana",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.25,
+      "union_size": 20
+    },
+    {
+      "plant1": "Urena lobata",
+      "plant2": "Physalis minima",
+      "shared_diseases": 5,
+      "jaccard": 0.25,
+      "union_size": 20
+    },
+    {
+      "plant1": "Tinospora crispa",
+      "plant2": "Tamarindus indica",
+      "shared_diseases": 6,
+      "jaccard": 0.24,
+      "union_size": 25
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Zingiber amaricans",
+      "shared_diseases": 5,
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Hedyotis capitellata",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Kaempferia galanga",
+      "plant2": "Gendarussa vulgaris",
+      "shared_diseases": 6,
+      "jaccard": 0.231,
+      "union_size": 26
+    },
+    {
+      "plant1": "Sophora tomentosa",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 6,
+      "jaccard": 0.231,
+      "union_size": 26
+    },
+    {
+      "plant1": "Santalum album",
+      "plant2": "Moringa oleifera",
+      "shared_diseases": 6,
+      "jaccard": 0.231,
+      "union_size": 26
+    },
+    {
+      "plant1": "Cocos nucifera",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 6,
+      "jaccard": 0.231,
+      "union_size": 26
+    },
+    {
+      "plant1": "Gendarussa vulgaris",
+      "plant2": "Aloe vera",
+      "shared_diseases": 5,
+      "jaccard": 0.227,
+      "union_size": 22
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Michelia champaca",
+      "shared_diseases": 5,
+      "jaccard": 0.227,
+      "union_size": 22
+    },
+    {
+      "plant1": "Brucea javanica",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.227,
+      "union_size": 22
+    },
+    {
+      "plant1": "Michelia champaca",
+      "plant2": "Blumea balsamifera",
+      "shared_diseases": 5,
+      "jaccard": 0.227,
+      "union_size": 22
+    },
+    {
+      "plant1": "Sida rhombifolia",
+      "plant2": "Tamarindus indica",
+      "shared_diseases": 7,
+      "jaccard": 0.219,
+      "union_size": 32
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Zingiber cassumunar",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Blumea balsamifera",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Momordica charantia",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Alstonia scholaris",
+      "plant2": "Monochoria vaginalis",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Myristica fragrans",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Blumea balsamifera",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Urena lobata",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Phyllanthus niruri",
+      "plant2": "Tinospora crispa",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Phyllanthus niruri",
+      "plant2": "Cocos nucifera",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Moringa oleifera",
+      "plant2": "Plumbago zeylanica",
+      "shared_diseases": 6,
+      "jaccard": 0.214,
+      "union_size": 28
+    },
+    {
+      "plant1": "Eurycoma longifolia",
+      "plant2": "Tinospora crispa",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Ervatamia coronaria",
+      "plant2": "Morinda citrifolia",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Aleurites moluccana",
+      "plant2": "Cocos nucifera",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Cocos nucifera",
+      "plant2": "Piper cubeba",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Hydrocotyle asiatica",
+      "plant2": "Pistia stratiotes",
+      "shared_diseases": 5,
+      "jaccard": 0.2,
+      "union_size": 25
+    },
+    {
+      "plant1": "Tinospora tuberculata",
+      "plant2": "Tinospora crispa",
+      "shared_diseases": 5,
+      "jaccard": 0.2,
+      "union_size": 25
+    },
+    {
+      "plant1": "Zingiber cassumunar",
+      "plant2": "Chloranthus officinalis",
+      "shared_diseases": 5,
+      "jaccard": 0.2,
+      "union_size": 25
+    },
+    {
+      "plant1": "Nigella sativum",
+      "plant2": "Morinda citrifolia",
+      "shared_diseases": 7,
+      "jaccard": 0.2,
+      "union_size": 35
+    }
+  ]
+}

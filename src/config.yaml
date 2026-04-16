@@ -1,0 +1,64 @@
+# JamuKG Configuration
+# ====================
+
+project:
+  name: "JamuKG"
+  version: "0.1.0"
+  description: "Knowledge Graph of Indonesian Traditional Medicine"
+  author: "Mukhlis Amien"
+
+paths:
+  raw_data: "data/raw"
+  processed: "data/processed"
+  kg_output: "data/kg"
+
+# Data source URLs
+sources:
+  duke:
+    csv_url: "https://ndownloader.figshare.com/files/43363335"
+    description: "Dr. Duke's Phytochemical and Ethnobotanical Databases (CC0)"
+  knapsack:
+    base_url: "https://www.knapsackfamily.com/jamu"
+    description: "KNApSAcK Jamu Database - 5,310 formulas"
+  farmakope:
+    ed2_url: "https://farmalkes.kemkes.go.id/en/unduh/farmakope-herbal-indonesia-edisi-ii/"
+    supplement_url: "https://farmalkes.kemkes.go.id/wp-content/uploads/2023/05/Buku-Suplemen-I-FHI-Edisi-II.pdf"
+    description: "Farmakope Herbal Indonesia - 363+ monographs"
+  herbaldb:
+    base_url: "http://herbaldb.farmasi.ui.ac.id/v3/"
+    description: "HerbalDB UI - 3,810 species, 6,776 compounds"
+  pubmed:
+    email: ""  # Set your email for NCBI Entrez
+    api_key: ""  # Optional: NCBI API key for faster queries
+
+# LLM extraction
+llm:
+  provider: "deepseek"
+  api_base: "https://api.deepseek.com/v1"
+  api_key_env: "DEEPSEEK_API_KEY"  # Read from environment variable
+  model: "deepseek-chat"
+  temperature: 0.1
+  max_tokens: 2000
+
+# KG Schema
+kg:
+  node_types:
+    - FORMULATION    # Jamu formula/product
+    - PLANT          # Plant species (canonical: Latin binomial)
+    - PLANT_PART     # Root, leaf, rhizome, etc.
+    - COMPOUND       # Chemical compound
+    - DISEASE        # Disease/condition (mapped to ICD-10 where possible)
+    - BIOACTIVITY    # Biological activity (anti-inflammatory, etc.)
+    - ETHNIC_GROUP   # Ethnic group that uses the formula
+    - SOURCE         # Data source provenance
+
+  edge_types:
+    - CONTAINS       # FORMULATION -> PLANT
+    - HAS_PART       # PLANT -> PLANT_PART
+    - PRODUCES       # PLANT -> COMPOUND
+    - HAS_ACTIVITY   # COMPOUND -> BIOACTIVITY
+    - TREATS         # FORMULATION/PLANT -> DISEASE (traditional claim)
+    - USED_BY        # FORMULATION -> ETHNIC_GROUP
+    - MAPS_TO_ICD10  # DISEASE -> ICD-10 code
+    - EVIDENCED_BY   # Edge attribute: PubMed evidence level
+    - FROM_SOURCE    # Any node -> SOURCE (provenance tracking)

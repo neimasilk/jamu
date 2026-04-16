@@ -1,0 +1,3935 @@
+{
+  "total_diseases": 651,
+  "icd10_mapped": 243,
+  "icd10_pct": 37.3,
+  "categories": {
+    "unknown": 321,
+    "pharmacological_effect": 83,
+    "infectious": 35,
+    "skin": 33,
+    "digestive": 23,
+    "symptom": 21,
+    "injury": 18,
+    "non_medical": 17,
+    "genitourinary": 15,
+    "neoplasm": 14,
+    "circulatory": 13,
+    "musculoskeletal": 11,
+    "respiratory": 11,
+    "eye": 9,
+    "endocrine": 8,
+    "nervous": 7,
+    "ear": 6,
+    "blood": 3,
+    "pregnancy": 2,
+    "mental": 1
+  },
+  "normalized_map": {
+    "abdomen": {
+      "raw": "Abdomen",
+      "normalized": "Abdominal complaints",
+      "icd10": "R10",
+      "category": "symptom"
+    },
+    "abortifacient": {
+      "raw": "Abortifacient",
+      "normalized": "Abortifacient use",
+      "icd10": "O03-O06",
+      "category": "pharmacological_effect"
+    },
+    "abortive": {
+      "raw": "Abortive",
+      "normalized": "Abortifacient use",
+      "icd10": "O03-O06",
+      "category": "pharmacological_effect"
+    },
+    "abscess": {
+      "raw": "Abscess",
+      "normalized": "Abscess",
+      "icd10": "L02",
+      "category": "skin"
+    },
+    "acaricide": {
+      "raw": "Acaricide",
+      "normalized": "Acaricide",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "ache": {
+      "raw": "Ache",
+      "normalized": "Earache",
+      "icd10": "H92",
+      "category": "ear"
+    },
+    "acheear": {
+      "raw": "Ache(Ear)",
+      "normalized": "Earache",
+      "icd10": "H92",
+      "category": "ear"
+    },
+    "achehead": {
+      "raw": "Ache(Head)",
+      "normalized": "Headache",
+      "icd10": "R51",
+      "category": "symptom"
+    },
+    "achestomach": {
+      "raw": "Ache(Stomach)",
+      "normalized": "Stomachache",
+      "icd10": "R10",
+      "category": "digestive"
+    },
+    "acne": {
+      "raw": "Acne",
+      "normalized": "Acne",
+      "icd10": "L70",
+      "category": "skin"
+    },
+    "adenopathy": {
+      "raw": "Adenopathy",
+      "normalized": "Lymphadenopathy",
+      "icd10": "R59",
+      "category": "symptom"
+    },
+    "afterbirth": {
+      "raw": "Afterbirth",
+      "normalized": "Postpartum care",
+      "icd10": "O73",
+      "category": "pregnancy"
+    },
+    "aftosa": {
+      "raw": "Aftosa",
+      "normalized": "Aftosa",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ague": {
+      "raw": "Ague",
+      "normalized": "Ague",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "alopecia": {
+      "raw": "Alopecia",
+      "normalized": "Alopecia",
+      "icd10": "L63-L65",
+      "category": "skin"
+    },
+    "alterative": {
+      "raw": "Alterative",
+      "normalized": "Alterative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "amebiasis": {
+      "raw": "Amebiasis",
+      "normalized": "Amebiasis",
+      "icd10": "A06",
+      "category": "infectious"
+    },
+    "amenorrhea": {
+      "raw": "Amenorrhea",
+      "normalized": "Amenorrhea",
+      "icd10": "N91",
+      "category": "genitourinary"
+    },
+    "anaphrodisiac": {
+      "raw": "Anaphrodisiac",
+      "normalized": "Anaphrodisiac use",
+      "icd10": "F52",
+      "category": "pharmacological_effect"
+    },
+    "anaphrodisiac_female": {
+      "raw": "Anaphrodisiac (Female)",
+      "normalized": "Aphrodisiac use",
+      "icd10": "F52",
+      "category": "pharmacological_effect"
+    },
+    "anasarca": {
+      "raw": "Anasarca",
+      "normalized": "Edema (generalized)",
+      "icd10": "R60",
+      "category": "circulatory"
+    },
+    "anemia": {
+      "raw": "Anemia",
+      "normalized": "Anemia",
+      "icd10": "D50-D64",
+      "category": "blood"
+    },
+    "angina": {
+      "raw": "Angina",
+      "normalized": "Angina",
+      "icd10": "I20",
+      "category": "circulatory"
+    },
+    "angina?": {
+      "raw": "Angina?",
+      "normalized": "Angina",
+      "icd10": "I20",
+      "category": "circulatory"
+    },
+    "ankle": {
+      "raw": "Ankle",
+      "normalized": "Ankle complaints",
+      "icd10": "M25",
+      "category": "musculoskeletal"
+    },
+    "anodyne": {
+      "raw": "Anodyne",
+      "normalized": "Analgesic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "anorectic": {
+      "raw": "Anorectic",
+      "normalized": "Appetite suppressant",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidote": {
+      "raw": "Antidote",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidoteantiaris": {
+      "raw": "Antidote(Antiaris)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotecrab": {
+      "raw": "Antidote(Crab)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotedatura": {
+      "raw": "Antidote(Datura)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotefish_poison": {
+      "raw": "Antidote(Fish poison)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotefish": {
+      "raw": "Antidote(Fish)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotefish_sting": {
+      "raw": "Antidote(Fish sting)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidoteipoh": {
+      "raw": "Antidote(Ipoh)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidoteopium": {
+      "raw": "Antidote(Opium)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotepithecellobium": {
+      "raw": "Antidote(Pithecellobium)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotepoison_arrow": {
+      "raw": "Antidote(Poison arrow)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotepoison": {
+      "raw": "Antidote(Poison)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotedioscorea": {
+      "raw": "Antidote(Dioscorea)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antiemetic": {
+      "raw": "Antiemetic",
+      "normalized": "Antiemetic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antiseptic": {
+      "raw": "Antiseptic",
+      "normalized": "Antiseptic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antispasmodic": {
+      "raw": "Antispasmodic",
+      "normalized": "Antispasmodic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "aperient": {
+      "raw": "Aperient",
+      "normalized": "Mild laxative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "apertif": {
+      "raw": "Apertif",
+      "normalized": "Apertif",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "aphrodisiac": {
+      "raw": "Aphrodisiac",
+      "normalized": "Aphrodisiac use",
+      "icd10": "F52",
+      "category": "pharmacological_effect"
+    },
+    "aphrodisiacfemale": {
+      "raw": "Aphrodisiac(Female)",
+      "normalized": "Aphrodisiac use",
+      "icd10": "F52",
+      "category": "pharmacological_effect"
+    },
+    "aphthae": {
+      "raw": "Aphthae",
+      "normalized": "Aphthae",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "aphthaee": {
+      "raw": "Aphthaee",
+      "normalized": "Aphthaee",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "aphthagenic": {
+      "raw": "Aphthagenic",
+      "normalized": "Aphthagenic",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "appendicitis": {
+      "raw": "Appendicitis",
+      "normalized": "Appendicitis",
+      "icd10": "K35-K37",
+      "category": "digestive"
+    },
+    "arrow_poison": {
+      "raw": "Arrow-poison",
+      "normalized": "Arrow poison",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "arrhythmia": {
+      "raw": "Arrhythmia",
+      "normalized": "Arrhythmia",
+      "icd10": "I49",
+      "category": "circulatory"
+    },
+    "artemicide": {
+      "raw": "Artemicide",
+      "normalized": "Artemicide",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "arthritis": {
+      "raw": "Arthritis",
+      "normalized": "Arthritis",
+      "icd10": "M05-M14",
+      "category": "musculoskeletal"
+    },
+    "arthritis?": {
+      "raw": "Arthritis?",
+      "normalized": "Arthritis",
+      "icd10": "M05-M14",
+      "category": "musculoskeletal"
+    },
+    "ascaricide": {
+      "raw": "Ascaricide",
+      "normalized": "Ascaricide",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "ascites": {
+      "raw": "Ascites",
+      "normalized": "Ascites",
+      "icd10": "R18",
+      "category": "digestive"
+    },
+    "asthma": {
+      "raw": "Asthma",
+      "normalized": "Asthma",
+      "icd10": "J45",
+      "category": "respiratory"
+    },
+    "astringent": {
+      "raw": "Astringent",
+      "normalized": "Astringent use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "athletes_foot": {
+      "raw": "Athlete's-Foot",
+      "normalized": "Athlete's-Foot",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "acheback": {
+      "raw": "Ache(Back)",
+      "normalized": "Back pain",
+      "icd10": "M54",
+      "category": "musculoskeletal"
+    },
+    "baldness": {
+      "raw": "Baldness",
+      "normalized": "Baldness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "beri_beri": {
+      "raw": "Beri-Beri",
+      "normalized": "Beriberi",
+      "icd10": "E51",
+      "category": "endocrine"
+    },
+    "beriberi": {
+      "raw": "Beriberi",
+      "normalized": "Beriberi",
+      "icd10": "E51",
+      "category": "endocrine"
+    },
+    "bilious": {
+      "raw": "Bilious",
+      "normalized": "Bilious",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "birdlime": {
+      "raw": "Birdlime",
+      "normalized": "Birdlime",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "bitebug": {
+      "raw": "Bite(Bug)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "bitedog": {
+      "raw": "Bite(Dog)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "bitesnake": {
+      "raw": "Bite(Snake)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "black_eye": {
+      "raw": "Black-Eye",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "bladder": {
+      "raw": "Bladder",
+      "normalized": "Bladder disease",
+      "icd10": "N30-N32",
+      "category": "genitourinary"
+    },
+    "bladder_stone": {
+      "raw": "Bladder stone",
+      "normalized": "Bladder disease",
+      "icd10": "N30-N32",
+      "category": "genitourinary"
+    },
+    "blemish": {
+      "raw": "Blemish",
+      "normalized": "Blemish",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "blennorhea": {
+      "raw": "Blennorhea",
+      "normalized": "Blennorhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "blister": {
+      "raw": "Blister",
+      "normalized": "Blister",
+      "icd10": "T14",
+      "category": "skin"
+    },
+    "boil": {
+      "raw": "Boil",
+      "normalized": "Boil/Furuncle",
+      "icd10": "L02",
+      "category": "skin"
+    },
+    "bones": {
+      "raw": "Bones",
+      "normalized": "Bone disorders",
+      "icd10": "M80-M89",
+      "category": "musculoskeletal"
+    },
+    "bowel": {
+      "raw": "Bowel",
+      "normalized": "Bowel disorders",
+      "icd10": "K55-K63",
+      "category": "digestive"
+    },
+    "brain": {
+      "raw": "Brain",
+      "normalized": "Brain disorders",
+      "icd10": "G00-G99",
+      "category": "nervous"
+    },
+    "breast": {
+      "raw": "Breast",
+      "normalized": "Breast disorders",
+      "icd10": "N60-N64",
+      "category": "genitourinary"
+    },
+    "bronchitis": {
+      "raw": "Bronchitis",
+      "normalized": "Bronchitis",
+      "icd10": "J20-J21",
+      "category": "respiratory"
+    },
+    "bronchosis": {
+      "raw": "Bronchosis",
+      "normalized": "Bronchial disease",
+      "icd10": "J40-J47",
+      "category": "respiratory"
+    },
+    "bruise": {
+      "raw": "Bruise",
+      "normalized": "Bruise",
+      "icd10": "T14",
+      "category": "injury"
+    },
+    "buboes": {
+      "raw": "Buboes",
+      "normalized": "Buboes",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "bugbite": {
+      "raw": "Bugbite",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "burn": {
+      "raw": "Burn",
+      "normalized": "Burn",
+      "icd10": "T20-T32",
+      "category": "skin"
+    },
+    "burns": {
+      "raw": "Burns",
+      "normalized": "Burn",
+      "icd10": "T20-T32",
+      "category": "skin"
+    },
+    "cachexia": {
+      "raw": "Cachexia",
+      "normalized": "Cachexia",
+      "icd10": "R64",
+      "category": "symptom"
+    },
+    "callus": {
+      "raw": "Callus",
+      "normalized": "Callus",
+      "icd10": "L84",
+      "category": "skin"
+    },
+    "cancer": {
+      "raw": "Cancer",
+      "normalized": "Cancer",
+      "icd10": "C00-C97",
+      "category": "neoplasm"
+    },
+    "cancernose": {
+      "raw": "Cancer(Nose)",
+      "normalized": "Cancer",
+      "icd10": "C00-C97",
+      "category": "neoplasm"
+    },
+    "cancerstomach": {
+      "raw": "Cancer(Stomach)",
+      "normalized": "Cancer",
+      "icd10": "C00-C97",
+      "category": "neoplasm"
+    },
+    "candlenut": {
+      "raw": "Candlenut",
+      "normalized": "Candlenut",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "canicide": {
+      "raw": "Canicide",
+      "normalized": "Canicide",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "carbuncle": {
+      "raw": "Carbuncle",
+      "normalized": "Carbuncle",
+      "icd10": "L02",
+      "category": "skin"
+    },
+    "cardiopathy": {
+      "raw": "Cardiopathy",
+      "normalized": "Heart disease",
+      "icd10": "I00-I52",
+      "category": "circulatory"
+    },
+    "cardiotonic": {
+      "raw": "Cardiotonic",
+      "normalized": "Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "carminative": {
+      "raw": "Carminative",
+      "normalized": "Carminative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "cataplasm": {
+      "raw": "Cataplasm",
+      "normalized": "Poultice use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "cataract": {
+      "raw": "Cataract",
+      "normalized": "Cataract",
+      "icd10": "H25-H26",
+      "category": "eye"
+    },
+    "catarrh": {
+      "raw": "Catarrh",
+      "normalized": "Upper respiratory inflammation",
+      "icd10": "J00-J06",
+      "category": "respiratory"
+    },
+    "stingcaterpillar": {
+      "raw": "Sting(Caterpillar)",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "cathartic": {
+      "raw": "Cathartic",
+      "normalized": "Cathartic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "centipede": {
+      "raw": "Centipede",
+      "normalized": "Centipede treatment",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "bitecentipede": {
+      "raw": "Bite(Centipede)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "cephalgia": {
+      "raw": "Cephalgia",
+      "normalized": "Cephalgia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cerebrosis": {
+      "raw": "Cerebrosis",
+      "normalized": "Cerebrosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "chafing": {
+      "raw": "Chafing",
+      "normalized": "Chafing",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "chancre": {
+      "raw": "Chancre",
+      "normalized": "Chancre",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "chest": {
+      "raw": "Chest",
+      "normalized": "Chest complaints",
+      "icd10": "R07",
+      "category": "symptom"
+    },
+    "achechest": {
+      "raw": "Ache(Chest)",
+      "normalized": "Chest pain",
+      "icd10": "R07",
+      "category": "symptom"
+    },
+    "painchest": {
+      "raw": "Pain(Chest)",
+      "normalized": "Pain",
+      "icd10": "R52",
+      "category": "symptom"
+    },
+    "chewstick": {
+      "raw": "Chewstick",
+      "normalized": "Dental hygiene",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "chickenpox": {
+      "raw": "Chickenpox",
+      "normalized": "Chickenpox",
+      "icd10": "B01",
+      "category": "infectious"
+    },
+    "chills": {
+      "raw": "Chills",
+      "normalized": "Chills/Rigor",
+      "icd10": "R68.83",
+      "category": "symptom"
+    },
+    "chlorosis": {
+      "raw": "Chlorosis",
+      "normalized": "Chlorosis/Anemia",
+      "icd10": "D50",
+      "category": "blood"
+    },
+    "cholecystitis": {
+      "raw": "Cholecystitis",
+      "normalized": "Cholecystitis",
+      "icd10": "K81",
+      "category": "digestive"
+    },
+    "cholecystosis": {
+      "raw": "Cholecystosis",
+      "normalized": "Cholecystosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cholera": {
+      "raw": "Cholera",
+      "normalized": "Cholera",
+      "icd10": "A00",
+      "category": "infectious"
+    },
+    "choleretic": {
+      "raw": "Choleretic",
+      "normalized": "Choleretic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "cicatrizant": {
+      "raw": "Cicatrizant",
+      "normalized": "Wound healing use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "circumscission": {
+      "raw": "Circumscission",
+      "normalized": "Circumscission",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cirrhosis": {
+      "raw": "Cirrhosis",
+      "normalized": "Liver cirrhosis",
+      "icd10": "K74",
+      "category": "digestive"
+    },
+    "cold": {
+      "raw": "Cold",
+      "normalized": "Common cold",
+      "icd10": "J00",
+      "category": "respiratory"
+    },
+    "colic": {
+      "raw": "Colic",
+      "normalized": "Colic",
+      "icd10": "R10",
+      "category": "digestive"
+    },
+    "colitis": {
+      "raw": "Colitis",
+      "normalized": "Colitis",
+      "icd10": "K50-K52",
+      "category": "digestive"
+    },
+    "collyrium": {
+      "raw": "Collyrium",
+      "normalized": "Eye wash use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "condyloma": {
+      "raw": "Condyloma",
+      "normalized": "Condyloma",
+      "icd10": "A63",
+      "category": "infectious"
+    },
+    "congestion": {
+      "raw": "Congestion",
+      "normalized": "Congestion",
+      "icd10": "R09",
+      "category": "symptom"
+    },
+    "conjunctivitis": {
+      "raw": "Conjunctivitis",
+      "normalized": "Conjunctivitis",
+      "icd10": "H10",
+      "category": "eye"
+    },
+    "constipation": {
+      "raw": "Constipation",
+      "normalized": "Constipation",
+      "icd10": "K59.0",
+      "category": "digestive"
+    },
+    "tuberculosis": {
+      "raw": "Tuberculosis",
+      "normalized": "Tuberculosis",
+      "icd10": "A15-A19",
+      "category": "infectious"
+    },
+    "contraceptive": {
+      "raw": "Contraceptive",
+      "normalized": "Contraceptive use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "contraceptive?": {
+      "raw": "Contraceptive?",
+      "normalized": "Contraceptive use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "contusion": {
+      "raw": "Contusion",
+      "normalized": "Bruise",
+      "icd10": "T14",
+      "category": "injury"
+    },
+    "convulsion": {
+      "raw": "Convulsion",
+      "normalized": "Convulsion",
+      "icd10": "G40/R56",
+      "category": "nervous"
+    },
+    "corn": {
+      "raw": "Corn",
+      "normalized": "Corn",
+      "icd10": "L84",
+      "category": "skin"
+    },
+    "cornea": {
+      "raw": "Cornea",
+      "normalized": "Corn",
+      "icd10": "L84",
+      "category": "skin"
+    },
+    "corneosis": {
+      "raw": "Corneosis",
+      "normalized": "Corn",
+      "icd10": "L84",
+      "category": "skin"
+    },
+    "cosmetic": {
+      "raw": "Cosmetic",
+      "normalized": "Cosmetic use",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "cough": {
+      "raw": "Cough",
+      "normalized": "Cough",
+      "icd10": "R05/J00-J99",
+      "category": "respiratory"
+    },
+    "counterirritant": {
+      "raw": "Counterirritant",
+      "normalized": "Counterirritant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cracked_feet": {
+      "raw": "Cracked feet",
+      "normalized": "Cracked feet",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cracked_lips": {
+      "raw": "Cracked lips",
+      "normalized": "Cracked lips",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cramp": {
+      "raw": "Cramp",
+      "normalized": "Cramp",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cramps": {
+      "raw": "Cramps",
+      "normalized": "Cramps",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "culifuge": {
+      "raw": "Culifuge",
+      "normalized": "Culifuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cut": {
+      "raw": "Cut",
+      "normalized": "Cut",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cyanogenetic": {
+      "raw": "Cyanogenetic",
+      "normalized": "Cyanogenetic",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cystitis": {
+      "raw": "Cystitis",
+      "normalized": "Cholecystitis",
+      "icd10": "K81",
+      "category": "digestive"
+    },
+    "cystitis?": {
+      "raw": "Cystitis?",
+      "normalized": "Cholecystitis",
+      "icd10": "K81",
+      "category": "digestive"
+    },
+    "dandruff": {
+      "raw": "Dandruff",
+      "normalized": "Dandruff",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "deafness": {
+      "raw": "Deafness",
+      "normalized": "Hearing loss",
+      "icd10": "H90-H91",
+      "category": "ear"
+    },
+    "debility": {
+      "raw": "Debility",
+      "normalized": "Debility",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "delirium": {
+      "raw": "Delirium",
+      "normalized": "Delirium",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "demulcent": {
+      "raw": "Demulcent",
+      "normalized": "Demulcent use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "dengue": {
+      "raw": "Dengue",
+      "normalized": "Dengue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dengue?": {
+      "raw": "Dengue?",
+      "normalized": "Dengue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dentifrice": {
+      "raw": "Dentifrice",
+      "normalized": "Dentifrice",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "deobstruent": {
+      "raw": "Deobstruent",
+      "normalized": "Deobstruent",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "deodorant": {
+      "raw": "Deodorant",
+      "normalized": "Deodorant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "depilatory": {
+      "raw": "Depilatory",
+      "normalized": "Depilatory",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "depressant": {
+      "raw": "Depressant",
+      "normalized": "Depressant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "depression": {
+      "raw": "Depression",
+      "normalized": "Depression",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "depurative": {
+      "raw": "Depurative",
+      "normalized": "Depurative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "dermatitigenic": {
+      "raw": "Dermatitigenic",
+      "normalized": "Dermatitigenic",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dermatosis": {
+      "raw": "Dermatosis",
+      "normalized": "Dermatosis",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "dhobi_itch": {
+      "raw": "Dhobi Itch",
+      "normalized": "Pruritus",
+      "icd10": "L29",
+      "category": "skin"
+    },
+    "diabetes": {
+      "raw": "Diabetes",
+      "normalized": "Diabetes",
+      "icd10": "E10-E14",
+      "category": "endocrine"
+    },
+    "diaphoretic": {
+      "raw": "Diaphoretic",
+      "normalized": "Diaphoretic",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "diarrhea": {
+      "raw": "Diarrhea",
+      "normalized": "Diarrhea",
+      "icd10": "K52/A09",
+      "category": "digestive"
+    },
+    "digestive": {
+      "raw": "Digestive",
+      "normalized": "Digestive aid",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "diphtheria": {
+      "raw": "Diphtheria",
+      "normalized": "Diphtheria",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dislocation": {
+      "raw": "Dislocation",
+      "normalized": "Dislocation",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "diuretic": {
+      "raw": "Diuretic",
+      "normalized": "Diuretic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "dizziness": {
+      "raw": "Dizziness",
+      "normalized": "Dizziness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dropsy": {
+      "raw": "Dropsy",
+      "normalized": "Edema/Dropsy",
+      "icd10": "R60",
+      "category": "circulatory"
+    },
+    "drunkenness": {
+      "raw": "Drunkenness",
+      "normalized": "Drunkenness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dugout": {
+      "raw": "Dugout",
+      "normalized": "Gout",
+      "icd10": "M10",
+      "category": "musculoskeletal"
+    },
+    "dullness": {
+      "raw": "Dullness",
+      "normalized": "Dullness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dyschezia": {
+      "raw": "Dyschezia",
+      "normalized": "Dyschezia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dysentery": {
+      "raw": "Dysentery",
+      "normalized": "Dysentery",
+      "icd10": "A06/A03",
+      "category": "infectious"
+    },
+    "dysmenorrhea": {
+      "raw": "Dysmenorrhea",
+      "normalized": "Dysmenorrhea",
+      "icd10": "N94.4-N94.6",
+      "category": "genitourinary"
+    },
+    "dyspepsia": {
+      "raw": "Dyspepsia",
+      "normalized": "Dyspepsia",
+      "icd10": "K30",
+      "category": "digestive"
+    },
+    "dyspnea": {
+      "raw": "Dyspnea",
+      "normalized": "Dyspnea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "dysuria": {
+      "raw": "Dysuria",
+      "normalized": "Dysuria",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "earache": {
+      "raw": "Earache",
+      "normalized": "Earache",
+      "icd10": "H92",
+      "category": "ear"
+    },
+    "eczema": {
+      "raw": "Eczema",
+      "normalized": "Eczema",
+      "icd10": "L20-L30",
+      "category": "skin"
+    },
+    "edema": {
+      "raw": "Edema",
+      "normalized": "Edema",
+      "icd10": "R60",
+      "category": "circulatory"
+    },
+    "emetic": {
+      "raw": "Emetic",
+      "normalized": "Emetic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "emmenagogue": {
+      "raw": "Emmenagogue",
+      "normalized": "Emmenagogue use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "emmenagogue?": {
+      "raw": "Emmenagogue?",
+      "normalized": "Emmenagogue use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "emollient": {
+      "raw": "Emollient",
+      "normalized": "Emollient use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "enteritis": {
+      "raw": "Enteritis",
+      "normalized": "Enteritis",
+      "icd10": "K50-K52",
+      "category": "digestive"
+    },
+    "enteromegaly": {
+      "raw": "Enteromegaly",
+      "normalized": "Enteromegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "enterorrhagia": {
+      "raw": "Enterorrhagia",
+      "normalized": "Enterorrhagia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "enterosis": {
+      "raw": "Enterosis",
+      "normalized": "Enterosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "enuresis": {
+      "raw": "Enuresis",
+      "normalized": "Enuresis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "epilepsy": {
+      "raw": "Epilepsy",
+      "normalized": "Epilepsy",
+      "icd10": "G40",
+      "category": "nervous"
+    },
+    "epistaxis": {
+      "raw": "Epistaxis",
+      "normalized": "Epistaxis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "eruption": {
+      "raw": "Eruption",
+      "normalized": "Eruption",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "erysipelas": {
+      "raw": "Erysipelas",
+      "normalized": "Erysipelas",
+      "icd10": "A46",
+      "category": "infectious"
+    },
+    "est": {
+      "raw": "Est",
+      "normalized": "Congestion",
+      "icd10": "R09",
+      "category": "symptom"
+    },
+    "evil_eye": {
+      "raw": "Evil eye",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "expectorant": {
+      "raw": "Expectorant",
+      "normalized": "Expectorant use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "eye": {
+      "raw": "Eye",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "eye_drop": {
+      "raw": "Eye drop",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "eyesight": {
+      "raw": "Eyesight",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "fatigue": {
+      "raw": "Fatigue",
+      "normalized": "Fatigue",
+      "icd10": "R53",
+      "category": "symptom"
+    },
+    "feet": {
+      "raw": "Feet",
+      "normalized": "Feet",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "felicide": {
+      "raw": "Felicide",
+      "normalized": "Felicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "female": {
+      "raw": "Female",
+      "normalized": "Female",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fever": {
+      "raw": "Fever",
+      "normalized": "Fever",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "feverremittent": {
+      "raw": "Fever(Remittent)",
+      "normalized": "Fever",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "stingfish": {
+      "raw": "Sting(Fish)",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "fistula": {
+      "raw": "Fistula",
+      "normalized": "Fistula",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fits": {
+      "raw": "Fits",
+      "normalized": "Fits",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "flatulence": {
+      "raw": "Flatulence",
+      "normalized": "Flatulence",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "food_poisoning": {
+      "raw": "Food poisoning",
+      "normalized": "Food poisoning",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fracture": {
+      "raw": "Fracture",
+      "normalized": "Fracture",
+      "icd10": "S/T",
+      "category": "injury"
+    },
+    "frambesia": {
+      "raw": "Frambesia",
+      "normalized": "Frambesia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fumitory": {
+      "raw": "Fumitory",
+      "normalized": "Fumigation",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "funereal": {
+      "raw": "Funereal",
+      "normalized": "Funereal",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fungicide": {
+      "raw": "Fungicide",
+      "normalized": "Fungicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "furuncle": {
+      "raw": "Furuncle",
+      "normalized": "Furuncle",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gallbladder": {
+      "raw": "Gallbladder",
+      "normalized": "Bladder disease",
+      "icd10": "N30-N32",
+      "category": "genitourinary"
+    },
+    "gallstone": {
+      "raw": "Gallstone",
+      "normalized": "Gallstone",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gallstones": {
+      "raw": "Gallstones",
+      "normalized": "Gallstones",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gangrene": {
+      "raw": "Gangrene",
+      "normalized": "Gangrene",
+      "icd10": "R02",
+      "category": "circulatory"
+    },
+    "gargle": {
+      "raw": "Gargle",
+      "normalized": "Gargle",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gas": {
+      "raw": "Gas",
+      "normalized": "Gastritis",
+      "icd10": "K29",
+      "category": "digestive"
+    },
+    "gasatromegaly": {
+      "raw": "Gasatromegaly",
+      "normalized": "Gasatromegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gastralgia": {
+      "raw": "Gastralgia",
+      "normalized": "Gastralgia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gastritis": {
+      "raw": "Gastritis",
+      "normalized": "Gastritis",
+      "icd10": "K29",
+      "category": "digestive"
+    },
+    "gastrointestinal": {
+      "raw": "Gastrointestinal",
+      "normalized": "Gastrointestinal",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gastromegaly": {
+      "raw": "Gastromegaly",
+      "normalized": "Gastromegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gastrosis": {
+      "raw": "Gastrosis",
+      "normalized": "Gastrosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "giddiness": {
+      "raw": "Giddiness",
+      "normalized": "Giddiness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gingivitis": {
+      "raw": "Gingivitis",
+      "normalized": "Gingivitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gingivosis": {
+      "raw": "Gingivosis",
+      "normalized": "Gingivosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "glands": {
+      "raw": "Glands",
+      "normalized": "Glands",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "glossitis": {
+      "raw": "Glossitis",
+      "normalized": "Glossitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "goiter": {
+      "raw": "Goiter",
+      "normalized": "Goiter",
+      "icd10": "E01-E05",
+      "category": "endocrine"
+    },
+    "gonorrhea": {
+      "raw": "Gonorrhea",
+      "normalized": "Gonorrhea",
+      "icd10": "A54",
+      "category": "infectious"
+    },
+    "gout": {
+      "raw": "Gout",
+      "normalized": "Gout",
+      "icd10": "M10",
+      "category": "musculoskeletal"
+    },
+    "gravel": {
+      "raw": "Gravel",
+      "normalized": "Gravel",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "grey_hair": {
+      "raw": "Grey Hair",
+      "normalized": "Grey Hair",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gripes": {
+      "raw": "Gripes",
+      "normalized": "Gripes",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "groin": {
+      "raw": "Groin",
+      "normalized": "Groin",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gynecology": {
+      "raw": "Gynecology",
+      "normalized": "Gynecology",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hair": {
+      "raw": "Hair",
+      "normalized": "Hair",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hair_tonic": {
+      "raw": "Hair-Tonic",
+      "normalized": "Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "halitosis": {
+      "raw": "Halitosis",
+      "normalized": "Halitosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hangover": {
+      "raw": "Hangover",
+      "normalized": "Hangover",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "coldhead": {
+      "raw": "Cold(Head)",
+      "normalized": "Common cold",
+      "icd10": "J00",
+      "category": "respiratory"
+    },
+    "heartburn": {
+      "raw": "Heartburn",
+      "normalized": "Heart disease",
+      "icd10": "I00-I52",
+      "category": "circulatory"
+    },
+    "hematemesis": {
+      "raw": "Hematemesis",
+      "normalized": "Hematemesis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hematochezia": {
+      "raw": "Hematochezia",
+      "normalized": "Hematochezia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hematoptysis": {
+      "raw": "Hematoptysis",
+      "normalized": "Hematoptysis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hematuria": {
+      "raw": "Hematuria",
+      "normalized": "Hematuria",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hemoptysis": {
+      "raw": "Hemoptysis",
+      "normalized": "Hemoptysis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hemorrhage": {
+      "raw": "Hemorrhage",
+      "normalized": "Hemorrhage",
+      "icd10": "I60-I62/R58",
+      "category": "circulatory"
+    },
+    "hemostat": {
+      "raw": "Hemostat",
+      "normalized": "Hemostatic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "hepatitis": {
+      "raw": "Hepatitis",
+      "normalized": "Hepatitis",
+      "icd10": "K75/B15-B19",
+      "category": "digestive"
+    },
+    "hepatomegaly": {
+      "raw": "Hepatomegaly",
+      "normalized": "Hepatomegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hepatosis": {
+      "raw": "Hepatosis",
+      "normalized": "Hepatosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "herbicide": {
+      "raw": "Herbicide",
+      "normalized": "Herbicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "herpes": {
+      "raw": "Herpes",
+      "normalized": "Herpes",
+      "icd10": "B00",
+      "category": "infectious"
+    },
+    "hiccup": {
+      "raw": "Hiccup",
+      "normalized": "Hiccup",
+      "icd10": "R06.6",
+      "category": "symptom"
+    },
+    "hoarseness": {
+      "raw": "Hoarseness",
+      "normalized": "Hoarseness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "homicide": {
+      "raw": "Homicide",
+      "normalized": "Homicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "homocide": {
+      "raw": "Homocide",
+      "normalized": "Homocide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hydrophobia": {
+      "raw": "Hydrophobia",
+      "normalized": "Hydrophobia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hysteria": {
+      "raw": "Hysteria",
+      "normalized": "Hysteria",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ichthyosarcotoxin": {
+      "raw": "Ichthyosarcotoxin",
+      "normalized": "Ichthyosarcotoxin",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ichthyosarcotoxism": {
+      "raw": "Ichthyosarcotoxism",
+      "normalized": "Ichthyosarcotoxism",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "icterus": {
+      "raw": "Icterus",
+      "normalized": "Icterus",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "impotence": {
+      "raw": "Impotence",
+      "normalized": "Impotence",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "impotency": {
+      "raw": "Impotency",
+      "normalized": "Impotency",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "inappetence": {
+      "raw": "Inappetence",
+      "normalized": "Inappetence",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "incense": {
+      "raw": "Incense",
+      "normalized": "Incense",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "incontinence": {
+      "raw": "Incontinence",
+      "normalized": "Incontinence",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "indigestion": {
+      "raw": "Indigestion",
+      "normalized": "Indigestion",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "inertia": {
+      "raw": "Inertia",
+      "normalized": "Inertia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "infection": {
+      "raw": "Infection",
+      "normalized": "Infection",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "infertility": {
+      "raw": "Infertility",
+      "normalized": "Infertility",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "inflammation": {
+      "raw": "Inflammation",
+      "normalized": "Inflammation",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "insanity": {
+      "raw": "Insanity",
+      "normalized": "Insanity",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "insecticide": {
+      "raw": "Insecticide",
+      "normalized": "Insecticide",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "insectifuge": {
+      "raw": "Insectifuge",
+      "normalized": "Insectifuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "insomnia": {
+      "raw": "Insomnia",
+      "normalized": "Insomnia",
+      "icd10": "F51",
+      "category": "mental"
+    },
+    "internal": {
+      "raw": "Internal",
+      "normalized": "Internal",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "intestinal_ailments": {
+      "raw": "Intestinal-Ailments",
+      "normalized": "Intestinal-Ailments",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "intestine": {
+      "raw": "Intestine",
+      "normalized": "Intestine",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "intoxicant": {
+      "raw": "Intoxicant",
+      "normalized": "Intoxicant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "intoxication": {
+      "raw": "Intoxication",
+      "normalized": "Intoxication",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "itch": {
+      "raw": "Itch",
+      "normalized": "Pruritus",
+      "icd10": "L29",
+      "category": "skin"
+    },
+    "jaundice": {
+      "raw": "Jaundice",
+      "normalized": "Jaundice",
+      "icd10": "R17",
+      "category": "digestive"
+    },
+    "jaw": {
+      "raw": "Jaw",
+      "normalized": "Jaw",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "jellyfish_sting": {
+      "raw": "Jellyfish-sting",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "joint": {
+      "raw": "Joint",
+      "normalized": "Joint",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "kidney": {
+      "raw": "Kidney",
+      "normalized": "Kidney disease",
+      "icd10": "N00-N29",
+      "category": "genitourinary"
+    },
+    "kidney_stones": {
+      "raw": "Kidney stones",
+      "normalized": "Kidney disease",
+      "icd10": "N00-N29",
+      "category": "genitourinary"
+    },
+    "knee": {
+      "raw": "Knee",
+      "normalized": "Knee",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "labor": {
+      "raw": "Labor",
+      "normalized": "Labor",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lactafuge": {
+      "raw": "Lactafuge",
+      "normalized": "Lactafuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lactagogue": {
+      "raw": "Lactagogue",
+      "normalized": "Galactagogue use",
+      "icd10": "O92",
+      "category": "pharmacological_effect"
+    },
+    "lactogogue": {
+      "raw": "Lactogogue",
+      "normalized": "Lactogogue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lameness": {
+      "raw": "Lameness",
+      "normalized": "Lameness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "larvicide": {
+      "raw": "Larvicide",
+      "normalized": "Larvicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lassitude": {
+      "raw": "Lassitude",
+      "normalized": "Lassitude",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "laxative": {
+      "raw": "Laxative",
+      "normalized": "Laxative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "leech_repellant": {
+      "raw": "Leech-repellant",
+      "normalized": "Leech-repellant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "leg": {
+      "raw": "Leg",
+      "normalized": "Leg",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "leprosy": {
+      "raw": "Leprosy",
+      "normalized": "Leprosy",
+      "icd10": "A30",
+      "category": "infectious"
+    },
+    "leucoderma": {
+      "raw": "Leucoderma",
+      "normalized": "Leucoderma",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "leucorrhea": {
+      "raw": "Leucorrhea",
+      "normalized": "Leucorrhea",
+      "icd10": "N76",
+      "category": "genitourinary"
+    },
+    "leukorrhea": {
+      "raw": "Leukorrhea",
+      "normalized": "Leukorrhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ligature": {
+      "raw": "Ligature",
+      "normalized": "Ligature",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "liniment": {
+      "raw": "Liniment",
+      "normalized": "Liniment",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "litholytic": {
+      "raw": "Litholytic",
+      "normalized": "Litholytic",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "liver": {
+      "raw": "Liver",
+      "normalized": "Liver disease",
+      "icd10": "K70-K77",
+      "category": "digestive"
+    },
+    "lizardbite": {
+      "raw": "Lizardbite",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "loin": {
+      "raw": "Loin",
+      "normalized": "Loin",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "longevity": {
+      "raw": "Longevity",
+      "normalized": "Longevity",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "loose_teeth": {
+      "raw": "Loose Teeth",
+      "normalized": "Loose Teeth",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lumbago": {
+      "raw": "Lumbago",
+      "normalized": "Low back pain",
+      "icd10": "M54.5",
+      "category": "musculoskeletal"
+    },
+    "lunacy": {
+      "raw": "Lunacy",
+      "normalized": "Lunacy",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "maculitis": {
+      "raw": "Maculitis",
+      "normalized": "Maculitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "malaise": {
+      "raw": "Malaise",
+      "normalized": "Malaise",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "malaria": {
+      "raw": "Malaria",
+      "normalized": "Malaria",
+      "icd10": "B50-B54",
+      "category": "infectious"
+    },
+    "mange": {
+      "raw": "Mange",
+      "normalized": "Mange",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mastalgia": {
+      "raw": "Mastalgia",
+      "normalized": "Mastalgia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "masticatory": {
+      "raw": "Masticatory",
+      "normalized": "Masticatory",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mastitis": {
+      "raw": "Mastitis",
+      "normalized": "Mastitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "measles": {
+      "raw": "Measles",
+      "normalized": "Measles",
+      "icd10": "B05",
+      "category": "infectious"
+    },
+    "medicine": {
+      "raw": "Medicine",
+      "normalized": "Medicine",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "medicine_vet": {
+      "raw": "Medicine (Vet)",
+      "normalized": "Medicine (Vet)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "menorrhagia": {
+      "raw": "Menorrhagia",
+      "normalized": "Menorrhagia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "metrorrhagia": {
+      "raw": "Metrorrhagia",
+      "normalized": "Metrorrhagia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "metroxenia": {
+      "raw": "Metroxenia",
+      "normalized": "Metroxenia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "migraine": {
+      "raw": "Migraine",
+      "normalized": "Migraine",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "millipede": {
+      "raw": "Millipede",
+      "normalized": "Millipede",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "miscarriage": {
+      "raw": "Miscarriage",
+      "normalized": "Miscarriage",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "morphinism": {
+      "raw": "Morphinism",
+      "normalized": "Morphinism",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "morphinism_opiumism": {
+      "raw": "Morphinism (Opiumism)",
+      "normalized": "Morphinism (Opiumism)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mouthwash": {
+      "raw": "Mouthwash",
+      "normalized": "Mouthwash",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mucositis": {
+      "raw": "Mucositis",
+      "normalized": "Mucositis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mucusitis": {
+      "raw": "Mucusitis",
+      "normalized": "Mucusitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mumps": {
+      "raw": "Mumps",
+      "normalized": "Mumps",
+      "icd10": "B26",
+      "category": "infectious"
+    },
+    "myalgia": {
+      "raw": "Myalgia",
+      "normalized": "Myalgia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "narcotic": {
+      "raw": "Narcotic",
+      "normalized": "Narcotic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "narcotic_pollen": {
+      "raw": "Narcotic (Pollen)",
+      "normalized": "Narcotic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "nausea": {
+      "raw": "Nausea",
+      "normalized": "Nausea",
+      "icd10": "R11",
+      "category": "digestive"
+    },
+    "neck": {
+      "raw": "Neck",
+      "normalized": "Neck",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "nephritis": {
+      "raw": "Nephritis",
+      "normalized": "Nephritis",
+      "icd10": "N00-N08",
+      "category": "genitourinary"
+    },
+    "nerves": {
+      "raw": "Nerves",
+      "normalized": "Nerves",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "nervine": {
+      "raw": "Nervine",
+      "normalized": "Nervine use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "nervousness": {
+      "raw": "Nervousness",
+      "normalized": "Nervousness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "neuralgia": {
+      "raw": "Neuralgia",
+      "normalized": "Neuralgia",
+      "icd10": "G50-G59",
+      "category": "nervous"
+    },
+    "nightsweats": {
+      "raw": "Nightsweats",
+      "normalized": "Nightsweats",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "nose": {
+      "raw": "Nose",
+      "normalized": "Nose",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "numbness": {
+      "raw": "Numbness",
+      "normalized": "Numbness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "obesity": {
+      "raw": "Obesity",
+      "normalized": "Obesity",
+      "icd10": "E66",
+      "category": "endocrine"
+    },
+    "odontectomy": {
+      "raw": "Odontectomy",
+      "normalized": "Odontectomy",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "odontosis": {
+      "raw": "Odontosis",
+      "normalized": "Odontosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "onychosis": {
+      "raw": "Onychosis",
+      "normalized": "Onychosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "onychyosis": {
+      "raw": "Onychyosis",
+      "normalized": "Onychyosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "opacity": {
+      "raw": "Opacity",
+      "normalized": "Opacity",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ophthalmia": {
+      "raw": "Ophthalmia",
+      "normalized": "Eye inflammation",
+      "icd10": "H10-H13",
+      "category": "eye"
+    },
+    "opium_substitute": {
+      "raw": "Opium substitute",
+      "normalized": "Opium substitute",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "orchitis": {
+      "raw": "Orchitis",
+      "normalized": "Orchitis",
+      "icd10": "N45",
+      "category": "genitourinary"
+    },
+    "ostealgia": {
+      "raw": "Ostealgia",
+      "normalized": "Ostealgia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "osteosis": {
+      "raw": "Osteosis",
+      "normalized": "Osteosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "otitis": {
+      "raw": "Otitis",
+      "normalized": "Otitis",
+      "icd10": "H65-H67",
+      "category": "ear"
+    },
+    "otosis": {
+      "raw": "Otosis",
+      "normalized": "Otosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "oxyuriasis": {
+      "raw": "Oxyuriasis",
+      "normalized": "Oxyuriasis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pain": {
+      "raw": "Pain",
+      "normalized": "Pain",
+      "icd10": "R52",
+      "category": "symptom"
+    },
+    "palpitations": {
+      "raw": "Palpitations",
+      "normalized": "Palpitations",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "panacea": {
+      "raw": "Panacea",
+      "normalized": "Panacea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "paralysis": {
+      "raw": "Paralysis",
+      "normalized": "Paralysis",
+      "icd10": "G80-G83",
+      "category": "nervous"
+    },
+    "parasiticide": {
+      "raw": "Parasiticide",
+      "normalized": "Parasiticide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "parotitis": {
+      "raw": "Parotitis",
+      "normalized": "Otitis",
+      "icd10": "H65-H67",
+      "category": "ear"
+    },
+    "parturition": {
+      "raw": "Parturition",
+      "normalized": "Childbirth support",
+      "icd10": "O80-O84",
+      "category": "pregnancy"
+    },
+    "paste": {
+      "raw": "Paste",
+      "normalized": "Paste",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pectoral": {
+      "raw": "Pectoral",
+      "normalized": "Pectoral use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "pediculicide": {
+      "raw": "Pediculicide",
+      "normalized": "Pediculicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pediculifuge": {
+      "raw": "Pediculifuge",
+      "normalized": "Pediculifuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "perfume": {
+      "raw": "Perfume",
+      "normalized": "Perfume",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "perfumery": {
+      "raw": "Perfumery",
+      "normalized": "Perfumery",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pertussis": {
+      "raw": "Pertussis",
+      "normalized": "Pertussis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pharyngitis": {
+      "raw": "Pharyngitis",
+      "normalized": "Pharyngitis",
+      "icd10": "J02",
+      "category": "respiratory"
+    },
+    "philter": {
+      "raw": "Philter",
+      "normalized": "Philter",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "philtre": {
+      "raw": "Philtre",
+      "normalized": "Philtre",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "phthisis": {
+      "raw": "Phthisis",
+      "normalized": "Phthisis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "piles": {
+      "raw": "Piles",
+      "normalized": "Hemorrhoids",
+      "icd10": "I84",
+      "category": "circulatory"
+    },
+    "pimple": {
+      "raw": "Pimple",
+      "normalized": "Pimple",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pinworms": {
+      "raw": "Pinworms",
+      "normalized": "Helminthiasis",
+      "icd10": "B65-B83",
+      "category": "infectious"
+    },
+    "piscicide": {
+      "raw": "Piscicide",
+      "normalized": "Fish poison",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "piscifuge": {
+      "raw": "Piscifuge",
+      "normalized": "Piscifuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pleurisy": {
+      "raw": "Pleurisy",
+      "normalized": "Pleurisy",
+      "icd10": "R09.1",
+      "category": "respiratory"
+    },
+    "pocks": {
+      "raw": "Pocks",
+      "normalized": "Pocks",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "poison": {
+      "raw": "Poison",
+      "normalized": "Arrow poison",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "poison_fatality": {
+      "raw": "Poison (Fatality)",
+      "normalized": "Poison (Fatality)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "poisonarrow": {
+      "raw": "Poison(Arrow)",
+      "normalized": "Poison(Arrow)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "poisoncrab": {
+      "raw": "Poison(Crab)",
+      "normalized": "Poison(Crab)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "polypabdomen": {
+      "raw": "Polyp(Abdomen)",
+      "normalized": "Abdominal complaints",
+      "icd10": "R10",
+      "category": "symptom"
+    },
+    "polypnose": {
+      "raw": "Polyp(Nose)",
+      "normalized": "Polyp(Nose)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "polypstomach": {
+      "raw": "Polyp(Stomach)",
+      "normalized": "Polyp(Stomach)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "poultice": {
+      "raw": "Poultice",
+      "normalized": "Poultice",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pox": {
+      "raw": "Pox",
+      "normalized": "Chickenpox",
+      "icd10": "B01",
+      "category": "infectious"
+    },
+    "pregnancy": {
+      "raw": "Pregnancy",
+      "normalized": "Pregnancy",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "preventitivefever": {
+      "raw": "Preventitive(Fever)",
+      "normalized": "Fever",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "prickly_heat": {
+      "raw": "Prickly heat",
+      "normalized": "Prickly heat",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "proctitis": {
+      "raw": "Proctitis",
+      "normalized": "Proctitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "proctosis": {
+      "raw": "Proctosis",
+      "normalized": "Proctosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "prolapse": {
+      "raw": "Prolapse",
+      "normalized": "Prolapse",
+      "icd10": "N81",
+      "category": "genitourinary"
+    },
+    "psoriasis": {
+      "raw": "Psoriasis",
+      "normalized": "Psoriasis",
+      "icd10": "L40",
+      "category": "skin"
+    },
+    "puerperium": {
+      "raw": "Puerperium",
+      "normalized": "Puerperium",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pulmonosis": {
+      "raw": "Pulmonosis",
+      "normalized": "Pulmonosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "purgative": {
+      "raw": "Purgative",
+      "normalized": "Purgative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "pustule": {
+      "raw": "Pustule",
+      "normalized": "Pustule",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pustules": {
+      "raw": "Pustules",
+      "normalized": "Pustules",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pyorrhea": {
+      "raw": "Pyorrhea",
+      "normalized": "Pyorrhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pyrorrhea": {
+      "raw": "Pyrorrhea",
+      "normalized": "Pyrorrhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pyrorrhea?": {
+      "raw": "Pyrorrhea?",
+      "normalized": "Pyrorrhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pyuria": {
+      "raw": "Pyuria",
+      "normalized": "Pyuria",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ranicide": {
+      "raw": "Ranicide",
+      "normalized": "Ranicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "raticide": {
+      "raw": "Raticide",
+      "normalized": "Raticide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "refrigerant": {
+      "raw": "Refrigerant",
+      "normalized": "Cooling agent use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "renosis": {
+      "raw": "Renosis",
+      "normalized": "Renosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "repellantrat": {
+      "raw": "Repellant(Rat)",
+      "normalized": "Repellant(Rat)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "resolvent": {
+      "raw": "Resolvent",
+      "normalized": "Resolvent use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "rhagades": {
+      "raw": "Rhagades",
+      "normalized": "Rhagades",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rhematism": {
+      "raw": "Rhematism",
+      "normalized": "Rhematism",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rheumatism": {
+      "raw": "Rheumatism",
+      "normalized": "Rheumatism",
+      "icd10": "M79",
+      "category": "musculoskeletal"
+    },
+    "rhinitis": {
+      "raw": "Rhinitis",
+      "normalized": "Rhinitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rhinosis": {
+      "raw": "Rhinosis",
+      "normalized": "Rhinosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rib": {
+      "raw": "Rib",
+      "normalized": "Beriberi",
+      "icd10": "E51",
+      "category": "endocrine"
+    },
+    "rickets": {
+      "raw": "Rickets",
+      "normalized": "Rickets",
+      "icd10": "E55",
+      "category": "endocrine"
+    },
+    "ringworm": {
+      "raw": "Ringworm",
+      "normalized": "Ringworm",
+      "icd10": "B35",
+      "category": "infectious"
+    },
+    "rodenticide": {
+      "raw": "Rodenticide",
+      "normalized": "Rodenticide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rubefacient": {
+      "raw": "Rubefacient",
+      "normalized": "Rubefacient use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "saccharomycose": {
+      "raw": "Saccharomycose",
+      "normalized": "Saccharomycose",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "salve": {
+      "raw": "Salve",
+      "normalized": "Salve",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sapraemia": {
+      "raw": "Sapraemia",
+      "normalized": "Sapraemia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "scabies": {
+      "raw": "Scabies",
+      "normalized": "Scabies",
+      "icd10": "B86",
+      "category": "skin"
+    },
+    "scald": {
+      "raw": "Scald",
+      "normalized": "Scald",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sciatica": {
+      "raw": "Sciatica",
+      "normalized": "Sciatica",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sclerosis": {
+      "raw": "Sclerosis",
+      "normalized": "Sclerosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "scorpion": {
+      "raw": "Scorpion",
+      "normalized": "Scorpion",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "stingscorpion": {
+      "raw": "Sting(Scorpion)",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "scrofula": {
+      "raw": "Scrofula",
+      "normalized": "Scrofula",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "scrotosis": {
+      "raw": "Scrotosis",
+      "normalized": "Scrotosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "scurf": {
+      "raw": "Scurf",
+      "normalized": "Scurf",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "scurvy": {
+      "raw": "Scurvy",
+      "normalized": "Scurvy",
+      "icd10": "E54",
+      "category": "endocrine"
+    },
+    "sedative": {
+      "raw": "Sedative",
+      "normalized": "Sedative use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "shampoo": {
+      "raw": "Shampoo",
+      "normalized": "Shampoo",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "shingles": {
+      "raw": "Shingles",
+      "normalized": "Shingles",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "shortwindedness": {
+      "raw": "Shortwindedness",
+      "normalized": "Shortwindedness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "skin": {
+      "raw": "Skin",
+      "normalized": "Skin conditions",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "smallpox": {
+      "raw": "Smallpox",
+      "normalized": "Smallpox",
+      "icd10": "B03",
+      "category": "infectious"
+    },
+    "soap": {
+      "raw": "Soap",
+      "normalized": "Soap/Cleaning",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "sore": {
+      "raw": "Sore",
+      "normalized": "Sore/Ulcer",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "sorethroat": {
+      "raw": "Sore(Throat)",
+      "normalized": "Sore/Ulcer",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "sorethroat?": {
+      "raw": "Sorethroat?",
+      "normalized": "Sore/Ulcer",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "spasm": {
+      "raw": "Spasm",
+      "normalized": "Antispasmodic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "spermatorrhea": {
+      "raw": "Spermatorrhea",
+      "normalized": "Spermatorrhea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "spice": {
+      "raw": "Spice",
+      "normalized": "Spice/Condiment",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "bitespider": {
+      "raw": "Bite(Spider)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "splenomegaly": {
+      "raw": "Splenomegaly",
+      "normalized": "Splenomegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "splenosis": {
+      "raw": "Splenosis",
+      "normalized": "Splenosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sprain": {
+      "raw": "Sprain",
+      "normalized": "Sprain",
+      "icd10": "S13-S93",
+      "category": "musculoskeletal"
+    },
+    "sprue": {
+      "raw": "Sprue",
+      "normalized": "Sprue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sterilizant": {
+      "raw": "Sterilizant",
+      "normalized": "Sterilizant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sternutatory": {
+      "raw": "Sternutatory",
+      "normalized": "Sternutatory",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "stimulant": {
+      "raw": "Stimulant",
+      "normalized": "Stimulant use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "stingbee": {
+      "raw": "Sting(Bee)",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "stitch": {
+      "raw": "Stitch",
+      "normalized": "Pruritus",
+      "icd10": "L29",
+      "category": "skin"
+    },
+    "stomach": {
+      "raw": "Stomach",
+      "normalized": "Stomachic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "stomachic": {
+      "raw": "Stomachic",
+      "normalized": "Stomachic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "stomatitis": {
+      "raw": "Stomatitis",
+      "normalized": "Stomatitis",
+      "icd10": "K12",
+      "category": "digestive"
+    },
+    "stomatosis": {
+      "raw": "Stomatosis",
+      "normalized": "Stomatosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "stone": {
+      "raw": "Stone",
+      "normalized": "Stone",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "stroke": {
+      "raw": "Stroke",
+      "normalized": "Stroke",
+      "icd10": "I60-I69",
+      "category": "circulatory"
+    },
+    "stupefacient": {
+      "raw": "Stupefacient",
+      "normalized": "Stupefacient",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sty": {
+      "raw": "Sty",
+      "normalized": "Styptic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "styptic": {
+      "raw": "Styptic",
+      "normalized": "Styptic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "sudorific": {
+      "raw": "Sudorific",
+      "normalized": "Diaphoretic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "sudorificveterinary": {
+      "raw": "Sudorific(Veterinary)",
+      "normalized": "Diaphoretic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "suicide": {
+      "raw": "Suicide",
+      "normalized": "Suicide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sunstroke": {
+      "raw": "Sunstroke",
+      "normalized": "Stroke",
+      "icd10": "I60-I69",
+      "category": "circulatory"
+    },
+    "suriculture": {
+      "raw": "Suriculture",
+      "normalized": "Suriculture",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sweetener": {
+      "raw": "Sweetener",
+      "normalized": "Sweetener",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "swelling": {
+      "raw": "Swelling",
+      "normalized": "Swelling/Inflammation",
+      "icd10": "R22/R60",
+      "category": "symptom"
+    },
+    "syncope": {
+      "raw": "Syncope",
+      "normalized": "Syncope",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "synergist": {
+      "raw": "Synergist",
+      "normalized": "Synergist",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "syphilis": {
+      "raw": "Syphilis",
+      "normalized": "Syphilis",
+      "icd10": "A50-A53",
+      "category": "infectious"
+    },
+    "tapeworm": {
+      "raw": "Tapeworm",
+      "normalized": "Tapeworm",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tattoo": {
+      "raw": "Tattoo",
+      "normalized": "Tattoo",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tea": {
+      "raw": "Tea",
+      "normalized": "Tea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tenderizer": {
+      "raw": "Tenderizer",
+      "normalized": "Tenderizer",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tenesmus": {
+      "raw": "Tenesmus",
+      "normalized": "Tenesmus",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "termiticide": {
+      "raw": "Termiticide",
+      "normalized": "Termiticide",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tetanus": {
+      "raw": "Tetanus",
+      "normalized": "Tetanus",
+      "icd10": "A35",
+      "category": "infectious"
+    },
+    "thorn": {
+      "raw": "Thorn",
+      "normalized": "Thorn",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "throat": {
+      "raw": "Throat",
+      "normalized": "Throat",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "thrush": {
+      "raw": "Thrush",
+      "normalized": "Oral thrush",
+      "icd10": "B37",
+      "category": "infectious"
+    },
+    "bitetick": {
+      "raw": "Bite(Tick)",
+      "normalized": "Animal bite",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "repellanttiger": {
+      "raw": "Repellant(Tiger)",
+      "normalized": "Repellant(Tiger)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tinea": {
+      "raw": "Tinea",
+      "normalized": "Tinea",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tinnitus?": {
+      "raw": "Tinnitus?",
+      "normalized": "Tinnitus",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tongue": {
+      "raw": "Tongue",
+      "normalized": "Tongue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tonic": {
+      "raw": "Tonic",
+      "normalized": "Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "tonsillitis": {
+      "raw": "Tonsillitis",
+      "normalized": "Tonsillitis",
+      "icd10": "J03",
+      "category": "respiratory"
+    },
+    "tonsillitis?": {
+      "raw": "Tonsillitis?",
+      "normalized": "Tonsillitis",
+      "icd10": "J03",
+      "category": "respiratory"
+    },
+    "achetooth": {
+      "raw": "Ache(Tooth)",
+      "normalized": "Toothache",
+      "icd10": "K08.8",
+      "category": "digestive"
+    },
+    "toothblack": {
+      "raw": "Toothblack",
+      "normalized": "Toothblack",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tremors": {
+      "raw": "Tremors",
+      "normalized": "Tremors",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tumor": {
+      "raw": "Tumor",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumorbreast": {
+      "raw": "Tumor(Breast)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumorstomach": {
+      "raw": "Tumor(Stomach)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "typhoid": {
+      "raw": "Typhoid",
+      "normalized": "Typhoid",
+      "icd10": "A01",
+      "category": "infectious"
+    },
+    "typhus_typhoid": {
+      "raw": "Typhus (Typhoid)",
+      "normalized": "Typhoid",
+      "icd10": "A01",
+      "category": "infectious"
+    },
+    "ulcer": {
+      "raw": "Ulcer",
+      "normalized": "Skin ulcer",
+      "icd10": "L97-L98",
+      "category": "skin"
+    },
+    "ulcer?": {
+      "raw": "Ulcer?",
+      "normalized": "Skin ulcer",
+      "icd10": "L97-L98",
+      "category": "skin"
+    },
+    "uremia": {
+      "raw": "Uremia",
+      "normalized": "Uremia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "urethritis": {
+      "raw": "Urethritis",
+      "normalized": "Urethritis",
+      "icd10": "N34",
+      "category": "genitourinary"
+    },
+    "urogenital": {
+      "raw": "Urogenital",
+      "normalized": "Urogenital",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "urtication": {
+      "raw": "Urtication",
+      "normalized": "Urtication",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "uterotonic": {
+      "raw": "Uterotonic",
+      "normalized": "Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "uteromegaly": {
+      "raw": "Uteromegaly",
+      "normalized": "Uteromegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "uterorrhagia": {
+      "raw": "Uterorrhagia",
+      "normalized": "Uterorrhagia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "uterosis": {
+      "raw": "Uterosis",
+      "normalized": "Uterosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "uterus": {
+      "raw": "Uterus",
+      "normalized": "Uterus",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "vaginamegaly": {
+      "raw": "Vaginamegaly",
+      "normalized": "Vaginamegaly",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "vaginitis": {
+      "raw": "Vaginitis",
+      "normalized": "Vaginitis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "varices": {
+      "raw": "Varices",
+      "normalized": "Varices",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "varicosity": {
+      "raw": "Varicosity",
+      "normalized": "Varicosity",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "venereal": {
+      "raw": "Venereal",
+      "normalized": "Venereal",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "vermifuge": {
+      "raw": "Vermifuge",
+      "normalized": "Anthelmintic use",
+      "icd10": "B65-B83",
+      "category": "pharmacological_effect"
+    },
+    "vermifugeveterinary": {
+      "raw": "Vermifuge(Veterinary)",
+      "normalized": "Anthelmintic use",
+      "icd10": "B65-B83",
+      "category": "pharmacological_effect"
+    },
+    "vermifuge?": {
+      "raw": "Vermifuge?",
+      "normalized": "Anthelmintic use",
+      "icd10": "B65-B83",
+      "category": "pharmacological_effect"
+    },
+    "vertigo": {
+      "raw": "Vertigo",
+      "normalized": "Vertigo",
+      "icd10": "R42",
+      "category": "symptom"
+    },
+    "vesicant": {
+      "raw": "Vesicant",
+      "normalized": "Vesicant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "vulnerary": {
+      "raw": "Vulnerary",
+      "normalized": "Vulnerary/Wound healing",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "waist": {
+      "raw": "Waist",
+      "normalized": "Waist",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "wart": {
+      "raw": "Wart",
+      "normalized": "Wart",
+      "icd10": "B07",
+      "category": "skin"
+    },
+    "waspsting": {
+      "raw": "Waspsting",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "water": {
+      "raw": "Water",
+      "normalized": "Water",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "water_vine": {
+      "raw": "Water vine",
+      "normalized": "Water vine",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "watervine": {
+      "raw": "Watervine",
+      "normalized": "Watervine",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "weakness": {
+      "raw": "Weakness",
+      "normalized": "Weakness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "whitlow": {
+      "raw": "Whitlow",
+      "normalized": "Whitlow",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "wound": {
+      "raw": "Wound",
+      "normalized": "Wound",
+      "icd10": "T14",
+      "category": "skin"
+    },
+    "woundveterinary": {
+      "raw": "Wound(Veterinary)",
+      "normalized": "Wound",
+      "icd10": "T14",
+      "category": "skin"
+    },
+    "wrist": {
+      "raw": "Wrist",
+      "normalized": "Wrist",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "yaws": {
+      "raw": "Yaws",
+      "normalized": "Yaws",
+      "icd10": "A66",
+      "category": "infectious"
+    },
+    "yaws_preventive": {
+      "raw": "Yaws (Preventive)",
+      "normalized": "Yaws",
+      "icd10": "A66",
+      "category": "infectious"
+    },
+    "canceruterus": {
+      "raw": "Cancer(Uterus)",
+      "normalized": "Cancer",
+      "icd10": "C00-C97",
+      "category": "neoplasm"
+    },
+    "witchcraft": {
+      "raw": "Witchcraft",
+      "normalized": "Pruritus",
+      "icd10": "L29",
+      "category": "skin"
+    },
+    "teeth": {
+      "raw": "Teeth",
+      "normalized": "Teeth",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "digestion": {
+      "raw": "Digestion",
+      "normalized": "Digestion",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "febrifuge": {
+      "raw": "Febrifuge",
+      "normalized": "Antipyretic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "vegetable": {
+      "raw": "Vegetable",
+      "normalized": "Vegetable",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tumorabdomen": {
+      "raw": "Tumor(Abdomen)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "repellantinsect": {
+      "raw": "Repellant(Insect)",
+      "normalized": "Repellant(Insect)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "kidneystone?": {
+      "raw": "Kidneystone?",
+      "normalized": "Kidney disease",
+      "icd10": "N00-N29",
+      "category": "genitourinary"
+    },
+    "achebones": {
+      "raw": "Ache(Bones)",
+      "normalized": "Bones pain",
+      "icd10": "R52",
+      "category": "symptom"
+    },
+    "thirst": {
+      "raw": "Thirst",
+      "normalized": "Polydipsia",
+      "icd10": "R63.1",
+      "category": "symptom"
+    },
+    "polyps": {
+      "raw": "Polyps",
+      "normalized": "Polyps",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "syphilis3": {
+      "raw": "Syphilis(3)",
+      "normalized": "Syphilis",
+      "icd10": "A50-A53",
+      "category": "infectious"
+    },
+    "preventitivemeasless": {
+      "raw": "Preventitive(Measless)",
+      "normalized": "Measles",
+      "icd10": "B05",
+      "category": "infectious"
+    },
+    "cordial": {
+      "raw": "Cordial",
+      "normalized": "Cordial/Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "bee_sting": {
+      "raw": "Bee-sting",
+      "normalized": "Insect sting",
+      "icd10": "T63",
+      "category": "injury"
+    },
+    "tumorscrotum": {
+      "raw": "Tumor(Scrotum)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumorhand": {
+      "raw": "Tumor(Hand)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "fevertertian": {
+      "raw": "Fever(Tertian)",
+      "normalized": "Fever",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "gum": {
+      "raw": "Gum",
+      "normalized": "Gum",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gall": {
+      "raw": "Gall",
+      "normalized": "Gall",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "herpes_zoster": {
+      "raw": "Herpes zoster",
+      "normalized": "Herpes",
+      "icd10": "B00",
+      "category": "infectious"
+    },
+    "onychiosis": {
+      "raw": "Onychiosis",
+      "normalized": "Onychiosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hematachezia": {
+      "raw": "Hematachezia",
+      "normalized": "Hematachezia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "abortifacientveterinary": {
+      "raw": "Abortifacient(Veterinary)",
+      "normalized": "Abortifacient use",
+      "icd10": "O03-O06",
+      "category": "pharmacological_effect"
+    },
+    "anodyne?": {
+      "raw": "Anodyne?",
+      "normalized": "Analgesic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "antidotelaportea": {
+      "raw": "Antidote(Laportea)",
+      "normalized": "Antidote use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "apertifveterinary": {
+      "raw": "Apertif(Veterinary)",
+      "normalized": "Apertif(Veterinary)",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "aphrodisiacchinese": {
+      "raw": "Aphrodisiac(Chinese)",
+      "normalized": "Aphrodisiac use",
+      "icd10": "F52",
+      "category": "pharmacological_effect"
+    },
+    "cardioactive": {
+      "raw": "Cardioactive",
+      "normalized": "Cardioactive use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "chickenpox?": {
+      "raw": "Chickenpox?",
+      "normalized": "Chickenpox",
+      "icd10": "B01",
+      "category": "infectious"
+    },
+    "chillveterinary": {
+      "raw": "Chill(Veterinary)",
+      "normalized": "Chills/Rigor",
+      "icd10": "R68.83",
+      "category": "symptom"
+    },
+    "convulsionpediatric": {
+      "raw": "Convulsion(Pediatric)",
+      "normalized": "Convulsion",
+      "icd10": "G40/R56",
+      "category": "nervous"
+    },
+    "dentition": {
+      "raw": "Dentition",
+      "normalized": "Dentition",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cracked_skin": {
+      "raw": "Cracked skin",
+      "normalized": "Skin conditions",
+      "icd10": "L00-L99",
+      "category": "skin"
+    },
+    "detoxicant": {
+      "raw": "Detoxicant",
+      "normalized": "Detoxicant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "felon": {
+      "raw": "Felon",
+      "normalized": "Felon",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "feverpreventive": {
+      "raw": "Fever(Preventive)",
+      "normalized": "Fever",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "framboesia": {
+      "raw": "Framboesia",
+      "normalized": "Framboesia",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "freckle": {
+      "raw": "Freckle",
+      "normalized": "Freckle",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "freckles": {
+      "raw": "Freckles",
+      "normalized": "Freckles",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "fumitory_opium_substitute": {
+      "raw": "Fumitory (Opium substitute)",
+      "normalized": "Fumigation",
+      "icd10": "",
+      "category": "non_medical"
+    },
+    "gray_hair": {
+      "raw": "Gray hair",
+      "normalized": "Gray hair",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hair_wash": {
+      "raw": "Hair-Wash",
+      "normalized": "Hair-Wash",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hairblack": {
+      "raw": "Hairblack",
+      "normalized": "Hairblack",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "heavy_legs": {
+      "raw": "Heavy legs",
+      "normalized": "Heavy legs",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hydragogue": {
+      "raw": "Hydragogue",
+      "normalized": "Hydragogue",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "illness": {
+      "raw": "Illness",
+      "normalized": "Illness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "impetigo": {
+      "raw": "Impetigo",
+      "normalized": "Impetigo",
+      "icd10": "L01",
+      "category": "skin"
+    },
+    "internulcer": {
+      "raw": "Internulcer",
+      "normalized": "Skin ulcer",
+      "icd10": "L97-L98",
+      "category": "skin"
+    },
+    "lactifuge": {
+      "raw": "Lactifuge",
+      "normalized": "Lactifuge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lip": {
+      "raw": "Lip",
+      "normalized": "Lip",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "lung": {
+      "raw": "Lung",
+      "normalized": "Lung",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "memory": {
+      "raw": "Memory",
+      "normalized": "Memory",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "mucus_mover": {
+      "raw": "Mucus-Mover",
+      "normalized": "Mucus-Mover",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "myosis": {
+      "raw": "Myosis",
+      "normalized": "Myosis",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "neuritis": {
+      "raw": "Neuritis",
+      "normalized": "Neuritis",
+      "icd10": "G50-G59",
+      "category": "nervous"
+    },
+    "oilseed": {
+      "raw": "Oilseed",
+      "normalized": "Oilseed",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ornamental": {
+      "raw": "Ornamental",
+      "normalized": "Ornamental",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "ozoena": {
+      "raw": "Ozoena",
+      "normalized": "Ozoena",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "palpitation": {
+      "raw": "Palpitation",
+      "normalized": "Palpitation",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "pinkeye": {
+      "raw": "Pinkeye",
+      "normalized": "Eye disorders",
+      "icd10": "H00-H59",
+      "category": "eye"
+    },
+    "post_natal": {
+      "raw": "Post-Natal",
+      "normalized": "Post-Natal",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "rash": {
+      "raw": "Rash",
+      "normalized": "Rash",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sclerosisspleen": {
+      "raw": "Sclerosis(Spleen)",
+      "normalized": "Spleen disorders",
+      "icd10": "D73",
+      "category": "blood"
+    },
+    "splinter": {
+      "raw": "Splinter",
+      "normalized": "Splinter",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "sponge": {
+      "raw": "Sponge",
+      "normalized": "Sponge",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "tonic_for_pubic_girls": {
+      "raw": "Tonic (for pubic girls)",
+      "normalized": "Tonic use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "tumorbelly": {
+      "raw": "Tumor(Belly)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumorgum": {
+      "raw": "Tumor(Gum)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumorneck": {
+      "raw": "Tumor(Neck)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "tumoruterus": {
+      "raw": "Tumor(Uterus)",
+      "normalized": "Tumor",
+      "icd10": "C/D",
+      "category": "neoplasm"
+    },
+    "urticant": {
+      "raw": "Urticant",
+      "normalized": "Urticant",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "weariness": {
+      "raw": "Weariness",
+      "normalized": "Weariness",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "burning_feet": {
+      "raw": "Burning-feet",
+      "normalized": "Burn",
+      "icd10": "T20-T32",
+      "category": "skin"
+    },
+    "antiphlogistic": {
+      "raw": "Antiphlogistic",
+      "normalized": "Anti-inflammatory use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "abortive?": {
+      "raw": "Abortive?",
+      "normalized": "Abortifacient use",
+      "icd10": "O03-O06",
+      "category": "pharmacological_effect"
+    },
+    "preventitive": {
+      "raw": "Preventitive",
+      "normalized": "Preventitive",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "hair_oil": {
+      "raw": "Hair-Oil",
+      "normalized": "Hair-Oil",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "vision": {
+      "raw": "Vision",
+      "normalized": "Vision",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "cns_stimulant": {
+      "raw": "CNS stimulant",
+      "normalized": "Stimulant use",
+      "icd10": "",
+      "category": "pharmacological_effect"
+    },
+    "fishbait": {
+      "raw": "Fishbait",
+      "normalized": "Fishbait",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "female_reproductive_organ_problems": {
+      "raw": "Female reproductive organ problems",
+      "normalized": "Gynecological disorders",
+      "icd10": "N70-N98",
+      "category": "genitourinary"
+    },
+    "respiratory_disease": {
+      "raw": "Respiratory disease",
+      "normalized": "Respiratory disease",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "musculoskeletal_and_connective_tissue_disorders": {
+      "raw": "Musculoskeletal and connective tissue disorders",
+      "normalized": "Musculoskeletal disorders",
+      "icd10": "M00-M99",
+      "category": "musculoskeletal"
+    },
+    "disorders_of_appetite": {
+      "raw": "Disorders of appetite",
+      "normalized": "Appetite disorders",
+      "icd10": "R63",
+      "category": "symptom"
+    },
+    "wounds_and_skin_infections": {
+      "raw": "Wounds and skin infections",
+      "normalized": "Infection",
+      "icd10": "A/B",
+      "category": "infectious"
+    },
+    "pain/inflammation": {
+      "raw": "Pain/inflammation",
+      "normalized": "Pain/Inflammation",
+      "icd10": "R52/M79",
+      "category": "symptom"
+    },
+    "urinary_related_problems": {
+      "raw": "Urinary related problems",
+      "normalized": "Urinary related problems",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "disorders_of_mood_and_behavior": {
+      "raw": "Disorders of mood and behavior",
+      "normalized": "Disorders of mood and behavior",
+      "icd10": "",
+      "category": "unknown"
+    },
+    "gastrointestinal_disorders": {
+      "raw": "Gastrointestinal disorders",
+      "normalized": "Gastrointestinal disorders",
+      "icd10": "K00-K93",
+      "category": "digestive"
+    }
+  }
+}

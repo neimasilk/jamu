@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 700px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03075", "label": "Sehat Wanita Plus Majakane", "shape": "dot", "size": 15, "title": "Formulation: Sehat Wanita Plus Majakane"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04144", "label": "Kapsul Jamu Awet Muda (106 A)", "shape": "dot", "size": 15, "title": "Formulation: Kapsul Jamu Awet Muda (106 A)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03062", "label": "Rapet Arum Plus Sirih", "shape": "dot", "size": 15, "title": "Formulation: Rapet Arum Plus Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03193", "label": "Kunir Asem Plus", "shape": "dot", "size": 15, "title": "Formulation: Kunir Asem Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04423", "label": "Susper Mona \u0026 Lisa (CP-SMG)", "shape": "dot", "size": 15, "title": "Formulation: Susper Mona \u0026 Lisa (CP-SMG)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02570", "label": "Eftul", "shape": "dot", "size": 15, "title": "Formulation: Eftul"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05131", "label": "Galian Delima Putih", "shape": "dot", "size": 15, "title": "Formulation: Galian Delima Putih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04470", "label": "Savira", "shape": "dot", "size": 15, "title": "Formulation: Savira"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01424", "label": "Galian Putri", "shape": "dot", "size": 15, "title": "Formulation: Galian Putri"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00145", "label": "Feminecare", "shape": "dot", "size": 15, "title": "Formulation: Feminecare"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04390", "label": "Djamoe Gendong Waroeng Pojo...", "shape": "dot", "size": 15, "title": "Formulation: Djamoe Gendong Waroeng Pojok (Sirih Kunci Plus)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00044", "label": "Sehat Lelaki (Pohon Pinang)", "shape": "dot", "size": 15, "title": "Formulation: Sehat Lelaki (Pohon Pinang)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01925", "label": "Cuksirih", "shape": "dot", "size": 15, "title": "Formulation: Cuksirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02833", "label": "Sesak Napas", "shape": "dot", "size": 15, "title": "Formulation: Sesak Napas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03685", "label": "OB Sari", "shape": "dot", "size": 15, "title": "Formulation: OB Sari"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04466", "label": "Ladyfem", "shape": "dot", "size": 15, "title": "Formulation: Ladyfem"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04405", "label": "Kuncup Sirih Kresno", "shape": "dot", "size": 15, "title": "Formulation: Kuncup Sirih Kresno"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04620", "label": "Kunyit Asam Sirih + Madu", "shape": "dot", "size": 15, "title": "Formulation: Kunyit Asam Sirih + Madu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04966", "label": "The Tropical SPA-Aromathera...", "shape": "dot", "size": 15, "title": "Formulation: The Tropical SPA-Aromatherapy Herbal Bath Bag Rela"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01991", "label": "Tongkat Kayu", "shape": "dot", "size": 15, "title": "Formulation: Tongkat Kayu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01587", "label": "Sirih Ayu", "shape": "dot", "size": 15, "title": "Formulation: Sirih Ayu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03032", "label": "Jamu Galian Ra-Ngi", "shape": "dot", "size": 15, "title": "Formulation: Jamu Galian Ra-Ngi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03787", "label": "Sariawan", "shape": "dot", "size": 15, "title": "Formulation: Sariawan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03165", "label": "Inti KK Sehat Wanita", "shape": "dot", "size": 15, "title": "Formulation: Inti KK Sehat Wanita"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02072", "label": "Sabdo Majakani", "shape": "dot", "size": 15, "title": "Formulation: Sabdo Majakani"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00618", "label": "Bersalin", "shape": "dot", "size": 15, "title": "Formulation: Bersalin"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03058", "label": "Pil Pelangsing", "shape": "dot", "size": 15, "title": "Formulation: Pil Pelangsing"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04596", "label": "Amotrend", "shape": "dot", "size": 15, "title": "Formulation: Amotrend"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01569", "label": "Daun Sirih Wangi Plus", "shape": "dot", "size": 15, "title": "Formulation: Daun Sirih Wangi Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00587", "label": "Wasir", "shape": "dot", "size": 15, "title": "Formulation: Wasir"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01932", "label": "Rupawan", "shape": "dot", "size": 15, "title": "Formulation: Rupawan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02077", "label": "Sabdo Sari Asih", "shape": "dot", "size": 15, "title": "Formulation: Sabdo Sari Asih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03057", "label": "Pelangsing Kunyit Asam Siri...", "shape": "dot", "size": 15, "title": "Formulation: Pelangsing Kunyit Asam Sirih Plus Majakane"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01431", "label": "Bisma Kinanti", "shape": "dot", "size": 15, "title": "Formulation: Bisma Kinanti"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02898", "label": "Rapet Wangi", "shape": "dot", "size": 15, "title": "Formulation: Rapet Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02112", "label": "Antigat", "shape": "dot", "size": 15, "title": "Formulation: Antigat"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02014", "label": "Hepi", "shape": "dot", "size": 15, "title": "Formulation: Hepi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04186", "label": "Kunyit Asam Sirih", "shape": "dot", "size": 15, "title": "Formulation: Kunyit Asam Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00214", "label": "Minyak Pegal Linu Rajawali ...", "shape": "dot", "size": 15, "title": "Formulation: Minyak Pegal Linu Rajawali Putih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01990", "label": "Sari Asmara Kresno Kimanteb", "shape": "dot", "size": 15, "title": "Formulation: Sari Asmara Kresno Kimanteb"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03045", "label": "Keset dan wangi", "shape": "dot", "size": 15, "title": "Formulation: Keset dan wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05197", "label": "Jamutih", "shape": "dot", "size": 15, "title": "Formulation: Jamutih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02205", "label": "Ambybol", "shape": "dot", "size": 15, "title": "Formulation: Ambybol"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03414", "label": "Kunir Asem Sirih", "shape": "dot", "size": 15, "title": "Formulation: Kunir Asem Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04033", "label": "Kunyit Asam Plus Sirih", "shape": "dot", "size": 15, "title": "Formulation: Kunyit Asam Plus Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01383", "label": "Sirih Anom", "shape": "dot", "size": 15, "title": "Formulation: Sirih Anom"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04952", "label": "The Tropical Spa Aromathera...", "shape": "dot", "size": 15, "title": "Formulation: The Tropical Spa Aromatherapy Herbal Bath Bag Warm"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04314", "label": "Sindowangi", "shape": "dot", "size": 15, "title": "Formulation: Sindowangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00489", "label": "Minyak Wayang Pandu", "shape": "dot", "size": 15, "title": "Formulation: Minyak Wayang Pandu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00507", "label": "Selokarang", "shape": "dot", "size": 15, "title": "Formulation: Selokarang"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01833", "label": "Langsing Plus", "shape": "dot", "size": 15, "title": "Formulation: Langsing Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00742", "label": "Kunir Asem Sirih", "shape": "dot", "size": 15, "title": "Formulation: Kunir Asem Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02399", "label": "Venus Lotion", "shape": "dot", "size": 15, "title": "Formulation: Venus Lotion"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02623", "label": "Ledifit", "shape": "dot", "size": 15, "title": "Formulation: Ledifit"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03037", "label": "Jamu Keset Wangi", "shape": "dot", "size": 15, "title": "Formulation: Jamu Keset Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02181", "label": "Jamu New Sesak Napas", "shape": "dot", "size": 15, "title": "Formulation: Jamu New Sesak Napas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01395", "label": "Sirnatih", "shape": "dot", "size": 15, "title": "Formulation: Sirnatih"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "abscess", "label": "Abscess", "shape": "dot", "size": 15, "title": "Disease: Abscess"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03236", "label": "Rossy Wangi", "shape": "dot", "size": 15, "title": "Formulation: Rossy Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01927", "label": "Minyak Gosok Tazmania", "shape": "dot", "size": 15, "title": "Formulation: Minyak Gosok Tazmania"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05294", "label": "Lancar Haid Nanas Merah", "shape": "dot", "size": 15, "title": "Formulation: Lancar Haid Nanas Merah"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01539", "label": "Wasir", "shape": "dot", "size": 15, "title": "Formulation: Wasir"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01621", "label": "Gatut Peret", "shape": "dot", "size": 15, "title": "Formulation: Gatut Peret"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01153", "label": "Rapatin Sehat Sejati Prima", "shape": "dot", "size": 15, "title": "Formulation: Rapatin Sehat Sejati Prima"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03470", "label": "Sirih BR", "shape": "dot", "size": 15, "title": "Formulation: Sirih BR"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01107", "label": "Jaya Sehat Sesak Nafas", "shape": "dot", "size": 15, "title": "Formulation: Jaya Sehat Sesak Nafas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01579", "label": "Reva", "shape": "dot", "size": 15, "title": "Formulation: Reva"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00885", "label": "Harmoni", "shape": "dot", "size": 15, "title": "Formulation: Harmoni"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01360", "label": "Herbal Sari Rapet", "shape": "dot", "size": 15, "title": "Formulation: Herbal Sari Rapet"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02201", "label": "Dileep V", "shape": "dot", "size": 15, "title": "Formulation: Dileep V"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04559", "label": "Guraping", "shape": "dot", "size": 15, "title": "Formulation: Guraping"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00536", "label": "Putri Indah", "shape": "dot", "size": 15, "title": "Formulation: Putri Indah"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01631", "label": "Pembasuh Arum Dalu", "shape": "dot", "size": 15, "title": "Formulation: Pembasuh Arum Dalu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02598", "label": "Obat Batuk Cap Matahari Laut", "shape": "dot", "size": 15, "title": "Formulation: Obat Batuk Cap Matahari Laut"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00776", "label": "Sehat Paru", "shape": "dot", "size": 15, "title": "Formulation: Sehat Paru"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02325", "label": "Minyak Santhika", "shape": "dot", "size": 15, "title": "Formulation: Minyak Santhika"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02637", "label": "Warisan Galian Singset (Sli...", "shape": "dot", "size": 15, "title": "Formulation: Warisan Galian Singset (Sliming)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04038", "label": "Rapat Wangi", "shape": "dot", "size": 15, "title": "Formulation: Rapat Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02466", "label": "Kunyit Asam Plus", "shape": "dot", "size": 15, "title": "Formulation: Kunyit Asam Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01685", "label": "Fitmaag", "shape": "dot", "size": 15, "title": "Formulation: Fitmaag"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02213", "label": "Hajocap", "shape": "dot", "size": 15, "title": "Formulation: Hajocap"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00847", "label": "Sehat Lelaki", "shape": "dot", "size": 15, "title": "Formulation: Sehat Lelaki"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04447", "label": "Kis Wan", "shape": "dot", "size": 15, "title": "Formulation: Kis Wan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01455", "label": "Jamu Bisma Lancar Haid Plus", "shape": "dot", "size": 15, "title": "Formulation: Jamu Bisma Lancar Haid Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03345", "label": "Tapel", "shape": "dot", "size": 15, "title": "Formulation: Tapel"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04167", "label": "Kapsul Jamu Nifas", "shape": "dot", "size": 15, "title": "Formulation: Kapsul Jamu Nifas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04801", "label": "Anstrep", "shape": "dot", "size": 15, "title": "Formulation: Anstrep"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00895", "label": "Lancar", "shape": "dot", "size": 15, "title": "Formulation: Lancar"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01672", "label": "Serbuk Cebok", "shape": "dot", "size": 15, "title": "Formulation: Serbuk Cebok"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02126", "label": "Langset", "shape": "dot", "size": 15, "title": "Formulation: Langset"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00556", "label": "Teh Dahito", "shape": "dot", "size": 15, "title": "Formulation: Teh Dahito"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02917", "label": "Tiara", "shape": "dot", "size": 15, "title": "Formulation: Tiara"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00585", "label": "Pahitan", "shape": "dot", "size": 15, "title": "Formulation: Pahitan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01945", "label": "Aluskin", "shape": "dot", "size": 15, "title": "Formulation: Aluskin"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04417", "label": "Sepet Arum Putro Kinasih", "shape": "dot", "size": 15, "title": "Formulation: Sepet Arum Putro Kinasih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00917", "label": "SIRIHAN", "shape": "dot", "size": 15, "title": "Formulation: SIRIHAN"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04307", "label": "Sepet Wangi", "shape": "dot", "size": 15, "title": "Formulation: Sepet Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04861", "label": "Wybert Sariawan", "shape": "dot", "size": 15, "title": "Formulation: Wybert Sariawan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03432", "label": "Peret", "shape": "dot", "size": 15, "title": "Formulation: Peret"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03590", "label": "Hanarin", "shape": "dot", "size": 15, "title": "Formulation: Hanarin"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04661", "label": "Sari Jamu Remaja Putri", "shape": "dot", "size": 15, "title": "Formulation: Sari Jamu Remaja Putri"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02135", "label": "Randah", "shape": "dot", "size": 15, "title": "Formulation: Randah"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04496", "label": "Ming Brian", "shape": "dot", "size": 15, "title": "Formulation: Ming Brian"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "sore", "label": "Sore", "shape": "dot", "size": 15, "title": "Disease: Sore"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03097", "label": "Haputi", "shape": "dot", "size": 15, "title": "Formulation: Haputi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04240", "label": "Sri Putih", "shape": "dot", "size": 15, "title": "Formulation: Sri Putih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04408", "label": "Pelangsing Mona \u0026 Lisa", "shape": "dot", "size": 15, "title": "Formulation: Pelangsing Mona \u0026 Lisa"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00388", "label": "Sehat Wanita", "shape": "dot", "size": 15, "title": "Formulation: Sehat Wanita"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01758", "label": "Bataflu", "shape": "dot", "size": 15, "title": "Formulation: Bataflu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04064", "label": "Empon-Empon Pembersih", "shape": "dot", "size": 15, "title": "Formulation: Empon-Empon Pembersih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05134", "label": "Galian Putri", "shape": "dot", "size": 15, "title": "Formulation: Galian Putri"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02017", "label": "Jamu Candra Dewi", "shape": "dot", "size": 15, "title": "Formulation: Jamu Candra Dewi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00916", "label": "Siputih", "shape": "dot", "size": 15, "title": "Formulation: Siputih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01652", "label": "Galian Rapet", "shape": "dot", "size": 15, "title": "Formulation: Galian Rapet"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02326", "label": "Minyak Sekar Sewu", "shape": "dot", "size": 15, "title": "Formulation: Minyak Sekar Sewu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02090", "label": "Sehat Wanita", "shape": "dot", "size": 15, "title": "Formulation: Sehat Wanita"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00111", "label": "Minyak Gosok Bangau", "shape": "dot", "size": 15, "title": "Formulation: Minyak Gosok Bangau"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02994", "label": "Minyak Gosok Beruang", "shape": "dot", "size": 15, "title": "Formulation: Minyak Gosok Beruang"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00073", "label": "Jamu Formula 75 (Ratih)", "shape": "dot", "size": 15, "title": "Formulation: Jamu Formula 75 (Ratih)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03797", "label": "TBL-Slimming", "shape": "dot", "size": 15, "title": "Formulation: TBL-Slimming"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02252", "label": "Sirih Gading", "shape": "dot", "size": 15, "title": "Formulation: Sirih Gading"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03112", "label": "Teh Haputi", "shape": "dot", "size": 15, "title": "Formulation: Teh Haputi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02400", "label": "Vocanol", "shape": "dot", "size": 15, "title": "Formulation: Vocanol"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03369", "label": "DELITIH (Khusus Ekspor)", "shape": "dot", "size": 15, "title": "Formulation: DELITIH (Khusus Ekspor)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04032", "label": "Jamu Galian Putri", "shape": "dot", "size": 15, "title": "Formulation: Jamu Galian Putri"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04418", "label": "Sepet Ijo Sabdo Joyo", "shape": "dot", "size": 15, "title": "Formulation: Sepet Ijo Sabdo Joyo"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05245", "label": "Balsem Terapi Pak Luluk", "shape": "dot", "size": 15, "title": "Formulation: Balsem Terapi Pak Luluk"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01477", "label": "Putri Sirih", "shape": "dot", "size": 15, "title": "Formulation: Putri Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00518", "label": "Brokosa", "shape": "dot", "size": 15, "title": "Formulation: Brokosa"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02226", "label": "Teh Batuxa", "shape": "dot", "size": 15, "title": "Formulation: Teh Batuxa"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00178", "label": "Luqman Aviluq", "shape": "dot", "size": 15, "title": "Formulation: Luqman Aviluq"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04025", "label": "Galian Putih", "shape": "dot", "size": 15, "title": "Formulation: Galian Putih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03076", "label": "Sekalor", "shape": "dot", "size": 15, "title": "Formulation: Sekalor"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04551", "label": "Obat Batuk Herbal Herbamint", "shape": "dot", "size": 15, "title": "Formulation: Obat Batuk Herbal Herbamint"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03951", "label": "Sariayu Napas Wangi", "shape": "dot", "size": 15, "title": "Formulation: Sariayu Napas Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04071", "label": "Kaplet Dadi Wiji", "shape": "dot", "size": 15, "title": "Formulation: Kaplet Dadi Wiji"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03353", "label": "Asri Rapat Plus", "shape": "dot", "size": 15, "title": "Formulation: Asri Rapat Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03989", "label": "Guva", "shape": "dot", "size": 15, "title": "Formulation: Guva"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01571", "label": "JAMU LANGSING EKA", "shape": "dot", "size": 15, "title": "Formulation: JAMU LANGSING EKA"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01068", "label": "Mitra Sejati Sesak Nafas", "shape": "dot", "size": 15, "title": "Formulation: Mitra Sejati Sesak Nafas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03350", "label": "Allus", "shape": "dot", "size": 15, "title": "Formulation: Allus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01696", "label": "Putriku", "shape": "dot", "size": 15, "title": "Formulation: Putriku"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00683", "label": "Ramuan Cantik", "shape": "dot", "size": 15, "title": "Formulation: Ramuan Cantik"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03950", "label": "Sariayu Martha Tilaar Tapel...", "shape": "dot", "size": 15, "title": "Formulation: Sariayu Martha Tilaar Tapel Habis Bersalin"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02572", "label": "Fodiar", "shape": "dot", "size": 15, "title": "Formulation: Fodiar"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03413", "label": "Kunas", "shape": "dot", "size": 15, "title": "Formulation: Kunas"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00430", "label": "Sehat Wanita", "shape": "dot", "size": 15, "title": "Formulation: Sehat Wanita"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01458", "label": "Kayu Rapet Plus", "shape": "dot", "size": 15, "title": "Formulation: Kayu Rapet Plus"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04248", "label": "Cebok Sepet Wangi", "shape": "dot", "size": 15, "title": "Formulation: Cebok Sepet Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02359", "label": "GP Wanita", "shape": "dot", "size": 15, "title": "Formulation: GP Wanita"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04006", "label": "Galian Ibu Sinlik", "shape": "dot", "size": 15, "title": "Formulation: Galian Ibu Sinlik"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03582", "label": "Tapel Sirih", "shape": "dot", "size": 15, "title": "Formulation: Tapel Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03617", "label": "Obat Batuk Herbal Alami", "shape": "dot", "size": 15, "title": "Formulation: Obat Batuk Herbal Alami"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02123", "label": "Kejed", "shape": "dot", "size": 15, "title": "Formulation: Kejed"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03851", "label": "Sri Asih", "shape": "dot", "size": 15, "title": "Formulation: Sri Asih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03849", "label": "Sirih Kunyit Putih", "shape": "dot", "size": 15, "title": "Formulation: Sirih Kunyit Putih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02719", "label": "New Purba Salma (Pelangsing)", "shape": "dot", "size": 15, "title": "Formulation: New Purba Salma (Pelangsing)"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "halitosis", "label": "Halitosis", "shape": "dot", "size": 15, "title": "Disease: Halitosis"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "gonorrhea", "label": "Gonorrhea", "shape": "dot", "size": 15, "title": "Disease: Gonorrhea"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01759", "label": "Benge", "shape": "dot", "size": 15, "title": "Formulation: Benge"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02216", "label": "Kiddoz Jellie", "shape": "dot", "size": 15, "title": "Formulation: Kiddoz Jellie"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04052", "label": "Forexx", "shape": "dot", "size": 15, "title": "Formulation: Forexx"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03372", "label": "Em Pil", "shape": "dot", "size": 15, "title": "Formulation: Em Pil"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "earache", "label": "Earache", "shape": "dot", "size": 15, "title": "Disease: Earache"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04428", "label": "Dewi Ratu", "shape": "dot", "size": 15, "title": "Formulation: Dewi Ratu"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00276", "label": "Primabat", "shape": "dot", "size": 15, "title": "Formulation: Primabat"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04308", "label": "Sepet Wangi Plus", "shape": "dot", "size": 15, "title": "Formulation: Sepet Wangi Plus"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "epistaxis", "label": "Epistaxis", "shape": "dot", "size": 15, "title": "Disease: Epistaxis"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02099", "label": "Serbuk Sirih", "shape": "dot", "size": 15, "title": "Formulation: Serbuk Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02362", "label": "Jamu Cantik LD (CP-SMRG)", "shape": "dot", "size": 15, "title": "Formulation: Jamu Cantik LD (CP-SMRG)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00610", "label": "Diamel", "shape": "dot", "size": 15, "title": "Formulation: Diamel"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04014", "label": "Putih Sinlik", "shape": "dot", "size": 15, "title": "Formulation: Putih Sinlik"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04409", "label": "Pepet Wangi", "shape": "dot", "size": 15, "title": "Formulation: Pepet Wangi"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01982", "label": "Rediro", "shape": "dot", "size": 15, "title": "Formulation: Rediro"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03041", "label": "Jamu Rapet Arum", "shape": "dot", "size": 15, "title": "Formulation: Jamu Rapet Arum"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03770", "label": "Kunir Asam + Sirih", "shape": "dot", "size": 15, "title": "Formulation: Kunir Asam + Sirih"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03181", "label": "Kathone", "shape": "dot", "size": 15, "title": "Formulation: Kathone"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04339", "label": "Herbal Troches", "shape": "dot", "size": 15, "title": "Formulation: Herbal Troches"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01233", "label": "Modelysa", "shape": "dot", "size": 15, "title": "Formulation: Modelysa"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02903", "label": "Sirkunas Guarana", "shape": "dot", "size": 15, "title": "Formulation: Sirkunas Guarana"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01926", "label": "CUKSIRIH/KHUSUS WANITA", "shape": "dot", "size": 15, "title": "Formulation: CUKSIRIH/KHUSUS WANITA"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02589", "label": "Losman`s Encok", "shape": "dot", "size": 15, "title": "Formulation: Losman`s Encok"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04146", "label": "Kapsul Jamu Awet Muda (Wanita)", "shape": "dot", "size": 15, "title": "Formulation: Kapsul Jamu Awet Muda (Wanita)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01761", "label": "Orta ( Sehat Jantung )", "shape": "dot", "size": 15, "title": "Formulation: Orta ( Sehat Jantung )"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04157", "label": "Kapsul Jamu Gatal-Gatal (Kh...", "shape": "dot", "size": 15, "title": "Formulation: Kapsul Jamu Gatal-Gatal (Khusus Ekspor)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01650", "label": "Asenaf", "shape": "dot", "size": 15, "title": "Formulation: Asenaf"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j05195", "label": "Galian Rapet", "shape": "dot", "size": 15, "title": "Formulation: Galian Rapet"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02016", "label": "Jamu Arum Bulan", "shape": "dot", "size": 15, "title": "Formulation: Jamu Arum Bulan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02395", "label": "Rigasta Lotion", "shape": "dot", "size": 15, "title": "Formulation: Rigasta Lotion"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03340", "label": "Sehat Pria", "shape": "dot", "size": 15, "title": "Formulation: Sehat Pria"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j04843", "label": "Minyak gosok Cap Tawon", "shape": "dot", "size": 15, "title": "Formulation: Minyak gosok Cap Tawon"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03854", "label": "Instan Ciri", "shape": "dot", "size": 15, "title": "Formulation: Instan Ciri"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01752", "label": "Jamu Sari Rapet", "shape": "dot", "size": 15, "title": "Formulation: Jamu Sari Rapet"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02075", "label": "Sabdo Sari", "shape": "dot", "size": 15, "title": "Formulation: Sabdo Sari"}, {"color": "#F44336", "font": {"color": "#333333"}, "id": "leucorrhea", "label": "Leucorrhea", "shape": "dot", "size": 15, "title": "Disease: Leucorrhea"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j02060", "label": "Jangkar", "shape": "dot", "size": 15, "title": "Formulation: Jangkar"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j01784", "label": "Minyak Gosok Kepala Kuda", "shape": "dot", "size": 15, "title": "Formulation: Minyak Gosok Kepala Kuda"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03484", "label": "Topas (Sirih)", "shape": "dot", "size": 15, "title": "Formulation: Topas (Sirih)"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j00564", "label": "Galian Rapet Cap Sembilan I...", "shape": "dot", "size": 15, "title": "Formulation: Galian Rapet Cap Sembilan Intan"}, {"color": "#9C27B0", "font": {"color": "#333333"}, "id": "knapsack_j03199", "label": "Beauty Gold", "shape": "dot", "size": 15, "title": "Formulation: Beauty Gold"}]);
+                  edges = new vis.DataSet([]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -3000,
+            "springConstant": 0.001,
+            "springLength": 150
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

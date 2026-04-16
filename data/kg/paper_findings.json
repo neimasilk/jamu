@@ -1,0 +1,1047 @@
+{
+  "kg_scale": {
+    "total_nodes": 17413,
+    "total_edges": 64066,
+    "plants": 2519,
+    "compounds": 7364,
+    "diseases": 651,
+    "bioactivities": 1569,
+    "formulations": 5310,
+    "connected_components": 62
+  },
+  "validation_gap": {
+    "total_pairs_analyzed": 5744,
+    "evidence_distribution": {
+      "none": 4933,
+      "limited": 604,
+      "moderate": 131,
+      "well_studied": 76
+    },
+    "pct_no_evidence": 85.9,
+    "pct_limited": 10.5,
+    "pct_moderate": 2.3,
+    "pct_well_studied": 1.3
+  },
+  "drug_discovery_candidates": [
+    {
+      "plant": "Sida rhombifolia",
+      "unstudied_claims": 21,
+      "diseases": [
+        "Abdomen",
+        "Abortive",
+        "Aphrodisiac",
+        "Boil",
+        "Chickenpox",
+        "Constipation",
+        "Cramps",
+        "Delirium",
+        "Dysmenorrhea",
+        "Enterosis"
+      ]
+    },
+    {
+      "plant": "Hydrocotyle asiatica",
+      "unstudied_claims": 20,
+      "diseases": [
+        "Asthma",
+        "Depurative",
+        "Fever",
+        "Hematuria",
+        "Hepatosis",
+        "Hysteria",
+        "Otosis",
+        "Piles",
+        "Rheumatism",
+        "Sore"
+      ]
+    },
+    {
+      "plant": "Nigella sativum",
+      "unstudied_claims": 20,
+      "diseases": [
+        "Abdomen",
+        "Amenorrhea",
+        "Colic",
+        "Constipation",
+        "Debility",
+        "Hepatomegaly",
+        "Ophthalmia",
+        "Parturition",
+        "Rheumatism",
+        "Vertigo"
+      ]
+    },
+    {
+      "plant": "Musa sapientum",
+      "unstudied_claims": 19,
+      "diseases": [
+        "Blister",
+        "Catarrh",
+        "Circumscission",
+        "Colitis",
+        "Dengue",
+        "Dysuria",
+        "Enteritis",
+        "Enterorrhagia",
+        "Epistaxis",
+        "Fever(Remittent)"
+      ]
+    },
+    {
+      "plant": "Sophora tomentosa",
+      "unstudied_claims": 18,
+      "diseases": [
+        "Cholera",
+        "Colic",
+        "Diarrhea",
+        "Dysentery",
+        "Dysuria",
+        "Food poisoning",
+        "Gonorrhea",
+        "Hematuria",
+        "Hemoptysis",
+        "Panacea"
+      ]
+    },
+    {
+      "plant": "Moringa oleifera",
+      "unstudied_claims": 17,
+      "diseases": [
+        "Beriberi",
+        "Dermatosis",
+        "Dropsy",
+        "Drunkenness",
+        "Emmenagogue",
+        "Expectorant",
+        "Gonorrhea",
+        "Ache(Head)",
+        "Lactafuge",
+        "Lameness"
+      ]
+    },
+    {
+      "plant": "Gendarussa vulgaris",
+      "unstudied_claims": 16,
+      "diseases": [
+        "Amenorrhea",
+        "Cough",
+        "Debility",
+        "Fever",
+        "Gastrosis",
+        "Gonorrhea",
+        "Ache(Head)",
+        "Lunacy",
+        "Malaria",
+        "Myalgia"
+      ]
+    },
+    {
+      "plant": "Zingiber cassumunar",
+      "unstudied_claims": 16,
+      "diseases": [
+        "Anodyne",
+        "Colic",
+        "Constipation",
+        "Fever",
+        "Flatulence",
+        "Gonorrhea",
+        "Ache(Head)",
+        "Jaundice",
+        "Malaria",
+        "Parturition"
+      ]
+    },
+    {
+      "plant": "Urena lobata",
+      "unstudied_claims": 16,
+      "diseases": [
+        "Anodyne",
+        "Colic",
+        "Diarrhea",
+        "Dysentery",
+        "Emollient",
+        "Fever",
+        "Gonorrhea",
+        "Ache(Head)",
+        "Hematochezia",
+        "Hemostat"
+      ]
+    },
+    {
+      "plant": "Morinda citrifolia",
+      "unstudied_claims": 15,
+      "diseases": [
+        "Beriberi",
+        "Chest",
+        "Colic",
+        "Convulsion",
+        "Cough",
+        "Dysuria",
+        "Emmenagogue",
+        "Leukorrhea",
+        "Sapraemia",
+        "Splenomegaly"
+      ]
+    },
+    {
+      "plant": "Datura metel",
+      "unstudied_claims": 14,
+      "diseases": [
+        "Arthritis",
+        "Boil",
+        "Cholera",
+        "Earache",
+        "Erysipelas",
+        "Orchitis",
+        "Piles",
+        "Ringworm",
+        "Smallpox",
+        "Sore(Throat)"
+      ]
+    },
+    {
+      "plant": "Sesbania grandiflora",
+      "unstudied_claims": 14,
+      "diseases": [
+        "Edema",
+        "Emetic",
+        "Enterosis",
+        "Gastrosis",
+        "Leucorrhea",
+        "Scabies",
+        "Stomatitis",
+        "Glossitis",
+        "Sore(Throat)",
+        "Aperient"
+      ]
+    },
+    {
+      "plant": "Piper betle",
+      "unstudied_claims": 14,
+      "diseases": [
+        "Abscess",
+        "Earache",
+        "Epistaxis",
+        "Gonorrhea",
+        "Hoarseness",
+        "Lactafuge",
+        "Leucorrhea",
+        "Mucositis",
+        "Otosis",
+        "Parturition"
+      ]
+    },
+    {
+      "plant": "Mimusops elengi",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Dermatosis",
+        "Diarrhea",
+        "Fever",
+        "Ache(Head)",
+        "Leukorrhea",
+        "Ophthalmia",
+        "Pimple",
+        "Pyorrhea",
+        "Rhinosis",
+        "Sprue"
+      ]
+    },
+    {
+      "plant": "Wedelia biflora",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Bugbite",
+        "Dermatosis",
+        "Diuretic",
+        "Gonorrhea",
+        "Gravel",
+        "Itch",
+        "Purgative",
+        "Sore",
+        "Swelling",
+        "Vaginitis"
+      ]
+    },
+    {
+      "plant": "Blumea balsamifera",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Angina",
+        "Beriberi",
+        "Fumitory",
+        "Ache(Head)",
+        "Lumbago",
+        "Menorrhagia",
+        "Piscicide",
+        "Splenomegaly",
+        "Ache(Stomach)",
+        "Stomachic"
+      ]
+    },
+    {
+      "plant": "Piper retrofractum",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Cancer(Nose)",
+        "Colic",
+        "Dyspepsia",
+        "Inertia",
+        "Osteosis",
+        "Puerperium",
+        "Weakness",
+        "Stomach",
+        "Cramps",
+        "Digestive"
+      ]
+    },
+    {
+      "plant": "Chloranthus officinalis",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Ankle",
+        "Anodyne",
+        "Burn",
+        "Cramps",
+        "Fever",
+        "Knee",
+        "Parturition",
+        "Smallpox",
+        "Sore",
+        "Typhus (Typhoid)"
+      ]
+    },
+    {
+      "plant": "Phyllanthus urinaria",
+      "unstudied_claims": 13,
+      "diseases": [
+        "Cough",
+        "Dermatosis",
+        "Diuretic",
+        "Gonorrhea",
+        "Miscarriage",
+        "Syphilis",
+        "Glossitis",
+        "Piscicide",
+        "Sting(Caterpillar)",
+        "Diarrhea"
+      ]
+    },
+    {
+      "plant": "Pterocarpus santalinus",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Arrhythmia",
+        "Diuretic",
+        "Hematochezia",
+        "Hematuria",
+        "Hemoptysis",
+        "Rheumatism",
+        "Yaws",
+        "Antidote",
+        "Diarrhea",
+        "Leucorrhea"
+      ]
+    },
+    {
+      "plant": "Coleus atropurpureus",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Adenopathy",
+        "Cold",
+        "Colic",
+        "Conjunctivitis",
+        "Diarrhea",
+        "Dysmenorrhea",
+        "Hepatosis",
+        "Piles",
+        "Contraceptive",
+        "Deafness"
+      ]
+    },
+    {
+      "plant": "Tinospora tuberculata",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Cholera",
+        "Diabetes",
+        "Emetic",
+        "Fever",
+        "Ophthalmia",
+        "Smallpox",
+        "Sore",
+        "Syphilis",
+        "Vermifuge",
+        "Ague"
+      ]
+    },
+    {
+      "plant": "Piper fragile",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Abdomen",
+        "Abscess",
+        "Arthritis?",
+        "Colic",
+        "Cramps",
+        "Fever",
+        "Gonorrhea",
+        "Gravel",
+        "Jaundice",
+        "Pleurisy"
+      ]
+    },
+    {
+      "plant": "Dryobalanops aromatica",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Asthma",
+        "Cancer(Nose)",
+        "Cough",
+        "Gastralgia",
+        "Ache(Head)",
+        "Rhinosis",
+        "Ringworm",
+        "Sore",
+        "Ache(Tooth)",
+        "Ophthalmia"
+      ]
+    },
+    {
+      "plant": "Fagraea racemosa",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Anodyne",
+        "Dropsy",
+        "Fever",
+        "Loin",
+        "Miscarriage",
+        "Rheumatism",
+        "Rhinosis",
+        "Sciatica",
+        "Tonic",
+        "Toothblack"
+      ]
+    },
+    {
+      "plant": "Myristica fragrans",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Carminative",
+        "Gastromegaly",
+        "Leprosy",
+        "Osteosis",
+        "Parturition",
+        "Sciatica",
+        "Thrush",
+        "Impotence",
+        "Insanity",
+        "Abdomen"
+      ]
+    },
+    {
+      "plant": "Lawsonia inermis",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Boil",
+        "Dermatosis",
+        "Herpes",
+        "Leucorrhea",
+        "Onychosis",
+        "Ophthalmia",
+        "Circumscission",
+        "Parturition",
+        "Venereal",
+        "Whitlow"
+      ]
+    },
+    {
+      "plant": "Crinum asiaticum",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Anodyne",
+        "Antidote(Poison arrow)",
+        "Chafing",
+        "Dysuria",
+        "Emetic",
+        "Ache(Head)",
+        "Lumbago",
+        "Orchitis",
+        "Sore",
+        "Tumor(Stomach)"
+      ]
+    },
+    {
+      "plant": "Hedyotis capitellata",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Ague",
+        "Bruise",
+        "Dysentery",
+        "Fracture",
+        "Lumbago",
+        "Parturition",
+        "Bite(Snake)",
+        "Wart",
+        "Gastrosis",
+        "Heartburn"
+      ]
+    },
+    {
+      "plant": "Averrhoa bilimbi",
+      "unstudied_claims": 12,
+      "diseases": [
+        "Beriberi",
+        "Bilious",
+        "Itch",
+        "Mumps",
+        "Ophthalmia",
+        "Osteosis",
+        "Pimple",
+        "Proctitis",
+        "Swelling",
+        "Thrush"
+      ]
+    }
+  ],
+  "most_validated_claims": [
+    {
+      "plant": "Pithecellobium scutiferum",
+      "disease": "Skin",
+      "pubmed_count": 1896
+    },
+    {
+      "plant": "Elastostemma sp.",
+      "disease": "Cosmetic",
+      "pubmed_count": 927
+    },
+    {
+      "plant": "Boerlagiodendron sp",
+      "disease": "Parturition",
+      "pubmed_count": 325
+    },
+    {
+      "plant": "Zingiber amaricans",
+      "disease": "Spice",
+      "pubmed_count": 244
+    },
+    {
+      "plant": "Macaranga tanaria",
+      "disease": "Wound",
+      "pubmed_count": 203
+    },
+    {
+      "plant": "Piper pseudonigrum",
+      "disease": "Spice",
+      "pubmed_count": 201
+    },
+    {
+      "plant": "Centella asiatica",
+      "disease": "Wound",
+      "pubmed_count": 195
+    },
+    {
+      "plant": "Zingiber amaricans",
+      "disease": "Infection",
+      "pubmed_count": 156
+    },
+    {
+      "plant": "Curcuma longa",
+      "disease": "Wound",
+      "pubmed_count": 141
+    },
+    {
+      "plant": "Zingiber officinale",
+      "disease": "Infection",
+      "pubmed_count": 137
+    },
+    {
+      "plant": "Piper subpeltatum",
+      "disease": "Wound",
+      "pubmed_count": 129
+    },
+    {
+      "plant": "Piper bantamense",
+      "disease": "Wound",
+      "pubmed_count": 129
+    },
+    {
+      "plant": "Xerospermum sp.",
+      "disease": "Ache(Stomach)",
+      "pubmed_count": 125
+    },
+    {
+      "plant": "Solanum nigrum",
+      "disease": "Cancer",
+      "pubmed_count": 117
+    },
+    {
+      "plant": "Aloe vera",
+      "disease": "Burn",
+      "pubmed_count": 96
+    },
+    {
+      "plant": "Nicotiana tabacum",
+      "disease": "Tumor",
+      "pubmed_count": 88
+    },
+    {
+      "plant": "Saprosma scortecinii",
+      "disease": "Fever",
+      "pubmed_count": 83
+    },
+    {
+      "plant": "Cinnamomum cassia",
+      "disease": "Tumor",
+      "pubmed_count": 82
+    },
+    {
+      "plant": "Luffa cylindrica",
+      "disease": "Sponge",
+      "pubmed_count": 80
+    },
+    {
+      "plant": "Andrographis paniculata",
+      "disease": "Diabetes",
+      "pubmed_count": 78
+    },
+    {
+      "plant": "Macaranga tanaria",
+      "disease": "Fever",
+      "pubmed_count": 77
+    },
+    {
+      "plant": "Aloe vera",
+      "disease": "Swelling",
+      "pubmed_count": 74
+    },
+    {
+      "plant": "Ocimum basilicum",
+      "disease": "Infection",
+      "pubmed_count": 63
+    },
+    {
+      "plant": "Allium ascalonium",
+      "disease": "Diarrhea",
+      "pubmed_count": 62
+    },
+    {
+      "plant": "Plumbago zeylanica",
+      "disease": "Tumor",
+      "pubmed_count": 54
+    },
+    {
+      "plant": "Calendula officinalis",
+      "disease": "Cancer",
+      "pubmed_count": 53
+    },
+    {
+      "plant": "Lagerstroemia speciosa",
+      "disease": "Diabetes",
+      "pubmed_count": 52
+    },
+    {
+      "plant": "Cannabis sativa",
+      "disease": "Narcotic",
+      "pubmed_count": 51
+    },
+    {
+      "plant": "Vanilla abundiflora",
+      "disease": "Spice",
+      "pubmed_count": 47
+    },
+    {
+      "plant": "Catharanthus roseus",
+      "disease": "Diabetes",
+      "pubmed_count": 46
+    }
+  ],
+  "multi_source_plants": {
+    "count": 35,
+    "total_plants": 2519,
+    "top_plants": [
+      {
+        "plant": "Eurycoma longifolia",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Averrhoa carambola",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Kaempferia rotunda",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Justicia gendarussa",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Carica papaya",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Jasminum sambac",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Citrus hystrix",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Garcinia mangostana",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Imperata cylindrica",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Mimusops elengi",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Mentha arvensis",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Momordica charantia",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Cucurbita moschata",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Pogostemon cablin",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Cyclea barbata",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Capsicum frutescens",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Acorus calamus",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Nigella sativa",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Leucaena glauca",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      },
+      {
+        "plant": "Psophocarpus tetragonolobus",
+        "sources": [
+          "knapsack_jamu",
+          "farmakope_herbal_indonesia"
+        ],
+        "num_sources": 2
+      }
+    ]
+  },
+  "disease_gap_analysis": [
+    {
+      "disease": "Fever",
+      "total": 303,
+      "unstudied": 207,
+      "studied": 87,
+      "well_studied": 9
+    },
+    {
+      "disease": "Parturition",
+      "total": 205,
+      "unstudied": 195,
+      "studied": 9,
+      "well_studied": 1
+    },
+    {
+      "disease": "Sore",
+      "total": 180,
+      "unstudied": 166,
+      "studied": 14,
+      "well_studied": 0
+    },
+    {
+      "disease": "Ache(Head)",
+      "total": 151,
+      "unstudied": 151,
+      "studied": 0,
+      "well_studied": 0
+    },
+    {
+      "disease": "Cough",
+      "total": 137,
+      "unstudied": 97,
+      "studied": 39,
+      "well_studied": 1
+    },
+    {
+      "disease": "Boil",
+      "total": 93,
+      "unstudied": 93,
+      "studied": 0,
+      "well_studied": 0
+    },
+    {
+      "disease": "Vermifuge",
+      "total": 96,
+      "unstudied": 93,
+      "studied": 3,
+      "well_studied": 0
+    },
+    {
+      "disease": "Rheumatism",
+      "total": 119,
+      "unstudied": 92,
+      "studied": 27,
+      "well_studied": 0
+    },
+    {
+      "disease": "Ache(Stomach)",
+      "total": 104,
+      "unstudied": 92,
+      "studied": 11,
+      "well_studied": 1
+    },
+    {
+      "disease": "Dermatosis",
+      "total": 97,
+      "unstudied": 91,
+      "studied": 6,
+      "well_studied": 0
+    },
+    {
+      "disease": "Diarrhea",
+      "total": 131,
+      "unstudied": 90,
+      "studied": 35,
+      "well_studied": 6
+    },
+    {
+      "disease": "Wound",
+      "total": 133,
+      "unstudied": 82,
+      "studied": 43,
+      "well_studied": 8
+    },
+    {
+      "disease": "Dysentery",
+      "total": 117,
+      "unstudied": 80,
+      "studied": 36,
+      "well_studied": 1
+    },
+    {
+      "disease": "Anodyne",
+      "total": 79,
+      "unstudied": 77,
+      "studied": 2,
+      "well_studied": 0
+    },
+    {
+      "disease": "Itch",
+      "total": 76,
+      "unstudied": 73,
+      "studied": 3,
+      "well_studied": 0
+    },
+    {
+      "disease": "Gonorrhea",
+      "total": 69,
+      "unstudied": 64,
+      "studied": 5,
+      "well_studied": 0
+    },
+    {
+      "disease": "Piscicide",
+      "total": 62,
+      "unstudied": 61,
+      "studied": 1,
+      "well_studied": 0
+    },
+    {
+      "disease": "Ache(Tooth)",
+      "total": 58,
+      "unstudied": 58,
+      "studied": 0,
+      "well_studied": 0
+    },
+    {
+      "disease": "Swelling",
+      "total": 83,
+      "unstudied": 58,
+      "studied": 21,
+      "well_studied": 4
+    },
+    {
+      "disease": "Tonic",
+      "total": 66,
+      "unstudied": 52,
+      "studied": 13,
+      "well_studied": 1
+    },
+    {
+      "disease": "Colic",
+      "total": 56,
+      "unstudied": 50,
+      "studied": 6,
+      "well_studied": 0
+    },
+    {
+      "disease": "Abdomen",
+      "total": 51,
+      "unstudied": 49,
+      "studied": 2,
+      "well_studied": 0
+    },
+    {
+      "disease": "Diuretic",
+      "total": 70,
+      "unstudied": 47,
+      "studied": 21,
+      "well_studied": 2
+    },
+    {
+      "disease": "Smallpox",
+      "total": 44,
+      "unstudied": 43,
+      "studied": 1,
+      "well_studied": 0
+    },
+    {
+      "disease": "Syphilis",
+      "total": 45,
+      "unstudied": 41,
+      "studied": 4,
+      "well_studied": 0
+    },
+    {
+      "disease": "Emmenagogue",
+      "total": 44,
+      "unstudied": 41,
+      "studied": 3,
+      "well_studied": 0
+    },
+    {
+      "disease": "Ophthalmia",
+      "total": 43,
+      "unstudied": 41,
+      "studied": 2,
+      "well_studied": 0
+    },
+    {
+      "disease": "Enterosis",
+      "total": 34,
+      "unstudied": 34,
+      "studied": 0,
+      "well_studied": 0
+    },
+    {
+      "disease": "Poison",
+      "total": 36,
+      "unstudied": 31,
+      "studied": 5,
+      "well_studied": 0
+    },
+    {
+      "disease": "Thrush",
+      "total": 32,
+      "unstudied": 31,
+      "studied": 1,
+      "well_studied": 0
+    }
+  ],
+  "abstract_stats": {
+    "total_plants": 2519,
+    "total_compounds": 7364,
+    "total_diseases": 651,
+    "total_treat_edges": 8931,
+    "total_produce_edges": 17387,
+    "validation_gap_pct": 85.9,
+    "total_pairs_queried": 5744,
+    "drug_candidates_count": 286
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "total_pairs": 5744,
+  "evidence_distribution": {
+    "none": 4933,
+    "limited": 604,
+    "moderate": 131,
+    "well_studied": 76
+  },
+  "pct_no_evidence": 85.9,
+  "pct_well_studied": 1.3,
+  "top_studied_plants": {
+    "Zingiber officinale": 18,
+    "Curcuma longa": 17,
+    "Kaempferia galanga": 9,
+    "Aloe vera": 8,
+    "Zingiber amaricans": 8,
+    "Tinospora crispa": 8,
+    "Pluchea indica": 8,
+    "Hibiscus rosa-sinensis": 7,
+    "Punica granatum": 7,
+    "Morinda citrifolia": 7,
+    "Nelumbo nelumbo": 7,
+    "Cocos nucifera": 7,
+    "Ocimum basilicum": 7,
+    "Eurycoma longifolia": 6,
+    "Carica papaya": 6,
+    "Psidium guajava": 6,
+    "Aegle marmelos": 6,
+    "Piper bantamense": 6,
+    "Alstonia scholaris": 6,
+    "Piper pedicellosum": 6
+  },
+  "top_unstudied_plants": {
+    "Sida rhombifolia": 21,
+    "Hydrocotyle asiatica": 20,
+    "Nigella sativum": 20,
+    "Musa sapientum": 19,
+    "Sophora tomentosa": 18,
+    "Moringa oleifera": 17,
+    "Gendarussa vulgaris": 16,
+    "Zingiber cassumunar": 16,
+    "Urena lobata": 16,
+    "Morinda citrifolia": 15,
+    "Datura metel": 14,
+    "Sesbania grandiflora": 14,
+    "Piper betle": 14,
+    "Mimusops elengi": 13,
+    "Wedelia biflora": 13,
+    "Blumea balsamifera": 13,
+    "Piper retrofractum": 13,
+    "Chloranthus officinalis": 13,
+    "Phyllanthus urinaria": 13,
+    "Pterocarpus santalinus": 12
+  },
+  "top_well_studied_pairs": [
+    {
+      "plant": "Pithecellobium scutiferum",
+      "disease": "Skin",
+      "pubmed_count": 1896
+    },
+    {
+      "plant": "Elastostemma sp.",
+      "disease": "Cosmetic",
+      "pubmed_count": 927
+    },
+    {
+      "plant": "Boerlagiodendron sp",
+      "disease": "Parturition",
+      "pubmed_count": 325
+    },
+    {
+      "plant": "Zingiber amaricans",
+      "disease": "Spice",
+      "pubmed_count": 244
+    },
+    {
+      "plant": "Macaranga tanaria",
+      "disease": "Wound",
+      "pubmed_count": 203
+    },
+    {
+      "plant": "Piper pseudonigrum",
+      "disease": "Spice",
+      "pubmed_count": 201
+    },
+    {
+      "plant": "Centella asiatica",
+      "disease": "Wound",
+      "pubmed_count": 195
+    },
+    {
+      "plant": "Zingiber amaricans",
+      "disease": "Infection",
+      "pubmed_count": 156
+    },
+    {
+      "plant": "Curcuma longa",
+      "disease": "Wound",
+      "pubmed_count": 141
+    },
+    {
+      "plant": "Zingiber officinale",
+      "disease": "Infection",
+      "pubmed_count": 137
+    },
+    {
+      "plant": "Piper subpeltatum",
+      "disease": "Wound",
+      "pubmed_count": 129
+    },
+    {
+      "plant": "Piper bantamense",
+      "disease": "Wound",
+      "pubmed_count": 129
+    },
+    {
+      "plant": "Xerospermum sp.",
+      "disease": "Ache(Stomach)",
+      "pubmed_count": 125
+    },
+    {
+      "plant": "Solanum nigrum",
+      "disease": "Cancer",
+      "pubmed_count": 117
+    },
+    {
+      "plant": "Aloe vera",
+      "disease": "Burn",
+      "pubmed_count": 96
+    },
+    {
+      "plant": "Nicotiana tabacum",
+      "disease": "Tumor",
+      "pubmed_count": 88
+    },
+    {
+      "plant": "Saprosma scortecinii",
+      "disease": "Fever",
+      "pubmed_count": 83
+    },
+    {
+      "plant": "Cinnamomum cassia",
+      "disease": "Tumor",
+      "pubmed_count": 82
+    },
+    {
+      "plant": "Luffa cylindrica",
+      "disease": "Sponge",
+      "pubmed_count": 80
+    },
+    {
+      "plant": "Andrographis paniculata",
+      "disease": "Diabetes",
+      "pubmed_count": 78
+    }
+  ],
+  "disease_gap_summary": {
+    "Fever": {
+      "studied": 96,
+      "unstudied": 207
+    },
+    "Parturition": {
+      "studied": 10,
+      "unstudied": 195
+    },
+    "Sore": {
+      "studied": 14,
+      "unstudied": 166
+    },
+    "Ache(Head)": {
+      "studied": 0,
+      "unstudied": 151
+    },
+    "Cough": {
+      "studied": 40,
+      "unstudied": 97
+    },
+    "Boil": {
+      "studied": 0,
+      "unstudied": 93
+    },
+    "Vermifuge": {
+      "studied": 3,
+      "unstudied": 93
+    },
+    "Rheumatism": {
+      "studied": 27,
+      "unstudied": 92
+    },
+    "Ache(Stomach)": {
+      "studied": 12,
+      "unstudied": 92
+    },
+    "Dermatosis": {
+      "studied": 6,
+      "unstudied": 91
+    },
+    "Diarrhea": {
+      "studied": 41,
+      "unstudied": 90
+    },
+    "Wound": {
+      "studied": 51,
+      "unstudied": 82
+    },
+    "Dysentery": {
+      "studied": 37,
+      "unstudied": 80
+    },
+    "Anodyne": {
+      "studied": 2,
+      "unstudied": 77
+    },
+    "Itch": {
+      "studied": 3,
+      "unstudied": 73
+    },
+    "Gonorrhea": {
+      "studied": 5,
+      "unstudied": 64
+    },
+    "Piscicide": {
+      "studied": 1,
+      "unstudied": 61
+    },
+    "Ache(Tooth)": {
+      "studied": 0,
+      "unstudied": 58
+    },
+    "Swelling": {
+      "studied": 25,
+      "unstudied": 58
+    },
+    "Tonic": {
+      "studied": 14,
+      "unstudied": 52
+    },
+    "Colic": {
+      "studied": 6,
+      "unstudied": 50
+    },
+    "Abdomen": {
+      "studied": 2,
+      "unstudied": 49
+    },
+    "Diuretic": {
+      "studied": 23,
+      "unstudied": 47
+    },
+    "Smallpox": {
+      "studied": 1,
+      "unstudied": 43
+    },
+    "Syphilis": {
+      "studied": 4,
+      "unstudied": 41
+    },
+    "Emmenagogue": {
+      "studied": 3,
+      "unstudied": 41
+    },
+    "Ophthalmia": {
+      "studied": 2,
+      "unstudied": 41
+    },
+    "Enterosis": {
+      "studied": 0,
+      "unstudied": 34
+    },
+    "Poison": {
+      "studied": 5,
+      "unstudied": 31
+    },
+    "Thrush": {
+      "studied": 1,
+      "unstudied": 31
+    }
+  }
+}

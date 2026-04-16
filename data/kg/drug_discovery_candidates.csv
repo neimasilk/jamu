@@ -1,0 +1,622 @@
+plant,unstudied_count,studied_count,well_studied_count,total_claims,gap_pct,unstudied_diseases,top_studied
+Sida rhombifolia,21,5,0,26,80.8,Abdomen; Abortive; Aphrodisiac; Boil; Chickenpox; Constipation; Cramps; Delirium; Dysmenorrhea; Enterosis; Fracture; Ache(Head); Ophthalmia; Sty; Swelling,Tuberculosis (1); Tumor (1); Wound (1); Fever (2); Rheumatism (1)
+Hydrocotyle asiatica,20,2,0,22,90.9,Asthma; Depurative; Fever; Hematuria; Hepatosis; Hysteria; Otosis; Piles; Rheumatism; Sore; Urethritis; Vertigo; Wound; Diuretic; Bronchitis,Dysentery (1); Leprosy (1)
+Nigella sativum,20,0,0,20,100.0,Abdomen; Amenorrhea; Colic; Constipation; Debility; Hepatomegaly; Ophthalmia; Parturition; Rheumatism; Vertigo; Chest; Herpes; Panacea; Sapraemia; Fever,
+Musa sapientum,19,3,0,22,86.4,Blister; Catarrh; Circumscission; Colitis; Dengue; Dysuria; Enteritis; Enterorrhagia; Epistaxis; Fever(Remittent); Hemostat; Metrorrhagia; Parturition; Pharyngitis; Piles,Diarrhea (5); Dysentery (2); Fever (1)
+Sophora tomentosa,18,0,0,18,100.0,Cholera; Colic; Diarrhea; Dysentery; Dysuria; Food poisoning; Gonorrhea; Hematuria; Hemoptysis; Panacea; Pyuria; Stomach; Swelling; Abdomen; Antidote(Fish poison),
+Moringa oleifera,17,4,0,21,81.0,Beriberi; Dermatosis; Dropsy; Drunkenness; Emmenagogue; Expectorant; Gonorrhea; Ache(Head); Lactafuge; Lameness; Numbness; Syphilis; Tremors; Vermifuge; Emetic,Abortive (1); Diuretic (9); Parturition (4); Fever (13)
+Gendarussa vulgaris,16,0,0,16,100.0,Amenorrhea; Cough; Debility; Fever; Gastrosis; Gonorrhea; Ache(Head); Lunacy; Malaria; Myalgia; Renosis; Rheumatism; Bite(Snake); Swelling; Thrush,
+Zingiber cassumunar,16,1,0,17,94.1,Anodyne; Colic; Constipation; Fever; Flatulence; Gonorrhea; Ache(Head); Jaundice; Malaria; Parturition; Ache(Stomach); Abdomen; Cramps; Spice; Vermifuge,Cosmetic (1)
+Urena lobata,16,1,0,17,94.1,Anodyne; Colic; Diarrhea; Dysentery; Emollient; Fever; Gonorrhea; Ache(Head); Hematochezia; Hemostat; Inflammation; Sore; Yaws; Abdomen; Bladder,Intestine (1)
+Morinda citrifolia,15,7,1,22,68.2,Beriberi; Chest; Colic; Convulsion; Cough; Dysuria; Emmenagogue; Leukorrhea; Sapraemia; Splenomegaly; Abdomen; Smallpox; Ague; Hepatosis; Sore,Diabetes (29); Diarrhea (3); Laxative (1); Shampoo (1); Swelling (4)
+Datura metel,14,3,0,17,82.4,Arthritis; Boil; Cholera; Earache; Erysipelas; Orchitis; Piles; Ringworm; Smallpox; Sore(Throat); Splenomegaly; Swelling; Syphilis; Vermifuge,Anodyne (1); Dermatosis (1); Rheumatism (1)
+Sesbania grandiflora,14,4,0,18,77.8,Edema; Emetic; Enterosis; Gastrosis; Leucorrhea; Scabies; Stomatitis; Glossitis; Sore(Throat); Aperient; Bruise; Sprue; Thrush; Tonsillitis,Cosmetic (1); Dysentery (2); Tonic (2); Diarrhea (1)
+Piper betle,14,4,0,18,77.8,Abscess; Earache; Epistaxis; Gonorrhea; Hoarseness; Lactafuge; Leucorrhea; Mucositis; Otosis; Parturition; Pimple; Sore; Ache(Tooth); Itch,Antiseptic (4); Gingivitis (1); Halitosis (3); Stimulant (5)
+Mimusops elengi,13,1,0,14,92.9,Dermatosis; Diarrhea; Fever; Ache(Head); Leukorrhea; Ophthalmia; Pimple; Pyorrhea; Rhinosis; Sprue; Stomatosis; Sore(Throat); Thrush,Gingivitis (3)
+Wedelia biflora,13,1,0,14,92.9,Bugbite; Dermatosis; Diuretic; Gonorrhea; Gravel; Itch; Purgative; Sore; Swelling; Vaginitis; Varicosity; Emmenagogue; Hematuria,Wound (1)
+Blumea balsamifera,13,4,0,17,76.5,Angina; Beriberi; Fumitory; Ache(Head); Lumbago; Menorrhagia; Piscicide; Splenomegaly; Ache(Stomach); Stomachic; Sudorific; Depurative; Vermifuge,Fever (3); Malaria (1); Parturition (1); Rheumatism (3)
+Piper retrofractum,13,1,0,14,92.9,Cancer(Nose); Colic; Dyspepsia; Inertia; Osteosis; Puerperium; Weakness; Stomach; Cramps; Digestive; Gastralgia; Hepatosis; Tonic,Spice (3)
+Chloranthus officinalis,13,0,0,13,100.0,Ankle; Anodyne; Burn; Cramps; Fever; Knee; Parturition; Smallpox; Sore; Typhus (Typhoid); Arthritis; Tea; Gonorrhea,
+Phyllanthus urinaria,13,1,0,14,92.9,Cough; Dermatosis; Diuretic; Gonorrhea; Miscarriage; Syphilis; Glossitis; Piscicide; Sting(Caterpillar); Diarrhea; Itch; Renosis; Vertigo,Ache(Stomach) (1)
+Pterocarpus santalinus,12,1,0,13,92.3,Arrhythmia; Diuretic; Hematochezia; Hematuria; Hemoptysis; Rheumatism; Yaws; Antidote; Diarrhea; Leucorrhea; Sprue; Ache(Stomach),Fever (1)
+Coleus atropurpureus,12,0,0,12,100.0,Adenopathy; Cold; Colic; Conjunctivitis; Diarrhea; Dysmenorrhea; Hepatosis; Piles; Contraceptive; Deafness; Diuretic; Smallpox,
+Tinospora tuberculata,12,0,0,12,100.0,Cholera; Diabetes; Emetic; Fever; Ophthalmia; Smallpox; Sore; Syphilis; Vermifuge; Ague; Bite(Snake); Wound,
+Piper fragile,12,0,0,12,100.0,Abdomen; Abscess; Arthritis?; Colic; Cramps; Fever; Gonorrhea; Gravel; Jaundice; Pleurisy; Vermifuge; Frambesia,
+Dryobalanops aromatica,12,0,0,12,100.0,Asthma; Cancer(Nose); Cough; Gastralgia; Ache(Head); Rhinosis; Ringworm; Sore; Ache(Tooth); Ophthalmia; Sprue; Conjunctivitis,
+Fagraea racemosa,12,0,0,12,100.0,Anodyne; Dropsy; Fever; Loin; Miscarriage; Rheumatism; Rhinosis; Sciatica; Tonic; Toothblack; Cough; Sore,
+Myristica fragrans,12,5,1,17,70.6,Carminative; Gastromegaly; Leprosy; Osteosis; Parturition; Sciatica; Thrush; Impotence; Insanity; Abdomen; Anodyne; Cramps,Dyspepsia (4); Perfume (1); Rheumatism (2); Spice (44); Malaria (4)
+Lawsonia inermis,12,1,0,13,92.3,Boil; Dermatosis; Herpes; Leucorrhea; Onychosis; Ophthalmia; Circumscission; Parturition; Venereal; Whitlow; Burning-feet; Hoarseness,Rheumatism (1)
+Crinum asiaticum,12,3,0,15,80.0,Anodyne; Antidote(Poison arrow); Chafing; Dysuria; Emetic; Ache(Head); Lumbago; Orchitis; Sore; Tumor(Stomach); Yaws (Preventive); Swelling,Edema (1); Fever (1); Wound (1)
+Hedyotis capitellata,12,0,0,12,100.0,Ague; Bruise; Dysentery; Fracture; Lumbago; Parturition; Bite(Snake); Wart; Gastrosis; Heartburn; Rheumatism; Vertigo,
+Averrhoa bilimbi,12,2,0,14,85.7,Beriberi; Bilious; Itch; Mumps; Ophthalmia; Osteosis; Pimple; Proctitis; Swelling; Thrush; Diaphoretic; Rheumatism,Cough (1); Syphilis (1)
+Pangium edule,11,1,0,12,91.7,Antiseptic; Arrow-poison; Artemicide; Homocide; Piscicide; Scurf; Wound; Leprosy; Boil; Vermifuge; Itch,Poison (1)
+Hibiscus rosa-sinensis,11,7,0,18,61.1,Bronchitis; Carbuncle; Gonorrhea; Labor; Ophthalmia; Purgative; Eye; Adenopathy; Dysmenorrhea; Expectorant; Hairblack,Abortifacient (6); Cancer (14); Fever (3); Swelling (2); Tumor (3)
+Phyllanthus niruri,11,5,0,16,68.8,Sting(Caterpillar); Dermatosis; Emmenagogue; Gonorrhea; Piscicide; Renosis; Ache(Stomach); Vertigo; Itch; Miscarriage; Syphilis,Cough (1); Diarrhea (2); Diuretic (6); Fever (3); Tonic (2)
+Ceiba pentandra,11,2,0,13,84.6,Catarrh; Diuretic; Hoarseness; Parturition; Shampoo; Urethritis; Bladder; Cough; Emetic; Gravel; Syphilis,Asthma (1); Fever (1)
+Euphorbia tirucalli,11,2,1,13,84.6,Fracture; Leprosy; Ostealgia; Osteosis; Piscicide; Scurf; Swelling; Thorn; Dermatosis; Piles; Rhinosis,Wound (3); Cancer (32)
+Alstonia scholaris,11,6,0,17,64.7,Antidote(Antiaris); Beriberi; Boil; Dyschezia; Enterosis; Piles; Poison(Arrow); Ache(Tooth); Vermifuge; Hepatosis; Panacea,Cough (8); Diabetes (5); Fever (1); Nausea (1); Tonic (1)
+Cocos nucifera,11,7,0,18,61.1,Colitis; Culifuge; Enterosis; Gonorrhea; Intoxicant; Rheumatism; Ache(Stomach); Smallpox; Osteosis; Piles; Syphilis,Astringent (2); Diuretic (2); Dysentery (2); Fever (3); Intestine (5)
+Paederia foetida,11,1,0,12,91.7,Diuretic; Enteromegaly; Enterosis; Flatulence; Rhinosis; Sapraemia; Sore; Ache(Tooth); Toothblack; Intestine; Gastromegaly,Tumor (4)
+Cordyline fruticosa,11,1,0,12,91.7,Ague; Arthritis; Dermatosis; Dysentery; Dyspepsia; Gingivitis; Insanity; Piscifuge; Smallpox; Wound; Cough,Diarrhea (1)
+Gmelina villosa,10,0,0,10,100.0,Alopecia; Anemia; Cathartic; Earache; Ache(Head); Itch; Rheumatism; Swelling; Cough; Dropsy,
+Leucas zeylanica,10,1,0,11,90.9,Cut; Fever; Itch; Nose; Sore; Spice; Vermifuge; Vertigo; Wound; Ache(Head),Skin (1)
+Plumeria acutifolia,10,0,0,10,100.0,Corn; Dermatosis; Dysuria; Funereal; Purgative; Swelling; Gonorrhea; Sore; Ache(Tooth); Dropsy,
+Parkia javanica,10,0,0,10,100.0,Cholera; Colic; Cosmetic; Cramps; Dermatosis; Dysmenorrhea; Gastromegaly; Itch; Pustule; Rhinosis,
+Brucea javanica,10,3,0,13,76.9,Boil; Condyloma; Cough; Mange; Ringworm; Splenomegaly; Bite(Centipede); Colic; Rheumatism; Scurf,Diarrhea (8); Fever (6); Dysentery (11)
+Michelia champaca,10,0,0,10,100.0,Angina; Fever; Halitosis; Malaria; Parturition; Rheumatism; Colic; Gonorrhea; Gravel; Ozoena,
+Tinospora crispa,10,8,1,18,55.6,Dermatosis; Enterosis; Itch; Sore; Syphilis; Tetanus; Tonic; Hepatomegaly; Poison(Arrow); Splenomegaly,Diabetes (21); Diarrhea (2); Digestive (1); Jaundice (4); Rheumatism (3)
+Pogostemon heyneanus,10,1,0,11,90.9,Boil; Cough; Jaundice; Wound; Ache(Head); Bilious; Dropsy; Fever; Rheumatism; Smallpox,Asthma (1)
+Caesalpinia sp.,10,0,0,10,100.0,Dysmenorrhea; Hepatosis; Itch; Jaundice; Orchitis; Tapeworm; Vermifuge; Cough; Gout; Rheumatism,
+Annona reticulata,10,0,0,10,100.0,Astringent; Convulsion; Diarrhea; Epilepsy; Fever; Hepatomegaly; Pediculicide; Ache(Tooth); Tonic; Boil,
+Monochoria vaginalis,10,1,0,11,90.9,Boil; Bronchosis; Cough; Fever; Gastrosis; Hepatosis; Sore; Ache(Tooth); Asthma; Stomach,Liver (1)
+Tacca palmata,9,0,0,9,100.0,Bite(Snake); Boil; Pimple; Stomachic; Swelling; Tonic; Tumor; Wound; Ache(Stomach),
+Zingiber officinale,9,18,8,27,33.3,Gingivosis; Ache(Head); Parturition; Rhinosis; Ague; Ache(Back); Tumor(Hand); Hepatosis; Syphilis,Colic (5); Cosmetic (26); Cough (30); Gynecology (37); Intestine (43)
+Areca catechu,9,4,0,13,69.2,Cornea; Gastrosis; Gonorrhea; Hematuria; Hysteria; Odontosis; Rhinosis; Scabies; Tapeworm,Colitis (2); Diarrhea (8); Fever (1); Herpes (1)
+Gmelina elliptica,9,0,0,9,100.0,Ache(Ear); Ache(Head); Alopecia; Collyrium; Eye; Swelling; Wound; Cathartic; Ache(Tooth),
+Strychnos ligustrina,9,0,0,9,100.0,Apertif; Bite(Snake); Depurative; Fever; Stomach; Tonic; Vermifuge; Skin; Sore,
+Gastrochilus panduratum,9,0,0,9,100.0,Cough; Dysuria; Gastrosis; Myalgia; Parturition; Rheumatism; Sore(Throat); Swelling; Thrush,
+Caesalpinia bonduc,9,0,0,9,100.0,Antidote; Cirrhosis; Cough; Emmenagogue; Hematochezia; Jaundice; Swelling; Vermifuge; Diarrhea,
+Kleinhovia hospita,9,1,0,10,90.0,Collyrium; Cyanogenetic; Eruption; Eyesight; Pediculicide; Piscicide; Poison; Scabies; Shampoo,Skin (2)
+Aleurites moluccana,9,2,0,11,81.8,Diarrhea; Ache(Head); Sprue; Ache(Stomach); Aphrodisiac; Dysentery; Sciatica; Sore; Swelling,Gonorrhea (1); Fever (4)
+Rubus moluccanus,9,1,0,10,90.0,Boil; Cough; Cramps; Enterosis; Miscarriage; Pimple; Sprue; Thrush; Enuresis,Dysentery (1)
+Arenga pinnata,9,0,0,9,100.0,Bladder stone; Intoxicant; Phthisis; Dysentery; Constipation; Lactagogue; Piles; Thrush; Tuberculosis,
+Pterocarpus indicus,9,0,0,9,100.0,Boil; Nephritis; Prickly heat; Stomatitis; Thrush; Diarrhea; Syphilis; Shampoo; Sore,
+Euchresta horsfieldii,9,0,0,9,100.0,Antidote; Aphrodisiac; Chest; Expectorant; Hematochezia; Poison; Tuberculosis; Pulmonosis; Tonic,
+Piper cubeba,9,2,0,11,81.8,Aphrodisiac; Carminative; Dysentery; Enterosis; Expectorant; Gonorrhea; Panacea; Stimulant; Dyspepsia,Diuretic (1); Rheumatism (1)
+Callicarpa longifolia,9,0,0,9,100.0,Colic; Fever; Gastromegaly; Parturition; Poultice; Sprue; Swelling; Syphilis; Tumor,
+Dysophylla auriculata,9,0,0,9,100.0,Diarrhea; Gastrosis; Renosis; Sore(Throat); Ache(Stomach); Vermifuge; Ache(Head); Prickly heat; Rheumatism,
+Casuarina equisetifolia,9,2,0,11,81.8,Beriberi; Diuretic; Dysentery; Dysmenorrhea; Pimple; Tremors; Abdomen; Cramps; Emmenagogue,Diarrhea (2); Swelling (1)
+Lygodium scandens,9,0,0,9,100.0,Dermatosis; Hematemesis; Hemoptysis; Measles; Smallpox; Sprue; Thrush; Dysentery; Wound,
+Melochia corchorifolia,9,0,0,9,100.0,Angina?; Anodyne; Antidote(Antiaris); Dysentery; Nausea; Smallpox; Sore; Abdomen; Dysuria,
+Hibiscus abelmoschus,9,1,0,10,90.0,Cancer(Stomach); Cystitis; Diuretic; Fever; Ache(Head); Varicosity; Dysuria; Gonorrhea; Rheumatism,Cosmetic (1)
+Solanum ferox,9,0,0,9,100.0,Anodyne; Fever; Itch; Labor; Spice; Syphilis; Ache(Tooth); Wound; Bruise,
+Oroxylum indicum,9,5,0,14,64.3,Ache(Stomach); Cholera; Enterosis; Parturition; Swelling; Ache(Tooth); Vertigo; Gastrosis; Splenomegaly,Fever (3); Rheumatism (2); Stomach (3); Diarrhea (7); Dysentery (2)
+Cyathula prostrata,9,0,0,9,100.0,Cholera; Cough; Diarrhea; Dysentery; Itch; Ringworm; Shingles; Gonorrhea; Vermifuge,
+Pongamia pinnata,8,1,0,9,88.9,Antidote(Fish sting); Beriberi; Dermatosis; Emetic; Itch; Piscicide; Rheumatism; Splenomegaly,Internal (3)
+Erythrina variegata,8,2,0,10,80.0,Abscess; Asthma; Cough; Fever; Bite(Snake); Ache(Tooth); Dysentery; Lactagogue,Cancer (3); Depressant (4)
+Citrus aurantifolia,8,0,0,8,100.0,Cough; Dermatosis; Dysentery; Gonorrhea; Ache(Head); Neuralgia; Ache(Stomach); Yaws,
+Merremia peltata,8,0,0,8,100.0,Cough; Ophthalmia; Ache(Stomach); Vermifuge; Wound; Diarrhea; Mastitis; Sore,
+Morinda elliptica,8,0,0,8,100.0,Cholera; Convulsion; Fever; Parturition; Splenosis; Ache(Head); Piles; Diarrhea,
+Drynaria sparsisora,8,0,0,8,100.0,Acne; Blemish; Conjunctivitis; Dropsy; Gonorrhea; Diarrhea; Freckle; Edema,
+Phyllanthus pulcher,8,0,0,8,100.0,Carbuncle; Dermatosis; Itch; Renosis; Sore; Ache(Stomach); Ache(Tooth); Boil,
+Quassia indica,8,0,0,8,100.0,Bruise; Emetic; Insecticide; Purgative; Rheumatism; Skin; Bilious; Fever,
+Pipturus incanus,8,0,0,8,100.0,Burn; Herpes; Stomatitis; Thrush; Tinea; Pimple; Boil; Pediculifuge,
+Erythrina subumbrans,8,0,0,8,100.0,Collyrium; Cough; Fever; Lactagogue; Menorrhagia; Splenomegaly; Ache(Head); Ophthalmia,
+Oxalis corniculata,8,4,0,12,66.7,Conjunctivitis; Gingivitis; Itch; Scurvy; Ache(Stomach); Stomatitis; Prickly heat; Antidote(Datura),Fever (1); Wound (2); Cough (1); Dysentery (1)
+Trachyspermum ammi,8,2,0,10,80.0,Apertif; Gastrosis; Hepatosis; Lunacy; Rheumatism; Sore(Throat); Panacea; Syphilis,Spice (15); Cough (1)
+Ipomoea pes-caprae,8,2,0,10,80.0,Boil; Bugbite; Cramps; Sore; Swelling; Sting(Fish); Ache(Stomach); Carbuncle,Cancer (5); Wound (2)
+Portulaca quadrifida,8,0,0,8,100.0,Abdomen; Boil; Diuretic; Fever; Piles; Alopecia; Abscess; Cough,
+Momordica charantia,8,3,0,11,72.7,Abdomen; Burn; Ache(Head); Parturition; Scald; Sprue; Ache(Stomach); Vermifuge,Asthma (1); Dermatosis (1); Diarrhea (2)
+Kadsura cauliflora,8,0,0,8,100.0,Anodyne; Cough; Dermatosis; Dysentery; Expectorant; Abdomen; Diarrhea; Dysuria,
+Curanga fel-terrae,8,0,0,8,100.0,Cardiotonic; Colic; Ache(Head); Ache(Stomach); Vermifuge; Fever(Tertian); Bite(Snake); Hepatosis,
+Hyptis suaveolens,8,1,0,9,88.9,Apertif; Catarrh; Dermatosis; Lactagogue; Spasm; Stimulant; Stomachic; Sudorific,Rheumatism (1)
+Fibraurea chloroleuca,8,0,0,8,100.0,Ache(Head); Ophthalmia; Parturition; Rhinosis; Sore; Dysentery; Hematochezia; Diabetes,
+Clerodendrum serratum,8,2,0,10,80.0,Cough; Gastromegaly; Ache(Head); Leprosy; Colic; Parturition; Ringworm; Labor,Arthritis (1); Fever (3)
+Merremia mammosa,8,0,0,8,100.0,Burn; Chest; Diabetes; Dysentery; Fever; Bite(Snake); Sore(Throat); Antidote,
+Melastoma malabathricum,8,2,0,10,80.0,Flatulence; Pimple; Puerperium; Smallpox; Thrush; Toothblack; Leucorrhea; Ache(Tooth),Diarrhea (2); Infection (4)
+Vernonia cinerea,8,0,0,8,100.0,Colic; Cough; Diarrhea; Ache(Head); Labor; Ringworm; Vermifuge; Ache(Stomach),
+Curcuma aeruginosa,8,0,0,8,100.0,Cough; Insanity; Parturition; Purgative; Scurf; Dermatosis; Scabies; Asthma,
+Terminalia catappa,8,3,0,11,72.7,Anodyne; Leprosy; Purgative; Rheumatism; Sudorific; Thrush; Vermifuge; Fever,Breast (3); Dysentery (2); Gastritis (1)
+Eleutherine americana,8,0,0,8,100.0,Diuretic; Dysentery; Emetic; Gynecology; Hematochezia; Jaundice; Purgative; Proctitis,
+Pithecellobium jiringa,8,0,0,8,100.0,Anodyne; Dermatosis; Scabies; Ache(Tooth); Wound; Chest; Circumscission; Itch,
+Ricinus communis,8,6,1,14,57.1,Ache(Head); Cancer(Stomach); Deafness; Dermatosis; Lactagogue; Sore; Sprain; Gout,Chest (3); Swelling (11); Wound (26); Rheumatism (3); Blister (5)
+Uraria crinita,8,0,0,8,100.0,Diarrhea; Hepatosis; Pediculicide; Pimple; Vermifuge; Parturition; Smallpox; Splenomegaly,
+Plumbago zeylanica,8,5,1,13,61.5,Abortive; Dermatosis; Emmenagogue; Ache(Head); Parturition; Ringworm; Wart; Funereal,Abortifacient (3); Leprosy (3); Rheumatism (1); Itch (1); Tumor (54)
+Tamarindus indica,8,5,0,13,61.5,Abortive; Boil; Dermatosis; Itch; Sore; Sting(Caterpillar); Mucusitis; Thrush,Cosmetic (8); Fever (3); Pimple (1); Rheumatism (1); Wound (14)
+Micromelum hirsutum,7,0,0,7,100.0,Anodyne; Sting(Caterpillar); Fever; Giddiness; Ostealgia; Ringworm; Leprosy,
+Kaempferia galanga,7,9,0,16,43.8,Abdomen; Mastitis; Ophthalmia; Otosis; Ache(Head); Chill(Veterinary); Stimulant,Cancer (19); Cough (4); Fever (3); Malaria (4); Rheumatism (5)
+Pandanus odorus,7,0,0,7,100.0,Anemia; Cosmetic; Gonorrhea; Parturition; Syphilis; Measles; Sapraemia,
+Jasminum sambac,7,1,0,8,87.5,Ache(Head); Collyrium; Sapraemia; Venereal; Congestion; Dermatosis; Lactifuge,Fever (3)
+Entada phaseoloides,7,3,0,10,70.0,Abdomen; Enterosis; Parturition; Piscicide; Shampoo; Soap; Watervine,Cosmetic (1); Hematochezia (1); Wound (3)
+Ervatamia coronaria,7,0,0,7,100.0,Convulsion; Cough; Diarrhea; Ophthalmia; Sore; Abdomen; Rhinosis,
+Pistia stratiotes,7,1,0,8,87.5,Demulcent; Sore; Ache(Head); Dysentery; Hematuria; Piles; Gonorrhea,Diuretic (1)
+Barleria prionitis,7,0,0,7,100.0,Constipation; Diuretic; Dyspepsia; Rheumatism; Ringworm; Ache(Tooth); Hepatosis,
+Imperata cylindrica,7,4,0,11,63.6,Depurative; Hemostat; Intoxicant; Myalgia; Nightsweats; Rheumatism; Sedative,Diuretic (3); Gonorrhea (1); Cancer (12); Diarrhea (1)
+Cymbopogon citratus,7,2,0,9,77.8,Dyspepsia; Emmenagogue; Gingivitis; Ache(Tooth); Sprain; Neuritis; Rheumatism,Diaphoretic (1); Diuretic (3)
+Hemigraphis colorata,7,0,0,7,100.0,Dermatosis; Dysentery; Gallstones; Hematochezia; Piles; Diuretic; Metrorrhagia,
+Quercus sp.,7,0,0,7,100.0,Apertif; Gastrosis; Leucorrhea; Sapraemia; Sore(Throat); Dermatosis; Fungicide,
+Aegle marmelos,7,6,0,13,53.8,Abortifacient; Aftosa; Itch; Piscicide; Proctitis; Sterilizant; Nausea,Diarrhea (17); Constipation (1); Dysentery (12); Dyspepsia (1); Palpitation (1)
+Peucedanum japonicum,7,0,0,7,100.0,Fever; Giddiness; Miscarriage; Sapraemia; Parturition; Smallpox; Constipation,
+Peltophorum pterocarpum,7,0,0,7,100.0,Collyrium; Dentifrice; Dysentery; Myalgia; Sore; Sprain; Gargle,
+Lindernia crustacea,7,0,0,7,100.0,Bilious; Boil; Dysentery; Parturition; Ringworm; Bite(Tick); Sore,
+Spondias pinnata,7,0,0,7,100.0,Asthma; Dysmenorrhea; Gonorrhea; Herpes; Scurf; Cough; Sore,
+Amaranthus spinosus,7,5,0,12,58.3,Eczema; Lactogogue; Bite(Snake); Boil; Dyspnea; Emmenagogue; Sudorific,Inflammation (2); Tumor (2); Bronchitis (1); Diuretic (1); Fever (1)
+Merremia umbellata,7,0,0,7,100.0,Fistula; Hematuria; Scald; Sore; Tumor; Burn; Pustule,
+Smilax leucophylla,7,0,0,7,100.0,Depurative; Dysmenorrhea; Rheumatism; Sore; Syphilis; Skin; Rhinosis,
+Gardenia augusta,7,0,0,7,100.0,Delirium; Fever; Ache(Head); Jaundice; Mastitis; Pulmonosis; Renosis,
+Plumbago indica,7,2,0,9,77.8,Adenopathy; Cough; Ache(Head); Leprosy; Rheumatism; Beriberi; Abortive,Tumor (7); Vermifuge(Veterinary) (2)
+Acalypha hispida,7,1,0,8,87.5,Diuretic; Expectorant; Gonorrhea; Hemoptysis; Laxative; Sore; Leprosy,Asthma (1)
+Santalum album,7,4,0,11,63.6,Dysentery; Emmenagogue; Enterosis; Ache(Head); Numbness; Bilious; Gonorrhea,Callus (6); Fever (3); Fits (1); Ulcer (1)
+Nelumbo nelumbo,7,7,0,14,50.0,Cramps; Dysmenorrhea; Hematoptysis; Spermatorrhea; Syphilis; Dysuria; Nausea,Cholera (2); Diarrhea (7); Diuretic (4); Hematochezia (1); Narcotic (2)
+Spatholobus ferrugineus,7,0,0,7,100.0,Cough; Dysmenorrhea; Fever; Parturition; Uterorrhagia; Ache(Stomach); Colic,
+Pterospermum javanicum,7,0,0,7,100.0,Abdomen; Sprain; Dentifrice; Sore; Dysentery; Gingivitis; Inflammation,
+Zingiber aromaticum,7,0,0,7,100.0,Bilious; Chlorosis; Cholecystosis; Gout; Parturition; Tonic; Pertussis,
+Mussaenda cambodiana,7,0,0,7,100.0,Cough; Fever; Tumor(Abdomen); Asthma; Malaria; Skin; Diuretic,
+Plantago major,7,4,0,11,63.6,Bladder stone; Depurative; Gonorrhea; Onychyosis; Piles; Thrush; Vermifuge,Cough (4); Diabetes (5); Dysentery (1); Diuretic (2)
+Cleome chelidonii,7,0,0,7,100.0,Dysentery; Ache(Head); Otitis; Rheumatism; Vermifuge; Colic; Narcotic,
+Eugenia aromatica,7,0,0,7,100.0,Colic; Ache(Head); Parturition; Ache(Tooth); Vaginamegaly; Aphrodisiac(Chinese); Tonic,
+Lagerstroemia speciosa,7,2,1,9,77.8,Aphthaee; Malaria; Narcotic; Puerperium; Cracked feet; Hematuria; Jaundice,Diabetes (52); Diarrhea (1)
+Solanum verbascifolium,7,0,0,7,100.0,Ache(Head); Hematuria; Parturition; Abortive; Vaginitis; Anodyne; Vertigo,
+Mirabilis jalapa,7,1,0,8,87.5,Abscess; Diuretic; Pimple; Uterosis; Carbuncle; Gonorrhea; Boil,Cosmetic (1)
+Cycas rumphii,7,0,0,7,100.0,Colic; Edema; Emetic; Heartburn; Hematemesis; Sore; Yaws,
+Tinospora rumphii,7,0,0,7,100.0,Cancer; Diarrhea; Panacea; Stomach; Cordial; Sore; Dyspepsia,
+Ficus glomerata,7,0,0,7,100.0,Anorectic; Antidote(Datura); Ache(Back); Cholera; Expectorant; Fumitory; Ache(Tooth),
+Aristolochia sp.,7,0,0,7,100.0,Colic; Constipation; Cramps; Fever; Gallbladder; Itch; Abdomen,
+Drymoglossum heterophyllum,7,0,0,7,100.0,Constipation; Dermatosis; Ache(Head); Smallpox; Cough; Gonorrhea; Itch,
+Dioscorea hispida,7,2,0,9,77.8,Antiseptic; Callus; Feet; Leprosy; Tumor; Whitlow; Sore,Diabetes (1); Corn (1)
+Millettia sericea,7,0,0,7,100.0,Fever; Ophthalmia; Parturition; Ache(Tooth); Dysuria; Piscicide; Vermifuge,
+Calotropis gigantea,6,2,0,8,75.0,Boil; Conjunctivitis; Rhinosis; Sore; Stomachic; Ache(Tooth),Syphilis (1); Wound (6)
+Buddleja asiatica,6,0,0,6,100.0,Intoxicant; Malaria; Skin; Tumor; Abortifacient; Dermatosis,
+Samadera indica,6,0,0,6,100.0,Bilious; Emetic; Fever; Purgative; Termiticide; Rheumatism,
+Anacardium occidentale,6,3,0,9,66.7,Burn; Dermatosis; Thrush; Wart; Catarrh; Constipation,Corn (2); Diarrhea (8); Nausea (1)
+Planchonella obovata,6,0,0,6,100.0,Ache(Stomach); Chest; Pain(Chest); Lumbago; Sprue; Anodyne,
+Lagenaria leucantha,6,0,0,6,100.0,Baldness; Fever; Pimple; Purgative; Typhoid; Colic,
+Piper sumatranum,6,0,0,6,100.0,Antiseptic; Carminative; Diuretic; Expectorant; Sore(Throat); Stimulant,
+Alyxia spp.,6,0,0,6,100.0,Colic; Diarrhea; Fever; Gonorrhea; Malaria; Thrush,
+Pellionia repens,6,0,0,6,100.0,Abdomen; Boil; Dislocation; Rheumatism; Swelling; Osteosis,
+Justicia gendarussa,6,0,0,6,100.0,Amenorrhea; Bite(Snake); Debility; Stomach; Evil eye; Lunacy,
+Desmodium gangeticum,6,0,0,6,100.0,Diarrhea; Gravel; Ache(Head); Stone; Ache(Tooth); Sedative,
+Glochidion sp,6,0,0,6,100.0,Abdomen; Ache(Stomach); Eruption; Puerperium; Skin; Sore,
+Artocarpus elastica,6,0,0,6,100.0,Aperient; Contraceptive; Dysentery; Lumbago; Tuberculosis; Sore,
+Tetracera scandens,6,0,0,6,100.0,Antidote; Boil; Cough; Dysentery; Osteosis; Burn,
+Sapindus rarak,6,0,0,6,100.0,Cosmetic; Insecticide; Pimple; Piscicide; Scabies; Soap,
+Jasminum bifarium,6,0,0,6,100.0,Ague; Fever; Ache(Head); Parturition; Vertigo; Yaws,
+Derris elliptica,6,1,0,7,85.7,Herbicide; Oxyuriasis; Piscicide; Poison(Arrow); Hepatosis; Impetigo,Insecticide (2)
+Ficus septica,6,0,0,6,100.0,Antidote; Antidote(Crab); Dermatitigenic; Emetic; Sting(Fish); Purgative,
+Desmodium triflorum,6,1,0,7,85.7,Boil; Diarrhea; Dysentery; Ache(Stomach); Dermatosis; Hematochezia,Tumor (2)
+Ochrosia oppositifolia,6,0,0,6,100.0,Abdomen; Anodyne; Antidote(Fish); Spasm; Antidote(Fish poison); Antidote(Crab),
+Amaranthus sp,6,0,0,6,100.0,Bronchitis; Expectorant; Insanity; Ache(Tooth); Fracture; Boil,
+Graptophyllum pictum,6,0,0,6,100.0,Constipation; Dermatosis; Earache; Swelling; Wound; Emmenagogue,
+Caesalpinia sappan,6,1,0,7,85.7,Depurative; Emmenagogue; Mastalgia; Sapraemia; Syphilis; Hematemesis,Antiseptic (1)
+Cajanus cajan,6,1,0,7,85.7,Abdomen; Diarrhea; Earache; Enteritis; Dermatosis; Sore,Cough (1)
+Corypha utan,6,0,0,6,100.0,Antidote(Fish); Cough; Diarrhea; Enterosis; Wound; Tuberculosis,
+Bryophyllum pinnatum,6,2,0,8,75.0,Anodyne; Dermatosis; Ache(Head); Rhagades; Rheumatism; Conjunctivitis,Cancer (7); Cough (4)
+Arcangelisia flava,6,1,0,7,85.7,Dyspepsia; Rhinitis; Smallpox; Stomatitis; Vermifuge; Piscicide,Jaundice (1)
+Smilax china,6,1,0,7,85.7,Aphrodisiac; Dermatosis; Gonorrhea; Parturition; Rheumatism; Tonic,Syphilis (1)
+Flacourtia rukam,6,0,0,6,100.0,Conjunctivitis; Smallpox; Wound; Diarrhea; Dysentery; Dysmenorrhea,
+Ixora chinensis,6,0,0,6,100.0,Dysuria; Parturition; Puerperium; Tuberculosis; Urogenital; Hemorrhage,
+Erioglossum rubiginosum,6,0,0,6,100.0,Cough; Dermatosis; Pertussis; Fever; Astringent; Gripes,
+Lycopodium cernuum,6,0,0,6,100.0,Beriberi; Chest; Cough; Dermatosis; Sore; Beri-Beri,
+Helminthostachys zeylanica,6,1,0,7,85.7,Dysentery; Pertussis; Phthisis; Tonic; Catarrh; Tuberculosis,Fever (5)
+Cyperus rotundus,6,2,0,8,75.0,Gravel; Leucorrhea; Sore; Stone; Whitlow; Felon,Edema (5); Diuretic (1)
+Basella rubra,6,0,0,6,100.0,Aperient; Boil; Laxative; Parturition; Sore; Conjunctivitis,
+Acorus calamus,6,3,1,9,66.7,Odontosis; Parturition; Pediculifuge; Venereal; Vermifuge; Splenomegaly,Diarrhea (3); Sedative (4); Cancer (27)
+Scoparia dulcis,6,0,0,6,100.0,Cough; Expectorant; Labor; Ache(Stomach); Opium substitute; Syphilis,
+Leucas lavandulifolia,6,0,0,6,100.0,Miscarriage; Nervousness; Saccharomycose; Wound; Sore; Vermifuge,
+Euphorbia hirta,6,2,0,8,75.0,Bruise; Catarrh; Cornea; Dermatosis; Ringworm; Sore,Conjunctivitis (1); Tumor (13)
+Kalanchoe laciniata,6,0,0,6,100.0,Cholera; Cold; Cough; Fever; Smallpox; Ache(Head),
+Deeringia amarantoides,6,0,0,6,100.0,Ache(Head); Sore; Sternutatory; Ache(Stomach); Chickenpox?; Smallpox,
+Borreria articularis,6,0,0,6,100.0,Anodyne; Gallstone; Ache(Head); Sore; Ache(Stomach); Breast,
+Codiaeum variegatum,6,0,0,6,100.0,Abortive; Cough; Dysuria; Purgative; Sore; Syphilis,
+Flacourtia jangomas,6,0,0,6,100.0,Dermatosis; Gastromegaly; Diarrhea; Wound; Sore; Sore(Throat),
+Mangifera sp.,6,0,0,6,100.0,Miscarriage; Rheumatism; Smallpox; Flatulence; Gonorrhea; Vermifuge,
+Sterculia foetida,6,0,0,6,100.0,Abortive; Aperient; Fever; Jaundice; Cachexia; Gonorrhea,
+Zingiber zerumbet,6,1,0,7,85.7,Apertif; Bilious; Dysentery; Gallstones; Ache(Stomach); Lassitude,Diarrhea (1)
+Carapa granatum,6,0,0,6,100.0,Cholera; Dysentery; Itch; Swelling; Tonic; Mumps,
+Chasallia chartacea,6,0,0,6,100.0,Convulsion; Cough; Ache(Head); Parturition; Herpes zoster; Malaria,
+Jatropha curcas,6,5,1,11,54.5,Circumscission; Cough; Piscicide; Rheumatism; Hemostat; Narcotic,Laxative (1); Purgative (1); Tumor (26); Wound (12); Diarrhea (5)
+Sandoricum indicum,6,0,0,6,100.0,Fever(Remittent); Parturition; Ringworm; Stitch; Vaginitis; Colic,
+Physalis minima,6,2,0,8,75.0,Gonorrhea; Ache(Head); Sore; Vermifuge; Wound; Enterosis,Diuretic (1); Fever (2)
+Eclipta alba,6,1,0,7,85.7,Gastrosis; Giddiness; Parturition; Ringworm; Ache(Tooth); Vertigo,Skin (12)
+Hernandia peltata,6,0,0,6,100.0,Antidote(Ipoh); Depilatory; Hemostat; Purgative; Candlenut; Hemoptysis,
+Scurrula gracilifolia,5,0,0,5,100.0,Dullness; Furuncle; Hair-Tonic; Loose Teeth; Vision,
+Uvaria purpurea,5,0,0,5,100.0,Colic; Abdomen; Dermatosis; Parturition; Ache(Stomach),
+Breynia reclinata,5,0,0,5,100.0,Dermatosis; Fever; Mumps; Swelling; Ache(Head),
+Madhuca sp,5,0,0,5,100.0,Burn; Chest; Eruption; Pinworms; Skin,
+Eurycoma longifolia,5,6,0,11,45.5,Ache(Head); Parturition; Smallpox; Sore; Itch,Bones (4); Fever (10); Syphilis (1); Vermifuge (1); Malaria (12)
+Parameria polyneura,5,0,0,5,100.0,Dysentery; Emmenagogue; Uteromegaly; Wound; Parturition,
+Morus alba,5,2,0,7,71.4,Depurative; Dermatosis; Gonorrhea; Lactagogue; Emollient,Sore (2); Wound (14)
+Dendrobium crumenatum,5,0,0,5,100.0,Ache(Ear); Boil; Brain; Nerves; Pimple,
+Ochanostachys amentacea,5,0,0,5,100.0,Arthritis; Fever; Parturition; Rheumatism; Swelling,
+Ervatamia corymbosa,5,0,0,5,100.0,Arrow-poison; Orchitis; Rhinosis; Sore; Syphilis,
+Mangifera indica,5,3,0,8,62.5,Ascaricide; Metrorrhagia; Piles; Uterus; Vermifuge,Dysentery (6); Hemorrhage (2); Diarrhea (9)
+Dianella ensifolia,5,0,0,5,100.0,Herpes; Rodenticide; Wound; Fever(Preventive); Vermifuge,
+Albizia saponaria,5,0,0,5,100.0,Cancer; Impotency; Piscicide; Shampoo; Dandruff,
+Moschosma polystachyum,5,0,0,5,100.0,Aphthagenic; Convulsion; Epilepsy; Neuralgia; Palpitations,
+Styrax tonkinense,5,0,0,5,100.0,Incense; Perfume; Soap; Vulnerary; Antiseptic,
+Kadsura scandens,5,0,0,5,100.0,Fever; Malaise; Puerperium; Ulcer; Rheumatism,
+Piper umbellatum,5,1,0,6,83.3,Ague; Bruise; Cough; Gastromegaly; Swelling,Wound (2)
+Carica papaya,5,6,1,11,45.5,Gravel; Vermifuge; Wart; Boil; Tumor(Uterus),Abortifacient (5); Arthritis (3); Fever (42); Dysuria (1); Colic (1)
+Cinnamomum iners,5,1,0,6,83.3,Ache(Head); Antidote(Antiaris); Fever; Parturition; Post-Natal,Rheumatism (1)
+Leea indica,5,0,0,5,100.0,Ache(Head); Anodyne; Sting(Caterpillar); Dermatosis; Eye,
+Curcuma longa,5,17,4,22,22.7,Hepatosis; Lactagogue; Pyuria; Gravel; Vulnerary,Cold (24); Conjunctivitis (3); Cosmetic (33); Dysentery (2); Jaundice (8)
+Cicca acida,5,0,0,5,100.0,Asthma; Sciatica; Ache(Head); Psoriasis; Lumbago,
+Cuscuta sp.,5,0,0,5,100.0,Abortive; Anodyne; Blennorhea; Diaphoretic; Incontinence,
+Curcuma purpurascens,5,1,0,6,83.3,Boil; Fever; Scabies; Cough; Itch,Wound (1)
+Ficus hispida,5,2,0,7,71.4,Dysuria; Parturition; Ache(Stomach); Wart; Boil,Diarrhea (2); Fever (1)
+Pouzolzia zeylanica,5,0,0,5,100.0,Boil; Sore; Vermifuge; Lactagogue; Ache(Stomach),
+Emilia sonchifolia,5,3,0,8,62.5,Diarrhea; Ophthalmia; Phthisis; Earache; Sore,Cough (1); Fever (2); Swelling (1)
+Eleutherine palmifolia,5,0,0,5,100.0,Antidote; Bite(Bug); Spasm; Wound; Boil,
+Antidesma sp,5,0,0,5,100.0,Lumbago; Parturition; Piscicide; Sore; Tonic,
+Anisophyllea disticha,5,0,0,5,100.0,Diarrhea; Fever; Jaundice; Dysentery; Weariness,
+Acacia farnesiana,5,1,0,6,83.3,Conjunctivitis; Emetic; Nausea; Ophthalmia; Parturition,Tumor (3)
+Dendrobium crumentatum,5,1,0,6,83.3,Cerebrosis; Otosis; Pimple; Boil; Cholera,Nerves (1)
+Woodfordia fruticosa,5,1,0,6,83.3,Bladder; Parturition; Smallpox; Catarrh; Infertility,Dysentery (2)
+Coleus amboinicus,5,3,0,8,62.5,Angina?; Ache(Head); Ache(Stomach); Thrush; Anodyne,Cough (3); Fever (3); Burns (1)
+Limnophila rugosa,5,0,0,5,100.0,Diuretic; Impotence; Stomachic; Gonorrhea; Tonic,
+Costus speciosus,5,4,0,9,55.6,Alopecia; Dysentery; Ophthalmia; Smallpox; Syphilis,Cough (1); Leprosy (1); Fever (2); Purgative (2)
+Ervatamia malaccensis,5,0,0,5,100.0,Arrow-poison; Rhinosis; Sore; Syphilis; Boil,
+Scaevola frutescens,5,0,0,5,100.0,Beriberi; Ache(Head); Swelling; Ophthalmia; Diarrhea,
+Croton tiglium,5,1,0,6,83.3,Abortive; Arrow-poison; Colic; Piscicide; Homicide,Purgative (7)
+Litsea sp,5,0,0,5,100.0,Eruption; Medicine; Pinworms; Skin; Abdomen,
+Spilanthes acmella,5,0,0,5,100.0,Piscicide; Sprue; Panacea; Stomatosis; Ache(Tooth),
+Alocasia macrorrhiza,5,0,0,5,100.0,Arthritis; Cough; Rubefacient; Ache(Tooth); Antidote(Laportea),
+Thottea grandiflora,5,0,0,5,100.0,Ague; Dysentery; Fever; Tonic; Parturition,
+Gynura pseudochina,5,0,0,5,100.0,Bruise; Dysmenorrhea; Erysipelas; Tumor(Breast); Pimple,
+Piper sarmentosum,5,3,0,8,62.5,Chest; Dermatosis; Ache(Head); Osteosis; Ache(Tooth),Asthma (2); Pleurisy (1); Cough (1)
+Aglaia odorata,5,0,0,5,100.0,Dysmenorrhea; Fever; Parturition; Tonic; Venereal,
+Euphorbia neriifolia,5,4,0,9,55.6,Earache; Wart; Piscicide; Vermifuge; Sore,Cough (1); Diuretic (1); Asthma (4); Purgative (1)
+Polygonum barbatum,5,0,0,5,100.0,Arthritis; Diarrhea; Infertility; Piscicide; Vulnerary,
+Curcuma xanthorrhiza,5,2,0,7,71.4,Amenorrhea; Emmenagogue; Gallstones; Hepatosis; Parturition,Choleretic (1); Constipation (1)
+Ruta graveolens,5,3,0,8,62.5,Anaphrodisiac; Hysteria; Acaricide; Convulsion; Itch,Cough (1); Earache (1); Fever (2)
+Piper porphyrophyllum,5,0,0,5,100.0,Dermatosis; Leprosy; Weakness; Ache(Stomach); Ostealgia,
+Celtis sp.,5,0,0,5,100.0,Colic; Fever; Flatulence; Nervousness; Convulsion,
+Jussiaea suffruticosa,5,0,0,5,100.0,Ache(Head); Adenopathy; Glands; Nerves; Orchitis,
+Callicarpa cana,5,0,0,5,100.0,Arrow-poison; Boil; Emmenagogue; Enterosis; Piscicide,
+Sonneratia caseolaris,5,0,0,5,100.0,Cough; Smallpox; Spice; Vermifuge; Dysuria,
+Mallotus floribundus,5,0,0,5,100.0,Cholera; Fever; Parturition; Ache(Stomach); Yaws,
+Schima noronhae,5,0,0,5,100.0,Piscicide; Smallpox; Uterosis; Hysteria; Parturition,
+Bidens pilosa,5,1,0,6,83.3,Boil; Conjunctivitis; Intoxicant; Ache(Tooth); Antidote,Cough (1)
+Quisqualis indica,5,0,0,5,100.0,Boil; Ache(Head); Rickets; Sore; Vermifuge,
+Ruellia repens,5,0,0,5,100.0,Appendicitis; Abdomen; Ache(Tooth); Sore; Wound,
+Cyclophorus nummulariifolius,5,0,0,5,100.0,Colic; Cough; Enterosis; Gingivitis; Pyrorrhea,
+Psophocarpus tetragonolobus,5,1,0,6,83.3,Boil; Otosis; Smallpox; Conjunctivitis; Vertigo,Tumor (3)
+Strychnos ignatii,5,1,0,6,83.3,Debility; Neuralgia; Stimulant; Tonic; Nerves,Poison (1)
+Cnestis palala,5,0,0,5,100.0,Colitis; Malaria; Ache(Stomach); Gonorrhea; Sprain,
+Dolichos lablab,5,0,0,5,100.0,Earache; Fever; Eczema; Emmenagogue; Gonorrhea,
+Eurycles amboinensis,5,0,0,5,100.0,Antidote(Fish poison); Boil; Emetic; Swelling; Giddiness,
+Lantana aculeata,5,0,0,5,100.0,Antiseptic; Emetic; Wound; Rheumatism; Swelling,
+Vitex trifolia,5,3,0,8,62.5,Diuretic; Emmenagogue; Enterosis; Insectifuge; Diaphoretic,Tuberculosis (1); Fever (1); Tumor (13)
+Pithecellobium clypearia,5,0,0,5,100.0,Cough; Smallpox; Bite(Snake); Chickenpox; Swelling,
+Roucheria griffithiana,5,0,0,5,100.0,Sprue; Water vine; Ache(Head); Enterosis; Poison(Arrow),
+Celosia cristata,5,0,0,5,100.0,Abdomen; Cramps; Dysmenorrhea; Gonorrhea; Anodyne,
+Piper attenuatum,5,0,0,5,100.0,Dysuria; Gonorrhea; Gallbladder; Colic; Fever,
+Biophytum sensitivum,5,2,0,7,71.4,Anaphrodisiac (Female); Chest; Gonorrhea; Tuberculosis; Vulnerary,Diabetes (5); Ache(Stomach) (1)
+Selaginella willdenovii,5,0,0,5,100.0,Ache(Back); Dermatosis; Itch; Wound; Fever,
+Cyrtandra sp,5,0,0,5,100.0,Gangrene; Infection; Styptic; Tenderizer; Wound,
+Murraya paniculata,5,2,0,7,71.4,Cosmetic; Stomatosis; Tapeworm; Dysentery; Herpes,Diarrhea (2); Gynecology (1)
+Eugenia jambos,5,0,0,5,100.0,Catarrh; Dysentery; Fever; Diarrhea; Smallpox,
+Clausena excavata,5,2,0,7,71.4,Colic; Ache(Head); Sore; Vermifuge; Rhinosis,Cough (1); Wound (2)
+Chartoloma chartacea,5,0,0,5,100.0,Ache(Head); Sore; Cough; Malaria; Wound,
+Hedyotis philippensis,5,0,0,5,100.0,Anodyne; Gonorrhea; Stomachic; Dysentery; Scald,
+Sauropus androgynus,5,1,0,6,83.3,Cholecystosis; Sore; Ophthalmia; Yaws; Rhinosis,Fever (4)
+Gynandropsis gynandra,5,0,0,5,100.0,Chills; Cold; Fever; Ache(Head); Labor,
+Myxopyrum nervosum,5,0,0,5,100.0,Arthritis; Fever; Parturition; Vermifuge; Vertigo,
+Caesalpinia pulcherrima,5,2,0,7,71.4,Catarrh; Cough; Gastromegaly; Vermifuge; Convulsion,Diarrhea (1); Swelling (2)
+Annona muricata,5,1,0,6,83.3,Boil; Cough; Dermatosis; Dysentery; Scurvy,Rheumatism (2)
+Calophyllum inophyllum,5,6,0,11,45.5,Gonorrhea; Metrorrhagia; Piles; Parturition; Stitch,Rheumatism (1); Stroke (3); Vaginitis (1); Wound (13); Eye (3)
+Curculigo latifolia,4,1,0,5,80.0,Apertif; Fever; Stimulant; Delirium,Sweetener (4)
+Carallia suffruticosa,4,0,0,4,100.0,Vermifuge; Boil; Cough; Fever,
+Solanum aculeatissimum,4,0,0,4,100.0,Dermatosis; Nose; Rhinosis; Ache(Tooth),
+Dracaena congesta,4,0,0,4,100.0,Anodyne; Rheumatism; Sore; Vermifuge,
+Trianthema portulacastrum,4,0,0,4,100.0,Abortifacient; Amenorrhea; Cathartic; Emmenagogue,
+Litsea cubeba,4,1,0,5,80.0,Ache(Head); Hysteria; Paralysis; Vertigo,Memory (2)
+Ipomoea reptans,4,0,0,4,100.0,Ache(Head); Piles; Insomnia; Laxative,
+Hedyotis glabra,4,0,0,4,100.0,Ache(Head); Ache(Stomach); Sore; Depurative,
+Peronema canescens,4,0,0,4,100.0,Mouthwash; Ringworm; Fever; Ache(Tooth),
+Bonnaya antipoda,4,0,0,4,100.0,Diarrhea; Vertigo; Sore; Vermifuge,
+Mussaenda philippica,4,0,0,4,100.0,Ache(Head); Sore; Wound; Fumitory,
+Gynura pseudo-china,4,2,1,6,66.7,Emollient; Erysipelas; Resolvent; Tumor(Breast),Tumor (29); Breast (6)
+Ocimum sanctum,4,4,0,8,50.0,Gastrosis; Lactagogue; Parturition; Laxative,Bronchitis (7); Demulcent (1); Fever (6); Rheumatism (1)
+Arcypteris difformis,4,0,0,4,100.0,Diarrhea; Hemostat; Itch; Malaria,
+Smilax calophylla,4,0,0,4,100.0,Aphrodisiac; Gonorrhea; Parturition; Tonic,
+Homalomena javanica,4,0,0,4,100.0,Miscarriage; Sore; Syphilis; Wound,
+Andrographis paniculata,4,4,3,8,50.0,Bugbite; Stomachic; Anodyne; Bite(Snake),Diabetes (78); Dysentery (6); Fever (44); Malaria (26)
+Rourea mimosoide,4,0,0,4,100.0,Cold; Colic; Leprosy; Parturition,
+Marsdenia tinctoria,4,0,0,4,100.0,Cosmetic; Enterosis; Hairblack; Ache(Stomach),
+Polygala glomerata,4,0,0,4,100.0,Anodyne; Fatigue; Sore(Throat); Asthma,
+Citrus hystrix,4,0,0,4,100.0,Ache(Head); Ache(Stomach); Tonic; Vermifuge,
+Artocarpus integra,4,0,0,4,100.0,Fever; Parturition; Sore; Ache(Tooth),
+Sesbania aegyptiaca,4,0,0,4,100.0,Cough; Gynecology; Hemoptysis; Vermifuge,
+Floscopa scandens,4,0,0,4,100.0,Conjunctivitis; Fracture; Ophthalmia; Parturition,
+Erigeron sumatrensis,4,0,0,4,100.0,Contraceptive?; Lumbago; Parturition; Rheumatism,
+Psidium guajava,4,6,1,10,40.0,Hysteria; Leucorrhea; Sore; Emmenagogue,Dermatosis (1); Diarrhea (37); Epilepsy (1); Swelling (3); Wound (12)
+Rubus alceifolius,4,0,0,4,100.0,Dysentery; Dysuria; Parturition; Fever,
+Papaver somniferum,4,2,0,6,66.7,Leprosy; Fever; Ache(Stomach); Piles,Diarrhea (3); Nausea (1)
+Zingiber griffithii,4,0,0,4,100.0,Giddiness; Asthma; Enteritis; Fever,
+Antidesma montanum,4,0,0,4,100.0,Chickenpox; Ache(Head); Malaria; Measles,
+Lansium domesticum,4,3,0,7,57.1,Collyrium; Insectifuge; Vermifuge; Toothblack,Fever (1); Malaria (2); Dysentery (1)
+Inocarpus edulis,4,0,0,4,100.0,Enterosis; Sorethroat?; Tonsillitis?; Astringent,
+Uncaria longiflora,4,0,0,4,100.0,Anodyne; Rheumatism; Framboesia; Thrush,
+Punica granatum,4,7,1,11,36.4,Bilious; Piles; Colic; Dysmenorrhea,Cough (4); Dermatosis (1); Diarrhea (30); Dysentery (9); Ophthalmia (1)
+Brucea amarissima,4,0,0,4,100.0,Anodyne; Internal; Skin; Splenomegaly,
+Melicope monophylla,4,0,0,4,100.0,Puerperium; Sore; Abdomen; Pimple,
+Vitex pubescens,4,0,0,4,100.0,Fever; Inappetence; Ache(Stomach); Wound,
+Smilax helferi,4,0,0,4,100.0,Dermatosis; Rheumatism; Boil; Syphilis,
+Dianella sp.,4,0,0,4,100.0,Dysuria; Mucusitis; Vermifuge; Lumbago,
+Vitis trifolia,4,0,0,4,100.0,Fever; Itch; Rhinosis; Sore,
+Thespesia populnea,4,1,0,5,80.0,Itch; Pleurisy; Ache(Head); Cholera,Colic (1)
+Breynia rhamnoides,4,0,0,4,100.0,Astringent; Hemorrhage; Parturition; Ache(Stomach),
+Pachyrhizus erosus,4,0,0,4,100.0,Dermatosis; Laxative; Prickly heat; Vermifuge,
+Gouania leptostachya,4,0,0,4,100.0,Dermatosis; Shampoo; Skin; Hair-Wash,
+Lindernia cordifolia,4,0,0,4,100.0,Bilious; Boil; Dysentery; Poultice,
+Desmodium heterophyllum,4,0,0,4,100.0,Earache; Enterosis; Sore; Ache(Stomach),
+Ficus rumphii,4,0,0,4,100.0,Cosmetic; Expectorant; Bronchosis; Itch,
+Ficus leucantatoma,4,2,0,6,66.7,Antidote(Fish poison); Proctosis; Prolapse; Deafness,Abscess (1); Dermatosis (2)
+Stachytarpheta indica,4,0,0,4,100.0,Bruise; Dysentery; Gonorrhea; Sprain,
+Goniothalamus macrophyllus,4,1,0,5,80.0,Cold; Parturition; Smallpox; Typhoid,Fever (1)
+Petunga venulosa,4,0,0,4,100.0,Rheumatism; Smallpox; Sore; Ache(Stomach),
+Pandanus furcatus,4,0,0,4,100.0,Antidote; Cough; Diarrhea; Dysentery,
+Aganosma marginata,4,0,0,4,100.0,Emmenagogue; Fever; Urogenital; Tonic,
+Strobilanthes flaccidifolius,4,0,0,4,100.0,Astringent; Cough; Diuretic; Ague,
+Aerva sanguinolenta,4,0,0,4,100.0,Dysmenorrhea; Leucorrhea; Pyuria; Hematuria,
+Allium ascalonium,4,5,1,9,44.4,Amenorrhea; Ophthalmia; Ache(Head); Vermifuge,Cholera (6); Diarrhea (62); Sore (6); Ache(Stomach) (6); Thrush (1)
+Rafflesia patma,4,0,0,4,100.0,Aphrodisiac(Female); Dysmenorrhea; Hemostat; Parturition,
+Solanum torvum,4,0,0,4,100.0,Antidote; Cracked feet; Fumitory; Parturition,
+Phytocrene blancoi,4,0,0,4,100.0,Puerperium; Pinkeye; Pinworms; Piscicide,
+Leptonychia heteroclita,4,0,0,4,100.0,Parturition; Sore; Fever; Rhinosis,
+Lycopodium phlegmaria,4,0,0,4,100.0,Gastrosis; Pulmonosis; Emmenagogue; Dropsy,
+Limnophila aromatica,4,0,0,4,100.0,Carminative; Fever; Sore; Poultice,
+Antiaris toxicaria,4,0,0,4,100.0,Arrow-poison; Cardiopathy; Poison(Arrow); Homicide,
+Santiria griffithii,4,0,0,4,100.0,Aphrodisiac; Impotence; Tonic; Rheumatism,
+Mallotus macrostachyus,4,0,0,4,100.0,Boil; Circumscission; Wound; Fever,
+Durio zibethinus,4,2,0,6,66.7,Jaundice; Parturition; Tonic; Dermatosis,Cancer (5); Fever (1)
+Piper nigrum,4,2,0,6,66.7,Cancer(Nose); Colic; Gonorrhea; Ache(Head),Abortifacient (2); Cholera (2)
+Poililospermum suaveolens,4,1,0,5,80.0,Pediculicide; Shampoo; Watervine; Ophthalmia,Fever (13)
+Nasturtium indicum,4,0,0,4,100.0,Cold; Cystitis?; Bladder; Fever,
+Baeckea frutescens,4,0,0,4,100.0,Dysmenorrhea; Fever; Lassitude; Parturition,
+Poikilospermum suaveolens,4,0,0,4,100.0,Eye; Numbness; Water; Wound,
+Dracaena porteri,4,0,0,4,100.0,Anodyne; Rheumatism; Sore; Vermifuge,
+Hibiscus tiliaceus,4,1,0,5,80.0,Boil; Bronchitis; Cough; Fever,Swelling (1)
+Borassus flabellifera,4,0,0,4,100.0,Diuretic; Dysentery; Hemoptysis; Tuberculosis,
+Litsea luzonica,4,0,0,4,100.0,Anodyne; Waist; Boil; Wound,
+Foeniculum vulgare,4,1,0,5,80.0,Dermatosis; Hepatosis; Abdomen; Gastralgia,Rheumatism (1)
+Psychotria viridiflora,4,0,0,4,100.0,Dermatosis; Female; Bite(Snake); Bugbite,
+Maesa ramentacea,4,0,0,4,100.0,Angina?; Dermatosis; Itch; Skin,
+Daemonorops sp.,4,0,0,4,100.0,Dyspepsia; Maculitis; Sprue; Ache(Stomach),
+Hyptis brevipes,4,0,0,4,100.0,Ache(Head); Parturition; Puerperium; Vermifuge,
+Eurya japonica,4,1,0,5,80.0,Dermatosis; Parturition; Pustules; Eruption,Skin (1)
+Trevesia cheirantha,4,1,0,5,80.0,Sore; Fever; Fracture; Ague,Rheumatism (1)
+Derris cebuensis,4,0,0,4,100.0,Anodyne; Internal; Stomach; Piscicide,
+Alocasia indica,4,0,0,4,100.0,Bite(Snake); Tumor; Laxative; Sore,
+Premna tomentosa,4,0,0,4,100.0,Ache(Stomach); Vermifuge; Diarrhea; Parturition,
+Cassia nodosa,4,0,0,4,100.0,Boil; Itch; Purgative; Fever,
+Solanum indicum,4,0,0,4,100.0,Diuretic; Rhinosis; Sore; Ache(Tooth),
+Wikstroemia ridleyi,4,0,0,4,100.0,Aperient; Nausea; Smallpox; Boil,
+Macaranga hypoleuca,4,0,0,4,100.0,Antispasmodic; Expectorant; Fever; Spasm,
+Coscinium blumeanum,4,0,0,4,100.0,Prickly heat; Sore; Wound; Piscicide,
+Pycnarrhena manilensis,4,0,0,4,100.0,Bite(Snake); Cicatrizant; Tonic; Vulnerary,
+Eupatorium triplinerve,4,0,0,4,100.0,Bronchosis; Diarrhea; Sudorific; Sore,
+Phyllanthus frondosus,4,0,0,4,100.0,Diaphoretic; Fever; Diuretic; Parturition,
+Willughbeia sp.,4,0,0,4,100.0,Jaundice; Malaria; Heartburn; Hysteria,
+Cinnamomum sintok,4,0,0,4,100.0,Bugbite; Diarrhea; Numbness; Vermifuge,
+Voacanga foetida,4,0,0,4,100.0,Pustule; Skin; Tumor; Fistula,
+Tetracera macrophylla,4,0,0,4,100.0,Sore; Syphilis; Thrush; Watervine,
+Triphasia trifolia,4,0,0,4,100.0,Colic; Cosmetic; Dermatosis; Diarrhea,
+Artemisia vulgaris,4,1,0,5,80.0,Dermatosis; Emmenagogue; Scurf; Fumitory (Opium substitute),Colic (1)
+Ardisia colorata,4,0,0,4,100.0,Cough; Diarrhea; Fever; Rheumatism,
+Pisonia alba,4,0,0,4,100.0,Boil; Corn; Edema; Swelling,
+Cardiospermum halicacabum,4,0,0,4,100.0,Bladder; Buboes; Conjunctivitis; Anodyne,
+Helicteres isora,4,0,0,4,100.0,Aphrodisiac; Ache(Stomach); Parturition; Tonic,
+Cassia alata,4,4,0,8,50.0,Herpes; Larvicide; Syphilis; Itch,Constipation (1); Ringworm (2); Skin (16); Scabies (1)
+Ehretia philippensis,4,0,0,4,100.0,Dysentery; Tenesmus; Hematochezia; Diarrhea,
+Globba panicoides,4,0,0,4,100.0,Fever; Rheumatism; Gonorrhea; Parturition,
+Erythrina indica,4,1,0,5,80.0,Emmenagogue; Hematochezia; Lactagogue; Abscess,Sedative (3)
+Zingiber ottensii,4,0,0,4,100.0,Convulsion; Cramps; Parturition; Sedative,
+Melia dubia,4,0,0,4,100.0,Fever; Internal; Vermifuge; Anodyne,
+Cyperus esculentus,4,0,0,4,100.0,Anodyne; Dysuria; Rhinosis; Sore,
+Zanthoxylum avicennae,4,0,0,4,100.0,Bite(Snake); Antidote; Stomachic; Tonic,
+Euphorbia pilulifera,4,0,0,4,100.0,Poison; Tattoo; Tumor; Eye,
+Averrhoa carambola,4,4,0,8,50.0,Bilious; Chickenpox; Dermatosis; Ache(Head),Diarrhea (1); Hangover (1); Nausea (2); Ringworm (1)
+Symplocos odoratissima,3,0,0,3,100.0,Parturition; Thrush; Aphthae,
+Senecio scandens,3,0,0,3,100.0,Eye; Jaundice; Emetic,
+Clerodendrum disparifolium,3,0,0,3,100.0,Constipation; Tonic; Ache(Tooth),
+Cratoxylon cochinchinense,3,0,0,3,100.0,Dermatosis; Ache(Stomach); Itch,
+Trichosanthes anguina,3,0,0,3,100.0,Emetic; Purgative; Vermifuge,
+Jatropha gossypifolia,3,0,0,3,100.0,Candlenut; Leprosy; Purgative,
+Fagraea blumei,3,0,0,3,100.0,Birdlime; Fever; Ache(Head),
+Cratoxylon ligustrinum,3,0,0,3,100.0,Fever; Parturition; Toothblack,
+Abelmoschus moschatus,3,1,0,4,75.0,Boil; Stomach; Hysteria,Cancer (1)
+Eugenia malaccensis,3,0,0,3,100.0,Glossitis; Itch; Thrush,
+Orchidantha longiflora,3,0,0,3,100.0,Ache(Back); Ache(Chest); Anodyne,
+Melothria indica,3,0,0,3,100.0,Ophthalmia; Sore; Thrush,
+Rhodamnia trinervia,3,0,0,3,100.0,Ache(Stomach); Parturition; Scald,
+Macaranga triloba,3,0,0,3,100.0,Boil; Ache(Stomach); Abdomen,
+Annona squamosa,3,0,0,3,100.0,Boil; Itch; Pediculicide,
+Alpinia galanga,3,0,0,3,100.0,Parturition; Ringworm; Splenomegaly,
+Myristica fatua,3,0,0,3,100.0,Aphrodisiac; Ache(Head); Hematochezia,
+Achyranthes aspera,3,4,0,7,42.9,Cataract; Convulsion; Hematochezia,Dysentery (5); Ophthalmia (1); Cough (5); Diuretic (3)
+Stereospermum fimbriatum,3,1,0,4,75.0,Itch; Dermatosis; Parturition,Earache (2)
+Flemingia strobilifera,3,0,0,3,100.0,Parturition; Rheumatism; Vermifuge,
+Capparis micracantha,3,0,0,3,100.0,Diuretic; Swelling; Vertigo,
+Lygodium flexuosum,3,0,0,3,100.0,Fever; Ringworm; Dermatosis,
+Indigofera sp.,3,0,0,3,100.0,Ache(Tooth); Yaws; Fever,
+Pellacalyx sp.,3,0,0,3,100.0,Anodyne; Internal; Yaws,
+Piper baccatum,3,0,0,3,100.0,Tonic; Venereal; Cough,
+Connarus grandis,3,0,0,3,100.0,Asthma; Chest; Bronchitis,
+Canthium horridum,3,0,0,3,100.0,Ophthalmia; Wound; Fever,
+Peperomia pellucida,3,1,0,4,75.0,Abdomen; Ache(Head); Anodyne,Fever (1)
+Capsicum sp.,3,1,0,4,75.0,Diarrhea; Dyspepsia; Cholera,Counterirritant (1)
+Melia azederach,3,0,0,3,100.0,Itch; Piscicide; Vermifuge,
+Capparis acuminata,3,0,0,3,100.0,Giddiness; Ache(Stomach); Bilious,
+Hedychium coronarium,3,2,0,5,60.0,Sore(Throat); Tonsillitis; Gargle,Swelling (1); Tumor (12)
+Heynea trijuga,3,0,0,3,100.0,Stupefacient; Cholera; Ranicide,
+Gomphostemma crinitum,3,0,0,3,100.0,Groin; Parturition; Swelling,
+Polyscias fruticosa,3,0,0,3,100.0,Dysuria; Gravel; Stone,
+Lophopyxis pierrei,3,1,0,4,75.0,Sore; Sting(Fish); Poultice,Wound (1)
+Uncaria ferrea,3,0,0,3,100.0,Wound; Enterosis; Sore,
+Polygonum pubescens,3,0,0,3,100.0,Emmenagogue?; Hemostat; Abortive?,
+Jatropha multifida,3,2,0,5,60.0,Dyspepsia; Colic; Piscicide,Purgative (1); Tonic (1)
+Geophila herbacea,3,0,0,3,100.0,Diarrhea; Leg; Sore,
+Helicia artocarpoides,3,0,0,3,100.0,Jaw; Sore; Eye,
+Coleus blumei,3,0,0,3,100.0,Cachexia; Dyspepsia; Ophthalmia,
+Platycerium bifurcatum,3,0,0,3,100.0,Abdomen; Fever; Swelling,
+Rourea minor,3,0,0,3,100.0,Kidneystone?; Poison; Waist,
+Grewia paniculata,3,2,0,5,60.0,Ache(Stomach); Abdomen; Itch,Diarrhea (1); Fever (1)
+Amaryllis belladonna,3,0,0,3,100.0,Contusion; Neck; Swelling,
+Liparis treubii,3,0,0,3,100.0,Constipation; Gastromegaly; Nausea,
+Hibiscus syriacus,3,0,0,3,100.0,Dermatosis; Diuretic; Itch,
+Laportea stimulans,3,0,0,3,100.0,Abscess; Cough; Urticant,
+Dichroa febrifuga,3,1,0,4,75.0,Abdomen; Anodyne; Vermifuge,Fever (3)
+Lumnitzera sexangula,3,0,0,3,100.0,Conjunctivitis; Burn; Shingles,
+Zanthoxylum myriacanthum,3,0,0,3,100.0,Rhinosis; Sore; Syphilis,
+Languas conchigera,3,0,0,3,100.0,Parturition; Rheumatism; Ostealgia,
+Garcinia mangostana,3,3,1,6,50.0,Catarrh; Circumscission; Astringent,Fever (4); Intestine (4); Wound (31)
+Ardisia villosa,3,0,0,3,100.0,Fever; Rheumatism; Diarrhea,
+Stephania hernandiifolia,3,1,0,4,75.0,Abdomen; Anodyne; Enterosis,Fever (17)
+Calamus ornatus,3,0,0,3,100.0,Parturition; Yaws; Anodyne,
+Lasia spinosa,3,2,0,5,60.0,Parturition; Anodyne; Colic,Ache(Stomach) (1); Cough (1)
+Scaevola taccada,3,0,0,3,100.0,Beri-Beri; Cataract; Syphilis,
+Hippeastrum equestre,3,0,0,3,100.0,Bruise; Parotitis; Swelling,
+Hydnophytum formicarium,3,0,0,3,100.0,Ache(Head); Intestine; Hepatitis,
+Dianella javanica,3,0,0,3,100.0,Anodyne; Impotence; Abdomen,
+Ardisia odontophylla,3,0,0,3,100.0,Diarrhea; Fever; Rheumatism,
+Guettarda speciosa,3,1,0,4,75.0,Dysentery; Wound; Abscess,Sore (1)
+Mussaenda glabra,3,0,0,3,100.0,Cough; Enterosis; Ophthalmia,
+Kopsia sp.,3,0,0,3,100.0,Rhinosis; Sore; Syphilis,
+Champereia manillana,3,0,0,3,100.0,Splenomegaly; Ache(Head); Ache(Stomach),
+Micromelum minutum,3,0,0,3,100.0,Ague; Cough; Fever,
+Leptospermum flavescens,3,1,0,4,75.0,Dysmenorrhea; Fever; Apertif,Constipation (1)
+Smilax myosotiflora,3,0,0,3,100.0,Aphrodisiac; Fever; Syphilis,
+Sansevieria trifasciata,3,0,0,3,100.0,Baldness; Itch; Earache,
+Scaphium affine,3,1,0,4,75.0,Dysentery; Fever; Sprue,Cough (1)
+Sarcolobus spanoghei,3,0,0,3,100.0,Felicide; Poison; Canicide,
+Barringtonia macrostachya,3,0,0,3,100.0,Conjunctivitis; Ache(Stomach); Ringworm,
+Uncaria tonkinensis,3,0,0,3,100.0,Depurative; Fever; Masticatory,
+Alocasia wenzelii,3,0,0,3,100.0,Itch; Scorpion; Centipede,
+Desmodium heterocarpum,3,0,0,3,100.0,Cough; Mastitis; Philter,
+Ipomoea pes-tigridis,3,0,0,3,100.0,Pimple; Sore; Boil,
+Aloe vera,3,8,2,11,27.3,Aperient; Gonorrhea; Ache(Head),Alopecia (3); Burn (96); Chest (8); Congestion (2); Swelling (74)
+Clerodendrum fragrans,3,0,0,3,100.0,Ague; Dermatosis; Rheumatism,
+Nicolaia speciosa,3,0,0,3,100.0,Deodorant; Earache; Wound,
+Pancratium zeylanicum,3,0,0,3,100.0,Deafness; Fever; Inflammation,
+Meliosma philippensis,3,0,0,3,100.0,Itch; Skin; Wound,
+Actinodaphne moluccana,3,0,0,3,100.0,Boil; Wound; Splinter,
+Ardisia solanacea,3,0,0,3,100.0,Diarrhea; Fever; Rheumatism,
+Baccaurea motleyana,3,0,0,3,100.0,Conjunctivitis; Ophthalmia; Parturition,
+Gouania tiliaefolia,3,0,0,3,100.0,Deafness; Skin; Soap,
+Rinorea kunstleriana,3,0,0,3,100.0,Rhinosis; Syphilis; Sore,
+Hibiscus esculentus,3,0,0,3,100.0,Dysuria; Gonorrhea; Syphilis,
+Uvaria grandiflora,3,0,0,3,100.0,Cough; Flatulence; Sudorific,
+Aquilaria sp.,3,0,0,3,100.0,Parturition; Palpitation; Smallpox,
+Euphorbia antiquorum,3,0,0,3,100.0,Piscicide; Wart; Poison,
+Melaleuca leucadendron,3,1,0,4,75.0,Rheumatism; Sore(Throat); Neuralgia,Infection (1)
+Salacca wallichiana,3,0,0,3,100.0,Ache(Head); Anodyne; Arthritis,
+Garcinia atroviridis,3,0,0,3,100.0,Ache(Ear); Parturition; Earache,
+Citrus medica,3,2,0,5,60.0,Aperient; Ache(Head); Insanity,Arthritis (1); Ache(Stomach) (2)
+Aralidium pinnatifidum,3,0,0,3,100.0,Boil; Fever; Rheumatism,
+Combretum sundaicum,3,0,0,3,100.0,Boil; Ache(Head); Morphinism (Opiumism),
+Evodia roxburghiana,3,0,0,3,100.0,Emmenagogue; Fever(Remittent); Tonic,
+Houttuynia cordata,3,0,0,3,100.0,Refrigerant; Emmenagogue; Resolvent,
+Salix tetrasperma,3,0,0,3,100.0,Fever; Rhinosis; Sore,
+Pothos scandens,3,1,0,4,75.0,Convulsion; Smallpox; Vermifuge,Asthma (1)
+Stemona moluccana,3,0,0,3,100.0,Polyp(Abdomen); Uterosis; Polyps,
+Hygrophila salicifolia,3,0,0,3,100.0,Ache(Head); Fever; Swelling,
+Alternanthera sessilis,3,2,0,5,60.0,Beriberi; Enterosis; Hematochezia,Wound (6); Fever (1)
+Amomum kepulaga,3,3,0,6,50.0,Halitosis; Hepatosis; Insanity,Rheumatism (1); Cough (1); Cold (4)
+Paspalum scrobiculatum,3,0,0,3,100.0,Alterative; Ophthalmia; Parturition,
+Ehretia navesii,3,3,1,6,50.0,Athlete's-Foot; Piscicide; Anodyne,Internal (33); Ringworm (3); Cough (9)
+Ixora lobbii,3,0,0,3,100.0,Ache(Head); Parturition; Puerperium,
+Peristrophe acuminata,3,0,0,3,100.0,Smallpox; Bite(Snake); Wound,
+Solanum melongena,3,0,0,3,100.0,Piles; Rhinosis; Sore,
+Abutilon indicum,3,3,0,6,50.0,Sore; Wound; Rheumatism,Demulcent (1); Ulcer (1); Fever (2)
+Trema orientalis,3,0,0,3,100.0,Diarrhea; Hematuria; Parturition,
+Vitis cinnamomea,3,0,0,3,100.0,Edema; Sore; Cholera,
+Thunbergia laurifolia,3,1,0,4,75.0,Boil; Deafness; Menorrhagia,Wound (2)
+Neptunia prostrata,3,0,0,3,100.0,Earache; Fever; Syphilis,
+Cuminum cyminum,3,0,0,3,100.0,Dermatosis; Enterosis; Puerperium,
+Bauhinia fulva,3,0,0,3,100.0,Cough; Diarrhea; Fever,
+Mallotus paniculatus,3,2,0,5,60.0,Ache(Head); Malaria; Parturition,Fever (1); Wound (1)
+Shorea harmandii,3,0,0,3,100.0,Astringent; Dysentery; Fungicide,
+Kyllinga brevifolia,3,0,0,3,100.0,Diarrhea; Leg; Sore,
+Shorea sumatrana,3,0,0,3,100.0,Sprue; Thrush; Oilseed,
+Ilex wallichii,3,0,0,3,100.0,Depurative; Tonic; Febrifuge,
+Synedrella nodiflora,3,2,0,5,60.0,Ache(Head); Parturition; Ache(Stomach),Earache (1); Rheumatism (2)
+Cassia fistula,3,2,0,5,60.0,Carbuncle; Dermatosis; Herpes,Purgative (1); Wound (10)
+Derris malaccensis,3,0,0,3,100.0,Insecticide; Piscicide; Larvicide,
+Psychotria sp,3,0,0,3,100.0,Eruption; Puerperium; Skin,
+Thevetia peruviana,3,0,0,3,100.0,Fever; Piscicide; Malaria,
+Dalbergia parviflora,3,0,0,3,100.0,Parturition; Sore; Tonic,
+Heliciopsis artocarpoides,3,0,0,3,100.0,Ophthalmia; Yaws; Sore,
+Ehretia microphylla,3,0,0,3,100.0,Cough; Fever; Stomach,
+Achyranthes nodiflora,3,0,0,3,100.0,Gray hair; Ache(Head); Fever,
+Vitis lanceolaria,3,0,0,3,100.0,Ague; Cough; Boil,
+Rourea floridum,3,0,0,3,100.0,Fever; Parturition; Thrush,
+Neonauclea formicaria,3,0,0,3,100.0,Malaria; Puerperium; Rheumatism,
+Podocarpus sp.,3,0,0,3,100.0,Anodyne; Arthritis; Rheumatism,
+Ixora macrophylla,3,0,0,3,100.0,Ache(Head); Puerperium; Abdomen,
+Homalomena coerulescens,3,0,0,3,100.0,Colic; Fever; Sore,
+Reissantia indica,3,0,0,3,100.0,Parturition; Rheumatism; Fever,
+Artocarpus communis,3,0,0,3,100.0,Ache(Tooth); Dermatosis; Splenomegaly,
+Villebrunea rubescens,3,0,0,3,100.0,Dysuria; Smallpox; Conjunctivitis,
+Apama tomentosa,3,0,0,3,100.0,Diuretic; Bite(Snake); Bugbite,
+Cerbera manghas,3,0,0,3,100.0,Cold; Piscicide; Rheumatism,
+Clerodendrum inerme,3,0,0,3,100.0,Dysentery; Fever; Poultice,
+Actinorhytis calapparia,3,0,0,3,100.0,Itch; Scabies; Scurf,
+Ardisia crispa,3,2,0,5,60.0,Cough; Diarrhea; Earache,Fever (1); Rheumatism (3)
+Pleomele angustifolia,3,0,0,3,100.0,Beriberi; Gonorrhea; Stomach,
+Trigonostemon longifolius,3,0,0,3,100.0,Jellyfish-sting; Bee-sting; Fever,
+Leea gigantea,3,0,0,3,100.0,Fever; Ache(Stomach); Wound,
+Parameria barbata,3,0,0,3,100.0,Dysentery; Uteromegaly; Wound,
+Acalypha siamensis,3,0,0,3,100.0,Bowel; Fever; Renosis,
+Kyllingia monocephala,3,0,0,3,100.0,Diarrhea; Measles; Onychiosis,
+Litchi chinensis,3,1,0,4,75.0,Anodyne; Orchitis; Neuralgia,Intestine (2)
+Embelia ribes,3,0,0,3,100.0,Cough; Diarrhea; Vermifuge?,
+Agelaea trinervis,3,0,0,3,100.0,Aphrodisiac; Rheumatism; Ache(Stomach),
+Macaranga grandifolia,3,0,0,3,100.0,Gargle; Stomatitis; Astringent,
+Rheum officinale,3,2,0,5,60.0,Fumitory; Tonic; Freckles,Cosmetic (2); Purgative (2)
+Manilkara elengi,3,0,0,3,100.0,Fever; Mouthwash; Tonic,
+Macaranga populifolia,3,0,0,3,100.0,Dropsy; Fever; Malaria,
+Apostasia nuda,3,0,0,3,100.0,Diarrhea; Hydrophobia; Ophthalmia,
+Bambusa vulgaris,3,0,0,3,100.0,Hepatosis; Jaundice; Tumor,
+Vanilla griffithii,3,0,0,3,100.0,Cosmetic; Fever; Hair-Tonic,
+Polycarpon prostratum,3,0,0,3,100.0,Cough; Fever; Measles,
+Clerodendrum intermedium,3,0,0,3,100.0,Ache(Head); Stomach; Intestine,
+Hedyotis verticillata,3,0,0,3,100.0,Dysentery; Ache(Stomach); Ache(Head),
+Mikania scandens,3,0,0,3,100.0,Circumscission; Itch; Wound,
+Ageratum conyzoides,3,3,0,6,50.0,Poultice; Boil; Vulnerary,Fever (5); Wound (13); Dysentery (1)
+Voacanga sp,3,0,0,3,100.0,Anodyne; Internal; Abdomen,
+Sarcolobus globosus,3,0,0,3,100.0,Dengue?; Fever; Rheumatism,
+Luvunga sarmentosa,3,0,0,3,100.0,Ostealgia; Rheumatism; Ache(Tooth),
+Dysoxylum cauliflorum,3,0,0,3,100.0,Rheumatism; Enterosis; Poison,
+Sapium indicum,3,0,0,3,100.0,Piscicide; Fever; Gonorrhea,
+Grewia umbellata,3,0,0,3,100.0,Tonic; Fever; Aphrodisiac,
+Brassica juncea,3,0,0,3,100.0,Ache(Head); Syphilis; Emmenagogue,
+Rhinacanthus nasutus,3,2,0,5,60.0,Dermatosis; Dhobi Itch; Prickly heat,Scurf (1); Ringworm (3)
+Cycas circinalis,3,1,0,4,75.0,Flatulence; Hematemesis; Narcotic (Pollen),Swelling (1)
+Scleria pergracilis,3,0,0,3,100.0,Cough; Parturition; Aftosa,
+Flagellaria indica,3,0,0,3,100.0,Pox; Shampoo; Wound,
+Illicium verum,3,2,0,5,60.0,Constipation; Emmenagogue; Parturition,Insomnia (1); Colic (11)
+Didymocarpus reptans,3,0,0,3,100.0,Colic; Constipation; Dysentery,
+Psychotria stipulacea,3,0,0,3,100.0,Dermatosis; Swelling; Fever,
+Adenostemma lavenia,3,1,0,4,75.0,Fever; Ache(Head); Poultice,Diarrhea (1)
+Michelia alba,3,0,0,3,100.0,Malaria; Miscarriage; Sapraemia,
+Cinnamomum pauciflorum,3,0,0,3,100.0,Cardiotonic; Stomachic; Antiseptic,
+Glycosmis cochinchinensis,3,0,0,3,100.0,Abdomen; Splenomegaly; Gall,
+Drymaria cordata,3,1,0,4,75.0,Boil; Poultice; Laxative,Fever (2)
+Blumea myriocephala,3,0,0,3,100.0,Bronchitis; Cataplasm; Rheumatism,
+Nepenthes sp.,3,0,0,3,100.0,Enuresis; Ache(Stomach); Incontinence,
+Allophylus sp,3,0,0,3,100.0,Abdomen; Burn; Sore,
+Vitis mollissima,3,0,0,3,100.0,Anodyne; Swelling; Labor,
+Rorippa dufia,3,0,0,3,100.0,Diuretic; Scurvy; Stimulant,
+Psychotria montana,3,0,0,3,100.0,Fever; Sore; Splenomegaly,
+Salacia prinoides,3,0,0,3,100.0,Amenorrhea; Dysmenorrhea; Abortifacient,
+Croton caudatum,3,0,0,3,100.0,Cold; Fever; Purgative,
+Breynia cernua,3,0,0,3,100.0,Leg; Salve; Swelling,
+Decaspermum fruticosum,3,0,0,3,100.0,Gingivosis; Pyrorrhea?; Dysentery,
+Liquidambar orientale,3,0,0,3,100.0,Wound; Mucus-Mover; Rheumatism,
+Citrus maxima,3,0,0,3,100.0,Sore; Swelling; Anodyne,
+Oryza sativas,3,1,0,4,75.0,Ophthalmia; Sapraemia; Carbuncle,Diarrhea (7)
+Hedychium longecornutum,3,0,0,3,100.0,Earache; Syphilis; Vermifuge,
+Hippocratea indica,3,0,0,3,100.0,Parturition; Rheumatism; Tonic,
+Ananas comosus,3,1,0,4,75.0,Diphtheria; Emmenagogue; Vermifuge,Abortifacient (5)
+Desmos chinensis,3,0,0,3,100.0,Dysentery; Parturition; Vertigo,
+Ervatamia cylindrocarpa,3,0,0,3,100.0,Beriberi; Itch; Eczema,
+Selaginella atroviridis,3,0,0,3,100.0,Asthma; Buboes; Rheumatism,
+Clitorea ternatea,3,0,0,3,100.0,Arthritis; Conjunctivitis; Cathartic,
+Roureopsis pubinervis,3,0,0,3,100.0,Ague; Anodyne; Fever,
+Biophytum reinwardtii,3,0,0,3,100.0,Smallpox; Dermatosis; Rash,
+Cordia dichotoma,3,1,0,4,75.0,Tumor(Breast); Dysentery; Dyspepsia,Fever (1)
+Solanum nigrum,3,1,1,4,75.0,Dropsy; Leucoderma; Yaws,Cancer (117)
+Hodgsonia capniocarpa,3,0,0,3,100.0,Mastalgia; Rhinosis; Sore,
+Terminalia bellirica,3,0,0,3,100.0,Parturition; Narcotic; Astringent,
+Rhodomyrtus tomentosa,3,2,0,5,60.0,Corneosis; Parturition; Ache(Stomach),Dysentery (5); Wound (7)
+Memecylon dichotomum,3,0,0,3,100.0,Parturition; Rheumatism; Vertigo,
+Angiopteris evecta,3,0,0,3,100.0,Deobstruent; Cough; Hemostat,
+Loranthus ferrugineus,3,1,0,4,75.0,Malaria; Parturition; Bite(Snake),Wound (1)
+Rubus rosaefolius,3,0,0,3,100.0,Hematemesis; Fever; Enuresis,
+Salacca conferta,3,0,0,3,100.0,Antidote(Antiaris); Cough; Hoarseness,
+Luffa acutangula,3,0,0,3,100.0,Amenorrhea; Parturition; Uremia,
+Vigna radiata,3,0,0,3,100.0,Beri-Beri; Diuretic; Vertigo,
+Cassia obtusifolia,3,2,0,5,60.0,Nausea; Parturition; Ache(Stomach),Constipation (10); Purgative (1)
+Dalbergia tamarindifolia,3,1,0,4,75.0,Itch; Nerves; Varices,Cough (2)

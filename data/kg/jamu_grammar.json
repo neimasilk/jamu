@@ -1,0 +1,1962 @@
+{
+  "herb_roles": {
+    "Alpinia galanga SW.": {
+      "role": "umum",
+      "total_formulas": 71,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.576,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 89,
+      "mean_position": 0.009
+    },
+    "Amomum cardamomum Willd": {
+      "role": "penyeimbang",
+      "total_formulas": 417,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.284,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 199,
+      "mean_position": 0.051
+    },
+    "Curcuma domestica Val": {
+      "role": "kurir",
+      "total_formulas": 1026,
+      "solo_count": 13,
+      "solo_ratio": 0.013,
+      "specificity": 0.305,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 321,
+      "mean_position": 0.245
+    },
+    "Curcuma xanthorrhiza Roxb": {
+      "role": "umum",
+      "total_formulas": 1474,
+      "solo_count": 55,
+      "solo_ratio": 0.037,
+      "specificity": 0.375,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 371,
+      "mean_position": 0.343
+    },
+    "Zingiber officinale Rosc": {
+      "role": "kurir",
+      "total_formulas": 1256,
+      "solo_count": 13,
+      "solo_ratio": 0.01,
+      "specificity": 0.519,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 362,
+      "mean_position": 0.987
+    },
+    "Zingiber purpureum Roxb": {
+      "role": "penyeimbang",
+      "total_formulas": 195,
+      "solo_count": 1,
+      "solo_ratio": 0.005,
+      "specificity": 0.336,
+      "top_effect": "Disorders of appetite",
+      "n_partners": 174,
+      "mean_position": 0.993
+    },
+    "Clausena anisum-olens Merr.": {
+      "role": "umum",
+      "total_formulas": 125,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.485,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 92,
+      "mean_position": 0.115
+    },
+    "Glycyrrhiza glabra L.": {
+      "role": "kurir",
+      "total_formulas": 279,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.252,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 319,
+      "mean_position": 0.483
+    },
+    "Kaempferia galanga L.": {
+      "role": "umum",
+      "total_formulas": 702,
+      "solo_count": 3,
+      "solo_ratio": 0.004,
+      "specificity": 0.497,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 243,
+      "mean_position": 0.488
+    },
+    "Carum copticum (L.) Benth": {
+      "role": "penyeimbang",
+      "total_formulas": 115,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.329,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 150,
+      "mean_position": 0.18
+    },
+    "Panax ginseng L.": {
+      "role": "umum",
+      "total_formulas": 285,
+      "solo_count": 10,
+      "solo_ratio": 0.035,
+      "specificity": 0.697,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 264,
+      "mean_position": 0.583
+    },
+    "Piper nigrum L": {
+      "role": "menteri",
+      "total_formulas": 441,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.727,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 198,
+      "mean_position": 0.684
+    },
+    "Boesenbergia pandurata (Roxb.) Schlecht": {
+      "role": "penyeimbang",
+      "total_formulas": 199,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.28,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 158,
+      "mean_position": 0.091
+    },
+    "Imperata cylindrica Beauv.": {
+      "role": "umum",
+      "total_formulas": 209,
+      "solo_count": 7,
+      "solo_ratio": 0.033,
+      "specificity": 0.308,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 204,
+      "mean_position": 0.469
+    },
+    "Piper retrofractum Vahl.": {
+      "role": "umum",
+      "total_formulas": 696,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.728,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 222,
+      "mean_position": 0.727
+    },
+    "Quercus lusitanica Lamk.": {
+      "role": "menteri",
+      "total_formulas": 108,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.692,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 120,
+      "mean_position": 0.886
+    },
+    "Coriandrum sativum L": {
+      "role": "penyeimbang",
+      "total_formulas": 262,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.267,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 180,
+      "mean_position": 0.217
+    },
+    "Zingiber aromaticum Val": {
+      "role": "umum",
+      "total_formulas": 437,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.549,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 199,
+      "mean_position": 0.892
+    },
+    "Baeckea frutescens L.": {
+      "role": "umum",
+      "total_formulas": 92,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.465,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 119,
+      "mean_position": 0.095
+    },
+    "Woodfordia floribunda Salisb.": {
+      "role": "penyeimbang",
+      "total_formulas": 70,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.283,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 113,
+      "mean_position": 0.934
+    },
+    "Myristica fragrans Houtt.": {
+      "role": "umum",
+      "total_formulas": 344,
+      "solo_count": 3,
+      "solo_ratio": 0.009,
+      "specificity": 0.465,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 205,
+      "mean_position": 0.603
+    },
+    "Pluchea indica Less": {
+      "role": "umum",
+      "total_formulas": 93,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.481,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 125,
+      "mean_position": 0.799
+    },
+    "Punica granatum L": {
+      "role": "umum",
+      "total_formulas": 191,
+      "solo_count": 1,
+      "solo_ratio": 0.005,
+      "specificity": 0.55,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 166,
+      "mean_position": 0.858
+    },
+    "Caesalpinia sappan L": {
+      "role": "penyeimbang",
+      "total_formulas": 100,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.203,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 159,
+      "mean_position": 0.135
+    },
+    "Centella asiatica Urb": {
+      "role": "umum",
+      "total_formulas": 349,
+      "solo_count": 15,
+      "solo_ratio": 0.043,
+      "specificity": 0.321,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 208,
+      "mean_position": 0.201
+    },
+    "Alyxia reinwardtii Bl.": {
+      "role": "penyeimbang",
+      "total_formulas": 466,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.286,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 228,
+      "mean_position": 0.02
+    },
+    "Blumea balsamifera DC.": {
+      "role": "penyeimbang",
+      "total_formulas": 218,
+      "solo_count": 1,
+      "solo_ratio": 0.005,
+      "specificity": 0.257,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 172,
+      "mean_position": 0.12
+    },
+    "Foeniculum vulgare Mill.": {
+      "role": "penyeimbang",
+      "total_formulas": 698,
+      "solo_count": 4,
+      "solo_ratio": 0.006,
+      "specificity": 0.294,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 258,
+      "mean_position": 0.5
+    },
+    "Mentha arvensis L": {
+      "role": "umum",
+      "total_formulas": 133,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.47,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 156,
+      "mean_position": 0.58
+    },
+    "Nigella sativa L.": {
+      "role": "umum",
+      "total_formulas": 237,
+      "solo_count": 35,
+      "solo_ratio": 0.148,
+      "specificity": 0.373,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 170,
+      "mean_position": 0.569
+    },
+    "Parkia roxburghii G.Don": {
+      "role": "penyeimbang",
+      "total_formulas": 310,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.291,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 173,
+      "mean_position": 0.659
+    },
+    "Sonchus arvensis L": {
+      "role": "umum",
+      "total_formulas": 139,
+      "solo_count": 6,
+      "solo_ratio": 0.043,
+      "specificity": 0.403,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 104,
+      "mean_position": 0.839
+    },
+    "Cyperus rotundus L": {
+      "role": "umum",
+      "total_formulas": 84,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.508,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 150,
+      "mean_position": 0.343
+    },
+    "Plantago major L": {
+      "role": "umum",
+      "total_formulas": 130,
+      "solo_count": 2,
+      "solo_ratio": 0.015,
+      "specificity": 0.418,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 162,
+      "mean_position": 0.697
+    },
+    "Curcuma aeruginosa Roxb": {
+      "role": "penyeimbang",
+      "total_formulas": 212,
+      "solo_count": 2,
+      "solo_ratio": 0.009,
+      "specificity": 0.304,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 157,
+      "mean_position": 0.234
+    },
+    "Parameria laevigata (Juss.) Moldenke": {
+      "role": "umum",
+      "total_formulas": 302,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.532,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 167,
+      "mean_position": 0.644
+    },
+    "Orthosiphon spicatus B.B.S.": {
+      "role": "umum",
+      "total_formulas": 365,
+      "solo_count": 7,
+      "solo_ratio": 0.019,
+      "specificity": 0.444,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 181,
+      "mean_position": 0.569
+    },
+    "Piper cubeba L.f.": {
+      "role": "penyeimbang",
+      "total_formulas": 218,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.329,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 169,
+      "mean_position": 0.734
+    },
+    "Psidium guajava L": {
+      "role": "menteri",
+      "total_formulas": 75,
+      "solo_count": 6,
+      "solo_ratio": 0.08,
+      "specificity": 0.711,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 100,
+      "mean_position": 0.817
+    },
+    "Elephantopus scaber L.": {
+      "role": "umum",
+      "total_formulas": 136,
+      "solo_count": 3,
+      "solo_ratio": 0.022,
+      "specificity": 0.325,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 139,
+      "mean_position": 0.388
+    },
+    "Equisetum debile Roxb.": {
+      "role": "menteri",
+      "total_formulas": 52,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.769,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 71,
+      "mean_position": 0.317
+    },
+    "Allium sativum": {
+      "role": "umum",
+      "total_formulas": 149,
+      "solo_count": 14,
+      "solo_ratio": 0.094,
+      "specificity": 0.432,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 153,
+      "mean_position": 0.023
+    },
+    "Areca catechu L": {
+      "role": "penyeimbang",
+      "total_formulas": 169,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.391,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 165,
+      "mean_position": 0.089
+    },
+    "Cinnamomum burmani Bl": {
+      "role": "umum",
+      "total_formulas": 365,
+      "solo_count": 6,
+      "solo_ratio": 0.016,
+      "specificity": 0.405,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 273,
+      "mean_position": 0.203
+    },
+    "Massoia aromatica Becc.": {
+      "role": "menteri",
+      "total_formulas": 80,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.651,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 119,
+      "mean_position": 0.588
+    },
+    "Morinda citrifolia L": {
+      "role": "raja",
+      "total_formulas": 236,
+      "solo_count": 55,
+      "solo_ratio": 0.233,
+      "specificity": 0.71,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 192,
+      "mean_position": 0.615
+    },
+    "Piper betle L": {
+      "role": "umum",
+      "total_formulas": 400,
+      "solo_count": 7,
+      "solo_ratio": 0.018,
+      "specificity": 0.453,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 231,
+      "mean_position": 0.756
+    },
+    "Apium graveolens L": {
+      "role": "menteri",
+      "total_formulas": 56,
+      "solo_count": 3,
+      "solo_ratio": 0.054,
+      "specificity": 0.71,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 88,
+      "mean_position": 0.118
+    },
+    "Cymbopogon nardus L. Rendle": {
+      "role": "umum",
+      "total_formulas": 53,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.41,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 111,
+      "mean_position": 0.292
+    },
+    "Mentha piperita L": {
+      "role": "umum",
+      "total_formulas": 95,
+      "solo_count": 2,
+      "solo_ratio": 0.021,
+      "specificity": 0.386,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 119,
+      "mean_position": 0.72
+    },
+    "Guazuma ulmifolia Lamk.": {
+      "role": "menteri",
+      "total_formulas": 328,
+      "solo_count": 3,
+      "solo_ratio": 0.009,
+      "specificity": 0.668,
+      "top_effect": "Disorders of appetite",
+      "n_partners": 147,
+      "mean_position": 0.456
+    },
+    "Graptophyllum pictum Griff": {
+      "role": "menteri",
+      "total_formulas": 53,
+      "solo_count": 6,
+      "solo_ratio": 0.113,
+      "specificity": 0.885,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 73,
+      "mean_position": 0.601
+    },
+    "Aloe vera L.": {
+      "role": "umum",
+      "total_formulas": 65,
+      "solo_count": 3,
+      "solo_ratio": 0.046,
+      "specificity": 0.556,
+      "top_effect": "Wounds and skin infections",
+      "n_partners": 108,
+      "mean_position": 0.046
+    },
+    "Phyllanthus niruri L": {
+      "role": "umum",
+      "total_formulas": 305,
+      "solo_count": 14,
+      "solo_ratio": 0.046,
+      "specificity": 0.357,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 173,
+      "mean_position": 0.697
+    },
+    "Eurycoma longifolia Jack.": {
+      "role": "menteri",
+      "total_formulas": 200,
+      "solo_count": 7,
+      "solo_ratio": 0.035,
+      "specificity": 0.944,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 130,
+      "mean_position": 0.238
+    },
+    "Theae sinensis": {
+      "role": "penyeimbang",
+      "total_formulas": 74,
+      "solo_count": 1,
+      "solo_ratio": 0.014,
+      "specificity": 0.311,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 105,
+      "mean_position": 0.917
+    },
+    "Soya max Piper": {
+      "role": "umum",
+      "total_formulas": 50,
+      "solo_count": 1,
+      "solo_ratio": 0.02,
+      "specificity": 0.368,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 83,
+      "mean_position": 0.759
+    },
+    "Caryophyllus aromaticus L.": {
+      "role": "umum",
+      "total_formulas": 263,
+      "solo_count": 6,
+      "solo_ratio": 0.023,
+      "specificity": 0.284,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 198,
+      "mean_position": 0.169
+    },
+    "Citrus aurantifolia": {
+      "role": "umum",
+      "total_formulas": 86,
+      "solo_count": 3,
+      "solo_ratio": 0.035,
+      "specificity": 0.324,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 146,
+      "mean_position": 0.187
+    },
+    "Languas galanga (L.) Stuntz": {
+      "role": "menteri",
+      "total_formulas": 291,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.613,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 164,
+      "mean_position": 0.475
+    },
+    "Piperis Albi": {
+      "role": "umum",
+      "total_formulas": 52,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.588,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 82,
+      "mean_position": 0.767
+    },
+    "Andrographis paniculata Ness": {
+      "role": "umum",
+      "total_formulas": 500,
+      "solo_count": 20,
+      "solo_ratio": 0.04,
+      "specificity": 0.446,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 229,
+      "mean_position": 0.062
+    },
+    "Curcuma zedoaria (Berg.) Roscoe": {
+      "role": "raja",
+      "total_formulas": 89,
+      "solo_count": 18,
+      "solo_ratio": 0.202,
+      "specificity": 0.341,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 88,
+      "mean_position": 0.415
+    },
+    "Abrus precatorius L.": {
+      "role": "umum",
+      "total_formulas": 67,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.429,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 91,
+      "mean_position": 0.0
+    },
+    "Alstonia macrophylla Wall. Ex G. Don.": {
+      "role": "penyeimbang",
+      "total_formulas": 115,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.333,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 129,
+      "mean_position": 0.014
+    },
+    "Rheum officinale Baill": {
+      "role": "penyeimbang",
+      "total_formulas": 131,
+      "solo_count": 2,
+      "solo_ratio": 0.015,
+      "specificity": 0.359,
+      "top_effect": "Disorders of appetite",
+      "n_partners": 185,
+      "mean_position": 0.893
+    },
+    "Zea mays L": {
+      "role": "umum",
+      "total_formulas": 73,
+      "solo_count": 3,
+      "solo_ratio": 0.041,
+      "specificity": 0.294,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 122,
+      "mean_position": 0.966
+    },
+    "Dioscorea hispida Dennust": {
+      "role": "menteri",
+      "total_formulas": 50,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.645,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 127,
+      "mean_position": 0.363
+    },
+    "Galla halepensis": {
+      "role": "umum",
+      "total_formulas": 127,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.505,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 101,
+      "mean_position": 0.435
+    },
+    "Kaempferia angustifolia Rosc.": {
+      "role": "umum",
+      "total_formulas": 80,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.5,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 109,
+      "mean_position": 0.471
+    },
+    "Murraya paniculata Jacq": {
+      "role": "menteri",
+      "total_formulas": 116,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.615,
+      "top_effect": "Disorders of appetite",
+      "n_partners": 103,
+      "mean_position": 0.619
+    },
+    "Eucalyptus alba Reinw": {
+      "role": "raja",
+      "total_formulas": 287,
+      "solo_count": 91,
+      "solo_ratio": 0.317,
+      "specificity": 0.788,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 102,
+      "mean_position": 0.585
+    },
+    "Cocos nucifera L.": {
+      "role": "menteri",
+      "total_formulas": 278,
+      "solo_count": 37,
+      "solo_ratio": 0.133,
+      "specificity": 0.683,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 136,
+      "mean_position": 0.246
+    },
+    "Camellia sinensis (L.) O.K.": {
+      "role": "umum",
+      "total_formulas": 70,
+      "solo_count": 3,
+      "solo_ratio": 0.043,
+      "specificity": 0.541,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 93,
+      "mean_position": 0.107
+    },
+    "Angelica sinensis (Oliv.) Diels": {
+      "role": "umum",
+      "total_formulas": 50,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.588,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 127,
+      "mean_position": 0.044
+    },
+    "Carthamus tinctorius L.": {
+      "role": "penyeimbang",
+      "total_formulas": 51,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.368,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 144,
+      "mean_position": 0.209
+    },
+    "Sericocalyx crispus (L.) Bremek.": {
+      "role": "umum",
+      "total_formulas": 74,
+      "solo_count": 1,
+      "solo_ratio": 0.014,
+      "specificity": 0.529,
+      "top_effect": "Urinary related problems",
+      "n_partners": 78,
+      "mean_position": 0.761
+    },
+    "Helicteres isora L.": {
+      "role": "penyeimbang",
+      "total_formulas": 84,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.354,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 112,
+      "mean_position": 0.517
+    },
+    "Syzygium polyanthum Wigh Walp": {
+      "role": "umum",
+      "total_formulas": 125,
+      "solo_count": 3,
+      "solo_ratio": 0.024,
+      "specificity": 0.583,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 120,
+      "mean_position": 0.891
+    },
+    "Andropogon citratus DC.": {
+      "role": "umum",
+      "total_formulas": 72,
+      "solo_count": 10,
+      "solo_ratio": 0.139,
+      "specificity": 0.56,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 72,
+      "mean_position": 0.059
+    },
+    "Carica papaya L.": {
+      "role": "umum",
+      "total_formulas": 97,
+      "solo_count": 4,
+      "solo_ratio": 0.041,
+      "specificity": 0.308,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 137,
+      "mean_position": 0.164
+    },
+    "Tinospora tuberculata Beumee": {
+      "role": "penyeimbang",
+      "total_formulas": 133,
+      "solo_count": 2,
+      "solo_ratio": 0.015,
+      "specificity": 0.333,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 122,
+      "mean_position": 0.932
+    },
+    "Gynura procumbens L. Merr.": {
+      "role": "umum",
+      "total_formulas": 71,
+      "solo_count": 9,
+      "solo_ratio": 0.127,
+      "specificity": 0.475,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 97,
+      "mean_position": 0.493
+    },
+    "Talinum paniculatum Gaertn": {
+      "role": "menteri",
+      "total_formulas": 65,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.875,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 71,
+      "mean_position": 0.789
+    },
+    "Curcuma heyneana Val.": {
+      "role": "umum",
+      "total_formulas": 110,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.519,
+      "top_effect": "Disorders of appetite",
+      "n_partners": 127,
+      "mean_position": 0.274
+    },
+    "Melaleuca cajuputi Powell": {
+      "role": "umum",
+      "total_formulas": 113,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.402,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 142,
+      "mean_position": 0.63
+    },
+    "Tribulus terrestris": {
+      "role": "menteri",
+      "total_formulas": 52,
+      "solo_count": 5,
+      "solo_ratio": 0.096,
+      "specificity": 0.833,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 68,
+      "mean_position": 0.842
+    },
+    "Usnea misaminensis (Vain) Not.": {
+      "role": "penyeimbang",
+      "total_formulas": 85,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.305,
+      "top_effect": "Pain/inflammation",
+      "n_partners": 121,
+      "mean_position": 0.908
+    },
+    "Phaleria macrocarpa (Scheff.)Boerl.": {
+      "role": "raja",
+      "total_formulas": 97,
+      "solo_count": 27,
+      "solo_ratio": 0.278,
+      "specificity": 0.667,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 73,
+      "mean_position": 0.701
+    },
+    "Momordica charantia L": {
+      "role": "menteri",
+      "total_formulas": 54,
+      "solo_count": 2,
+      "solo_ratio": 0.037,
+      "specificity": 0.788,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 81,
+      "mean_position": 0.528
+    },
+    "Tamarindus indica L.": {
+      "role": "umum",
+      "total_formulas": 134,
+      "solo_count": 3,
+      "solo_ratio": 0.022,
+      "specificity": 0.488,
+      "top_effect": "Female reproductive organ problems",
+      "n_partners": 102,
+      "mean_position": 0.907
+    },
+    "Zingiber zerumbet SM": {
+      "role": "umum",
+      "total_formulas": 113,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.528,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 110,
+      "mean_position": 1.0
+    },
+    "Trigonella foenum-graecum L.": {
+      "role": "penyeimbang",
+      "total_formulas": 62,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.343,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 123,
+      "mean_position": 0.904
+    },
+    "Strychnos ligustrina Bl": {
+      "role": "penyeimbang",
+      "total_formulas": 93,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.279,
+      "top_effect": "Gastrointestinal disorders",
+      "n_partners": 124,
+      "mean_position": 0.881
+    },
+    "Oryza sativa L.": {
+      "role": "umum",
+      "total_formulas": 111,
+      "solo_count": 2,
+      "solo_ratio": 0.018,
+      "specificity": 0.418,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 151,
+      "mean_position": 0.675
+    },
+    "Cinnamomum sintok Bl.": {
+      "role": "umum",
+      "total_formulas": 74,
+      "solo_count": 0,
+      "solo_ratio": 0.0,
+      "specificity": 0.576,
+      "top_effect": "Musculoskeletal and connective tissue disorders",
+      "n_partners": 101,
+      "mean_position": 0.197
+    }
+  },
+  "forbidden_combinations": [
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Piper retrofractum Vahl.",
+      "freq1": 277,
+      "freq2": 696,
+      "expected_overlap": 36.30734463276836
+    },
+    {
+      "herb1": "Andrographis paniculata Ness",
+      "herb2": "Eucalyptus alba Reinw",
+      "freq1": 500,
+      "freq2": 287,
+      "expected_overlap": 27.024482109227872
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Orthosiphon spicatus B.B.S.",
+      "freq1": 277,
+      "freq2": 365,
+      "expected_overlap": 19.040489642184557
+    },
+    {
+      "herb1": "Centella asiatica Urb",
+      "herb2": "Cocos nucifera L.",
+      "freq1": 349,
+      "freq2": 277,
+      "expected_overlap": 18.20583804143126
+    },
+    {
+      "herb1": "Guazuma ulmifolia Lamk.",
+      "herb2": "Panax ginseng L.",
+      "freq1": 328,
+      "freq2": 285,
+      "expected_overlap": 17.6045197740113
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Guazuma ulmifolia Lamk.",
+      "freq1": 277,
+      "freq2": 328,
+      "expected_overlap": 17.110357815442562
+    },
+    {
+      "herb1": "Panax ginseng L.",
+      "herb2": "Parameria laevigata (Juss.) Moldenke",
+      "freq1": 285,
+      "freq2": 302,
+      "expected_overlap": 16.2090395480226
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Parkia roxburghii G.Don",
+      "freq1": 277,
+      "freq2": 310,
+      "expected_overlap": 16.171374764595104
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Phyllanthus niruri L",
+      "freq1": 277,
+      "freq2": 305,
+      "expected_overlap": 15.910546139359699
+    },
+    {
+      "herb1": "Eucalyptus alba Reinw",
+      "herb2": "Panax ginseng L.",
+      "freq1": 287,
+      "freq2": 285,
+      "expected_overlap": 15.403954802259888
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Coriandrum sativum L",
+      "freq1": 277,
+      "freq2": 262,
+      "expected_overlap": 13.667419962335217
+    },
+    {
+      "herb1": "Blumea balsamifera DC.",
+      "herb2": "Eucalyptus alba Reinw",
+      "freq1": 218,
+      "freq2": 287,
+      "expected_overlap": 11.782674199623353
+    },
+    {
+      "herb1": "Curcuma aeruginosa Roxb",
+      "herb2": "Eucalyptus alba Reinw",
+      "freq1": 212,
+      "freq2": 287,
+      "expected_overlap": 11.458380414312618
+    },
+    {
+      "herb1": "Eurycoma longifolia Jack.",
+      "herb2": "Parameria laevigata (Juss.) Moldenke",
+      "freq1": 200,
+      "freq2": 302,
+      "expected_overlap": 11.374764595103578
+    },
+    {
+      "herb1": "Blumea balsamifera DC.",
+      "herb2": "Cocos nucifera L.",
+      "freq1": 218,
+      "freq2": 277,
+      "expected_overlap": 11.372128060263654
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Curcuma aeruginosa Roxb",
+      "freq1": 277,
+      "freq2": 212,
+      "expected_overlap": 11.059133709981168
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Punica granatum L",
+      "freq1": 277,
+      "freq2": 191,
+      "expected_overlap": 9.963653483992466
+    },
+    {
+      "herb1": "Boesenbergia pandurata (Roxb.) Schlecht",
+      "herb2": "Eurycoma longifolia Jack.",
+      "freq1": 199,
+      "freq2": 200,
+      "expected_overlap": 7.495291902071563
+    },
+    {
+      "herb1": "Eurycoma longifolia Jack.",
+      "herb2": "Zingiber purpureum Roxb",
+      "freq1": 200,
+      "freq2": 195,
+      "expected_overlap": 7.344632768361582
+    },
+    {
+      "herb1": "Glycyrrhiza glabra L.",
+      "herb2": "Sonchus arvensis L",
+      "freq1": 279,
+      "freq2": 139,
+      "expected_overlap": 7.303389830508475
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Sonchus arvensis L",
+      "freq1": 277,
+      "freq2": 139,
+      "expected_overlap": 7.251035781544256
+    },
+    {
+      "herb1": "Eucalyptus alba Reinw",
+      "herb2": "Tamarindus indica L.",
+      "freq1": 287,
+      "freq2": 134,
+      "expected_overlap": 7.24256120527307
+    },
+    {
+      "herb1": "Eurycoma longifolia Jack.",
+      "herb2": "Punica granatum L",
+      "freq1": 200,
+      "freq2": 191,
+      "expected_overlap": 7.1939736346516
+    },
+    {
+      "herb1": "Parameria laevigata (Juss.) Moldenke",
+      "herb2": "Syzygium polyanthum Wigh Walp",
+      "freq1": 302,
+      "freq2": 125,
+      "expected_overlap": 7.109227871939736
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Elephantopus scaber L.",
+      "freq1": 277,
+      "freq2": 136,
+      "expected_overlap": 7.094538606403013
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Mentha arvensis L",
+      "freq1": 277,
+      "freq2": 133,
+      "expected_overlap": 6.93804143126177
+    },
+    {
+      "herb1": "Eucalyptus alba Reinw",
+      "herb2": "Galla halepensis",
+      "freq1": 287,
+      "freq2": 127,
+      "expected_overlap": 6.864218455743879
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Plantago major L",
+      "freq1": 277,
+      "freq2": 130,
+      "expected_overlap": 6.781544256120528
+    },
+    {
+      "herb1": "Eucalyptus alba Reinw",
+      "herb2": "Syzygium polyanthum Wigh Walp",
+      "freq1": 287,
+      "freq2": 125,
+      "expected_overlap": 6.756120527306968
+    },
+    {
+      "herb1": "Cocos nucifera L.",
+      "herb2": "Syzygium polyanthum Wigh Walp",
+      "freq1": 277,
+      "freq2": 125,
+      "expected_overlap": 6.520715630885123
+    }
+  ],
+  "effect_subnetworks": {
+    "Gastrointestinal disorders": {
+      "n_formulas": 988,
+      "mean_herbs": 3.4342105263157894,
+      "signature_herbs": [
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 252,
+          "pct": 25.5
+        },
+        {
+          "herb": "Eucalyptus alba Reinw",
+          "count": 212,
+          "pct": 21.5
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Cocos nucifera L.",
+            "Eucalyptus alba Reinw"
+          ],
+          "count": 112
+        },
+        {
+          "pair": [
+            "Eucalyptus alba Reinw",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 77
+        },
+        {
+          "pair": [
+            "Cocos nucifera L.",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 75
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 68
+        },
+        {
+          "pair": [
+            "Clausena anisum-olens Merr.",
+            "Eucalyptus alba Reinw"
+          ],
+          "count": 48
+        },
+        {
+          "pair": [
+            "Clausena anisum-olens Merr.",
+            "Cocos nucifera L."
+          ],
+          "count": 43
+        },
+        {
+          "pair": [
+            "Andrographis paniculata Ness",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 42
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 33
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 32
+        },
+        {
+          "pair": [
+            "Alyxia reinwardtii Bl.",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 31
+        }
+      ]
+    },
+    "Musculoskeletal and connective tissue disorders": {
+      "n_formulas": 863,
+      "mean_herbs": 5.971031286210892,
+      "signature_herbs": [
+        {
+          "herb": "Zingiber officinale Rosc",
+          "count": 440,
+          "pct": 51.0
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 357,
+          "pct": 41.4
+        },
+        {
+          "herb": "Piper retrofractum Vahl.",
+          "count": 343,
+          "pct": 39.7
+        },
+        {
+          "herb": "Kaempferia galanga L.",
+          "count": 254,
+          "pct": 29.4
+        },
+        {
+          "herb": "Piper nigrum L",
+          "count": 208,
+          "pct": 24.1
+        },
+        {
+          "herb": "Zingiber aromaticum Val",
+          "count": 178,
+          "pct": 20.6
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Piper retrofractum Vahl.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 211
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 210
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Piper retrofractum Vahl."
+          ],
+          "count": 174
+        },
+        {
+          "pair": [
+            "Kaempferia galanga L.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 160
+        },
+        {
+          "pair": [
+            "Piper nigrum L",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 137
+        },
+        {
+          "pair": [
+            "Piper retrofractum Vahl.",
+            "Zingiber aromaticum Val"
+          ],
+          "count": 122
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Kaempferia galanga L."
+          ],
+          "count": 119
+        },
+        {
+          "pair": [
+            "Zingiber aromaticum Val",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 115
+        },
+        {
+          "pair": [
+            "Kaempferia galanga L.",
+            "Piper retrofractum Vahl."
+          ],
+          "count": 114
+        },
+        {
+          "pair": [
+            "Piper nigrum L",
+            "Piper retrofractum Vahl."
+          ],
+          "count": 107
+        }
+      ]
+    },
+    "Female reproductive organ problems": {
+      "n_formulas": 405,
+      "mean_herbs": 5.77283950617284,
+      "signature_herbs": [
+        {
+          "herb": "Curcuma domestica Val",
+          "count": 201,
+          "pct": 49.6
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 121,
+          "pct": 29.9
+        },
+        {
+          "herb": "Parameria laevigata (Juss.) Moldenke",
+          "count": 109,
+          "pct": 26.9
+        },
+        {
+          "herb": "Piper betle L",
+          "count": 106,
+          "pct": 26.2
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 55
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Piper betle L"
+          ],
+          "count": 54
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Parameria laevigata (Juss.) Moldenke"
+          ],
+          "count": 50
+        },
+        {
+          "pair": [
+            "Parameria laevigata (Juss.) Moldenke",
+            "Piper betle L"
+          ],
+          "count": 41
+        },
+        {
+          "pair": [
+            "Alyxia reinwardtii Bl.",
+            "Curcuma domestica Val"
+          ],
+          "count": 41
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 39
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Tamarindus indica L."
+          ],
+          "count": 39
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Kaempferia galanga L."
+          ],
+          "count": 37
+        },
+        {
+          "pair": [
+            "Alyxia reinwardtii Bl.",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 36
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 33
+        }
+      ]
+    },
+    "Pain/inflammation": {
+      "n_formulas": 315,
+      "mean_herbs": 5.352380952380952,
+      "signature_herbs": [
+        {
+          "herb": "Zingiber officinale Rosc",
+          "count": 165,
+          "pct": 52.4
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 75,
+          "pct": 23.8
+        },
+        {
+          "herb": "Foeniculum vulgare Mill.",
+          "count": 74,
+          "pct": 23.5
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Foeniculum vulgare Mill.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 53
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 43
+        },
+        {
+          "pair": [
+            "Mentha arvensis L",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 43
+        },
+        {
+          "pair": [
+            "Kaempferia galanga L.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 39
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 38
+        },
+        {
+          "pair": [
+            "Parkia roxburghii G.Don",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 35
+        },
+        {
+          "pair": [
+            "Caryophyllus aromaticus L.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 33
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 32
+        },
+        {
+          "pair": [
+            "Piper retrofractum Vahl.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 31
+        },
+        {
+          "pair": [
+            "Myristica fragrans Houtt.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 31
+        }
+      ]
+    },
+    "Respiratory disease": {
+      "n_formulas": 107,
+      "mean_herbs": 6.205607476635514,
+      "signature_herbs": [
+        {
+          "herb": "Zingiber officinale Rosc",
+          "count": 53,
+          "pct": 49.5
+        },
+        {
+          "herb": "Amomum cardamomum Willd",
+          "count": 48,
+          "pct": 44.9
+        },
+        {
+          "herb": "Kaempferia galanga L.",
+          "count": 42,
+          "pct": 39.3
+        },
+        {
+          "herb": "Foeniculum vulgare Mill.",
+          "count": 42,
+          "pct": 39.3
+        },
+        {
+          "herb": "Caryophyllus aromaticus L.",
+          "count": 28,
+          "pct": 26.2
+        },
+        {
+          "herb": "Blumea balsamifera DC.",
+          "count": 25,
+          "pct": 23.4
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 23,
+          "pct": 21.5
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Kaempferia galanga L.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 27
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 23
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Caryophyllus aromaticus L."
+          ],
+          "count": 23
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 23
+        },
+        {
+          "pair": [
+            "Foeniculum vulgare Mill.",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 21
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Kaempferia galanga L."
+          ],
+          "count": 18
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Zingiber officinale Rosc"
+          ],
+          "count": 17
+        },
+        {
+          "pair": [
+            "Foeniculum vulgare Mill.",
+            "Kaempferia galanga L."
+          ],
+          "count": 17
+        },
+        {
+          "pair": [
+            "Amomum cardamomum Willd",
+            "Blumea balsamifera DC."
+          ],
+          "count": 14
+        },
+        {
+          "pair": [
+            "Caryophyllus aromaticus L.",
+            "Foeniculum vulgare Mill."
+          ],
+          "count": 14
+        }
+      ]
+    },
+    "Wounds and skin infections": {
+      "n_formulas": 162,
+      "mean_herbs": 4.62962962962963,
+      "signature_herbs": [
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 41,
+          "pct": 25.3
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 18
+        },
+        {
+          "pair": [
+            "Andrographis paniculata Ness",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 17
+        },
+        {
+          "pair": [
+            "Curcuma heyneana Val.",
+            "Oryza sativa L."
+          ],
+          "count": 15
+        },
+        {
+          "pair": [
+            "Centella asiatica Urb",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 14
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Tinospora tuberculata Beumee"
+          ],
+          "count": 11
+        },
+        {
+          "pair": [
+            "Andrographis paniculata Ness",
+            "Centella asiatica Urb"
+          ],
+          "count": 10
+        },
+        {
+          "pair": [
+            "Centella asiatica Urb",
+            "Curcuma domestica Val"
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "Citrus aurantium",
+            "Cocos nucifera L."
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "Murraya paniculata Jacq",
+            "Oryza sativa L."
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Kaempferia galanga L."
+          ],
+          "count": 7
+        }
+      ]
+    },
+    "Urinary related problems": {
+      "n_formulas": 72,
+      "mean_herbs": 3.9444444444444446,
+      "signature_herbs": [
+        {
+          "herb": "Orthosiphon spicatus B.B.S.",
+          "count": 39,
+          "pct": 54.2
+        },
+        {
+          "herb": "Sonchus arvensis L",
+          "count": 24,
+          "pct": 33.3
+        },
+        {
+          "herb": "Sericocalyx crispus (L.) Bremek.",
+          "count": 18,
+          "pct": 25.0
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 17,
+          "pct": 23.6
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Orthosiphon spicatus B.B.S.",
+            "Sericocalyx crispus (L.) Bremek."
+          ],
+          "count": 16
+        },
+        {
+          "pair": [
+            "Orthosiphon spicatus B.B.S.",
+            "Sonchus arvensis L"
+          ],
+          "count": 15
+        },
+        {
+          "pair": [
+            "Sericocalyx crispus (L.) Bremek.",
+            "Sonchus arvensis L"
+          ],
+          "count": 12
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Orthosiphon spicatus B.B.S."
+          ],
+          "count": 11
+        },
+        {
+          "pair": [
+            "Orthosiphon spicatus B.B.S.",
+            "Phyllanthus niruri L"
+          ],
+          "count": 10
+        },
+        {
+          "pair": [
+            "Imperata cylindrica Beauv.",
+            "Orthosiphon spicatus B.B.S."
+          ],
+          "count": 9
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Imperata cylindrica Beauv."
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "Phyllanthus niruri L",
+            "Sonchus arvensis L"
+          ],
+          "count": 7
+        },
+        {
+          "pair": [
+            "Imperata cylindrica Beauv.",
+            "Sonchus arvensis L"
+          ],
+          "count": 6
+        },
+        {
+          "pair": [
+            "Phyllanthus niruri L",
+            "Sericocalyx crispus (L.) Bremek."
+          ],
+          "count": 6
+        }
+      ]
+    },
+    "Disorders of appetite": {
+      "n_formulas": 249,
+      "mean_herbs": 5.42570281124498,
+      "signature_herbs": [
+        {
+          "herb": "Guazuma ulmifolia Lamk.",
+          "count": 163,
+          "pct": 65.5
+        },
+        {
+          "herb": "Curcuma domestica Val",
+          "count": 85,
+          "pct": 34.1
+        },
+        {
+          "herb": "Curcuma xanthorrhiza Roxb",
+          "count": 61,
+          "pct": 24.5
+        },
+        {
+          "herb": "Murraya paniculata Jacq",
+          "count": 56,
+          "pct": 22.5
+        },
+        {
+          "herb": "Parameria laevigata (Juss.) Moldenke",
+          "count": 56,
+          "pct": 22.5
+        }
+      ],
+      "top_pairs": [
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Guazuma ulmifolia Lamk."
+          ],
+          "count": 59
+        },
+        {
+          "pair": [
+            "Guazuma ulmifolia Lamk.",
+            "Murraya paniculata Jacq"
+          ],
+          "count": 53
+        },
+        {
+          "pair": [
+            "Guazuma ulmifolia Lamk.",
+            "Parameria laevigata (Juss.) Moldenke"
+          ],
+          "count": 40
+        },
+        {
+          "pair": [
+            "Guazuma ulmifolia Lamk.",
+            "Zingiber purpureum Roxb"
+          ],
+          "count": 36
+        },
+        {
+          "pair": [
+            "Curcuma heyneana Val.",
+            "Guazuma ulmifolia Lamk."
+          ],
+          "count": 33
+        },
+        {
+          "pair": [
+            "Curcuma xanthorrhiza Roxb",
+            "Guazuma ulmifolia Lamk."
+          ],
+          "count": 32
+        },
+        {
+          "pair": [
+            "Guazuma ulmifolia Lamk.",
+            "Rheum officinale Baill"
+          ],
+          "count": 27
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Parameria laevigata (Juss.) Moldenke"
+          ],
+          "count": 26
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Murraya paniculata Jacq"
+          ],
+          "count": 24
+        },
+        {
+          "pair": [
+            "Curcuma domestica Val",
+            "Curcuma xanthorrhiza Roxb"
+          ],
+          "count": 23
+        }
+      ]
+    }
+  }
+}

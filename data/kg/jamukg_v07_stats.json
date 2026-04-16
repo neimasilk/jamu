@@ -1,0 +1,21 @@
+{
+  "total_nodes": 17413,
+  "total_edges": 64066,
+  "nodes_by_type": {
+    "plant": 2519,
+    "disease": 651,
+    "compound": 7364,
+    "bioactivity": 1569,
+    "formulation": 5310
+  },
+  "edges_by_type": {
+    "treats": 8931,
+    "produces": 17387,
+    "has_activity": 12343,
+    "contains": 25405
+  },
+  "evidence_distribution": {
+    "none": 64066
+  },
+  "connected_components": 62
+}
