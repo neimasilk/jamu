@@ -1043,5 +1043,112 @@
     "validation_gap_pct": 85.9,
     "total_pairs_queried": 5744,
     "drug_candidates_count": 286
+  },
+  "v08_ontology_applied": {
+    "as_of": "2026-04-20",
+    "method": "disease ontology applied; TREATS split into TREATS / HAS_USE / ETHNOBOTANICAL_USE / APPLIED_TO",
+    "ambiguous_resolution": {
+      "Ozoena": "clinical_disease",
+      "Syphilis(3)": "clinical_disease",
+      "Typhus (Typhoid)": "clinical_disease",
+      "Internal": "non_medical",
+      "Medicine": "non_medical",
+      "Medicine (Vet)": "non_medical"
+    },
+    "edge_split_stats": {
+      "treats_before": 8931,
+      "treats_after": 6923,
+      "has_use": 1387,
+      "ethnobotanical_use": 407,
+      "applied_to": 214,
+      "unmapped": 0
+    },
+    "validation_gap_dr_duke_by_refined_type": {
+      "treats": {
+        "n": 3740,
+        "no_evidence": 3200,
+        "no_evidence_pct": 85.56,
+        "limited": 392,
+        "limited_pct": 10.48,
+        "moderate": 99,
+        "moderate_pct": 2.65,
+        "well_studied": 49,
+        "well_studied_pct": 1.31
+      },
+      "has_use": {
+        "n": 1387,
+        "no_evidence": 1206,
+        "no_evidence_pct": 86.95,
+        "limited": 127,
+        "limited_pct": 9.16,
+        "moderate": 38,
+        "moderate_pct": 2.74,
+        "well_studied": 16,
+        "well_studied_pct": 1.15
+      },
+      "ethnobotanical_use": {
+        "n": 407,
+        "no_evidence": 356,
+        "no_evidence_pct": 87.47,
+        "limited": 33,
+        "limited_pct": 8.11,
+        "moderate": 9,
+        "moderate_pct": 2.21,
+        "well_studied": 9,
+        "well_studied_pct": 2.21
+      },
+      "applied_to": {
+        "n": 214,
+        "no_evidence": 175,
+        "no_evidence_pct": 81.78,
+        "limited": 23,
+        "limited_pct": 10.75,
+        "moderate": 13,
+        "moderate_pct": 6.07,
+        "well_studied": 3,
+        "well_studied_pct": 1.4
+      }
+    },
+    "validation_gap_knapsack_formulations": {
+      "n": 3183,
+      "no_evidence": 3183,
+      "no_evidence_pct": 100.0,
+      "limited": 0,
+      "limited_pct": 0.0,
+      "moderate": 0,
+      "moderate_pct": 0.0,
+      "well_studied": 0,
+      "well_studied_pct": 0.0
+    },
+    "headline_numbers_v08": {
+      "clinical_treats_pairs": 3740,
+      "clinical_treats_no_evidence_pct": 85.56,
+      "clinical_treats_well_studied_pct": 1.31
+    },
+    "honest_note": "Ontology cleanup moves the validation gap number negligibly (85.89% -> 85.56% for the clinical TREATS subset). All categories show similar 82-87% no-evidence rates, suggesting the gap is structural to PubMed coverage rather than a consequence of category mixing. What the cleanup DOES improve: claim precision (TREATS now means clinical only, no Arrow-poison or Cosmetic), downstream filter quality (drug-discovery candidates can be restricted to clinical), and removes a reviewer attack surface.",
+    "drug_discovery_candidates_v08_top30_changes": {
+      "overlap_with_v07": 22,
+      "dropped_out": [
+        "Blumea balsamifera",
+        "Chloranthus officinalis",
+        "Crinum asiaticum",
+        "Fagraea racemosa",
+        "Hedyotis capitellata",
+        "Myristica fragrans",
+        "Phyllanthus urinaria",
+        "Tinospora tuberculata"
+      ],
+      "newly_entered": [
+        "Brucea javanica",
+        "Caesalpinia sp.",
+        "Cocos nucifera",
+        "Cordyline fruticosa",
+        "Gmelina villosa",
+        "Michelia champaca",
+        "Parkia javanica",
+        "Pogostemon heyneanus"
+      ],
+      "interpretation": "Plants that dropped out were ranked high because of non-clinical (pharmacological action, therapeutic use, body-part, cosmetic) claims. Ranking by clinical-only unstudied claims gives a more defensible list for drug-discovery prioritization."
+    }
   }
 }

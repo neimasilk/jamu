@@ -1,7 +1,7 @@
 # JamuKG — Session Handoff
 
-**Tanggal**: 16 April 2026
-**Status**: KG v07 final, disease ontology clean, jamu grammar discovered
+**Tanggal**: 20 April 2026 (last update)
+**Status**: KG v08 (ontology-split). Mazhab teridentifikasi & validated. Methodology hardened.
 
 ---
 
@@ -81,37 +81,61 @@ This is a **long-term masterpiece project** — like Michelangelo, not a semeste
 
 Per `TRIAGE.md`, three tiers:
 
-### Tier 1 — Foundation (mostly done)
+### Tier 1 — Foundation (DONE as of 2026-04-20)
 - [x] Disease ontology cleanup (636/642 classified)
-- [ ] Resolve 6 remaining ambiguous terms (minor)
-- [ ] Apply ontology to KG: split TREATS into TREATS vs HAS_USE edges
+- [x] Resolve 6 remaining ambiguous terms (Apr 20 session 3: Ozoena/Syphilis3/Typhus→clinical; Internal/Medicine/MedicineVet→non_medical)
+- [x] Apply ontology to KG: split TREATS into TREATS vs HAS_USE vs ETHNOBOTANICAL_USE vs APPLIED_TO — produces v08 KG
 
-### Tier 2 — Discovery (the interesting stuff)
+### Tier 2 — Discovery (substantial progress Apr 20)
 - [x] Herb role classification (Raja/Menteri/Kurir/Penyeimbang)
 - [x] Forbidden combinations (107 pairs found)
 - [x] Effect-specific signature herbs
-- [ ] **Deeper grammar analysis**: are there compositional *rules*? (e.g., "every muskuloskeletal formula must contain ≥1 Zingiberaceae + ≥1 Piperaceae")
-- [ ] **Forbidden combinations investigation**: why do some pairs never co-occur? Pharmacological incompatibility or just different therapeutic domains?
-- [ ] **Synergy prediction**: pairs with high co-occurrence + known bioenhancement mechanisms
-- [ ] Visualize jamu grammar as network figures
+- [x] **Deeper grammar analysis** (Apr 20 session 1): found 11 stable "mazhab" (schools) via consensus-Louvain, each cohere in co-occurrence + plant-part but NOT in taxonomy → jamu grammar is functional-material, not lineage-based
+- [x] **Forbidden combinations investigation** (Apr 20 session 1): structurally cross-mazhab. Null model Z=37.97. Parameter-robust (99.5% cross-rate across 60 configs)
+- [x] **Methodological robustness suite** (Apr 20 session 2): null model + parameter sweep
+- [ ] **Synergy prediction**: pairs with high co-occurrence + known bioenhancement mechanisms (not started)
+- [ ] Visualize jamu grammar as network figures (not started)
+- [ ] Piperaceae / TCM-island / bridge-herb case studies (scoped in NOTES)
 
 ### Tier 3 — Expansion
 - [ ] HerbalDB harvest (server down, harvester ready)
 - [ ] Historical text mining (Serat Centhini, Usada Bali)
 - [ ] Marketplace mining (Tokopedia)
 - [ ] Improve ICD-10 mapping (37.3% → target 80%+)
+- [ ] Formulation-level PubMed validation (visibility of current 3,183-edge blind spot)
+
+## April 20 Session Summary
+
+Three sessions (grammar depth → methodological robustness → ontology applied).
+
+**Key additions to the project**:
+- `data/kg/jamu_herb_communities.json` — 11 stable mazhab + 5 bridges (consensus-Louvain, 40 seeds)
+- `data/kg/jamu_herb_taxonomy.json` — family × mazhab entropy analysis (family entropy 0.81–1.00, i.e., cross-taxonomic)
+- `data/kg/jamu_robustness.json` — null model Z=37.97, 60-config param sweep mean 99.5% cross-rate
+- `data/kg/jamukg_v08_annotated.json` — ontology-split KG (8,931 treats → 6,923 TREATS + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO)
+- `data/kg/drug_discovery_candidates_v08.json` — re-ranked by clinical-only unstudied claims (8/30 plants replaced)
+- `NOTES_2026-04-20_grammar_schools.md` — mazhab findings + methodological defense
+- `NOTES_2026-04-20_ontology_applied.md` — v08 build + honest note: gap barely moves but DDC list improves
+
+**Updated headline numbers** (not yet propagated to MANUSCRIPT.md):
+- Validation gap: **85.56%** of **3,740** clinical TREATS claims (was 85.9% of 5,744 mixed)
+- Also: 87.0% of 1,387 HAS_USE, 87.5% of 407 ETHNOBOTANICAL_USE, 81.8% of 214 APPLIED_TO
+- Gap is structural across all categories — not a label artifact
+- Jamu grammar: **11 mazhab + 5 bridges**; 107 forbidden pairs Z=37.97 vs null
+- Piperaceae splits into 3 mazhab by function; Zingiberaceae spans 5; no taxonomic coherence
 
 ## Resume Prompt
 
 ```
-Lanjutkan proyek JamuKG dalam mode santai — ini masterpiece jangka
-panjang, bukan sprint. Baca HANDOFF.md dan TRIAGE.md. KG v07 sudah
-final (17,413 nodes, 64,066 edges). Disease ontology bersih (636/642).
-Temuan baru: grammar jamu teridentifikasi — 4 peran herbal
-(Raja/Menteri/Kurir/Penyeimbang), 107 forbidden combinations,
-signature herbs per area terapeutik. Lihat jamu_grammar.json. Arah
-selanjutnya: dalami grammar analysis (aturan komposisi, investigasi
-forbidden pairs, prediksi sinergi), atau eksplorasi apa pun yang
-menarik dari data. Jangan buru-buru submit paper — baca MANIFESTO
-dulu untuk konteks. Kerjakan dengan pelan dan matang.
+Lanjutkan proyek JamuKG dalam mode santai tapi serius metodologis.
+Baca HANDOFF.md, NOTES_2026-04-20_*.md, dan TRIAGE.md. KG v08 sudah
+jadi (v07 + ontology split). Mazhab teridentifikasi: 11 stable + 5
+bridges. Forbidden pair lulus null model (Z=37.97) dan parameter
+sweep (99.5% cross-rate). Validation gap 85.56% dari 3,740 clinical
+TREATS. DDC re-ranked dengan filter clinical-only. MANUSCRIPT belum
+di-update dengan angka baru. Arah lanjutan: synergy prediction,
+visualisasi jaringan, atau case study (Piperaceae / TCM island /
+bridge herbs). Juga pending: formulation-level PubMed validation
+(3,183 edges blind spot), HerbalDB harvest saat server up. Jangan
+buru-buru submit paper — prinsip masterpiece.
 ```

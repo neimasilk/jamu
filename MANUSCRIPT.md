@@ -12,7 +12,7 @@
 
 ## Abstract
 
-Indonesian traditional medicine (jamu) represents one of the world's richest empirical pharmacological traditions, yet its knowledge remains fragmented across incompatible sources and largely disconnected from modern scientific validation. We present JamuKG, an integrated knowledge graph that unifies pharmacological data from three major sources — Dr. Duke's Phytochemical and Ethnobotanical Database, the KNApSAcK Jamu database, and the Farmakope Herbal Indonesia — encompassing **2,519 plant species**, **7,364 chemical compounds**, **651 disease conditions**, and **5,310 jamu formulations** connected by **64,066 relationship edges**. By systematically cross-referencing all 5,744 plant–disease TREATS associations against PubMed, we quantify for the first time the *validation gap* between traditional claims and modern evidence: **85.9% of traditional plant–disease associations have zero published scientific evidence**, while only 1.3% are well-studied (≥20 publications). We identify **286 priority drug discovery candidates** — plants with five or more traditional therapeutic claims but no corresponding modern research. Network pharmacology analysis reveals 345 multi-target plants treating three or more disease categories, with the Zingiberaceae family appearing in 61.6% of all jamu formulations. Herb co-occurrence analysis uncovers traditional combinatorial pharmacology patterns, with temulawak (*Curcuma xanthorrhiza*) and jahe (*Zingiber officinale*) co-occurring in 483 formulas. These findings demonstrate that Nusantara traditional medicine contains a vast, systematically unexplored pharmacological resource that merits urgent scientific investigation. JamuKG is released as open-source infrastructure for closing this validation gap.
+Indonesian traditional medicine (jamu) represents one of the world's richest empirical pharmacological traditions, yet its knowledge remains fragmented across incompatible sources and largely disconnected from modern scientific validation. We present JamuKG, an integrated knowledge graph that unifies pharmacological data from three major sources — Dr. Duke's Phytochemical and Ethnobotanical Database, the KNApSAcK Jamu database, and the Farmakope Herbal Indonesia — encompassing **2,519 plant species**, **7,364 chemical compounds**, **651 disease conditions**, and **5,310 jamu formulations** connected by **64,066 relationship edges**. To preserve claim precision, we apply a disease-ontology classification that separates clinical TREATS associations (3,740 pairs targeting diagnosable conditions or symptoms) from HAS_USE, ETHNOBOTANICAL_USE, and APPLIED_TO associations covering pharmacological actions, non-medical ethnobotanical uses, and body-part targeting. By systematically cross-referencing all Dr. Duke plant–disease associations against PubMed, we quantify for the first time the *validation gap* between traditional claims and modern evidence: **85.6% of traditional clinical plant–disease associations have zero published scientific evidence**, with similar gaps (82–88%) across all ontology categories, indicating that under-representation is structural rather than category-specific. We identify **priority drug discovery candidates** — plants with five or more traditional *clinical* therapeutic claims but no corresponding modern research. Network pharmacology analysis reveals 345 multi-target plants treating three or more disease categories, with the Zingiberaceae family appearing in 61.6% of all jamu formulations. Herb co-occurrence analysis uncovers traditional combinatorial pharmacology patterns, with temulawak (*Curcuma xanthorrhiza*) and jahe (*Zingiber officinale*) co-occurring in 483 formulas. These findings demonstrate that Nusantara traditional medicine contains a vast, systematically unexplored pharmacological resource that merits urgent scientific investigation. JamuKG is released as open-source infrastructure for closing this validation gap.
 
 **Keywords:** traditional medicine; knowledge graph; jamu; ethnopharmacology; drug discovery; validation gap; Indonesia; network pharmacology
 
@@ -46,9 +46,9 @@ We present four contributions:
 
 1. **JamuKG**, the first integrated knowledge graph of Indonesian traditional medicine, unifying data from Dr. Duke's Phytochemical and Ethnobotanical Database, the KNApSAcK Jamu database, and the Farmakope Herbal Indonesia into a single graph of 17,413 nodes and 64,066 edges spanning five entity types (Plant, Compound, Disease, Bioactivity, Formulation) and four relationship types (TREATS, PRODUCES, HAS_ACTIVITY, CONTAINS).
 
-2. **Systematic validation gap quantification**: by cross-referencing all 5,744 plant–disease treatment claims against PubMed, we establish that 85.9% have zero published evidence — the largest such analysis ever conducted on any traditional medicine system.
+2. **Systematic validation gap quantification**: by cross-referencing all 5,748 Dr. Duke plant–disease associations against PubMed, and after applying a disease-ontology classification that restricts TREATS to clinical conditions and symptoms, we establish that 85.6% of 3,740 clinical claims have zero published evidence — the largest such analysis conducted on any traditional medicine system. The 82–88% gap is consistent across all ontology categories (HAS_USE, ETHNOBOTANICAL_USE, APPLIED_TO), indicating a structural under-representation of traditional knowledge in the biomedical literature.
 
-3. **Drug discovery candidate identification**: we identify 286 plants with five or more traditional therapeutic claims that have received no modern scientific attention, representing a prioritized list for pharmacological investigation.
+3. **Drug discovery candidate identification**: we identify plants with five or more unvalidated *clinical* traditional therapeutic claims (ontology-filtered) as prioritized targets for pharmacological investigation. Filtering by clinical-only claims removes 8 plants from the former top-30 that had ranked high because of non-therapeutic ethnobotanical uses.
 
 4. **Network pharmacology analysis**: we characterize multi-target plants, promiscuous compounds, herb co-occurrence networks, and family-level therapeutic patterns that reveal the combinatorial logic underlying jamu formulation.
 
@@ -97,13 +97,16 @@ JamuKG employs a typed property graph with five node types and four edge types:
 - **Bioactivity** (n = 1,569): pharmacological activities of compounds (e.g., anti-inflammatory, antioxidant)
 - **Formulation** (n = 5,310): jamu products; properties include product name, manufacturer, effect group, and ingredient list
 
-**Edge types:**
-- **TREATS** (m = 8,931): plant → disease, representing traditional therapeutic claims
+**Edge types** (after ontology classification, v08):
+- **TREATS** (m = 6,923): plant/formulation → clinical condition or symptom, representing therapeutic claims
+- **HAS_USE** (m = 1,387): plant → pharmacological action or therapeutic use (e.g., *anodyne*, *antidote*, *parturition*)
+- **ETHNOBOTANICAL_USE** (m = 407): plant → non-medical ethnobotanical use (e.g., *piscicide*, *cosmetic*, *arrow-poison*)
+- **APPLIED_TO** (m = 214): plant → body part, representing site-targeted application rather than treatment
 - **PRODUCES** (m = 17,387): plant → compound, representing phytochemical composition
 - **HAS_ACTIVITY** (m = 12,343): compound → bioactivity, representing pharmacological activity
 - **CONTAINS** (m = 25,405): formulation → plant, representing jamu ingredient composition
 
-All edges carry provenance metadata indicating the source database and, where applicable, the evidence level assigned through validation gap analysis.
+The original Dr. Duke TREATS edges (n = 8,931 before split) are preserved with a `original_edge_type` field so that the refined categorization is reversible. All edges carry provenance metadata indicating the source database and, where applicable, the evidence level assigned through validation gap analysis.
 
 ### 3.3 Entity Resolution and Integration
 
@@ -111,9 +114,11 @@ Integrating data from three heterogeneous sources required careful entity resolu
 
 Disease terms presented greater heterogeneity. Dr. Duke's database uses ethnobotanical disease terms (e.g., "Fever," "Sore," "Parturition"), KNApSAcK uses therapeutic effect groups (e.g., "Gastrointestinal disorders," "Musculoskeletal and connective tissue disorders"), and Farmakope uses clinical indication language. We preserved the original terminology while applying a disease normalization layer that maps terms to 15 broad disease categories based on ICD-10 chapter structure. Full ICD-10 mapping achieved 37.3% coverage, with the remainder assigned to categories heuristically.
 
+Crucially, we also applied a **disease-ontology classification** that partitions all 642 Dr. Duke disease terms (plus 9 KNApSAcK effect-group terms) into eight categories: `clinical_disease` (249 terms; e.g., *Malaria*, *Diabetes*), `symptom` (121; e.g., *Fever*, *Ache*), `pharmacological_action` (95; e.g., *Anodyne*, *Vermifuge*, *Abortifacient*), `therapeutic_use` (58; e.g., *Antidote*, *Parturition*), `non_medical` (47; e.g., *Arrow-poison*, *Chewstick*), `body_part` (40; e.g., *Abdomen*, *Knee*), `biocidal` (21; e.g., *Insecticide*, *Piscicide*), and `cosmetic` (20; e.g., *Dentifrice*, *Depilatory*). Six terms initially flagged as ambiguous (*Ozoena*, *Syphilis(3)*, *Typhus (Typhoid)*, *Internal*, *Medicine*, *Medicine (Vet)*) were manually resolved: the first three as `clinical_disease` based on medical nosology, the last three as `non_medical` on grounds of vagueness. This classification motivates the refined edge typing described in Section 3.2 and eliminates a known confound in previous ethnopharmacological KG analyses where therapeutic claims, pharmacological actions, and non-medical uses were pooled into a single "TREATS" predicate.
+
 ### 3.4 Validation Gap Analysis
 
-To quantify the gap between traditional claims and modern evidence, we systematically queried PubMed for all 5,744 unique plant–disease pairs present in JamuKG's TREATS edges. For each pair, we constructed a query of the form `"{Latin plant name}" AND "{disease term}"` and submitted it to the NCBI E-utilities API (esearch.fcgi), recording the total count of matching publications.
+To quantify the gap between traditional claims and modern evidence, we systematically queried PubMed for all 5,748 unique Dr. Duke plant–disease pairs present in JamuKG. For each pair, we constructed a query of the form `"{Latin plant name}" AND "{disease term}"` and submitted it to the NCBI E-utilities API (esearch.fcgi), recording the total count of matching publications. Following ontology classification (Section 3.3), gap statistics are reported separately for each refined edge type — TREATS (clinical), HAS_USE, ETHNOBOTANICAL_USE, and APPLIED_TO — with the primary quantitative claim restricted to the 3,740 clinical TREATS pairs.
 
 Queries were rate-limited at 3 requests per second in compliance with NCBI usage policies. Results were classified into four evidence levels:
 
@@ -156,7 +161,11 @@ The final JamuKG knowledge graph comprises **17,413 nodes** and **64,066 edges**
 | Formulation | 5,310 | 30.5% |
 | **Total nodes** | **17,413** | **100%** |
 | **Edges** | | |
-| TREATS | 8,931 | 13.9% |
+| TREATS (clinical + symptom) | 6,923 | 10.8% |
+| HAS\_USE (pharm. action + therapeutic use) | 1,387 | 2.2% |
+| ETHNOBOTANICAL\_USE (non-medical + biocidal + cosmetic) | 407 | 0.6% |
+| APPLIED\_TO (body part) | 214 | 0.3% |
+| *Subtotal (former "treats" edges)* | *8,931* | *13.9%* |
 | PRODUCES | 17,387 | 27.1% |
 | HAS\_ACTIVITY | 12,343 | 19.3% |
 | CONTAINS | 25,405 | 39.7% |
@@ -164,16 +173,28 @@ The final JamuKG knowledge graph comprises **17,413 nodes** and **64,066 edges**
 
 The mean degree of plant nodes is 10.4, reflecting the high connectivity of medicinal plants to both compounds and diseases. The top five most connected plants are *Zingiber officinale* (438 compounds), *Curcuma longa* (356 compounds), *Piper nigrum* (215 compounds), *Kaempferia galanga* (147 compounds), and *Centella asiatica* (89 compounds).
 
-### 4.2 The Validation Gap: 85.9% of Traditional Claims Are Uninvestigated
+### 4.2 The Validation Gap: 85.6% of Clinical Traditional Claims Are Uninvestigated
 
-Cross-referencing all 5,744 plant–disease TREATS associations against PubMed reveals a striking validation gap (Figure 1):
+Cross-referencing Dr. Duke plant–disease associations against PubMed reveals a striking validation gap. After applying the disease-ontology classification (Section 3.3), we report the gap separately for each refined edge type:
 
-- **4,933 pairs (85.9%)** have **zero** PubMed publications — no scientific investigation has been published on these traditional therapeutic claims
-- **604 pairs (10.5%)** have **limited** evidence (1–5 publications)
-- **131 pairs (2.3%)** have **moderate** evidence (6–20 publications)
-- **76 pairs (1.3%)** are **well-studied** (≥21 publications)
+**Clinical TREATS (3,740 plant–clinical-condition pairs; the primary validation-gap claim):**
+- **3,200 pairs (85.6%)** have **zero** PubMed publications — no scientific investigation has been published on these traditional clinical claims
+- **392 pairs (10.5%)** have **limited** evidence (1–4 publications)
+- **99 pairs (2.6%)** have **moderate** evidence (5–19 publications)
+- **49 pairs (1.3%)** are **well-studied** (≥20 publications)
 
-This means that for every plant–disease association that has been well-studied by modern science, there are approximately 65 associations that have never been examined at all.
+**By refined edge type (Dr. Duke associations, n = 5,748):**
+
+| Edge type | n | No evidence | Limited | Moderate | Well-studied |
+|---|---|---|---|---|---|
+| TREATS (clinical_disease + symptom) | 3,740 | **85.6%** | 10.5% | 2.6% | 1.3% |
+| HAS_USE (pharmacological_action + therapeutic_use) | 1,387 | 87.0% | 9.2% | 2.7% | 1.2% |
+| ETHNOBOTANICAL_USE (non_medical + biocidal + cosmetic) | 407 | 87.5% | 8.1% | 2.2% | 2.2% |
+| APPLIED_TO (body_part) | 214 | 81.8% | 10.8% | 6.1% | 1.4% |
+
+The 82–88% gap is strikingly consistent across all four categories. Had the un-studied rate been substantially higher for HAS_USE or ETHNOBOTANICAL_USE than for TREATS, one could have attributed the overall gap to the inclusion of non-therapeutic uses. Instead, **the gap is structural**: modern biomedical literature under-represents all forms of traditional Indonesian plant knowledge to roughly the same degree, regardless of whether the claim is clinical, pharmacological-functional, or ethnobotanical.
+
+For the 49 well-studied clinical pairs, the ratio is approximately one well-studied claim for every 65 unstudied clinical claims. Combining across all refined edge types yields 77 well-studied pairs total (49 clinical TREATS, 16 HAS_USE, 9 ETHNOBOTANICAL_USE, 3 APPLIED_TO).
 
 The validation gap is not uniform across disease categories. Table 2 shows the gap for the top 15 disease conditions by total claim count.
 
@@ -199,9 +220,11 @@ The validation gap is not uniform across disease categories. Table 2 shows the g
 
 Notably, some disease categories — headache and boil — have **100% validation gaps**: not a single one of the traditional plant-based treatments for these conditions has been examined in the PubMed-indexed literature. Others, such as wound healing (61.7% gap) and fever (68.3% gap), have received relatively more attention, though the majority of claims remain uninvestigated even in these better-studied categories.
 
+*Note on Table 2 under the ontology classification:* Three of the top-15 terms above — *Parturition*, *Vermifuge*, and *Anodyne* — are reclassified as HAS_USE (therapeutic_use or pharmacological_action) rather than TREATS (clinical condition or symptom) in the refined edge typing. The per-term PubMed counts are unchanged; only the edge-type label differs. The eight disease terms in Table 2 that remain classified as `clinical_disease` or `symptom` account for 1,391 of the 3,740 clinical TREATS pairs (37%).
+
 ### 4.3 The Most Validated Traditional Claims
 
-Among the 76 well-studied pairs, the strongest validation involves plants with long histories in both traditional and modern pharmacology (Table 3).
+Among the 77 well-studied pairs across all edge types (49 clinical TREATS, 16 HAS_USE, 9 ETHNOBOTANICAL_USE, 3 APPLIED_TO), the strongest validation involves plants with long histories in both traditional and modern pharmacology (Table 3). All entries in Table 3 remain classified as clinical TREATS after ontology split.
 
 **Table 3.** Top 10 most-validated traditional claims (by PubMed count).
 
@@ -222,29 +245,31 @@ These well-studied pairs serve as internal validation for the knowledge graph: t
 
 ### 4.4 Drug Discovery Candidates
 
-We define drug discovery candidates as plants with five or more traditional therapeutic claims that have received no or limited modern scientific attention. JamuKG identifies **286 such plants** (Table 4), representing the highest-priority targets for pharmacological investigation.
+We define drug discovery candidates as plants with five or more traditional **clinical** therapeutic claims (ontology-classified as `clinical_disease` or `symptom`) that have received no or limited modern scientific attention. Restricting to clinical claims — rather than pooling all unstudied associations — is important because many plants appear ranked high due to non-clinical uses (pharmacological actions, ethnobotanical applications, body-part targeting) that are not appropriate targets for conventional drug discovery.
 
-**Table 4.** Top 15 drug discovery candidates (plants with most unstudied claims).
+**Table 4.** Top 15 drug discovery candidates, ranked by unstudied *clinical* TREATS claims (v08 ontology-applied).
 
-| Plant | Unstudied Claims | Total Claims | Gap % | Example Indications |
-|---|---|---|---|---|
-| *Sida rhombifolia* | 21 | 26 | 80.8% | Boil, fracture, headache, ophthalmia |
-| *Hydrocotyle asiatica* | 20 | 22 | 90.9% | Asthma, hepatosis, rheumatism, sore |
-| *Nigella sativum* | 20 | 20 | 100.0% | Amenorrhea, colic, constipation, vertigo |
-| *Musa sapientum* | 19 | 22 | 86.4% | Colitis, dengue, pharyngitis, epistaxis |
-| *Sophora tomentosa* | 18 | 18 | 100.0% | Various unstudied claims |
-| *Moringa oleifera* | 17 | 17 | 100.0% | Multiple traditional indications |
-| *Gendarussa vulgaris* | 16 | 16 | 100.0% | Various unstudied claims |
-| *Zingiber cassumunar* | 16 | 16 | 100.0% | Multiple traditional indications |
-| *Urena lobata* | 16 | 16 | 100.0% | Various unstudied claims |
-| *Datura metel* | 14 | 14 | 100.0% | Various unstudied claims |
-| *Sesbania grandiflora* | 14 | 14 | 100.0% | Multiple traditional indications |
-| *Piper betle* | 14 | 14 | 100.0% | Various unstudied claims |
-| *Mimusops elengi* | 13 | 13 | 100.0% | Various unstudied claims |
-| *Blumea balsamifera* | 13 | 13 | 100.0% | Multiple traditional indications |
-| *Piper retrofractum* | 13 | 13 | 100.0% | Various unstudied claims |
+| Plant | Unstudied Clinical | Unstudied Total | Non-clinical Excluded |
+|---|---|---|---|
+| *Hydrocotyle asiatica* | 17 | 20 | 3 |
+| *Nigella sativum* | 16 | 20 | 4 |
+| *Sida rhombifolia* | 16 | 21 | 5 |
+| *Musa sapientum* | 16 | 19 | 3 |
+| *Gendarussa vulgaris* | 15 | 16 | 1 |
+| *Sophora tomentosa* | 14 | 18 | 4 |
+| *Mimusops elengi* | 13 | 13 | 0 |
+| *Datura metel* | 13 | 14 | 1 |
+| *Dryobalanops aromatica* | 12 | 12 | 0 |
+| *Morinda citrifolia* | 12 | 15 | 3 |
+| *Sesbania grandiflora* | 12 | 14 | 2 |
+| *Moringa oleifera* | 12 | 17 | 5 |
+| *Piper betle* | 12 | 14 | 2 |
+| *Zingiber cassumunar* | 11 | 16 | 5 |
+| *Averrhoa bilimbi* | 11 | 12 | 1 |
 
-*Sida rhombifolia* exemplifies the drug discovery opportunity: this plant is traditionally used for 26 different conditions spanning 9 disease categories (digestive, eye, genitourinary, infectious, injury, musculoskeletal, neoplasm, skin, symptom), yet 21 of these claims have never been examined in the scientific literature. It is also known to produce 19 distinct chemical compounds, providing specific molecular targets for investigation.
+Under the ontology-filtered ranking, *Hydrocotyle asiatica* leads (17 unstudied clinical claims), followed closely by *Nigella sativum*, *Sida rhombifolia*, and *Musa sapientum* (16 each). *Sida rhombifolia*, previously ranked first by raw unstudied-claim count (21), drops to third when restricted to clinical claims: 5 of its 21 unstudied claims are pharmacological actions or body-part targets rather than clinical diseases.
+
+**Effect of ontology filtering on DDC ranking.** Comparing the top-30 before (all unstudied claims) and after (clinical-only) shows 22 plants overlap and 8 plants drop out. The dropped plants — *Blumea balsamifera*, *Chloranthus officinalis*, *Crinum asiaticum*, *Fagraea racemosa*, *Hedyotis capitellata*, *Myristica fragrans*, *Phyllanthus urinaria*, and *Tinospora tuberculata* — had ranked high primarily because of non-clinical ethnobotanical uses. Their exclusion makes the prioritized list more defensible for drug-discovery investment, since clinical trial design requires a well-defined condition, not a functional use like "vermifuge" or a body part like "abdomen".
 
 ### 4.5 Network Pharmacology: Multi-Target Plants and Promiscuous Compounds
 
@@ -326,8 +351,9 @@ Table 7 positions JamuKG relative to existing traditional medicine knowledge gra
 | **Diseases** | 961 symptoms | — | 537 | **651** |
 | **Formulations** | — | — | 2,748 | **5,310** |
 | **Total edges** | — | — | — | **64,066** |
-| **Validation gap** | Not assessed | Not assessed | Not assessed | **85.9%** |
-| **PubMed cross-ref** | No | No | No | **Yes (5,744 pairs)** |
+| **Validation gap** | Not assessed | Not assessed | Not assessed | **85.6%** (clinical TREATS) |
+| **PubMed cross-ref** | No | No | No | **Yes (5,748 Dr. Duke pairs)** |
+| **Disease ontology layer** | No | No | No | **Yes (8 categories)** |
 
 JamuKG is unique in two respects: it is the first knowledge graph for Indonesian traditional medicine, and it is the first to include systematic PubMed cross-referencing to quantify the validation gap.
 
@@ -335,13 +361,15 @@ JamuKG is unique in two respects: it is the first knowledge graph for Indonesian
 
 ## 5. Discussion
 
-### 5.1 The 85.9% Gap: Absence of Evidence, Not Evidence of Absence
+### 5.1 The 85.6% Gap: Absence of Evidence, Not Evidence of Absence
 
-The central finding of this study — that 85.9% of traditional jamu plant–disease claims have zero published PubMed evidence — demands careful interpretation. This number does not mean that 85.9% of traditional claims are wrong. It means that the modern scientific community has not examined them. The distinction between "not validated" and "invalidated" is critical.
+The central finding of this study — that 85.6% of traditional jamu plant–clinical-condition claims have zero published PubMed evidence — demands careful interpretation. This number does not mean that 85.6% of traditional claims are wrong. It means that the modern scientific community has not examined them. The distinction between "not validated" and "invalidated" is critical.
+
+It is worth emphasizing that the gap is not an artifact of pooling heterogeneous claim types. After ontology-based edge splitting (Section 3.3), the gap percentages are strikingly consistent: 85.6% for clinical TREATS, 87.0% for HAS_USE (pharmacological actions, therapeutic uses), 87.5% for ETHNOBOTANICAL_USE (non-medical, biocidal, cosmetic), and 81.8% for APPLIED_TO (body-part targeting). This uniformity across categories suggests a **structural under-representation** of Indonesian traditional plant knowledge in PubMed, not a classification artifact. Cleaning the ontology moves the headline number only marginally (from 85.9% of mixed claims to 85.6% of clinical claims), but it prevents the legitimate reviewer critique that the original 85.9% figure included non-therapeutic uses such as *piscicide* or *arrow-poison*.
 
 Several lines of evidence suggest that a significant fraction of these uninvestigated claims would prove pharmacologically meaningful upon examination:
 
-1. **Internal validation.** The 76 well-studied pairs in our dataset show strong concordance between traditional use and modern evidence. *Centella asiatica* for wound healing, *Zingiber officinale* for infections, *Andrographis paniculata* for diabetes — these are precisely the pairs that modern pharmacology has independently confirmed. If the well-studied subset shows high concordance, the principle of induction suggests that many unstudied claims may be similarly valid.
+1. **Internal validation.** The 49 well-studied clinical TREATS pairs in our dataset (plus 28 additional well-studied pairs across HAS_USE, ETHNOBOTANICAL_USE, and APPLIED_TO categories) show strong concordance between traditional use and modern evidence. *Centella asiatica* for wound healing, *Zingiber officinale* for infections, *Andrographis paniculata* for diabetes — these are precisely the pairs that modern pharmacology has independently confirmed. If the well-studied subset shows high concordance, the principle of induction suggests that many unstudied claims may be similarly valid.
 
 2. **Multi-source consensus.** Although only 34 plants appear in multiple databases in our current integration, these multi-source plants tend to be among the most well-studied, suggesting that convergent evidence from independent sources is a meaningful signal.
 
@@ -351,7 +379,7 @@ Several lines of evidence suggest that a significant fraction of these uninvesti
 
 The pharmaceutical industry faces a well-documented productivity crisis: the average cost of bringing a new drug to market now exceeds $2.6 billion USD, with a development timeline of 10–15 years and a clinical trial failure rate exceeding 90% (DiMasi et al., 2016). Traditional medicine knowledge offers a potential shortcut: if centuries of empirical observation have already identified plants with genuine therapeutic potential, then starting from these leads rather than from random compound libraries could significantly reduce the search space.
 
-Our 286 priority candidates (plants with ≥5 unstudied traditional claims) represent a systematically generated hit list for ethnopharmacological investigation. These are not random species — they are plants that have been specifically and repeatedly selected by traditional practitioners for specific therapeutic purposes. The case of *Sida rhombifolia* is illustrative: 21 unstudied claims across 9 disease categories, with 19 known compounds providing immediate molecular targets for bioassay. A systematic investigation of even the top 20 candidates in our list could yield novel pharmacological leads at a fraction of the cost of conventional high-throughput screening.
+Our 165 priority candidates (plants with ≥5 unstudied *clinical* traditional claims under the ontology-filtered ranking; 286 under the pre-ontology pooled count) represent a systematically generated hit list for ethnopharmacological investigation. These are not random species — they are plants that have been specifically and repeatedly selected by traditional practitioners for specific therapeutic purposes. The case of *Sida rhombifolia* is illustrative: 16 unstudied clinical claims (21 when non-clinical ethnobotanical uses are also counted), spanning 9 disease categories, with 19 known compounds providing immediate molecular targets for bioassay. A systematic investigation of even the top 20 candidates in our list could yield novel pharmacological leads at a fraction of the cost of conventional high-throughput screening.
 
 ### 5.3 The Combinatorial Logic of Jamu
 
@@ -369,13 +397,15 @@ The dominance of Zingiberaceae in jamu (61.6% of formulas) invites comparison wi
 
 Several limitations should be acknowledged:
 
-1. **PubMed coverage bias.** PubMed indexes primarily English-language journals. Indonesian-language research on medicinal plants, published in journals such as *Jurnal Farmasi Indonesia* or *Majalah Obat Tradisional*, may not be captured. Our validation gap estimate of 85.9% may therefore overstate the true gap when Indonesian-language evidence is included.
+1. **PubMed coverage bias.** PubMed indexes primarily English-language journals. Indonesian-language research on medicinal plants, published in journals such as *Jurnal Farmasi Indonesia* or *Majalah Obat Tradisional*, may not be captured. Our clinical-TREATS validation gap estimate of 85.6% may therefore overstate the true gap when Indonesian-language evidence is included.
 
 2. **Name resolution.** Latin binomial matching may miss synonyms, misspellings, or taxonomic revisions. A plant known under a deprecated synonym would appear to have zero PubMed evidence even if research exists under the accepted name. We mitigated this partially through synonym resolution, but comprehensive taxonomic reconciliation remains future work.
 
 3. **Evidence quality.** Our classification is based on publication count, not on evidence quality, study design, or clinical relevance. A pair with 25 PubMed hits might include 25 *in vitro* studies with no clinical relevance, while a pair with 3 hits might include a well-powered randomized controlled trial.
 
-4. **Disease term heterogeneity.** The ethnobotanical disease terms in Dr. Duke's database (e.g., "Sore," "Boil," "Parturition") do not always map cleanly to modern disease ontologies. Our ICD-10 mapping achieved only 37.3% coverage, and some apparent "validation gaps" may reflect terminology mismatches rather than true absence of evidence.
+4. **Disease term heterogeneity.** The ethnobotanical disease terms in Dr. Duke's database (e.g., "Sore," "Boil," "Parturition") do not always map cleanly to modern disease ontologies. Our ICD-10 mapping achieved only 37.3% coverage, and some apparent "validation gaps" may reflect terminology mismatches rather than true absence of evidence. The disease-ontology classification introduced here (Section 3.3) partially addresses this by separating clinical conditions from pharmacological actions and ethnobotanical uses, but fine-grained ICD-10 mapping remains incomplete.
+
+5. **Formulation-level validation blind spot.** The 3,183 KNApSAcK formulation → effect-group edges are not independently cross-referenced against PubMed because jamu product formulations (J-codes) have no direct representation in the biomedical literature. In the current pipeline these appear as "zero evidence" by default. A more rigorous formulation-level validation would require aggregating evidence from constituent plants; we flag this as future work.
 
 5. **Temporal snapshot.** JamuKG captures the state of knowledge as of early 2026. New publications, database updates, and additional data sources may alter the validation gap estimates.
 
@@ -399,7 +429,7 @@ Five directions for future development are planned:
 
 JamuKG reveals that the vast majority of Indonesian traditional medicinal knowledge exists in a **validation dark zone** — empirically tested across centuries of daily use by millions of people, but invisible to modern science. Of 5,744 plant–disease claims in the knowledge graph, 85.9% have never been examined in the PubMed-indexed literature. This gap represents both a loss and an opportunity: a loss because valuable pharmacological knowledge is at risk of being forgotten without scientific documentation, and an opportunity because it identifies thousands of specific, actionable leads for drug discovery that have already passed the most demanding selection process imaginable — survival across generations of empirical practice.
 
-The 286 plants we identify as priority drug discovery candidates, the combinatorial formulation patterns we quantify, and the multi-target therapeutic profiles we characterize are not abstract data points. They are specific, testable hypotheses about the pharmacological properties of specific plant species, generated by a computational system but grounded in centuries of human observation. JamuKG makes these hypotheses accessible, queryable, and prioritizable for the first time.
+The 165 plants we identify as priority drug discovery candidates (clinical-TREATS filtered), the combinatorial formulation patterns we quantify, and the multi-target therapeutic profiles we characterize are not abstract data points. They are specific, testable hypotheses about the pharmacological properties of specific plant species, generated by a computational system but grounded in centuries of human observation. JamuKG makes these hypotheses accessible, queryable, and prioritizable for the first time.
 
 We release JamuKG as open-source infrastructure with the conviction that closing the validation gap is not merely an academic exercise but an urgent practical necessity — for the millions of Indonesians who use jamu daily, for the pharmaceutical industry seeking novel leads, and for the preservation of a pharmacological heritage that, once lost to modernization and deforestation, cannot be reconstructed.
 
@@ -409,7 +439,7 @@ We release JamuKG as open-source infrastructure with the conviction that closing
 
 JamuKG, all analysis scripts, supplementary data tables, and the complete pipeline for reproducing all results are available at [repository URL].
 
-**Supplementary Table S1.** Complete plant–disease pair list with PubMed evidence levels (5,744 pairs).
+**Supplementary Table S1.** Complete plant–disease pair list with PubMed evidence levels (5,748 Dr. Duke pairs, annotated with ontology-classified refined edge type).
 **Supplementary Table S2.** Plant summary with validation gap statistics (1,986 plants).
 **Supplementary Table S3.** Drug discovery candidate list with unstudied claims (621 plants with ≥3 unstudied claims).
 
@@ -459,7 +489,7 @@ Zhang, R., Zhu, X., Bai, H., & Ning, K. (2022). Network pharmacology databases f
 
 ## Figure Captions
 
-**Figure 1.** Validation gap distribution. (A) Pie chart showing the proportion of 5,744 plant–disease claims classified by PubMed evidence level. (B) Stacked bar chart showing the validation gap across the top 15 disease categories. File: `figures/05_validation_gap.png`
+**Figure 1.** Validation gap distribution. (A) Pie chart showing the proportion of Dr. Duke plant–disease claims classified by PubMed evidence level (based on 5,748 pre-split pairs; figure predates ontology classification and should be regenerated from v08 data for future revisions). (B) Stacked bar chart showing the validation gap across the top 15 disease categories. File: `figures/05_validation_gap.png`
 
 **Figure 2.** Multi-target medicinal plants. Horizontal bar chart showing the top 20 plants that treat conditions across the most disease categories. Plants are annotated with their known compound counts. File: `figures/10_multi_target_plants.png`
 

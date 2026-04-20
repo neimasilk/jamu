@@ -1,7 +1,39 @@
 # JamuKG — Triage
-**16 April 2026**
+**16 April 2026** (deliberation) | **20 April 2026** (progress update di bawah)
 
 Catatan deliberasi setelah audit mendalam terhadap data yang sudah ada.
+
+---
+
+## Progress Update — 20 April 2026
+
+Tiga sesi di tanggal 20 April 2026 menyelesaikan sebagian besar Tier 1 + Tier 2. Detail lengkap di `NOTES_2026-04-20_grammar_schools.md` dan `NOTES_2026-04-20_ontology_applied.md`.
+
+### ✅ Selesai
+- **Ontology cleanup + apply to KG** (Tier 1). v08 KG tercipta: 8,931 TREATS lama → 6,923 TREATS (clinical+symptom) + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO. 6 ambiguous terms resolved.
+- **Deeper grammar analysis** (Tier 2). 11 mazhab stabil + 5 bridge herbs via consensus-Louvain, divalidasi oleh dua axis independen (plant-part, taxonomy).
+- **Forbidden combinations investigation** (Tier 2). 107 forbidden pairs lulus uji signifikansi (Z=37.97 vs null degree-preserving) dan parameter sweep (99.5% cross-mazhab di 60 konfigurasi).
+- **Methodological robustness suite**. Null model + parameter sweep tersimpan sebagai skrip reusable (`src/analysis/herb_communities_robustness.py`).
+
+### Hasil mengejutkan (jujur)
+
+Angka validation gap **hanya bergerak dari 85.9% → 85.6%** setelah ontology cleanup — jauh di bawah hipotesis awal triage (88.5%). Gap ternyata **struktural** di semua kategori (82–87%), bukan artefak label. Cleanup tetap bernilai karena:
+1. Meningkatkan precision klaim (3,740 clinical vs 5,744 mixed)
+2. Re-ranking drug discovery candidates: 8/30 plants keluar dari top-30 karena ranked tinggi akibat non-clinical uses
+3. Membongkar blind spot: 3,183 KNApSAcK formulation edges tidak pernah diquery PubMed
+
+Angka 88.5% yang dihipotesiskan di TRIAGE asli (via restriksi ke istilah spesifik) **tidak tercapai** dengan pendekatan ontology-split. Jalur perbaikan PubMed-query-quality (mengganti "Skin" → "skin AND disease" dll.) masih belum dieksplorasi.
+
+### Belum dikerjakan (Tier 2/3)
+- Synergy prediction (co-occurrence + bioenhancement mechanism)
+- Visualisasi jaringan mazhab
+- HerbalDB harvest (server masih down)
+- Historical text mining (Layer 1 Manifesto)
+- Marketplace mining
+- ICD-10 mapping improvement
+- Formulation-level PubMed validation (aggregate from constituent plants)
+- Piperaceae / TCM island / bridge herb case studies (scoped)
+- PubMed-query-quality improvement (mengaddress 88.5% hypothesis dari TRIAGE asli)
 
 ---
 

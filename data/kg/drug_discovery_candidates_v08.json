@@ -1,0 +1,909 @@
+{
+  "method": "ranked by unstudied TREATS-clinical (v08 ontology-split)",
+  "n_candidates": 50,
+  "candidates": [
+    {
+      "plant": "Hydrocotyle asiatica",
+      "plant_id": "hydrocotyle_asiatica",
+      "unstudied_clinical_claims": 17,
+      "unstudied_total_claims": 20,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Asthma",
+        "Bronchitis",
+        "Catarrh",
+        "Dropsy",
+        "Epilepsy",
+        "Fever",
+        "Hematuria",
+        "Hepatosis",
+        "Hysteria",
+        "Leukorrhea"
+      ]
+    },
+    {
+      "plant": "Nigella sativum",
+      "plant_id": "nigella_sativum",
+      "unstudied_clinical_claims": 16,
+      "unstudied_total_claims": 20,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Amenorrhea",
+        "Colic",
+        "Constipation",
+        "Debility",
+        "Fever",
+        "Hepatomegaly",
+        "Herpes",
+        "Nausea",
+        "Ophthalmia"
+      ]
+    },
+    {
+      "plant": "Sida rhombifolia",
+      "plant_id": "sida_rhombifolia",
+      "unstudied_clinical_claims": 16,
+      "unstudied_total_claims": 21,
+      "non_clinical_claims_excluded": 5,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Tooth)",
+        "Boil",
+        "Chickenpox",
+        "Constipation",
+        "Cramps",
+        "Delirium",
+        "Dermatosis",
+        "Dysmenorrhea",
+        "Enterosis"
+      ]
+    },
+    {
+      "plant": "Musa sapientum",
+      "plant_id": "musa_sapientum",
+      "unstudied_clinical_claims": 16,
+      "unstudied_total_claims": 19,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Blister",
+        "Catarrh",
+        "Colitis",
+        "Dengue",
+        "Dizziness",
+        "Dysuria",
+        "Enteritis",
+        "Enterorrhagia",
+        "Epistaxis",
+        "Fever(Remittent)"
+      ]
+    },
+    {
+      "plant": "Gendarussa vulgaris",
+      "plant_id": "gendarussa_vulgaris",
+      "unstudied_clinical_claims": 15,
+      "unstudied_total_claims": 16,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Amenorrhea",
+        "Cough",
+        "Debility",
+        "Fever",
+        "Gastrosis",
+        "Gonorrhea",
+        "Hematoptysis",
+        "Lunacy",
+        "Malaria"
+      ]
+    },
+    {
+      "plant": "Sophora tomentosa",
+      "plant_id": "sophora_tomentosa",
+      "unstudied_clinical_claims": 14,
+      "unstudied_total_claims": 18,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Cholera",
+        "Colic",
+        "Diarrhea",
+        "Dropsy",
+        "Dysentery",
+        "Dysuria",
+        "Enterosis",
+        "Food poisoning",
+        "Gonorrhea",
+        "Hematuria"
+      ]
+    },
+    {
+      "plant": "Mimusops elengi",
+      "plant_id": "mimusops_elengi",
+      "unstudied_clinical_claims": 13,
+      "unstudied_total_claims": 13,
+      "non_clinical_claims_excluded": 0,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Dermatosis",
+        "Diarrhea",
+        "Fever",
+        "Leukorrhea",
+        "Ophthalmia",
+        "Pimple",
+        "Pyorrhea",
+        "Rhinosis",
+        "Sore(Throat)"
+      ]
+    },
+    {
+      "plant": "Datura metel",
+      "plant_id": "datura_metel",
+      "unstudied_clinical_claims": 13,
+      "unstudied_total_claims": 14,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Arthritis",
+        "Boil",
+        "Cholera",
+        "Earache",
+        "Erysipelas",
+        "Orchitis",
+        "Piles",
+        "Ringworm",
+        "Smallpox",
+        "Sore(Throat)"
+      ]
+    },
+    {
+      "plant": "Dryobalanops aromatica",
+      "plant_id": "dryobalanops_aromatica",
+      "unstudied_clinical_claims": 12,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 0,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Tooth)",
+        "Asthma",
+        "Cancer(Nose)",
+        "Conjunctivitis",
+        "Cough",
+        "Gastralgia",
+        "Ophthalmia",
+        "Rhinosis",
+        "Ringworm"
+      ]
+    },
+    {
+      "plant": "Morinda citrifolia",
+      "plant_id": "morinda_citrifolia",
+      "unstudied_clinical_claims": 12,
+      "unstudied_total_claims": 15,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Ague",
+        "Beriberi",
+        "Colic",
+        "Convulsion",
+        "Cough",
+        "Dysuria",
+        "Hepatosis",
+        "Leukorrhea",
+        "Sapraemia",
+        "Smallpox"
+      ]
+    },
+    {
+      "plant": "Sesbania grandiflora",
+      "plant_id": "sesbania_grandiflora",
+      "unstudied_clinical_claims": 12,
+      "unstudied_total_claims": 14,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Bruise",
+        "Edema",
+        "Enterosis",
+        "Gastrosis",
+        "Glossitis",
+        "Leucorrhea",
+        "Scabies",
+        "Sore(Throat)",
+        "Sprue",
+        "Stomatitis"
+      ]
+    },
+    {
+      "plant": "Moringa oleifera",
+      "plant_id": "moringa_oleifera",
+      "unstudied_clinical_claims": 12,
+      "unstudied_total_claims": 17,
+      "non_clinical_claims_excluded": 5,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Beriberi",
+        "Dermatosis",
+        "Dropsy",
+        "Drunkenness",
+        "Enterosis",
+        "Gonorrhea",
+        "Lameness",
+        "Numbness",
+        "Ringworm"
+      ]
+    },
+    {
+      "plant": "Piper betle",
+      "plant_id": "piper_betle",
+      "unstudied_clinical_claims": 12,
+      "unstudied_total_claims": 14,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Abscess",
+        "Ache(Tooth)",
+        "Earache",
+        "Epistaxis",
+        "Gonorrhea",
+        "Hoarseness",
+        "Itch",
+        "Leucorrhea",
+        "Mucositis",
+        "Otosis"
+      ]
+    },
+    {
+      "plant": "Zingiber cassumunar",
+      "plant_id": "zingiber_cassumunar",
+      "unstudied_clinical_claims": 11,
+      "unstudied_total_claims": 16,
+      "non_clinical_claims_excluded": 5,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Stomach)",
+        "Colic",
+        "Constipation",
+        "Cramps",
+        "Fever",
+        "Flatulence",
+        "Gonorrhea",
+        "Jaundice",
+        "Malaria"
+      ]
+    },
+    {
+      "plant": "Averrhoa bilimbi",
+      "plant_id": "averrhoa_bilimbi",
+      "unstudied_clinical_claims": 11,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Beriberi",
+        "Bilious",
+        "Itch",
+        "Mumps",
+        "Ophthalmia",
+        "Osteosis",
+        "Pimple",
+        "Proctitis",
+        "Rheumatism",
+        "Swelling"
+      ]
+    },
+    {
+      "plant": "Pterocarpus santalinus",
+      "plant_id": "pterocarpus_santalinus",
+      "unstudied_clinical_claims": 10,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Ache(Stomach)",
+        "Arrhythmia",
+        "Diarrhea",
+        "Hematochezia",
+        "Hematuria",
+        "Hemoptysis",
+        "Leucorrhea",
+        "Rheumatism",
+        "Sprue",
+        "Yaws"
+      ]
+    },
+    {
+      "plant": "Coleus atropurpureus",
+      "plant_id": "coleus_atropurpureus",
+      "unstudied_clinical_claims": 10,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Adenopathy",
+        "Cold",
+        "Colic",
+        "Conjunctivitis",
+        "Deafness",
+        "Diarrhea",
+        "Dysmenorrhea",
+        "Hepatosis",
+        "Piles",
+        "Smallpox"
+      ]
+    },
+    {
+      "plant": "Piper fragile",
+      "plant_id": "piper_fragile",
+      "unstudied_clinical_claims": 10,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Abscess",
+        "Arthritis?",
+        "Colic",
+        "Cramps",
+        "Fever",
+        "Frambesia",
+        "Gonorrhea",
+        "Gravel",
+        "Jaundice",
+        "Pleurisy"
+      ]
+    },
+    {
+      "plant": "Lawsonia inermis",
+      "plant_id": "lawsonia_inermis",
+      "unstudied_clinical_claims": 10,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Boil",
+        "Burning-feet",
+        "Dermatosis",
+        "Herpes",
+        "Hoarseness",
+        "Leucorrhea",
+        "Onychosis",
+        "Ophthalmia",
+        "Venereal",
+        "Whitlow"
+      ]
+    },
+    {
+      "plant": "Urena lobata",
+      "plant_id": "urena_lobata",
+      "unstudied_clinical_claims": 10,
+      "unstudied_total_claims": 16,
+      "non_clinical_claims_excluded": 6,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Colic",
+        "Diarrhea",
+        "Dysentery",
+        "Fever",
+        "Gonorrhea",
+        "Hematochezia",
+        "Inflammation",
+        "Sore",
+        "Yaws"
+      ]
+    },
+    {
+      "plant": "Gmelina villosa",
+      "plant_id": "gmelina_villosa",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Alopecia",
+        "Anemia",
+        "Cough",
+        "Dropsy",
+        "Earache",
+        "Itch",
+        "Rheumatism",
+        "Swelling"
+      ]
+    },
+    {
+      "plant": "Wedelia biflora",
+      "plant_id": "wedelia_biflora",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 13,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Dermatosis",
+        "Gonorrhea",
+        "Gravel",
+        "Hematuria",
+        "Itch",
+        "Sore",
+        "Swelling",
+        "Vaginitis",
+        "Varicosity"
+      ]
+    },
+    {
+      "plant": "Parkia javanica",
+      "plant_id": "parkia_javanica",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Cholera",
+        "Colic",
+        "Cramps",
+        "Dermatosis",
+        "Dysmenorrhea",
+        "Gastromegaly",
+        "Itch",
+        "Pustule",
+        "Rhinosis"
+      ]
+    },
+    {
+      "plant": "Brucea javanica",
+      "plant_id": "brucea_javanica",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Boil",
+        "Colic",
+        "Condyloma",
+        "Cough",
+        "Mange",
+        "Rheumatism",
+        "Ringworm",
+        "Scurf",
+        "Splenomegaly"
+      ]
+    },
+    {
+      "plant": "Michelia champaca",
+      "plant_id": "michelia_champaca",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Angina",
+        "Colic",
+        "Fever",
+        "Gonorrhea",
+        "Gravel",
+        "Halitosis",
+        "Malaria",
+        "Ozoena",
+        "Rheumatism"
+      ]
+    },
+    {
+      "plant": "Cocos nucifera",
+      "plant_id": "cocos_nucifera",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 11,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Ache(Stomach)",
+        "Colitis",
+        "Enterosis",
+        "Gonorrhea",
+        "Osteosis",
+        "Piles",
+        "Rheumatism",
+        "Smallpox",
+        "Syphilis"
+      ]
+    },
+    {
+      "plant": "Pogostemon heyneanus",
+      "plant_id": "pogostemon_heyneanus",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Bilious",
+        "Boil",
+        "Cough",
+        "Dropsy",
+        "Fever",
+        "Jaundice",
+        "Rheumatism",
+        "Smallpox"
+      ]
+    },
+    {
+      "plant": "Piper retrofractum",
+      "plant_id": "piper_retrofractum",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 13,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Cancer(Nose)",
+        "Colic",
+        "Cramps",
+        "Dyspepsia",
+        "Gastralgia",
+        "Hepatosis",
+        "Inertia",
+        "Osteosis",
+        "Weakness"
+      ]
+    },
+    {
+      "plant": "Cordyline fruticosa",
+      "plant_id": "cordyline_fruticosa",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 11,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Ague",
+        "Arthritis",
+        "Cough",
+        "Dermatosis",
+        "Dysentery",
+        "Dyspepsia",
+        "Gingivitis",
+        "Insanity",
+        "Smallpox"
+      ]
+    },
+    {
+      "plant": "Caesalpinia sp.",
+      "plant_id": "caesalpinia_sp",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Cough",
+        "Dysmenorrhea",
+        "Gout",
+        "Hepatosis",
+        "Itch",
+        "Jaundice",
+        "Orchitis",
+        "Rheumatism",
+        "Tapeworm"
+      ]
+    },
+    {
+      "plant": "Hedyotis capitellata",
+      "plant_id": "hedyotis_capitellata",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Ague",
+        "Bruise",
+        "Dysentery",
+        "Gastrosis",
+        "Heartburn",
+        "Lumbago",
+        "Rheumatism",
+        "Vertigo",
+        "Wart"
+      ]
+    },
+    {
+      "plant": "Phyllanthus urinaria",
+      "plant_id": "phyllanthus_urinaria",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 13,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Cough",
+        "Dermatosis",
+        "Diarrhea",
+        "Glossitis",
+        "Gonorrhea",
+        "Itch",
+        "Renosis",
+        "Syphilis",
+        "Vertigo"
+      ]
+    },
+    {
+      "plant": "Monochoria vaginalis",
+      "plant_id": "monochoria_vaginalis",
+      "unstudied_clinical_claims": 9,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Tooth)",
+        "Asthma",
+        "Boil",
+        "Bronchosis",
+        "Cough",
+        "Fever",
+        "Gastrosis",
+        "Hepatosis",
+        "Sore"
+      ]
+    },
+    {
+      "plant": "Tinospora tuberculata",
+      "plant_id": "tinospora_tuberculata",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Ague",
+        "Cholera",
+        "Diabetes",
+        "Fever",
+        "Ophthalmia",
+        "Smallpox",
+        "Sore",
+        "Syphilis"
+      ]
+    },
+    {
+      "plant": "Citrus aurantifolia",
+      "plant_id": "citrus_aurantifolia",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 8,
+      "non_clinical_claims_excluded": 0,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Stomach)",
+        "Cough",
+        "Dermatosis",
+        "Dysentery",
+        "Gonorrhea",
+        "Neuralgia",
+        "Yaws"
+      ]
+    },
+    {
+      "plant": "Zingiber officinale",
+      "plant_id": "zingiber_officinale",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Back)",
+        "Ache(Head)",
+        "Ague",
+        "Gingivosis",
+        "Hepatosis",
+        "Rhinosis",
+        "Syphilis",
+        "Tumor(Hand)"
+      ]
+    },
+    {
+      "plant": "Areca catechu",
+      "plant_id": "areca_catechu",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Gastrosis",
+        "Gonorrhea",
+        "Hematuria",
+        "Hysteria",
+        "Odontosis",
+        "Rhinosis",
+        "Scabies",
+        "Tapeworm"
+      ]
+    },
+    {
+      "plant": "Gastrochilus panduratum",
+      "plant_id": "gastrochilus_panduratum",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Cough",
+        "Dysuria",
+        "Gastrosis",
+        "Myalgia",
+        "Rheumatism",
+        "Sore(Throat)",
+        "Swelling",
+        "Thrush"
+      ]
+    },
+    {
+      "plant": "Phyllanthus pulcher",
+      "plant_id": "phyllanthus_pulcher",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 8,
+      "non_clinical_claims_excluded": 0,
+      "clinical_diseases_sample": [
+        "Ache(Stomach)",
+        "Ache(Tooth)",
+        "Boil",
+        "Carbuncle",
+        "Dermatosis",
+        "Itch",
+        "Renosis",
+        "Sore"
+      ]
+    },
+    {
+      "plant": "Plumeria acutifolia",
+      "plant_id": "plumeria_acutifolia",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Ache(Tooth)",
+        "Corn",
+        "Dermatosis",
+        "Dropsy",
+        "Dysuria",
+        "Gonorrhea",
+        "Sore",
+        "Swelling"
+      ]
+    },
+    {
+      "plant": "Myristica fragrans",
+      "plant_id": "myristica_fragrans",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Cramps",
+        "Gastromegaly",
+        "Impotence",
+        "Insanity",
+        "Leprosy",
+        "Osteosis",
+        "Sciatica",
+        "Thrush"
+      ]
+    },
+    {
+      "plant": "Euphorbia tirucalli",
+      "plant_id": "euphorbia_tirucalli",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 11,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Dermatosis",
+        "Leprosy",
+        "Ostealgia",
+        "Osteosis",
+        "Piles",
+        "Rhinosis",
+        "Scurf",
+        "Swelling"
+      ]
+    },
+    {
+      "plant": "Aleurites moluccana",
+      "plant_id": "aleurites_moluccana",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Stomach)",
+        "Diarrhea",
+        "Dysentery",
+        "Sciatica",
+        "Sore",
+        "Sprue",
+        "Swelling"
+      ]
+    },
+    {
+      "plant": "Tinospora crispa",
+      "plant_id": "tinospora_crispa",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 10,
+      "non_clinical_claims_excluded": 2,
+      "clinical_diseases_sample": [
+        "Dermatosis",
+        "Enterosis",
+        "Hepatomegaly",
+        "Itch",
+        "Sore",
+        "Splenomegaly",
+        "Syphilis",
+        "Tetanus"
+      ]
+    },
+    {
+      "plant": "Rubus moluccanus",
+      "plant_id": "rubus_moluccanus",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Boil",
+        "Cough",
+        "Cramps",
+        "Enterosis",
+        "Enuresis",
+        "Pimple",
+        "Sprue",
+        "Thrush"
+      ]
+    },
+    {
+      "plant": "Pterocarpus indicus",
+      "plant_id": "pterocarpus_indicus",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Boil",
+        "Diarrhea",
+        "Nephritis",
+        "Prickly heat",
+        "Sore",
+        "Stomatitis",
+        "Syphilis",
+        "Thrush"
+      ]
+    },
+    {
+      "plant": "Paederia foetida",
+      "plant_id": "paederia_foetida",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 11,
+      "non_clinical_claims_excluded": 3,
+      "clinical_diseases_sample": [
+        "Ache(Tooth)",
+        "Enteromegaly",
+        "Enterosis",
+        "Flatulence",
+        "Gastromegaly",
+        "Rhinosis",
+        "Sapraemia",
+        "Sore"
+      ]
+    },
+    {
+      "plant": "Chloranthus officinalis",
+      "plant_id": "chloranthus_officinalis",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 13,
+      "non_clinical_claims_excluded": 5,
+      "clinical_diseases_sample": [
+        "Arthritis",
+        "Burn",
+        "Cramps",
+        "Fever",
+        "Gonorrhea",
+        "Smallpox",
+        "Sore",
+        "Typhus (Typhoid)"
+      ]
+    },
+    {
+      "plant": "Dysophylla auriculata",
+      "plant_id": "dysophylla_auriculata",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 9,
+      "non_clinical_claims_excluded": 1,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Ache(Stomach)",
+        "Diarrhea",
+        "Gastrosis",
+        "Prickly heat",
+        "Renosis",
+        "Rheumatism",
+        "Sore(Throat)"
+      ]
+    },
+    {
+      "plant": "Crinum asiaticum",
+      "plant_id": "crinum_asiaticum",
+      "unstudied_clinical_claims": 8,
+      "unstudied_total_claims": 12,
+      "non_clinical_claims_excluded": 4,
+      "clinical_diseases_sample": [
+        "Ache(Head)",
+        "Chafing",
+        "Dysuria",
+        "Lumbago",
+        "Orchitis",
+        "Sore",
+        "Swelling",
+        "Tumor(Stomach)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "genus_family_map": {
+    "Abrus": "Fabaceae",
+    "Acorus": "Acoraceae",
+    "Allium": "Amaryllidaceae",
+    "Aloe": "Asphodelaceae",
+    "Alpinia": "Zingiberaceae",
+    "Alstonia": "Apocynaceae",
+    "Alyxia": "Apocynaceae",
+    "Amomum": "Zingiberaceae",
+    "Andrographis": "Acanthaceae",
+    "Andropogon": "Poaceae",
+    "Angelica": "Apiaceae",
+    "Apium": "Apiaceae",
+    "Areca": "Arecaceae",
+    "Baeckea": "Myrtaceae",
+    "Blumea": "Asteraceae",
+    "Boesenbergia": "Zingiberaceae",
+    "Caesalpinia": "Fabaceae",
+    "Camellia": "Theaceae",
+    "Carica": "Caricaceae",
+    "Carthamus": "Asteraceae",
+    "Carum": "Apiaceae",
+    "Caryophyllus": "Myrtaceae",
+    "Cassia": "Fabaceae",
+    "Centella": "Apiaceae",
+    "Cinnamomum": "Lauraceae",
+    "Citrus": "Rutaceae",
+    "Clausena": "Rutaceae",
+    "Cocos": "Arecaceae",
+    "Coriandrum": "Apiaceae",
+    "Curcuma": "Zingiberaceae",
+    "Cymbopogon": "Poaceae",
+    "Cyperus": "Cyperaceae",
+    "Dioscorea": "Dioscoreaceae",
+    "Elephantopus": "Asteraceae",
+    "Equisetum": "Equisetaceae",
+    "Eucalyptus": "Myrtaceae",
+    "Eugenia": "Myrtaceae",
+    "Eurycoma": "Simaroubaceae",
+    "Foeniculum": "Apiaceae",
+    "Galla": "Fagaceae",
+    "Glycyrrhiza": "Fabaceae",
+    "Graptophyllum": "Acanthaceae",
+    "Guazuma": "Malvaceae",
+    "Gynura": "Asteraceae",
+    "Helicteres": "Malvaceae",
+    "Imperata": "Poaceae",
+    "Kaempferia": "Zingiberaceae",
+    "Languas": "Zingiberaceae",
+    "Massoia": "Lauraceae",
+    "Melaleuca": "Myrtaceae",
+    "Mentha": "Lamiaceae",
+    "Momordica": "Cucurbitaceae",
+    "Morinda": "Rubiaceae",
+    "Murraya": "Rutaceae",
+    "Myristica": "Myristicaceae",
+    "Nigella": "Ranunculaceae",
+    "Olea": "Oleaceae",
+    "Orthosiphon": "Lamiaceae",
+    "Oryza": "Poaceae",
+    "Panax": "Araliaceae",
+    "Parameria": "Apocynaceae",
+    "Parkia": "Fabaceae",
+    "Phaleria": "Thymelaeaceae",
+    "Phyllanthus": "Phyllanthaceae",
+    "Pimpinella": "Apiaceae",
+    "Piper": "Piperaceae",
+    "Piperis": "Piperaceae",
+    "Plantago": "Plantaginaceae",
+    "Pluchea": "Asteraceae",
+    "Psidium": "Myrtaceae",
+    "Punica": "Lythraceae",
+    "Quercus": "Fagaceae",
+    "Rheum": "Polygonaceae",
+    "Santalum": "Santalaceae",
+    "Sauropus": "Phyllanthaceae",
+    "Sericocalyx": "Acanthaceae",
+    "Sonchus": "Asteraceae",
+    "Soya": "Fabaceae",
+    "Strychnos": "Loganiaceae",
+    "Syzygium": "Myrtaceae",
+    "Talinum": "Talinaceae",
+    "Tamarindus": "Fabaceae",
+    "Terminalia": "Combretaceae",
+    "Theae": "Theaceae",
+    "Tinospora": "Menispermaceae",
+    "Tribulus": "Zygophyllaceae",
+    "Trigonella": "Fabaceae",
+    "Usnea": "Parmeliaceae",
+    "Woodfordia": "Lythraceae",
+    "Zea": "Poaceae",
+    "Zingiber": "Zingiberaceae"
+  },
+  "community_family_distribution": {
+    "S0": {
+      "Piperaceae": 2,
+      "Parmeliaceae": 1,
+      "Poaceae": 2,
+      "Myrtaceae": 3,
+      "Lauraceae": 1,
+      "Cyperaceae": 1,
+      "Zingiberaceae": 7,
+      "Apiaceae": 3,
+      "Equisetaceae": 1,
+      "Malvaceae": 1,
+      "Lamiaceae": 1,
+      "Fabaceae": 1,
+      "Myristicaceae": 1
+    },
+    "S1": {
+      "Theaceae": 2,
+      "Myrtaceae": 1,
+      "Asteraceae": 2,
+      "Arecaceae": 1,
+      "Apocynaceae": 2,
+      "Fabaceae": 3,
+      "Combretaceae": 1,
+      "Piperaceae": 1,
+      "Malvaceae": 1,
+      "Zingiberaceae": 5,
+      "Fagaceae": 2,
+      "Rutaceae": 2,
+      "Lythraceae": 1,
+      "Asphodelaceae": 1
+    },
+    "S2": {
+      "Myrtaceae": 1,
+      "Acanthaceae": 2,
+      "Amaryllidaceae": 1,
+      "Asteraceae": 2,
+      "Lamiaceae": 1,
+      "Poaceae": 1,
+      "Rubiaceae": 1,
+      "Plantaginaceae": 1,
+      "Cucurbitaceae": 1,
+      "Apiaceae": 2,
+      "Menispermaceae": 1,
+      "Thymelaeaceae": 1,
+      "Phyllanthaceae": 1
+    },
+    "S3": {
+      "Myrtaceae": 2,
+      "Oleaceae": 1,
+      "Ranunculaceae": 1,
+      "Rutaceae": 1,
+      "Arecaceae": 1,
+      "Poaceae": 1,
+      "Zingiberaceae": 1,
+      "Lamiaceae": 1
+    },
+    "S4": {
+      "Dioscoreaceae": 1,
+      "Talinaceae": 1,
+      "Apiaceae": 1,
+      "Araliaceae": 1,
+      "Piperaceae": 2,
+      "Zygophyllaceae": 1,
+      "Simaroubaceae": 1
+    },
+    "S5": {
+      "Acoraceae": 1,
+      "Zingiberaceae": 3
+    },
+    "S6": {
+      "Santalaceae": 1,
+      "Lauraceae": 2,
+      "Fabaceae": 1
+    },
+    "S7": {
+      "Apocynaceae": 1,
+      "Loganiaceae": 1,
+      "Fabaceae": 1
+    },
+    "S8": {
+      "Apiaceae": 1,
+      "Polygonaceae": 1,
+      "Asteraceae": 1
+    },
+    "S9": {
+      "Caricaceae": 1,
+      "Acanthaceae": 1
+    },
+    "S10": {
+      "Poaceae": 1,
+      "Fabaceae": 1
+    }
+  },
+  "family_community_distribution": {
+    "Piperaceae": {
+      "S0": 2,
+      "S1": 1,
+      "S4": 2
+    },
+    "Parmeliaceae": {
+      "S0": 1
+    },
+    "Poaceae": {
+      "S0": 2,
+      "S2": 1,
+      "S3": 1,
+      "S10": 1
+    },
+    "Myrtaceae": {
+      "S0": 3,
+      "S1": 1,
+      "S2": 1,
+      "S3": 2
+    },
+    "Lauraceae": {
+      "S0": 1,
+      "S6": 2
+    },
+    "Cyperaceae": {
+      "S0": 1
+    },
+    "Zingiberaceae": {
+      "S0": 7,
+      "S1": 5,
+      "S3": 1,
+      "S5": 3
+    },
+    "Apiaceae": {
+      "S0": 3,
+      "S2": 2,
+      "S4": 1,
+      "S8": 1
+    },
+    "Equisetaceae": {
+      "S0": 1
+    },
+    "Malvaceae": {
+      "S0": 1,
+      "S1": 1
+    },
+    "Lamiaceae": {
+      "S0": 1,
+      "S2": 1,
+      "S3": 1
+    },
+    "Fabaceae": {
+      "S0": 1,
+      "S1": 3,
+      "S6": 1,
+      "S7": 1,
+      "S10": 1
+    },
+    "Myristicaceae": {
+      "S0": 1
+    },
+    "Theaceae": {
+      "S1": 2
+    },
+    "Asteraceae": {
+      "S1": 2,
+      "S2": 2,
+      "S8": 1
+    },
+    "Arecaceae": {
+      "S1": 1,
+      "S3": 1
+    },
+    "Apocynaceae": {
+      "S1": 2,
+      "S7": 1
+    },
+    "Combretaceae": {
+      "S1": 1
+    },
+    "Fagaceae": {
+      "S1": 2
+    },
+    "Rutaceae": {
+      "S1": 2,
+      "S3": 1
+    },
+    "Lythraceae": {
+      "S1": 1
+    },
+    "Asphodelaceae": {
+      "S1": 1
+    },
+    "Acanthaceae": {
+      "S2": 2,
+      "S9": 1
+    },
+    "Amaryllidaceae": {
+      "S2": 1
+    },
+    "Rubiaceae": {
+      "S2": 1
+    },
+    "Plantaginaceae": {
+      "S2": 1
+    },
+    "Cucurbitaceae": {
+      "S2": 1
+    },
+    "Menispermaceae": {
+      "S2": 1
+    },
+    "Thymelaeaceae": {
+      "S2": 1
+    },
+    "Phyllanthaceae": {
+      "S2": 1
+    },
+    "Oleaceae": {
+      "S3": 1
+    },
+    "Ranunculaceae": {
+      "S3": 1
+    },
+    "Dioscoreaceae": {
+      "S4": 1
+    },
+    "Talinaceae": {
+      "S4": 1
+    },
+    "Araliaceae": {
+      "S4": 1
+    },
+    "Zygophyllaceae": {
+      "S4": 1
+    },
+    "Simaroubaceae": {
+      "S4": 1
+    },
+    "Acoraceae": {
+      "S5": 1
+    },
+    "Santalaceae": {
+      "S6": 1
+    },
+    "Loganiaceae": {
+      "S7": 1
+    },
+    "Polygonaceae": {
+      "S8": 1
+    },
+    "Caricaceae": {
+      "S9": 1
+    }
+  },
+  "community_family_entropy": {
+    "S0": 0.896,
+    "S1": 0.943,
+    "S2": 0.98,
+    "S3": 0.983,
+    "S4": 0.98,
+    "S5": 0.811,
+    "S6": 0.946,
+    "S7": 1.0,
+    "S8": 1.0,
+    "S9": 1.0,
+    "S10": 1.0
+  }
+}

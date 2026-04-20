@@ -1,0 +1,477 @@
+{
+  "method": {
+    "graph": "lift-weighted co-occurrence",
+    "min_herb_freq": 40,
+    "min_obs": 5,
+    "lift_threshold": 1.5,
+    "algorithm": "consensus Louvain over 40 seeds",
+    "resolution": 1.2,
+    "co_cluster_threshold": 0.7,
+    "stability_mean_ari": 0.72
+  },
+  "communities": [
+    {
+      "community_id": 0,
+      "label": "Musculoskeletal warming + aromatic base",
+      "size": 25,
+      "effect_distribution": {
+        "Musculoskeletal and connective tissue disorders": 17,
+        "Pain/inflammation": 3,
+        "Female reproductive organ problems": 2,
+        "Gastrointestinal disorders": 2
+      },
+      "role_distribution": {
+        "umum": 13,
+        "penyeimbang": 7,
+        "menteri": 2,
+        "kurir": 2
+      },
+      "plant_part_occurrences_pct": {
+        "Rhizome": 44.0,
+        "Fruit": 27.9,
+        "Bark": 5.1,
+        "Seed": 5.0,
+        "Root": 4.0
+      },
+      "members": [
+        "Zingiber officinale Rosc",
+        "Kaempferia galanga L.",
+        "Foeniculum vulgare Mill.",
+        "Zingiber aromaticum Val",
+        "Amomum cardamomum Willd",
+        "Cinnamomum burmani Bl",
+        "Myristica fragrans Houtt.",
+        "Languas galanga (L.) Stuntz",
+        "Glycyrrhiza glabra L.",
+        "Caryophyllus aromaticus L.",
+        "Coriandrum sativum L",
+        "Piper cubeba L.f.",
+        "Mentha arvensis L",
+        "Carum copticum (L.) Benth",
+        "Melaleuca cajuputi Powell",
+        "Zingiber zerumbet SM",
+        "Oryza sativa L.",
+        "Baeckea frutescens L.",
+        "Usnea misaminensis (Vain) Not.",
+        "Cyperus rotundus L",
+        "Helicteres isora L.",
+        "Cymbopogon nardus L. Rendle",
+        "Piperis Albi",
+        "Equisetum debile Roxb.",
+        "Zingiber amaricans Bl"
+      ]
+    },
+    {
+      "community_id": 1,
+      "label": "Female reproductive / astringent",
+      "size": 25,
+      "effect_distribution": {
+        "Female reproductive organ problems": 11,
+        "Gastrointestinal disorders": 4,
+        "Disorders of appetite": 4,
+        "Musculoskeletal and connective tissue disorders": 3,
+        "Wounds and skin infections": 1
+      },
+      "role_distribution": {
+        "penyeimbang": 6,
+        "menteri": 4,
+        "umum": 12,
+        "kurir": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Rhizome": 32.5,
+        "Leaf": 30.0,
+        "Bark": 15.4,
+        "Fruit": 9.0,
+        "Seed": 8.8
+      },
+      "members": [
+        "Curcuma domestica Val",
+        "Alyxia reinwardtii Bl.",
+        "Piper betle L",
+        "Guazuma ulmifolia Lamk.",
+        "Parkia roxburghii G.Don",
+        "Parameria laevigata (Juss.) Moldenke",
+        "Boesenbergia pandurata (Roxb.) Schlecht",
+        "Zingiber purpureum Roxb",
+        "Punica granatum L",
+        "Areca catechu L",
+        "Elephantopus scaber L.",
+        "Tamarindus indica L.",
+        "Galla halepensis",
+        "Murraya paniculata Jacq",
+        "Curcuma heyneana Val.",
+        "Quercus lusitanica Lamk.",
+        "Pluchea indica Less",
+        "Citrus aurantifolia",
+        "Kaempferia angustifolia Rosc.",
+        "Theae sinensis",
+        "Psidium guajava L",
+        "Camellia sinensis (L.) O.K.",
+        "Aloe vera L.",
+        "Cassia angustifolia Vahl.",
+        "Terminalia bellirica (Gaertn) Roxb."
+      ]
+    },
+    {
+      "community_id": 2,
+      "label": "GI bitter / hepatoprotective",
+      "size": 16,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 11,
+        "Musculoskeletal and connective tissue disorders": 4,
+        "Urinary related problems": 1
+      },
+      "role_distribution": {
+        "umum": 11,
+        "raja": 2,
+        "menteri": 2,
+        "penyeimbang": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Herb": 36.9,
+        "Leaf": 34.8,
+        "Fruit": 11.2,
+        "Bulb": 4.6,
+        "Rhizome": 4.4
+      },
+      "members": [
+        "Andrographis paniculata Ness",
+        "Orthosiphon spicatus B.B.S.",
+        "Centella asiatica Urb",
+        "Phyllanthus niruri L",
+        "Morinda citrifolia L",
+        "Imperata cylindrica Beauv.",
+        "Allium sativum",
+        "Sonchus arvensis L",
+        "Tinospora tuberculata Beumee",
+        "Plantago major L",
+        "Syzygium polyanthum Wigh Walp",
+        "Phaleria macrocarpa (Scheff.)Boerl.",
+        "Sericocalyx crispus (L.) Bremek.",
+        "Gynura procumbens L. Merr.",
+        "Apium graveolens L",
+        "Momordica charantia L"
+      ]
+    },
+    {
+      "community_id": 3,
+      "label": "GI aromatic-carminative",
+      "size": 9,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 4,
+        "Pain/inflammation": 2,
+        "Musculoskeletal and connective tissue disorders": 1
+      },
+      "role_distribution": {
+        "raja": 1,
+        "umum": 5,
+        "menteri": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Oil": 65.3,
+        "Seed": 18.0,
+        "Fruit": 6.4,
+        "Rhizome": 5.7,
+        "Flower": 2.6
+      },
+      "members": [
+        "Eucalyptus alba Reinw",
+        "Cocos nucifera L.",
+        "Nigella sativa L.",
+        "Clausena anisum-olens Merr.",
+        "Mentha piperita L",
+        "Andropogon citratus DC.",
+        "Alpinia galanga SW.",
+        "Olea europaea L.",
+        "Eugenia aromatica O.K"
+      ]
+    },
+    {
+      "community_id": 4,
+      "label": "Male tonic / aphrodisiac",
+      "size": 8,
+      "effect_distribution": {
+        "Musculoskeletal and connective tissue disorders": 7
+      },
+      "role_distribution": {
+        "menteri": 5,
+        "umum": 2
+      },
+      "plant_part_occurrences_pct": {
+        "Fruit": 62.2,
+        "Root": 31.9,
+        "Herb": 2.9,
+        "Rhizome": 1.9,
+        "Tuber": 0.8
+      },
+      "members": [
+        "Piper retrofractum Vahl.",
+        "Piper nigrum L",
+        "Panax ginseng L.",
+        "Eurycoma longifolia Jack.",
+        "Talinum paniculatum Gaertn",
+        "Tribulus terrestris",
+        "Dioscorea hispida Dennust",
+        "Pimpinella alpina K. D. S."
+      ]
+    },
+    {
+      "community_id": 5,
+      "label": "Aromatic rhizome bitters",
+      "size": 4,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 1,
+        "Musculoskeletal and connective tissue disorders": 1
+      },
+      "role_distribution": {
+        "penyeimbang": 1,
+        "umum": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Rhizome": 100.0
+      },
+      "members": [
+        "Curcuma xanthorrhiza Roxb",
+        "Curcuma aeruginosa Roxb",
+        "Zingiber cassumunar Roxb.",
+        "Acorus calamus L."
+      ]
+    },
+    {
+      "community_id": 6,
+      "label": "Aromatic woods",
+      "size": 4,
+      "effect_distribution": {
+        "Musculoskeletal and connective tissue disorders": 3
+      },
+      "role_distribution": {
+        "umum": 1,
+        "penyeimbang": 1,
+        "menteri": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Bark": 55.5,
+        "Seed": 21.5,
+        "Wood": 10.2,
+        "Oil": 5.9,
+        "Rhizome": 3.5
+      },
+      "members": [
+        "Massoia aromatica Becc.",
+        "Cinnamomum sintok Bl.",
+        "Trigonella foenum-graecum L.",
+        "Santalum album L."
+      ]
+    },
+    {
+      "community_id": 7,
+      "label": "Astringent GI bitters (small)",
+      "size": 3,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 3
+      },
+      "role_distribution": {
+        "penyeimbang": 3
+      },
+      "plant_part_occurrences_pct": {
+        "Wood": 60.1,
+        "Bark": 38.0,
+        "Root": 1.0,
+        "Leaf": 0.6,
+        "Seed": 0.3
+      },
+      "members": [
+        "Alstonia macrophylla Wall. Ex G. Don.",
+        "Caesalpinia sappan L",
+        "Strychnos ligustrina Bl"
+      ]
+    },
+    {
+      "community_id": 8,
+      "label": "TCM-imported",
+      "size": 3,
+      "effect_distribution": {
+        "Musculoskeletal and connective tissue disorders": 1,
+        "Disorders of appetite": 1,
+        "Pain/inflammation": 1
+      },
+      "role_distribution": {
+        "umum": 1,
+        "penyeimbang": 2
+      },
+      "plant_part_occurrences_pct": {
+        "Root": 78.0,
+        "Flower": 21.6,
+        "Oil": 0.4
+      },
+      "members": [
+        "Rheum officinale Baill",
+        "Carthamus tinctorius L.",
+        "Angelica sinensis (Oliv.) Diels"
+      ]
+    },
+    {
+      "community_id": 9,
+      "label": "Pepaya-daun wungu dyad",
+      "size": 2,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 1,
+        "Pain/inflammation": 1
+      },
+      "role_distribution": {
+        "umum": 1,
+        "menteri": 1
+      },
+      "plant_part_occurrences_pct": {
+        "Leaf": 93.3,
+        "Seed": 4.0,
+        "Root": 1.3,
+        "Herb": 0.7,
+        "Fruit": 0.7
+      },
+      "members": [
+        "Carica papaya L.",
+        "Graptophyllum pictum Griff"
+      ]
+    },
+    {
+      "community_id": 10,
+      "label": "Food-grain GI pair",
+      "size": 2,
+      "effect_distribution": {
+        "Gastrointestinal disorders": 2
+      },
+      "role_distribution": {
+        "umum": 2
+      },
+      "plant_part_occurrences_pct": {
+        "Flour": 50.4,
+        "Seed": 39.8,
+        "Oil": 5.7,
+        "Fruit": 3.3,
+        "Rhizome": 0.8
+      },
+      "members": [
+        "Zea mays L",
+        "Soya max Piper"
+      ]
+    }
+  ],
+  "bridge_singletons": [
+    "Woodfordia floribunda Salisb.",
+    "Blumea balsamifera DC.",
+    "Sauropus androgynus Merr",
+    "Curcuma zedoaria (Berg.) Roscoe",
+    "Abrus precatorius L."
+  ],
+  "community_assignments": {
+    "Piperis Albi": 0,
+    "Usnea misaminensis (Vain) Not.": 0,
+    "Cymbopogon nardus L. Rendle": 0,
+    "Melaleuca cajuputi Powell": 0,
+    "Cinnamomum burmani Bl": 0,
+    "Cyperus rotundus L": 0,
+    "Zingiber amaricans Bl": 0,
+    "Zingiber aromaticum Val": 0,
+    "Oryza sativa L.": 0,
+    "Carum copticum (L.) Benth": 0,
+    "Baeckea frutescens L.": 0,
+    "Foeniculum vulgare Mill.": 0,
+    "Equisetum debile Roxb.": 0,
+    "Languas galanga (L.) Stuntz": 0,
+    "Helicteres isora L.": 0,
+    "Piper cubeba L.f.": 0,
+    "Caryophyllus aromaticus L.": 0,
+    "Zingiber officinale Rosc": 0,
+    "Mentha arvensis L": 0,
+    "Amomum cardamomum Willd": 0,
+    "Coriandrum sativum L": 0,
+    "Kaempferia galanga L.": 0,
+    "Zingiber zerumbet SM": 0,
+    "Glycyrrhiza glabra L.": 0,
+    "Myristica fragrans Houtt.": 0,
+    "Theae sinensis": 1,
+    "Psidium guajava L": 1,
+    "Pluchea indica Less": 1,
+    "Areca catechu L": 1,
+    "Alyxia reinwardtii Bl.": 1,
+    "Tamarindus indica L.": 1,
+    "Terminalia bellirica (Gaertn) Roxb.": 1,
+    "Piper betle L": 1,
+    "Guazuma ulmifolia Lamk.": 1,
+    "Elephantopus scaber L.": 1,
+    "Curcuma domestica Val": 1,
+    "Galla halepensis": 1,
+    "Curcuma heyneana Val.": 1,
+    "Quercus lusitanica Lamk.": 1,
+    "Citrus aurantifolia": 1,
+    "Murraya paniculata Jacq": 1,
+    "Cassia angustifolia Vahl.": 1,
+    "Camellia sinensis (L.) O.K.": 1,
+    "Kaempferia angustifolia Rosc.": 1,
+    "Punica granatum L": 1,
+    "Aloe vera L.": 1,
+    "Boesenbergia pandurata (Roxb.) Schlecht": 1,
+    "Zingiber purpureum Roxb": 1,
+    "Parkia roxburghii G.Don": 1,
+    "Parameria laevigata (Juss.) Moldenke": 1,
+    "Syzygium polyanthum Wigh Walp": 2,
+    "Sericocalyx crispus (L.) Bremek.": 2,
+    "Allium sativum": 2,
+    "Sonchus arvensis L": 2,
+    "Orthosiphon spicatus B.B.S.": 2,
+    "Imperata cylindrica Beauv.": 2,
+    "Morinda citrifolia L": 2,
+    "Plantago major L": 2,
+    "Momordica charantia L": 2,
+    "Andrographis paniculata Ness": 2,
+    "Gynura procumbens L. Merr.": 2,
+    "Apium graveolens L": 2,
+    "Tinospora tuberculata Beumee": 2,
+    "Phaleria macrocarpa (Scheff.)Boerl.": 2,
+    "Phyllanthus niruri L": 2,
+    "Centella asiatica Urb": 2,
+    "Eugenia aromatica O.K": 3,
+    "Eucalyptus alba Reinw": 3,
+    "Olea europaea L.": 3,
+    "Nigella sativa L.": 3,
+    "Clausena anisum-olens Merr.": 3,
+    "Cocos nucifera L.": 3,
+    "Andropogon citratus DC.": 3,
+    "Alpinia galanga SW.": 3,
+    "Mentha piperita L": 3,
+    "Dioscorea hispida Dennust": 4,
+    "Talinum paniculatum Gaertn": 4,
+    "Pimpinella alpina K. D. S.": 4,
+    "Panax ginseng L.": 4,
+    "Piper retrofractum Vahl.": 4,
+    "Tribulus terrestris": 4,
+    "Eurycoma longifolia Jack.": 4,
+    "Piper nigrum L": 4,
+    "Acorus calamus L.": 5,
+    "Curcuma aeruginosa Roxb": 5,
+    "Zingiber cassumunar Roxb.": 5,
+    "Curcuma xanthorrhiza Roxb": 5,
+    "Santalum album L.": 6,
+    "Cinnamomum sintok Bl.": 6,
+    "Trigonella foenum-graecum L.": 6,
+    "Massoia aromatica Becc.": 6,
+    "Alstonia macrophylla Wall. Ex G. Don.": 7,
+    "Strychnos ligustrina Bl": 7,
+    "Caesalpinia sappan L": 7,
+    "Angelica sinensis (Oliv.) Diels": 8,
+    "Rheum officinale Baill": 8,
+    "Carthamus tinctorius L.": 8,
+    "Carica papaya L.": 9,
+    "Graptophyllum pictum Griff": 9,
+    "Zea mays L": 10,
+    "Soya max Piper": 10
+  },
+  "forbidden_pair_validation": {
+    "forbidden_cross": 28,
+    "forbidden_within": 0,
+    "forbidden_missing": 2,
+    "random_cross_rate": 0.837
+  }
+}
