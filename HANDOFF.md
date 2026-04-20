@@ -117,25 +117,23 @@ Three sessions (grammar depth → methodological robustness → ontology applied
 - `NOTES_2026-04-20_grammar_schools.md` — mazhab findings + methodological defense
 - `NOTES_2026-04-20_ontology_applied.md` — v08 build + honest note: gap barely moves but DDC list improves
 
-**Updated headline numbers** (not yet propagated to MANUSCRIPT.md):
+**Updated headline numbers (propagated to MANUSCRIPT.md in session 3)**:
 - Validation gap: **85.56%** of **3,740** clinical TREATS claims (was 85.9% of 5,744 mixed)
 - Also: 87.0% of 1,387 HAS_USE, 87.5% of 407 ETHNOBOTANICAL_USE, 81.8% of 214 APPLIED_TO
 - Gap is structural across all categories — not a label artifact
 - Jamu grammar: **11 mazhab + 5 bridges**; 107 forbidden pairs Z=37.97 vs null
 - Piperaceae splits into 3 mazhab by function; Zingiberaceae spans 5; no taxonomic coherence
+- DDC count: **165 plants** with ≥5 unstudied *clinical* claims (was 286 pooled)
 
-## Resume Prompt
+**Git state (end of 2026-04-20)**: commit `a611aa0` on main, pushed to origin. Working tree clean.
 
-```
-Lanjutkan proyek JamuKG dalam mode santai tapi serius metodologis.
-Baca HANDOFF.md, NOTES_2026-04-20_*.md, dan TRIAGE.md. KG v08 sudah
-jadi (v07 + ontology split). Mazhab teridentifikasi: 11 stable + 5
-bridges. Forbidden pair lulus null model (Z=37.97) dan parameter
-sweep (99.5% cross-rate). Validation gap 85.56% dari 3,740 clinical
-TREATS. DDC re-ranked dengan filter clinical-only. MANUSCRIPT belum
-di-update dengan angka baru. Arah lanjutan: synergy prediction,
-visualisasi jaringan, atau case study (Piperaceae / TCM island /
-bridge herbs). Juga pending: formulation-level PubMed validation
-(3,183 edges blind spot), HerbalDB harvest saat server up. Jangan
-buru-buru submit paper — prinsip masterpiece.
-```
+**Files that were NOT updated despite v08 data** (deferred honestly, not regressions):
+- `figures/` — all figures regenerated from v07 data; need rerun with v08 split for paper revision
+- `PAPER_DRAFT.md` — separate, shorter draft; not updated in this sweep (MANUSCRIPT.md is primary)
+- `data/kg/paper_findings.json` validation_gap + drug_discovery_candidates sections — kept unchanged; new v08 section added alongside
+- `run_full_pipeline.py` — predates v08; does not call `apply_disease_ontology.py` yet
+- Bootstrap-formula robustness + alternative-association-measure tests — noted as future work in NOTES
+
+## Resume Prompt (one paragraph, for a clean session)
+
+Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). Baca dulu HANDOFF.md (status ini), TRIAGE.md (deliberasi + progress 20 April), dan kedua NOTES_2026-04-20_*.md (tiga sesi kemarin: grammar mazhab, robustness suite, ontology applied). State saat ini: KG v08 sudah dibangun dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO), 11 mazhab stabil + 5 bridge herbs teridentifikasi via consensus-Louvain dan divalidasi oleh plant-part (konvergen) + taxonomy (divergen secara informatif — jamu grammar functional, bukan lineage-based), forbidden pairs lulus null model (Z=37.97) dan parameter sweep (99.5% cross-mazhab di 60 konfigurasi), dan MANUSCRIPT.md sudah diperbarui dengan angka v08 (85.56% dari 3,740 clinical TREATS; 165 priority DDC; Table 4 re-ranked). Arah lanjutan yang paling menarik belum dijalankan: (a) **synergy prediction** dari pairs high-lift dikombinasikan dengan literatur bioenhancement, (b) **case study Piperaceae** atau **TCM-island (S8)** sebagai kandidat short paper, (c) **bridge herb investigation** (5 herba bridge: Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia), (d) **visualisasi jaringan mazhab** sebagai figure baru, (e) **PubMed query-quality improvement** untuk mengaddress hipotesis 88.5% spesifik-term yang belum tercapai, atau (f) **regenerasi figures/** dengan data v08 + update run_full_pipeline.py agar ontology step ter-integrate. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga hal yang jangan diulang: (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari.
