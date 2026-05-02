@@ -1,7 +1,9 @@
 # JamuKG — Session Handoff
 
-**Tanggal**: 20 April 2026 (last update)
-**Status**: KG v08 (ontology-split). Mazhab teridentifikasi & validated. Methodology hardened.
+**Tanggal**: 3 Mei 2026 (last update)
+**Status**: KG v08 (ontology-split). Mazhab teridentifikasi, validated, **dan tervisualisasikan** (figures 21+22). Methodology hardened.
+
+> **Pasca-petir (3 Mei 2026)**: komputer kantor kena petir akhir April; recovery dari git utuh — semua artifact v08 (KG, scripts, figures, raw data 66 MB) ter-track dan ter-pulihkan. Tidak ada uncommitted work yang hilang.
 
 ---
 
@@ -128,12 +130,23 @@ Three sessions (grammar depth → methodological robustness → ontology applied
 **Git state (end of 2026-04-20)**: commit `a611aa0` on main, pushed to origin. Working tree clean.
 
 **Files that were NOT updated despite v08 data** (deferred honestly, not regressions):
-- `figures/` — all figures regenerated from v07 data; need rerun with v08 split for paper revision
+- `figures/` 00–20 — generated from v07 data; need rerun with v08 split for paper revision (figures 21–22 baru, dari v08)
 - `PAPER_DRAFT.md` — separate, shorter draft; not updated in this sweep (MANUSCRIPT.md is primary)
 - `data/kg/paper_findings.json` validation_gap + drug_discovery_candidates sections — kept unchanged; new v08 section added alongside
 - `run_full_pipeline.py` — predates v08; does not call `apply_disease_ontology.py` yet
 - Bootstrap-formula robustness + alternative-association-measure tests — noted as future work in NOTES
 
+## May 3 Session Summary
+
+Sesi pendek pasca-recovery. Satu deliverable konkret (visualisasi mazhab):
+
+- `src/analysis/visualize_mazhab.py` — reuse `build_lift_graph` dari `herb_communities.py` (no parameter drift)
+- `figures/21_mazhab_network.png` — 106 herbs × 1,136 lift edges, 11 mazhab color-coded, 5 bridges sebagai diamonds berlabel, 30 forbidden pairs sebagai dashed red overlay
+- `figures/22_mazhab_small_multiples.png` — 9 subnetwork per-mazhab (S0–S8) dengan internal edges
+- `NOTES_2026-05-03_mazhab_visualization.md` — keputusan metodologis + arah lanjutan
+
+Visual mengkonfirmasi klaim sebelumnya secara intuitif: forbidden pairs (merah putus) memotong antar-mazhab, tidak intra-mazhab. Bridge herbs berada di celah antar-cluster. Re-ranked arah lanjutan favoring bridge herb investigation karena posisi mereka sekarang visible.
+
 ## Resume Prompt (one paragraph, for a clean session)
 
-Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). Baca dulu HANDOFF.md (status ini), TRIAGE.md (deliberasi + progress 20 April), dan kedua NOTES_2026-04-20_*.md (tiga sesi kemarin: grammar mazhab, robustness suite, ontology applied). State saat ini: KG v08 sudah dibangun dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO), 11 mazhab stabil + 5 bridge herbs teridentifikasi via consensus-Louvain dan divalidasi oleh plant-part (konvergen) + taxonomy (divergen secara informatif — jamu grammar functional, bukan lineage-based), forbidden pairs lulus null model (Z=37.97) dan parameter sweep (99.5% cross-mazhab di 60 konfigurasi), dan MANUSCRIPT.md sudah diperbarui dengan angka v08 (85.56% dari 3,740 clinical TREATS; 165 priority DDC; Table 4 re-ranked). Arah lanjutan yang paling menarik belum dijalankan: (a) **synergy prediction** dari pairs high-lift dikombinasikan dengan literatur bioenhancement, (b) **case study Piperaceae** atau **TCM-island (S8)** sebagai kandidat short paper, (c) **bridge herb investigation** (5 herba bridge: Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia), (d) **visualisasi jaringan mazhab** sebagai figure baru, (e) **PubMed query-quality improvement** untuk mengaddress hipotesis 88.5% spesifik-term yang belum tercapai, atau (f) **regenerasi figures/** dengan data v08 + update run_full_pipeline.py agar ontology step ter-integrate. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga hal yang jangan diulang: (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari.
+Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). Baca dulu HANDOFF.md (status ini), TRIAGE.md (deliberasi + progress), dua NOTES_2026-04-20_*.md (tiga sesi April: grammar mazhab, robustness suite, ontology applied), dan NOTES_2026-05-03_mazhab_visualization.md (sesi pasca-petir, visualisasi). State saat ini: KG v08 sudah dibangun dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO), 11 mazhab stabil + 5 bridge herbs teridentifikasi via consensus-Louvain dan divalidasi oleh plant-part (konvergen) + taxonomy (divergen secara informatif — jamu grammar functional, bukan lineage-based), forbidden pairs lulus null model (Z=37.97) dan parameter sweep (99.5% cross-mazhab di 60 konfigurasi), MANUSCRIPT.md sudah diperbarui dengan angka v08 (85.56% dari 3,740 clinical TREATS; 165 priority DDC; Table 4 re-ranked), dan **figures/21+22 baru menampilkan jaringan mazhab** (overview + per-mazhab small multiples) dengan forbidden pair overlay. Arah lanjutan yang paling menarik belum dijalankan: (a) **bridge herb investigation** (5 herba bridge: Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia) — sekarang prioritas teratas karena posisi mereka sudah visible di figure 21, (b) **synergy prediction** dari pairs high-lift dikombinasikan dengan literatur bioenhancement, (c) **case study Piperaceae** atau **TCM-island (S8)** sebagai kandidat short paper, (d) **PubMed query-quality improvement** untuk mengaddress hipotesis 88.5% spesifik-term yang belum tercapai, atau (e) **regenerasi figures 00–20** dengan data v08 + update run_full_pipeline.py agar ontology step ter-integrate. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py, visualize_mazhab.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga hal yang jangan diulang: (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari.

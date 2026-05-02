@@ -26,7 +26,7 @@ Angka 88.5% yang dihipotesiskan di TRIAGE asli (via restriksi ke istilah spesifi
 
 ### Belum dikerjakan (Tier 2/3)
 - Synergy prediction (co-occurrence + bioenhancement mechanism)
-- Visualisasi jaringan mazhab
+- ~~Visualisasi jaringan mazhab~~ → **selesai 3 Mei 2026** (`figures/21_mazhab_network.png` + `22_mazhab_small_multiples.png`, lihat `NOTES_2026-05-03_mazhab_visualization.md`)
 - HerbalDB harvest (server masih down)
 - Historical text mining (Layer 1 Manifesto)
 - Marketplace mining
