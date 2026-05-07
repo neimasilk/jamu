@@ -27,6 +27,7 @@ Angka 88.5% yang dihipotesiskan di TRIAGE asli (via restriksi ke istilah spesifi
 ### Belum dikerjakan (Tier 2/3)
 - Synergy prediction (co-occurrence + bioenhancement mechanism)
 - ~~Visualisasi jaringan mazhab~~ → **selesai 3 Mei 2026** (`figures/21_mazhab_network.png` + `22_mazhab_small_multiples.png`, lihat `NOTES_2026-05-03_mazhab_visualization.md`)
+- ~~Pipeline integration: ontology step + figures regen~~ → **selesai 7 Mei 2026** (`run_full_pipeline.py` end-to-end reproducible; figures 00–17 regen dari v08; lihat `NOTES_2026-05-07_pipeline_integration.md`)
 - HerbalDB harvest (server masih down)
 - Historical text mining (Layer 1 Manifesto)
 - Marketplace mining
@@ -34,6 +35,7 @@ Angka 88.5% yang dihipotesiskan di TRIAGE asli (via restriksi ke istilah spesifi
 - Formulation-level PubMed validation (aggregate from constituent plants)
 - Piperaceae / TCM island / bridge herb case studies (scoped)
 - PubMed-query-quality improvement (mengaddress 88.5% hypothesis dari TRIAGE asli)
+- HKI registration prep (Hak Cipta DJKI atas Program Komputer + Basis Data; deklarasi 7 Mei 2026)
 
 ---
 

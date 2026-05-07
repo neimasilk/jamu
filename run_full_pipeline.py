@@ -6,8 +6,10 @@ Steps:
   1. Sync KNApSAcK checkpoint -> clean file
   2. Rebuild integrated KG (auto-versioned)
   3. Annotate KG with PubMed evidence
-  4. Generate all visualizations
-  5. Print final statistics
+  4. Apply disease ontology (split TREATS into TREATS / HAS_USE /
+     ETHNOBOTANICAL_USE / APPLIED_TO)
+  5. Generate all visualizations
+  6. Print final statistics
 """
 
 import json
@@ -124,20 +126,121 @@ def step3_annotate_evidence(kg, version="v02"):
     return kg
 
 
-def step4_visualize():
-    """Generate all visualizations."""
+def step4_apply_ontology(version: str):
+    """Apply disease ontology: split TREATS into refined edge types.
+
+    Reads `jamukg_{version}_annotated.json`, rewrites it in place with
+    ontology-aware edge types, and writes a split-report sibling.
+
+    The annotated KG produced by step 3 contains `treats` edges that mix
+    clinical disease, symptom, pharmacological action, ethnobotanical use,
+    and body-part targets. This step splits them according to
+    `data/kg/disease_ontology.json` (with 6 hand-resolved ambiguous terms
+    documented in `src/analysis/apply_disease_ontology.py`).
+    """
     print("\n" + "=" * 60)
-    print("STEP 4: Generating visualizations")
+    print("STEP 4: Applying disease ontology (split TREATS)")
     print("=" * 60)
 
-    from src.analysis.visualize import main as viz_main
-    viz_main()
+    annotated_path = BASE_DIR / "data" / "kg" / f"jamukg_{version}_annotated.json"
+    ontology_path = BASE_DIR / "data" / "kg" / "disease_ontology.json"
+
+    if not annotated_path.exists():
+        print(f"  Annotated KG not found at {annotated_path}, skipping")
+        return
+    if not ontology_path.exists():
+        print(f"  Ontology not found at {ontology_path}, skipping")
+        return
+
+    from src.analysis.apply_disease_ontology import (
+        build_node_to_category,
+        apply_split,
+        compute_validation_gap,
+        AMBIGUOUS_RESOLUTION,
+    )
+
+    with open(annotated_path, "r", encoding="utf-8") as f:
+        kg_dict = json.load(f)
+    with open(ontology_path, "r", encoding="utf-8") as f:
+        ontology = json.load(f)
+
+    node2cat = build_node_to_category(kg_dict, ontology)
+    new_kg, stats = apply_split(kg_dict, node2cat)
+
+    print(f"  Disease nodes mapped: {len(node2cat)}")
+    print(f"  Edge split (from {stats['treats_before']} treats edges):")
+    print(f"    treats             : {stats['treats_after']}")
+    print(f"    has_use            : {stats['has_use']}")
+    print(f"    ethnobotanical_use : {stats['ethnobotanical_use']}")
+    print(f"    applied_to         : {stats['applied_to']}")
+    if stats["unmapped"]:
+        print(f"    unmapped           : {stats['unmapped']}  (warning)")
+
+    # Overwrite annotated file in place; from this run forward,
+    # `_annotated.json` includes ontology split.
+    with open(annotated_path, "w", encoding="utf-8") as f:
+        json.dump(new_kg, f, ensure_ascii=False)
+    print(f"  Updated {annotated_path.name} with ontology split")
+
+    # Validation gap per refined edge type (Dr. Duke subset)
+    gap_report = {}
+    for et in ["treats", "has_use", "ethnobotanical_use", "applied_to"]:
+        g = compute_validation_gap(new_kg, et, restrict_source_db="dr_duke")
+        gap_report[et] = g
+    knaps_gap = compute_validation_gap(new_kg, "treats", restrict_source_db="knapsack_jamu")
+
+    report = {
+        "version": version,
+        "method": "apply disease_ontology.json to TREATS edges; 6 ambiguous resolved",
+        "ambiguous_resolution": AMBIGUOUS_RESOLUTION,
+        "edge_split_stats": {
+            "treats_before": stats["treats_before"],
+            "treats_after": stats["treats_after"],
+            "has_use": stats["has_use"],
+            "ethnobotanical_use": stats["ethnobotanical_use"],
+            "applied_to": stats["applied_to"],
+            "unmapped": stats["unmapped"],
+        },
+        "validation_gap_dr_duke": gap_report,
+        "validation_gap_knapsack_formulations": knaps_gap,
+    }
+    report_path = BASE_DIR / "data" / "kg" / f"{version}_ontology_split_report.json"
+    with open(report_path, "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+    print(f"  Wrote split report: {report_path.name}")
 
 
-def step5_final_stats():
+def step5_visualize():
+    """Generate all visualizations.
+
+    Calls three figure-producing modules in sequence:
+      - visualize.py            -> figures 01-08 + interactive subgraphs
+      - network_pharmacology.py -> figures 09-11
+      - formulation_analysis.py -> figures 12-17 + 00 (paper summary)
+    Each is wrapped so a failure in one does not abort later groups,
+    but errors are still surfaced to the console.
+    """
+    print("\n" + "=" * 60)
+    print("STEP 5: Generating visualizations")
+    print("=" * 60)
+
+    for module_path, label in [
+        ("src.analysis.visualize", "core figures (01-08)"),
+        ("src.analysis.network_pharmacology", "network pharmacology (09-11)"),
+        ("src.analysis.formulation_analysis", "formulation figures (12-17, 00)"),
+    ]:
+        print(f"\n--- {label} ---")
+        try:
+            mod = __import__(module_path, fromlist=["main"])
+            mod.main()
+        except Exception as e:
+            print(f"  WARNING: {label} failed: {type(e).__name__}: {e}")
+
+
+def step6_final_stats():
     """Print final statistics."""
     print("\n" + "=" * 60)
-    print("STEP 5: Final Statistics")
+    print("STEP 6: Final Statistics")
     print("=" * 60)
 
     from src.analysis.statistics import analyze_kg
@@ -168,8 +271,9 @@ if __name__ == "__main__":
     step1_sync_knapsack()
     kg, version = step2_rebuild_kg()
     kg = step3_annotate_evidence(kg, version)
-    step4_visualize()
-    step5_final_stats()
+    step4_apply_ontology(version)
+    step5_visualize()
+    step6_final_stats()
     print("\n" + "=" * 60)
     print(f"PIPELINE COMPLETE — JamuKG {version}")
     print("=" * 60)

@@ -1,683 +1,5 @@
 {
-  "multi_target_plants": {
-    "Sida rhombifolia": {
-      "num_categories": 9,
-      "categories": [
-        "digestive",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "injury",
-        "musculoskeletal",
-        "neoplasm",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 26,
-      "num_compounds": 19
-    },
-    "Kaempferia galanga": {
-      "num_categories": 8,
-      "categories": [
-        "digestive",
-        "eye",
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 16,
-      "num_compounds": 8
-    },
-    "Coleus atropurpureus": {
-      "num_categories": 8,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "ear",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "respiratory",
-        "symptom"
-      ],
-      "num_diseases": 12,
-      "num_compounds": 0
-    },
-    "Hydrocotyle asiatica": {
-      "num_categories": 8,
-      "categories": [
-        "circulatory",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal",
-        "nervous",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 22,
-      "num_compounds": 0
-    },
-    "Zingiber officinale": {
-      "num_categories": 8,
-      "categories": [
-        "digestive",
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "pregnancy",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 27,
-      "num_compounds": 438
-    },
-    "Nigella sativum": {
-      "num_categories": 8,
-      "categories": [
-        "digestive",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 20,
-      "num_compounds": 0
-    },
-    "Curcuma longa": {
-      "num_categories": 8,
-      "categories": [
-        "digestive",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "pregnancy",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 22,
-      "num_compounds": 177
-    },
-    "Hibiscus rosa-sinensis": {
-      "num_categories": 7,
-      "categories": [
-        "eye",
-        "genitourinary",
-        "infectious",
-        "neoplasm",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 18,
-      "num_compounds": 20
-    },
-    "Dryobalanops aromatica": {
-      "num_categories": 7,
-      "categories": [
-        "digestive",
-        "eye",
-        "infectious",
-        "neoplasm",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 12,
-      "num_compounds": 0
-    },
-    "Gmelina villosa": {
-      "num_categories": 7,
-      "categories": [
-        "blood",
-        "circulatory",
-        "ear",
-        "musculoskeletal",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 10,
-      "num_compounds": 0
-    },
-    "Emilia sonchifolia": {
-      "num_categories": 7,
-      "categories": [
-        "digestive",
-        "ear",
-        "eye",
-        "infectious",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Punica granatum": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 11,
-      "num_compounds": 259
-    },
-    "Morinda citrifolia": {
-      "num_categories": 7,
-      "categories": [
-        "digestive",
-        "endocrine",
-        "infectious",
-        "nervous",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 22,
-      "num_compounds": 113
-    },
-    "Alstonia scholaris": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "endocrine",
-        "infectious",
-        "pregnancy",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 17,
-      "num_compounds": 2
-    },
-    "Blumea balsamifera": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "endocrine",
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "symptom"
-      ],
-      "num_diseases": 17,
-      "num_compounds": 0
-    },
-    "Datura metel": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "ear",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 17,
-      "num_compounds": 34
-    },
-    "Pogostemon heyneanus": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "infectious",
-        "musculoskeletal",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 11,
-      "num_compounds": 0
-    },
-    "Sesbania grandiflora": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "genitourinary",
-        "infectious",
-        "injury",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 18,
-      "num_compounds": 1
-    },
-    "Crinum asiaticum": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 15,
-      "num_compounds": 0
-    },
-    "Averrhoa bilimbi": {
-      "num_categories": 7,
-      "categories": [
-        "endocrine",
-        "eye",
-        "infectious",
-        "musculoskeletal",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 14,
-      "num_compounds": 18
-    },
-    "Hedyotis capitellata": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "infectious",
-        "injury",
-        "musculoskeletal",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 12,
-      "num_compounds": 0
-    },
-    "Calophyllum inophyllum": {
-      "num_categories": 7,
-      "categories": [
-        "circulatory",
-        "eye",
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "pregnancy",
-        "skin"
-      ],
-      "num_diseases": 11,
-      "num_compounds": 0
-    },
-    "Erythrina variegata": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "injury",
-        "neoplasm",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 10,
-      "num_compounds": 0
-    },
-    "Citrus aurantifolia": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "nervous",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Gendarussa vulgaris": {
-      "num_categories": 6,
-      "categories": [
-        "genitourinary",
-        "infectious",
-        "injury",
-        "musculoskeletal",
-        "respiratory",
-        "symptom"
-      ],
-      "num_diseases": 16,
-      "num_compounds": 0
-    },
-    "Morinda elliptica": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "infectious",
-        "nervous",
-        "pregnancy",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Piper fragile": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "musculoskeletal",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 12,
-      "num_compounds": 0
-    },
-    "Ervatamia coronaria": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "eye",
-        "nervous",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 7,
-      "num_compounds": 0
-    },
-    "Gastrochilus panduratum": {
-      "num_categories": 6,
-      "categories": [
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 9,
-      "num_compounds": 0
-    },
-    "Phyllanthus niruri": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "injury",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 16,
-      "num_compounds": 27
-    },
-    "Coleus amboinicus": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "infectious",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Oxalis corniculata": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "endocrine",
-        "eye",
-        "infectious",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 12,
-      "num_compounds": 0
-    },
-    "Bryophyllum pinnatum": {
-      "num_categories": 6,
-      "categories": [
-        "eye",
-        "musculoskeletal",
-        "neoplasm",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Plumbago indica": {
-      "num_categories": 6,
-      "categories": [
-        "endocrine",
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "respiratory",
-        "symptom"
-      ],
-      "num_diseases": 9,
-      "num_compounds": 0
-    },
-    "Brucea javanica": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "injury",
-        "musculoskeletal",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 13,
-      "num_compounds": 0
-    },
-    "Euphorbia tirucalli": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "infectious",
-        "injury",
-        "neoplasm",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 13,
-      "num_compounds": 20
-    },
-    "Allium ascalonium": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "eye",
-        "genitourinary",
-        "infectious",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 9,
-      "num_compounds": 0
-    },
-    "Lawsonia inermis": {
-      "num_categories": 6,
-      "categories": [
-        "eye",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "skin"
-      ],
-      "num_diseases": 13,
-      "num_compounds": 89
-    },
-    "Cocos nucifera": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "infectious",
-        "musculoskeletal",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 18,
-      "num_compounds": 187
-    },
-    "Euphorbia hirta": {
-      "num_categories": 6,
-      "categories": [
-        "eye",
-        "infectious",
-        "injury",
-        "neoplasm",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 59
-    },
-    "Fibraurea chloroleuca": {
-      "num_categories": 6,
-      "categories": [
-        "endocrine",
-        "eye",
-        "infectious",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 8,
-      "num_compounds": 0
-    },
-    "Clerodendrum serratum": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "respiratory",
-        "symptom"
-      ],
-      "num_diseases": 10,
-      "num_compounds": 0
-    },
-    "Musa sapientum": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "infectious",
-        "pregnancy",
-        "respiratory",
-        "skin"
-      ],
-      "num_diseases": 22,
-      "num_compounds": 0
-    },
-    "Moringa oleifera": {
-      "num_categories": 6,
-      "categories": [
-        "circulatory",
-        "endocrine",
-        "infectious",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 21,
-      "num_compounds": 106
-    },
-    "Phyllanthus urinaria": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "infectious",
-        "injury",
-        "respiratory",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 14,
-      "num_compounds": 0
-    },
-    "Piper betle": {
-      "num_categories": 6,
-      "categories": [
-        "digestive",
-        "ear",
-        "genitourinary",
-        "infectious",
-        "pregnancy",
-        "skin"
-      ],
-      "num_diseases": 18,
-      "num_compounds": 0
-    },
-    "Plumbago zeylanica": {
-      "num_categories": 6,
-      "categories": [
-        "infectious",
-        "musculoskeletal",
-        "neoplasm",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 13,
-      "num_compounds": 0
-    },
-    "Pterocarpus santalinus": {
-      "num_categories": 5,
-      "categories": [
-        "circulatory",
-        "digestive",
-        "genitourinary",
-        "infectious",
-        "musculoskeletal"
-      ],
-      "num_diseases": 13,
-      "num_compounds": 32
-    },
-    "Eurycoma longifolia": {
-      "num_categories": 5,
-      "categories": [
-        "infectious",
-        "musculoskeletal",
-        "pregnancy",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 11,
-      "num_compounds": 1
-    },
-    "Tacca palmata": {
-      "num_categories": 5,
-      "categories": [
-        "digestive",
-        "injury",
-        "neoplasm",
-        "skin",
-        "symptom"
-      ],
-      "num_diseases": 9,
-      "num_compounds": 0
-    }
-  },
+  "multi_target_plants": {},
   "promiscuous_compounds": {
     "CALCIUM": {
       "num_plants": 123,
@@ -2000,354 +1322,270 @@
   },
   "similar_plant_pairs": [
     {
-      "plant1": "Piper sumatranum",
-      "plant2": "Piper pedicellosum",
-      "shared_diseases": 6,
-      "jaccard": 1.0,
-      "union_size": 6
-    },
-    {
       "plant1": "Phyllanthus niruri",
       "plant2": "Phyllanthus urinaria",
-      "shared_diseases": 13,
-      "jaccard": 0.765,
-      "union_size": 17
-    },
-    {
-      "plant1": "Samadera indica",
-      "plant2": "Quassia indica",
-      "shared_diseases": 5,
-      "jaccard": 0.556,
-      "union_size": 9
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Mallotus paniculatus",
-      "shared_diseases": 5,
-      "jaccard": 0.455,
+      "shared_diseases": 9,
+      "jaccard": 0.818,
       "union_size": 11
     },
     {
-      "plant1": "Merremia peltata",
-      "plant2": "Allium ascalonium",
-      "shared_diseases": 5,
-      "jaccard": 0.417,
-      "union_size": 12
-    },
-    {
-      "plant1": "Clerodendrum serratum",
-      "plant2": "Vernonia cinerea",
-      "shared_diseases": 5,
-      "jaccard": 0.385,
-      "union_size": 13
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Leucas zeylanica",
+      "plant1": "Aleurites moluccana",
+      "plant2": "Urena lobata",
       "shared_diseases": 6,
-      "jaccard": 0.375,
-      "union_size": 16
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Physalis minima",
-      "shared_diseases": 5,
-      "jaccard": 0.357,
+      "jaccard": 0.429,
       "union_size": 14
-    },
-    {
-      "plant1": "Leucas zeylanica",
-      "plant2": "Physalis minima",
-      "shared_diseases": 5,
-      "jaccard": 0.357,
-      "union_size": 14
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Tinospora tuberculata",
-      "shared_diseases": 6,
-      "jaccard": 0.353,
-      "union_size": 17
-    },
-    {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Piper fragile",
-      "shared_diseases": 7,
-      "jaccard": 0.318,
-      "union_size": 22
     },
     {
       "plant1": "Gendarussa vulgaris",
       "plant2": "Gastrochilus panduratum",
       "shared_diseases": 6,
-      "jaccard": 0.316,
-      "union_size": 19
-    },
-    {
-      "plant1": "Plumbago indica",
-      "plant2": "Plumbago zeylanica",
-      "shared_diseases": 5,
-      "jaccard": 0.294,
+      "jaccard": 0.353,
       "union_size": 17
-    },
-    {
-      "plant1": "Aleurites moluccana",
-      "plant2": "Urena lobata",
-      "shared_diseases": 6,
-      "jaccard": 0.273,
-      "union_size": 22
-    },
-    {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Aristolochia sp.",
-      "shared_diseases": 5,
-      "jaccard": 0.263,
-      "union_size": 19
-    },
-    {
-      "plant1": "Psidium guajava",
-      "plant2": "Wedelia biflora",
-      "shared_diseases": 5,
-      "jaccard": 0.263,
-      "union_size": 19
-    },
-    {
-      "plant1": "Plumeria acutifolia",
-      "plant2": "Wedelia biflora",
-      "shared_diseases": 5,
-      "jaccard": 0.263,
-      "union_size": 19
-    },
-    {
-      "plant1": "Moringa oleifera",
-      "plant2": "Physalis minima",
-      "shared_diseases": 6,
-      "jaccard": 0.261,
-      "union_size": 23
-    },
-    {
-      "plant1": "Aleurites moluccana",
-      "plant2": "Oroxylum indicum",
-      "shared_diseases": 5,
-      "jaccard": 0.25,
-      "union_size": 20
-    },
-    {
-      "plant1": "Urena lobata",
-      "plant2": "Physalis minima",
-      "shared_diseases": 5,
-      "jaccard": 0.25,
-      "union_size": 20
-    },
-    {
-      "plant1": "Tinospora crispa",
-      "plant2": "Tamarindus indica",
-      "shared_diseases": 6,
-      "jaccard": 0.24,
-      "union_size": 25
-    },
-    {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Zingiber amaricans",
-      "shared_diseases": 5,
-      "jaccard": 0.238,
-      "union_size": 21
-    },
-    {
-      "plant1": "Hedyotis capitellata",
-      "plant2": "Oroxylum indicum",
-      "shared_diseases": 5,
-      "jaccard": 0.238,
-      "union_size": 21
-    },
-    {
-      "plant1": "Kaempferia galanga",
-      "plant2": "Gendarussa vulgaris",
-      "shared_diseases": 6,
-      "jaccard": 0.231,
-      "union_size": 26
-    },
-    {
-      "plant1": "Sophora tomentosa",
-      "plant2": "Oroxylum indicum",
-      "shared_diseases": 6,
-      "jaccard": 0.231,
-      "union_size": 26
-    },
-    {
-      "plant1": "Santalum album",
-      "plant2": "Moringa oleifera",
-      "shared_diseases": 6,
-      "jaccard": 0.231,
-      "union_size": 26
-    },
-    {
-      "plant1": "Cocos nucifera",
-      "plant2": "Oroxylum indicum",
-      "shared_diseases": 6,
-      "jaccard": 0.231,
-      "union_size": 26
-    },
-    {
-      "plant1": "Gendarussa vulgaris",
-      "plant2": "Aloe vera",
-      "shared_diseases": 5,
-      "jaccard": 0.227,
-      "union_size": 22
-    },
-    {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Michelia champaca",
-      "shared_diseases": 5,
-      "jaccard": 0.227,
-      "union_size": 22
-    },
-    {
-      "plant1": "Brucea javanica",
-      "plant2": "Oroxylum indicum",
-      "shared_diseases": 5,
-      "jaccard": 0.227,
-      "union_size": 22
-    },
-    {
-      "plant1": "Michelia champaca",
-      "plant2": "Blumea balsamifera",
-      "shared_diseases": 5,
-      "jaccard": 0.227,
-      "union_size": 22
-    },
-    {
-      "plant1": "Sida rhombifolia",
-      "plant2": "Tamarindus indica",
-      "shared_diseases": 7,
-      "jaccard": 0.219,
-      "union_size": 32
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Zingiber cassumunar",
-      "shared_diseases": 5,
-      "jaccard": 0.217,
-      "union_size": 23
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Blumea balsamifera",
-      "shared_diseases": 5,
-      "jaccard": 0.217,
-      "union_size": 23
-    },
-    {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Momordica charantia",
-      "shared_diseases": 5,
-      "jaccard": 0.217,
-      "union_size": 23
     },
     {
       "plant1": "Alstonia scholaris",
       "plant2": "Monochoria vaginalis",
       "shared_diseases": 5,
-      "jaccard": 0.217,
-      "union_size": 23
+      "jaccard": 0.333,
+      "union_size": 15
+    },
+    {
+      "plant1": "Cocos nucifera",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 6,
+      "jaccard": 0.316,
+      "union_size": 19
     },
     {
       "plant1": "Zingiber cassumunar",
-      "plant2": "Myristica fragrans",
-      "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
+      "plant2": "Piper fragile",
+      "shared_diseases": 5,
+      "jaccard": 0.312,
+      "union_size": 16
     },
     {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Blumea balsamifera",
-      "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
+      "plant1": "Aleurites moluccana",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.294,
+      "union_size": 17
     },
     {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Urena lobata",
+      "plant1": "Kaempferia galanga",
+      "plant2": "Gendarussa vulgaris",
       "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
-    },
-    {
-      "plant1": "Phyllanthus niruri",
-      "plant2": "Tinospora crispa",
-      "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
+      "jaccard": 0.286,
+      "union_size": 21
     },
     {
       "plant1": "Phyllanthus niruri",
       "plant2": "Cocos nucifera",
-      "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
-    },
-    {
-      "plant1": "Moringa oleifera",
-      "plant2": "Plumbago zeylanica",
-      "shared_diseases": 6,
-      "jaccard": 0.214,
-      "union_size": 28
-    },
-    {
-      "plant1": "Eurycoma longifolia",
-      "plant2": "Tinospora crispa",
       "shared_diseases": 5,
-      "jaccard": 0.208,
-      "union_size": 24
+      "jaccard": 0.278,
+      "union_size": 18
     },
     {
-      "plant1": "Ervatamia coronaria",
-      "plant2": "Morinda citrifolia",
+      "plant1": "Santalum album",
+      "plant2": "Moringa oleifera",
       "shared_diseases": 5,
-      "jaccard": 0.208,
-      "union_size": 24
+      "jaccard": 0.278,
+      "union_size": 18
     },
     {
       "plant1": "Aleurites moluccana",
       "plant2": "Cocos nucifera",
       "shared_diseases": 5,
-      "jaccard": 0.208,
-      "union_size": 24
+      "jaccard": 0.278,
+      "union_size": 18
     },
     {
-      "plant1": "Cocos nucifera",
-      "plant2": "Piper cubeba",
+      "plant1": "Tinospora crispa",
+      "plant2": "Tamarindus indica",
       "shared_diseases": 5,
-      "jaccard": 0.208,
-      "union_size": 24
+      "jaccard": 0.278,
+      "union_size": 18
     },
     {
-      "plant1": "Hydrocotyle asiatica",
-      "plant2": "Pistia stratiotes",
+      "plant1": "Morinda citrifolia",
+      "plant2": "Alstonia scholaris",
+      "shared_diseases": 6,
+      "jaccard": 0.273,
+      "union_size": 22
+    },
+    {
+      "plant1": "Kaempferia galanga",
+      "plant2": "Hibiscus rosa-sinensis",
       "shared_diseases": 5,
-      "jaccard": 0.2,
-      "union_size": 25
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Clausena excavata",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Gendarussa vulgaris",
+      "plant2": "Aloe vera",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Curcuma longa",
+      "plant2": "Aleurites moluccana",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Phyllanthus niruri",
+      "plant2": "Tinospora crispa",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Brucea javanica",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.263,
+      "union_size": 19
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Aleurites moluccana",
+      "shared_diseases": 6,
+      "jaccard": 0.261,
+      "union_size": 23
     },
     {
       "plant1": "Tinospora tuberculata",
-      "plant2": "Tinospora crispa",
+      "plant2": "Morinda citrifolia",
       "shared_diseases": 5,
-      "jaccard": 0.2,
+      "jaccard": 0.25,
+      "union_size": 20
+    },
+    {
+      "plant1": "Emilia sonchifolia",
+      "plant2": "Morinda citrifolia",
+      "shared_diseases": 5,
+      "jaccard": 0.25,
+      "union_size": 20
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Morinda citrifolia",
+      "shared_diseases": 7,
+      "jaccard": 0.241,
+      "union_size": 29
+    },
+    {
+      "plant1": "Kaempferia galanga",
+      "plant2": "Zingiber officinale",
+      "shared_diseases": 6,
+      "jaccard": 0.24,
       "union_size": 25
     },
     {
-      "plant1": "Zingiber cassumunar",
-      "plant2": "Chloranthus officinalis",
+      "plant1": "Zingiber officinale",
+      "plant2": "Fagraea racemosa",
       "shared_diseases": 5,
-      "jaccard": 0.2,
-      "union_size": 25
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Sophora tomentosa",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Tinospora crispa",
+      "plant2": "Oroxylum indicum",
+      "shared_diseases": 5,
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Cocos nucifera",
+      "plant2": "Averrhoa bilimbi",
+      "shared_diseases": 5,
+      "jaccard": 0.238,
+      "union_size": 21
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Cocos nucifera",
+      "shared_diseases": 6,
+      "jaccard": 0.231,
+      "union_size": 26
+    },
+    {
+      "plant1": "Tinospora crispa",
+      "plant2": "Cocos nucifera",
+      "shared_diseases": 5,
+      "jaccard": 0.227,
+      "union_size": 22
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Aloe vera",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Curcuma longa",
+      "plant2": "Sophora tomentosa",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Sida rhombifolia",
+      "plant2": "Plumbago zeylanica",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Cocos nucifera",
+      "plant2": "Datura metel",
+      "shared_diseases": 5,
+      "jaccard": 0.217,
+      "union_size": 23
+    },
+    {
+      "plant1": "Zingiber officinale",
+      "plant2": "Urena lobata",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Sida rhombifolia",
+      "plant2": "Tamarindus indica",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
+    },
+    {
+      "plant1": "Brucea javanica",
+      "plant2": "Morinda citrifolia",
+      "shared_diseases": 5,
+      "jaccard": 0.208,
+      "union_size": 24
     },
     {
       "plant1": "Nigella sativum",
-      "plant2": "Morinda citrifolia",
-      "shared_diseases": 7,
+      "plant2": "Sida rhombifolia",
+      "shared_diseases": 6,
       "jaccard": 0.2,
-      "union_size": 35
+      "union_size": 30
     }
   ]
 }

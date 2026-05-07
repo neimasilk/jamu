@@ -182,17 +182,24 @@ class JamuKG:
     # --- I/O ---
 
     def save(self, path: str):
-        """Save KG to JSON (node-link format)."""
-        data = nx.node_link_data(self.graph)
+        """Save KG to JSON (node-link format).
+
+        The edges array is written under the key ``"links"`` so that older
+        artifacts and the ontology splitter (which reads JSON directly) keep
+        working across networkx versions; networkx >=3.4 changed the default
+        key to ``"edges"`` but accepts an explicit override.
+        """
+        data = nx.node_link_data(self.graph, edges="links")
         Path(path).parent.mkdir(parents=True, exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
     def load(self, path: str):
-        """Load KG from JSON."""
+        """Load KG from JSON; tolerate both 'links' and 'edges' conventions."""
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        self.graph = nx.node_link_graph(data)
+        edges_key = "links" if "links" in data and "edges" not in data else "edges"
+        self.graph = nx.node_link_graph(data, edges=edges_key)
 
     # --- Internal ---
 

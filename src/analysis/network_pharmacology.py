@@ -251,11 +251,14 @@ def main():
     kg_dir = base_dir / "data" / "kg"
     fig_dir = base_dir / "figures"
 
-    # Load normalized KG
+    # Load latest annotated KG (auto-detect newest version)
     kg = JamuKG()
-    kg_path = kg_dir / "jamukg_v02_normalized.json"
-    if not kg_path.exists():
-        kg_path = kg_dir / "jamukg_v02_annotated.json"
+    candidates = sorted(kg_dir.glob("jamukg_v*_annotated.json"))
+    if not candidates:
+        candidates = sorted(p for p in kg_dir.glob("jamukg_v*.json") if "_stats" not in p.name)
+    if not candidates:
+        raise FileNotFoundError(f"No KG file found in {kg_dir}")
+    kg_path = candidates[-1]
     kg.load(str(kg_path))
     print(f"Loaded: {kg_path.name}")
 
