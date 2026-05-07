@@ -29,6 +29,10 @@ data/kg/jamukg_v06*.json
 # inbox/autoresearch has its own git repo
 inbox/
 
+# Local secrets (API keys, etc.)
+.env
+.env.*
+
 # OS files
 Thumbs.db
 .DS_Store

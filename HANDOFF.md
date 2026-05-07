@@ -1,15 +1,17 @@
 # JamuKG — Session Handoff
 
 **Tanggal**: 7 Mei 2026 (last update)
-**Status**: KG v08 (ontology-split). Mazhab teridentifikasi, validated, tervisualisasikan. **Pipeline ter-integrate end-to-end**: `run_full_pipeline.py` sekarang produce v08-style output otomatis (rebuild → annotate → ontology-split → 3 figure modules). Methodology hardened.
+**Status**: KG v08 (ontology-split). Mazhab teridentifikasi, validated, tervisualisasikan. **Pipeline ter-integrate end-to-end**: `run_full_pipeline.py` sekarang produce v08-style output otomatis (rebuild → annotate → ontology-split → 3 figure modules). **Wiki paradigm adopted (Karpathy LLM Wiki)** — `CLAUDE.md` + `wiki/SCHEMA.md`. Methodology hardened.
 
 > **Pasca-petir (3 Mei 2026)**: komputer kantor kena petir akhir April; recovery dari git utuh — semua artifact v08 (KG, scripts, figures, raw data 66 MB) ter-track dan ter-pulihkan. Tidak ada uncommitted work yang hilang.
 
-> **Mei 7 2026**: pipeline integration + figures regen (sesi otomatis, user busy). Detail: `NOTES_2026-05-07_pipeline_integration.md`. **Goal HKI** dideklarasikan — Hak Cipta atas Program Komputer + Basis Data via DJKI. Reproduktibilitas pipeline jadi prerequisite untuk pendaftaran.
+> **Mei 7 2026 (pagi)**: pipeline integration + figures regen (sesi otomatis, user busy). Detail: `NOTES_2026-05-07_pipeline_integration.md`. **Goal HKI** dideklarasikan — Hak Cipta atas Program Komputer + Basis Data via DJKI. Reproduktibilitas pipeline jadi prerequisite untuk pendaftaran.
+
+> **Mei 7 2026 (sore) — wiki adoption**: project sekarang dioperasikan sebagai LLM-maintained wiki à la Karpathy. Read `CLAUDE.md` → `wiki/SCHEMA.md` di awal sesi. Wiki augments (tidak menggantikan) canonical docs. Autoresearch loop **tidak** diadopsi (lihat SCHEMA G6).
 
 > **Fresh clone (7 Mei 2026)**: user baru re-clone repo dari `github.com/neimasilk/jamu.git`. Dataset lengkap dari git (no LFS, 126 tracked files, 158 MB total). Python deps di env ini sudah di-install (seaborn, pyvis, biopython, tqdm, pyyaml, beautifulsoup4, pdfplumber). Setelah restart komputer, kalau env Python masih ada → tidak perlu install lagi; kalau env baru → `pip install -r requirements.txt`.
 
-> **Git state akhir sesi 7 Mei 2026**: working tree clean, semua commit sudah dipush ke `origin/main`. Last commit: `3813ef4` "Integrate ontology step into pipeline; regen figures from v08". **Tidak ada uncommitted work yang hilang kalau komputer restart.**
+> **Git state akhir sesi 7 Mei 2026**: working tree clean, semua commit sudah dipush ke `origin/main`.
 
 ---
 
