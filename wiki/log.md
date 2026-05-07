@@ -12,6 +12,19 @@ where `<kind>` is `ingest`, `query`, `lint`, `analysis`, `manuscript`,
 
 Quick listing: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-05-08] handoff | HANDOFF refreshed for clean restart
+
+User akan restart komputer. HANDOFF.md di-refresh dengan:
+- Top blockquote "⚡ RESTART READY" — snapshot git state, env state, dan
+  instruksi resume.
+- Section baru "May 7 (Sore) Session Summary — Wiki Adoption" yang merangkum
+  bootstrap wiki dengan tujuh kearifan lokal.
+- Resume Prompt updated mention CLAUDE.md auto-load + wiki/SCHEMA.md.
+- Last commits di handoff: c2638a5 (wiki), 1649a74 (handoff fresh-clone),
+  3813ef4 (pipeline), a922fa2 (mazhab viz).
+
+Working tree clean, in sync dengan origin/main. Aman restart.
+
 ## [2026-05-07] analysis | Pipeline integration + figures regen (pagi, sesi paralel di mesin lain)
 
 Sesi yang dijalankan oleh user dari mesin lain pagi tadi (commit `3813ef4`).

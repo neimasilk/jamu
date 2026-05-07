@@ -1,17 +1,31 @@
 # JamuKG — Session Handoff
 
-**Tanggal**: 7 Mei 2026 (last update)
+**Tanggal**: 8 Mei 2026 (last update — restart-ready)
 **Status**: KG v08 (ontology-split). Mazhab teridentifikasi, validated, tervisualisasikan. **Pipeline ter-integrate end-to-end**: `run_full_pipeline.py` sekarang produce v08-style output otomatis (rebuild → annotate → ontology-split → 3 figure modules). **Wiki paradigm adopted (Karpathy LLM Wiki)** — `CLAUDE.md` + `wiki/SCHEMA.md`. Methodology hardened.
+
+> ## ⚡ RESTART READY (8 Mei 2026)
+>
+> Komputer akan di-restart. Snapshot sebelum mati:
+> - **Git**: working tree clean. Last commit `c2638a5` "Adopt Karpathy LLM Wiki paradigm with kearifan lokal" sudah dipush ke `origin/main`. Branch `main` in sync (no ahead/behind).
+> - **Tidak ada uncommitted work**. Aman restart.
+> - **Setelah restart**: `cd C:/Users/amien/Documents/jamu && git status` harus print "nothing to commit, working tree clean". Kalau env Python hilang, `pip install -r requirements.txt` (lihat blockquote "Fresh clone" di bawah untuk daftar deps yang sebelumnya ter-install).
+> - **Untuk Claude Code di sesi berikutnya**: `CLAUDE.md` di root sudah auto-pointer ke `wiki/SCHEMA.md` + HANDOFF.md (file ini) + `wiki/log.md` (last 5–10 entries via `grep "^## \[" wiki/log.md | tail -10`). Lanjutkan dari arah lanjutan yang dijelaskan di Resume Prompt paling bawah.
 
 > **Pasca-petir (3 Mei 2026)**: komputer kantor kena petir akhir April; recovery dari git utuh — semua artifact v08 (KG, scripts, figures, raw data 66 MB) ter-track dan ter-pulihkan. Tidak ada uncommitted work yang hilang.
 
 > **Mei 7 2026 (pagi)**: pipeline integration + figures regen (sesi otomatis, user busy). Detail: `NOTES_2026-05-07_pipeline_integration.md`. **Goal HKI** dideklarasikan — Hak Cipta atas Program Komputer + Basis Data via DJKI. Reproduktibilitas pipeline jadi prerequisite untuk pendaftaran.
 
-> **Mei 7 2026 (sore) — wiki adoption**: project sekarang dioperasikan sebagai LLM-maintained wiki à la Karpathy. Read `CLAUDE.md` → `wiki/SCHEMA.md` di awal sesi. Wiki augments (tidak menggantikan) canonical docs. Autoresearch loop **tidak** diadopsi (lihat SCHEMA G6).
+> **Mei 7 2026 (sore) — wiki adoption**: project sekarang dioperasikan sebagai LLM-maintained wiki à la Karpathy. Read `CLAUDE.md` → `wiki/SCHEMA.md` di awal sesi. Wiki augments (tidak menggantikan) canonical docs. Autoresearch loop **tidak** diadopsi (lihat SCHEMA G6). Bootstrap content: SCHEMA, README, index, log; concepts (validation_gap, forbidden_pairs, bridge_herb); entities (Zingiber officinale, mazhab S0); source page knapsack. Halaman lain ditambah saat ingest berikutnya.
 
-> **Fresh clone (7 Mei 2026)**: user baru re-clone repo dari `github.com/neimasilk/jamu.git`. Dataset lengkap dari git (no LFS, 126 tracked files, 158 MB total). Python deps di env ini sudah di-install (seaborn, pyvis, biopython, tqdm, pyyaml, beautifulsoup4, pdfplumber). Setelah restart komputer, kalau env Python masih ada → tidak perlu install lagi; kalau env baru → `pip install -r requirements.txt`.
+> **Fresh clone (7 Mei 2026)**: user baru re-clone repo dari `github.com/neimasilk/jamu.git`. Dataset lengkap dari git (no LFS, 126 tracked files, 158 MB total). Python deps di env sebelum restart: `seaborn, pyvis, biopython, tqdm, pyyaml, beautifulsoup4, pdfplumber, networkx, matplotlib, pandas, requests, pdfplumber, openai`. Setelah restart komputer, kalau env Python masih ada → tidak perlu install lagi; kalau env baru → `pip install -r requirements.txt`.
 
-> **Git state akhir sesi 7 Mei 2026**: working tree clean, semua commit sudah dipush ke `origin/main`.
+> **Git state akhir sesi 8 Mei 2026 (restart point)**:
+> - Last 4 commit (terbaru di atas):
+>   - `c2638a5` Adopt Karpathy LLM Wiki paradigm with kearifan lokal (7 Mei sore)
+>   - `1649a74` Add fresh-clone + git-state notes to HANDOFF for clean restart (7 Mei pagi)
+>   - `3813ef4` Integrate ontology step into pipeline; regen figures from v08 (7 Mei pagi)
+>   - `a922fa2` Visualize 11 mazhab + 5 bridges as network figures (3 Mei sore)
+> - Working tree: clean. Origin: in sync.
 
 ---
 
@@ -171,6 +185,21 @@ Sesi otomatis (user busy → review later). Zoom-out dari orbit mazhab, tutup hu
 
 **Figures 18–20 belum regen**: tidak ada generator script di `src/`; mereka dihasilkan ad-hoc. Perlu dilacak generatornya di sesi terpisah.
 
+## May 7 (Sore) Session Summary — Wiki Adoption
+
+Setelah diskusi tentang [Karpathy LLM Wiki gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) dan [karpathy/autoresearch](https://github.com/karpathy/autoresearch), user minta adopsi paradigma wiki — bukan loop autoresearch. Hasil:
+
+- `CLAUDE.md` (root) — auto-loaded oleh Claude Code; pointer ke `wiki/SCHEMA.md` + HANDOFF + log.md, plus tiga guardrails.
+- `wiki/SCHEMA.md` — keystone (templates, frontmatter, claim-provenance tags, bilingual rule, ingest/query/lint workflow, tujuh guardrails). Tujuh kearifan lokal: provenance tags wajib (anti-Goodhart), manifesto layer tag, bilingual rule, wiki augments tidak menggantikan canonical docs, lint advisory only, **autoresearch loop ditolak eksplisit (G6)**, sub-project labs bounded saja (G7).
+- `wiki/{README, index, log}` — entry, katalog, kronologi (di-seed dari sesi Mar 17 → 7 Mei).
+- Bootstrap halaman: 3 concept (validation_gap, forbidden_pairs, bridge_herb), 2 entity (Zingiber officinale, mazhab S0), 1 source (knapsack). Halaman lain ditambah saat ingest berikutnya per SCHEMA §7.
+- `inbox/autoresearch/` — clone repo Karpathy untuk referensi (sudah di .gitignore karena punya git-repo terpisah).
+- `.gitignore` — tambah `.env` + `.env.*` (secrets).
+
+**Tabrakan dengan sesi 7 Mei pagi**: HANDOFF.md di-edit kedua sesi; resolved integratif via rebase. TRIAGE.md auto-merge sukses. File lain tidak overlap.
+
+**Yang sengaja TIDAK dilakukan**: tidak edit MANUSCRIPT.md, tidak refactor canonical docs ke wiki/, tidak generate halaman exhaustive (compounding-from-use principle), tidak adopt autoresearch loop (G6).
+
 ## Resume Prompt (one paragraph, for a clean session)
 
-Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). Baca dulu HANDOFF.md (status ini), TRIAGE.md, dua NOTES_2026-04-20_*.md, NOTES_2026-05-03_mazhab_visualization.md, dan NOTES_2026-05-07_pipeline_integration.md. State saat ini: KG v08 dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO); 11 mazhab + 5 bridge herbs (consensus-Louvain, plant-part konvergen, taxonomy divergen → jamu grammar functional bukan lineage-based); forbidden pairs lulus null model Z=37.97 dan parameter sweep 99.5% cross-mazhab; MANUSCRIPT.md updated v08 (85.56% dari 3,740 clinical TREATS, 165 priority DDC); **figures 21+22** mazhab network + small multiples; **figures 00–17 regenerated dari v08 (7 Mei 2026)**; **`run_full_pipeline.py` sekarang end-to-end reproducible** dengan ontology step terintegrasi (step1 sync → step2 rebuild → step3 annotate → step4 ontology-split → step5 viz × 3 modul → step6 stats). **Tujuan HKI**: user ingin satu Hak Cipta DJKI atas Program Komputer + Basis Data dari proyek ini; reproduktibilitas pipeline sudah memenuhi technical bar untuk pendaftaran. Arah lanjutan yang belum dikerjakan: (a) **bridge herb investigation** (Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia) — figure 21 sudah menunjukkan posisi mereka; (b) **synergy prediction** dari pairs high-lift + bioenhancement literature; (c) **case study Piperaceae** atau **TCM-island (S8)** sebagai short paper; (d) **PubMed query-quality improvement** (hipotesis 88.5% spesifik-term, masih belum dieksplorasi); (e) **HKI registration prep** — dokumen deskripsi sistem, screenshot pipeline jalan, source archive. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py, visualize_mazhab.py, jamu_grammar.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga hal yang jangan diulang: (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari. Sesi 7 Mei sudah break dari mazhab orbit (sesi infrastruktur), jadi sesi berikutnya boleh kembali ke analytical work.
+Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). **Auto-load oleh Claude Code**: `CLAUDE.md` di root → ikut perintahnya untuk baca `wiki/SCHEMA.md` (keystone wiki schema), HANDOFF.md (file ini), dan `wiki/log.md` last 5–10 entries. Wiki paradigm adopted (Karpathy LLM Wiki) dengan tujuh kearifan lokal di SCHEMA §6; autoresearch loop **ditolak** (G6). Konteks tambahan kalau perlu: TRIAGE.md, dua NOTES_2026-04-20_*.md, NOTES_2026-05-03_mazhab_visualization.md, NOTES_2026-05-07_pipeline_integration.md. State saat ini: KG v08 dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO); 11 mazhab + 5 bridge herbs (consensus-Louvain, plant-part konvergen, taxonomy divergen → jamu grammar functional bukan lineage-based); forbidden pairs lulus null model Z=37.97 dan parameter sweep 99.5% cross-mazhab; MANUSCRIPT.md updated v08 (85.56% dari 3,740 clinical TREATS, 165 priority DDC); **figures 21+22** mazhab network + small multiples; **figures 00–17 regenerated dari v08 (7 Mei 2026)**; **`run_full_pipeline.py` sekarang end-to-end reproducible** dengan ontology step terintegrasi (step1 sync → step2 rebuild → step3 annotate → step4 ontology-split → step5 viz × 3 modul → step6 stats); **wiki/ ter-bootstrap** dengan SCHEMA + 9 halaman seed (concepts, entities, sources, log). **Tujuan HKI**: user ingin satu Hak Cipta DJKI atas Program Komputer + Basis Data dari proyek ini; reproduktibilitas pipeline sudah memenuhi technical bar untuk pendaftaran. Arah lanjutan yang belum dikerjakan: (a) **bridge herb investigation** (Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia) — figure 21 sudah menunjukkan posisi mereka; concept page `wiki/concepts/bridge_herb.md` sudah ada dengan TBD table — kandidat lab pertama; (b) **synergy prediction** dari pairs high-lift + bioenhancement literature; (c) **case study Piperaceae** atau **TCM-island (S8)** sebagai short paper; (d) **PubMed query-quality improvement** (hipotesis 88.5% spesifik-term, masih belum dieksplorasi); (e) **HKI registration prep** — dokumen deskripsi sistem, screenshot pipeline jalan, source archive. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py, visualize_mazhab.py, jamu_grammar.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga guardrails yang jangan diulang (juga di `CLAUDE.md` dan `wiki/SCHEMA.md` §G1–G3): (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari. Sesi 7 Mei sudah break dari mazhab orbit (sesi infrastruktur + wiki), jadi sesi berikutnya boleh kembali ke analytical work.
