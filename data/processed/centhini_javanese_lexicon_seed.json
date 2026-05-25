@@ -1,0 +1,226 @@
+{
+  "Acorus calamus": {
+    "terms": [
+      "dlingo",
+      "dringo",
+      "jaringau"
+    ],
+    "conf": "high"
+  },
+  "Allium cepa": {
+    "terms": [
+      "brambang"
+    ],
+    "conf": "high"
+  },
+  "Allium sativum": {
+    "terms": [
+      "bawang putih"
+    ],
+    "conf": "high"
+  },
+  "Alpinia galanga": {
+    "terms": [
+      "laos",
+      "laja",
+      "lengkuas"
+    ],
+    "conf": "high"
+  },
+  "Areca catechu": {
+    "terms": [
+      "jambe",
+      "pinang"
+    ],
+    "conf": "high"
+  },
+  "Averrhoa bilimbi": {
+    "terms": [
+      "blimbing wuluh",
+      "blimbing"
+    ],
+    "conf": "high"
+  },
+  "Boesenbergia rotunda": {
+    "terms": [
+      "temu kunci",
+      "kunci"
+    ],
+    "conf": "high"
+  },
+  "Caesalpinia pulcherrima": {
+    "terms": [
+      "kembang merak"
+    ],
+    "conf": "low"
+  },
+  "Cassia occidentalis": {
+    "terms": [
+      "kasingsat",
+      "menting"
+    ],
+    "conf": "low"
+  },
+  "Cinnamomum verum": {
+    "terms": [
+      "manis jangan",
+      "kayu manis"
+    ],
+    "conf": "high"
+  },
+  "Cocos nucifera": {
+    "terms": [
+      "klapa",
+      "kalapa",
+      "krambil",
+      "kambil"
+    ],
+    "conf": "high"
+  },
+  "Coriandrum sativum": {
+    "terms": [
+      "tumbar",
+      "ketumbar"
+    ],
+    "conf": "high"
+  },
+  "Curcuma longa": {
+    "terms": [
+      "kunir",
+      "kunyit"
+    ],
+    "conf": "high"
+  },
+  "Foeniculum vulgare": {
+    "terms": [
+      "adas"
+    ],
+    "conf": "high"
+  },
+  "Limonia acidissima": {
+    "terms": [
+      "kawista",
+      "kawis"
+    ],
+    "conf": "high"
+  },
+  "Morinda citrifolia": {
+    "terms": [
+      "pace",
+      "mengkudu",
+      "kudu"
+    ],
+    "conf": "high"
+  },
+  "Moringa oleifera": {
+    "terms": [
+      "kelor",
+      "klentang"
+    ],
+    "conf": "high"
+  },
+  "Nigella sativa": {
+    "terms": [
+      "jinten ireng",
+      "jinten cemeng",
+      "jintan"
+    ],
+    "conf": "high"
+  },
+  "Oryza sativa": {
+    "terms": [
+      "pari",
+      "uwos",
+      "beras"
+    ],
+    "conf": "ambig"
+  },
+  "Piper betle": {
+    "terms": [
+      "suruh",
+      "sedah",
+      "sirih"
+    ],
+    "conf": "high"
+  },
+  "Piper cubeba": {
+    "terms": [
+      "kemukus"
+    ],
+    "conf": "high"
+  },
+  "Piper nigrum": {
+    "terms": [
+      "mrica",
+      "merica",
+      "marica"
+    ],
+    "conf": "high"
+  },
+  "Portulaca oleracea": {
+    "terms": [
+      "krokot"
+    ],
+    "conf": "high"
+  },
+  "Psophocarpus tetragonolobus": {
+    "terms": [
+      "kecipir"
+    ],
+    "conf": "high"
+  },
+  "Quercus infectoria": {
+    "terms": [
+      "manjakani"
+    ],
+    "conf": "low"
+  },
+  "Sesbania grandiflora": {
+    "terms": [
+      "turi"
+    ],
+    "conf": "high"
+  },
+  "Syzygium aromaticum": {
+    "terms": [
+      "cengkeh",
+      "cengkih",
+      "cengkeh"
+    ],
+    "conf": "high"
+  },
+  "Tamarindus indica": {
+    "terms": [
+      "asem",
+      "asam",
+      "acem"
+    ],
+    "conf": "ambig"
+  },
+  "Tectona grandis": {
+    "terms": [
+      "jati"
+    ],
+    "conf": "ambig"
+  },
+  "Zingiber montanum": {
+    "terms": [
+      "bangle",
+      "panglai"
+    ],
+    "conf": "high"
+  },
+  "Zingiber officinale": {
+    "terms": [
+      "jae",
+      "jahe"
+    ],
+    "conf": "high"
+  },
+  "Zingiber zerumbet": {
+    "terms": [
+      "lempuyang"
+    ],
+    "conf": "high"
+  }
+}

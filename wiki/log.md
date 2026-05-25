@@ -12,6 +12,48 @@ where `<kind>` is `ingest`, `query`, `lint`, `analysis`, `manuscript`,
 
 Quick listing: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-05-25] analysis | L1 frontier opened — Serat Centhini pilot, Phase 0
+
+Sesi resume setelah lama vakum. Setelah review pekerjaan Mei (mazhab viz +
+pipeline + wiki — semua terverifikasi konsisten: v07→v08 split exact 8,931 →
+6,923+1,387+407+214, reversible via `original_edge_type`) dan audit zoom-out
+(G3), user memilih arah **L1 historical text mining** — layer yang 0% selama 8
+sesi padahal manifesto sebut sebagai jiwa proyek.
+
+Tangent strategis ditangani jujur: catatan user "Bidang B Scopus → J.
+Ethnopharmacology Q2 sprint 6 hari" di-cek dan **tidak direkomendasikan apa
+adanya** — JEP desk-reject paper murni komputasional/database tanpa wet-lab
+(verified, kebijakan editorial Elsevier; ironisnya manuscript mengutip Heinrich
+2020 yang justru aturan itu). Plus 4 cacat manuscript ditemukan (konklusi §6
+masih pakai 85.9%/5,744 pra-v08; figures 19/20 stale tanpa generator; figure 1
+caption self-flag stale; formatting belum). User pilih "anggap tanpa deadline"
+→ paper menunggu sampai lebih kuat, L1 jalan.
+
+Phase 0 lab [[wiki/labs/L1_centhini_pilot/program.md|L1 Centhini Pilot]] (G7):
+- Korpus Centhini Latin vol-1 di-acquire (624 KB) + dikarakterisasi: OCR Jawa
+  terbaca, medis hadir tapi vol-1 tipis herbal (= 1 dari 12 vol; archive vol 2-4
+  tidak ada → korpus penuh = blocker sesi depan).
+- Gold standard `[source:Nafayu2025]` (ERA 31:1-42) di-strukturkan: 32 studied
+  species → `data/processed/centhini_gold_standard_nafayu2025.json` (82 penuh
+  partly figure-locked).
+- **28/32 spesies obat Centhini sudah ada di JamuKG** (87.5%) — sinyal awal
+  kontinuitas L3.
+- Falsifikasi didefinisikan (Manifesto §X presisi<0.50 + recall vs gold).
+
+**Phase 1 (lanjutan sesi sama)** — blocker korpus teratasi: full 12-vol Centhini
+di-acquire (item `seratcenthini`, 1.1M kata). Baseline ekstraksi dictionary:
+**21/32 gold species ter-named, 19/32 di konteks medis ketat** (leksikon seed
+kasar, tanpa tuning). Eyeball 34 konteks: term high-conf presisi ~>0.8 (resep
+jampi/usada nyata); homonim ambig (jati="sejati", kudu="harus") = FP. **Temuan
+kunci**: teks punya tata-bahasa resep `jampi <penyakit> … <bahan> … <verba-olah>`
+→ Relation Extraction feasible (mirror historis jamu-grammar L2). Falsifikasi §X
+(presisi<0.50) **belum diuji formal** tapi sinyal kuat di sisi feasible. Artifact:
+`data/processed/centhini_phase1_{recall.json,contexts.txt,javanese_lexicon_seed.json}`.
+
+Source page baru: [[wiki/sources/serat_centhini.md]]. **Tidak ada klaim
+`status:validated` baru** (G2 dihormati — Phase 0/1 = scoping + baseline, presisi
+formal belum). vol-3 = target herbal-dense sesi depan.
+
 ## [2026-05-08] handoff | HANDOFF refreshed for clean restart
 
 User akan restart komputer. HANDOFF.md di-refresh dengan:

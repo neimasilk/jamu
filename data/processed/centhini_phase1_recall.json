@@ -1,0 +1,162 @@
+{
+  "Acorus calamus": {
+    "total": 10,
+    "med_ctx": 5,
+    "conf": "high"
+  },
+  "Allium cepa": {
+    "total": 27,
+    "med_ctx": 4,
+    "conf": "high"
+  },
+  "Allium sativum": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Alpinia galanga": {
+    "total": 14,
+    "med_ctx": 3,
+    "conf": "high"
+  },
+  "Areca catechu": {
+    "total": 24,
+    "med_ctx": 3,
+    "conf": "high"
+  },
+  "Averrhoa bilimbi": {
+    "total": 13,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Boesenbergia rotunda": {
+    "total": 30,
+    "med_ctx": 3,
+    "conf": "high"
+  },
+  "Caesalpinia pulcherrima": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "low"
+  },
+  "Cassia occidentalis": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "low"
+  },
+  "Cinnamomum verum": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Cocos nucifera": {
+    "total": 77,
+    "med_ctx": 9,
+    "conf": "high"
+  },
+  "Coriandrum sativum": {
+    "total": 5,
+    "med_ctx": 2,
+    "conf": "high"
+  },
+  "Curcuma longa": {
+    "total": 25,
+    "med_ctx": 11,
+    "conf": "high"
+  },
+  "Foeniculum vulgare": {
+    "total": 16,
+    "med_ctx": 9,
+    "conf": "high"
+  },
+  "Limonia acidissima": {
+    "total": 44,
+    "med_ctx": 2,
+    "conf": "high"
+  },
+  "Morinda citrifolia": {
+    "total": 346,
+    "med_ctx": 7,
+    "conf": "high"
+  },
+  "Moringa oleifera": {
+    "total": 9,
+    "med_ctx": 1,
+    "conf": "high"
+  },
+  "Nigella sativa": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Oryza sativa": {
+    "total": 63,
+    "med_ctx": 1,
+    "conf": "ambig"
+  },
+  "Piper betle": {
+    "total": 51,
+    "med_ctx": 3,
+    "conf": "high"
+  },
+  "Piper cubeba": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Piper nigrum": {
+    "total": 12,
+    "med_ctx": 3,
+    "conf": "high"
+  },
+  "Portulaca oleracea": {
+    "total": 1,
+    "med_ctx": 1,
+    "conf": "high"
+  },
+  "Psophocarpus tetragonolobus": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Quercus infectoria": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "low"
+  },
+  "Sesbania grandiflora": {
+    "total": 41,
+    "med_ctx": 1,
+    "conf": "high"
+  },
+  "Syzygium aromaticum": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Tamarindus indica": {
+    "total": 2,
+    "med_ctx": 0,
+    "conf": "ambig"
+  },
+  "Tectona grandis": {
+    "total": 303,
+    "med_ctx": 10,
+    "conf": "ambig"
+  },
+  "Zingiber montanum": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  },
+  "Zingiber officinale": {
+    "total": 21,
+    "med_ctx": 2,
+    "conf": "high"
+  },
+  "Zingiber zerumbet": {
+    "total": 0,
+    "med_ctx": 0,
+    "conf": "high"
+  }
+}

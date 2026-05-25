@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "description": "Gold standard for L1 Centhini extraction pilot: the studied-species subset from Nafayu et al. 2025, Table 1.",
+    "compiled": "2026-05-25",
+    "compiled_by": "Claude (read from PDF Table 1) — hand-curated reference, verify against source before publication",
+    "manifesto_layer": "L1"
+  },
+  "provenance": {
+    "citation": "Nafayu Y.H.D., Kintoko K., Pratama A.N.W., Josafat A., Raharjo A.M., Triatmoko B., Nawiyanto N., Wangchuk P., Keller P.A., Nugraha A.S. (2025). Bioprospecting medicinal plants of Centhini: Javanese ancient manuscript. Ethnobotany Research and Applications, 31: 1-42.",
+    "source_text_they_used": "Kamajaya (1985) Latin transliteration of the COMPLETE 12-volume Serat Centhini (suluk tambangraras), Yayasan Centhini, Yogyakarta. 3500 pages.",
+    "pdf_local": "data/raw/centhini/_refs/Nafayu2025.pdf",
+    "table": "Table 1 (Staub use category x species)"
+  },
+  "caveats": [
+    "This file holds the 32 species that Nafayu reports as having modern pharmacological study (their Table 1 + discussion). The full 82-species inventory is NOT cleanly text-extractable: ~50 species appear only inside figures (Fig 5 X-axis, Fig 7 Sankey) as images, not machine-readable text.",
+    "Abstract says 'twelve diseases'; Table 1 footnote lists ELEVEN use categories (no 12th). Internal inconsistency in the source paper — not resolved here.",
+    "Use categories follow Staub et al. classification, NOT our disease_ontology.json categories. Cross-mapping is future work.",
+    "Latin names are as printed by Nafayu; authorities stripped here. Some differ from our KG canonical names (e.g. Nigella sativa vs our 'Nigella sativum'; Curcuma longa vs 'Curcuma domestica'). Reconcile before any recall computation."
+  ],
+  "use_category_legend": {
+    "AND": "andrology",
+    "CAR": "cardiovascular disease",
+    "DER": "dermatologic disorders",
+    "EYE": "ophthalmic problems",
+    "FOO": "food",
+    "GAS": "gastrointestinal problem",
+    "INF": "infections",
+    "MET": "metabolic syndrome",
+    "NER": "nervous system",
+    "RES": "respiratory complaints",
+    "SKE": "skeleton-muscular system",
+    "URO": "urology"
+  },
+  "n_studied_species": 32,
+  "n_total_species_reported": 82,
+  "studied_species": {
+    "Acorus calamus": [
+      "DER",
+      "GAS",
+      "NER",
+      "SKE"
+    ],
+    "Allium cepa": [
+      "INF",
+      "MET"
+    ],
+    "Allium sativum": [
+      "INF",
+      "NER"
+    ],
+    "Alpinia galanga": [
+      "GAS",
+      "MET",
+      "NER"
+    ],
+    "Areca catechu": [
+      "INF"
+    ],
+    "Averrhoa bilimbi": [
+      "GAS"
+    ],
+    "Boesenbergia rotunda": [
+      "GAS"
+    ],
+    "Caesalpinia pulcherrima": [
+      "INF"
+    ],
+    "Cassia occidentalis": [
+      "INF"
+    ],
+    "Cinnamomum verum": [
+      "DER"
+    ],
+    "Cocos nucifera": [
+      "INF"
+    ],
+    "Coriandrum sativum": [
+      "URO"
+    ],
+    "Curcuma longa": [
+      "GAS",
+      "INF"
+    ],
+    "Foeniculum vulgare": [
+      "GAS",
+      "INF",
+      "NER",
+      "RES"
+    ],
+    "Limonia acidissima": [
+      "NER"
+    ],
+    "Morinda citrifolia": [
+      "MET"
+    ],
+    "Moringa oleifera": [
+      "INF",
+      "MET",
+      "NER"
+    ],
+    "Nigella sativa": [
+      "GAS"
+    ],
+    "Oryza sativa": [
+      "GAS"
+    ],
+    "Piper betle": [
+      "NER"
+    ],
+    "Piper cubeba": [
+      "NER"
+    ],
+    "Piper nigrum": [
+      "INF",
+      "MET",
+      "NER"
+    ],
+    "Portulaca oleracea": [
+      "INF",
+      "NER"
+    ],
+    "Psophocarpus tetragonolobus": [
+      "INF"
+    ],
+    "Quercus infectoria": [
+      "INF"
+    ],
+    "Sesbania grandiflora": [
+      "EYE",
+      "INF",
+      "NER"
+    ],
+    "Syzygium aromaticum": [
+      "INF"
+    ],
+    "Tamarindus indica": [
+      "CAR",
+      "GAS",
+      "INF",
+      "NER"
+    ],
+    "Tectona grandis": [
+      "GAS",
+      "INF"
+    ],
+    "Zingiber montanum": [
+      "GAS"
+    ],
+    "Zingiber officinale": [
+      "AND",
+      "GAS",
+      "MET"
+    ],
+    "Zingiber zerumbet": [
+      "FOO",
+      "INF",
+      "MET"
+    ]
+  }
+}

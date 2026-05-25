@@ -33,6 +33,13 @@ inbox/
 .env
 .env.*
 
+# Third-party copyrighted reference material (PDF + extracted text) — keep local, don't redistribute.
+# The curated gold-standard facts live in data/processed/ instead.
+data/raw/centhini/_refs/
+
+# scratch / temp download dir
+tmp_dl/
+
 # OS files
 Thumbs.db
 .DS_Store

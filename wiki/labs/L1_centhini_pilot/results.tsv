@@ -1,0 +1,13 @@
+date	phase	action	result	artifact	note
+2026-05-25	phase0	download Centhini Latin vol1 from archive.org	624794 bytes, 24770 lines, 84945 words	data/raw/centhini/centhini_latin_vol1_djvu.txt	OCR tesseract jv; readable Javanese w/ diacritics
+2026-05-25	phase0	characterize corpus medical/plant vocab	medical terms present (jampi=13,usada=4,tamba=3,loro/lara=30,waras=11); plant names sparse (jae=2,kunir=3,kencur=0)	-	vol 1 = pethikan-style, thin on herbal recipes
+2026-05-25	phase0	probe archive for vols 2-4	absent (metadata empty {})	-	full 12-vol set needs different source; blocker for recall
+2026-05-25	phase0	acquire gold-standard paper	Nafayu et al 2025 ERA 31:1-42, 42pp	data/raw/centhini/_refs/Nafayu2025.pdf	open-access; used Kamajaya 1985 full 12-vol
+2026-05-25	phase0	extract Table 1 gold standard	32 studied species x 11 Staub categories (full 82 partly figure-locked)	data/processed/centhini_gold_standard_nafayu2025.json	hand-read from PDF; verify before publication
+2026-05-25	phase0	cross-check gold species vs JamuKG	28/32 present in KG (87.5%); 4 absent likely synonyms	-	descriptive convergence signal (L3); NOT validated claim
+2026-05-25	phase1	acquire FULL 12-vol corpus (item seratcenthini)	12 vols, 1,096,457 words, 6.9MB	data/raw/centhini/full12/	blocker resolved; Malay-tagged but Javanese
+2026-05-25	phase1	per-volume medical/plant vocab density	vol3 herbal-dense (jampi=32, plant=61); lara/loro/wedang ubiquitous=noisy	-	target vol3 cantos for extraction
+2026-05-25	phase1	build seed Javanese->Latin lexicon (32 gold sp)	hand-curated seed	data/processed/centhini_javanese_lexicon_seed.json	incomplete; 7 species lack known Jav name in corpus
+2026-05-25	phase1	dictionary-match recall pass (uniform regex)	21/32 named; 19/32 in strict medical ctx	data/processed/centhini_phase1_recall.json	untuned baseline, NO tuning
+2026-05-25	phase1	precision eyeball on 34 contexts	hi-conf terms ~>0.8 precision (real jampi/usada recipes); ambig homonyms (jati=true,kudu=must,pari=companion) are FP	data/processed/centhini_phase1_contexts.txt	NOT a formal labeled-sample precision; manifesto falsification (P<0.50) NOT formally tested but signal strongly feasible
+2026-05-25	phase1	KEY: recipe grammar discovered	jampi/usada <ailment> ... <ingredients> ... <prep-verb> is formulaic	-	Relation Extraction feasible; mirrors KNApSAcK jamu grammar but historical
