@@ -1,15 +1,15 @@
 # JamuKG — Session Handoff
 
-**Tanggal**: 8 Mei 2026 (last update — restart-ready)
-**Status**: KG v08 (ontology-split). Mazhab teridentifikasi, validated, tervisualisasikan. **Pipeline ter-integrate end-to-end**: `run_full_pipeline.py` sekarang produce v08-style output otomatis (rebuild → annotate → ontology-split → 3 figure modules). **Wiki paradigm adopted (Karpathy LLM Wiki)** — `CLAUDE.md` + `wiki/SCHEMA.md`. Methodology hardened.
+**Tanggal**: 25 Mei 2026 (last update)
+**Status**: KG v08 (ontology-split) stabil. **L1 frontier DIBUKA** — historical text mining Serat Centhini, lab `wiki/labs/L1_centhini_pilot/` di fase `phase1_baseline`. Manuscript **TIDAK** disubmit (J. Ethnopharmacology di-tolak sebagai venue — desk-reject paper murni komputasional; paper menunggu sampai lebih kuat, tanpa deadline). Wiki paradigm aktif.
 
-> ## ⚡ RESTART READY (8 Mei 2026)
+> ## ⚡ RESUME READY (25 Mei 2026)
 >
-> Komputer akan di-restart. Snapshot sebelum mati:
-> - **Git**: working tree clean. Last commit `c2638a5` "Adopt Karpathy LLM Wiki paradigm with kearifan lokal" sudah dipush ke `origin/main`. Branch `main` in sync (no ahead/behind).
-> - **Tidak ada uncommitted work**. Aman restart.
-> - **Setelah restart**: `cd C:/Users/amien/Documents/jamu && git status` harus print "nothing to commit, working tree clean". Kalau env Python hilang, `pip install -r requirements.txt` (lihat blockquote "Fresh clone" di bawah untuk daftar deps yang sebelumnya ter-install).
-> - **Untuk Claude Code di sesi berikutnya**: `CLAUDE.md` di root sudah auto-pointer ke `wiki/SCHEMA.md` + HANDOFF.md (file ini) + `wiki/log.md` (last 5–10 entries via `grep "^## \[" wiki/log.md | tail -10`). Lanjutkan dari arah lanjutan yang dijelaskan di Resume Prompt paling bawah.
+> Snapshot:
+> - **Git**: working tree (akan) clean. Last commit `36b159d` "Open L1 frontier: Serat Centhini extraction pilot (Phase 0+1)" sudah dipush ke `origin/main`. (Commit handoff ini menyusul.)
+> - **Untuk Claude Code di sesi berikutnya**: `CLAUDE.md` auto-pointer ke `wiki/SCHEMA.md` + HANDOFF.md (file ini) + `wiki/log.md` (`grep "^## \[" wiki/log.md | tail -10`). **Arah aktif = L1 Centhini** — baca `wiki/labs/L1_centhini_pilot/program.md` (objektif, temuan Phase 0/1, decision points). Lanjutkan dari Resume Prompt paling bawah.
+> - **Env**: kalau Python hilang, `pip install -r requirements.txt` (+ `pdfplumber` dipakai untuk parse paper gold-standard).
+> - **Korpus L1** ada di `data/raw/centhini/full12/` (12 vol, public domain). Materi berhak-cipta (`data/raw/centhini/_refs/`) di-`.gitignore` — TIDAK ada di GitHub; kalau env baru, unduh ulang PDF Nafayu 2025 dari ethnobotanyjournal.org bila perlu.
 
 > **Pasca-petir (3 Mei 2026)**: komputer kantor kena petir akhir April; recovery dari git utuh — semua artifact v08 (KG, scripts, figures, raw data 66 MB) ter-track dan ter-pulihkan. Tidak ada uncommitted work yang hilang.
 
@@ -200,6 +200,48 @@ Setelah diskusi tentang [Karpathy LLM Wiki gist](https://gist.github.com/karpath
 
 **Yang sengaja TIDAK dilakukan**: tidak edit MANUSCRIPT.md, tidak refactor canonical docs ke wiki/, tidak generate halaman exhaustive (compounding-from-use principle), tidak adopt autoresearch loop (G6).
 
+## May 25 Session Summary — Review, venue reality-check, L1 frontier opened
+
+Sesi resume setelah user lama vakum. Tiga babak:
+
+**1. Review pekerjaan Mei (verified, bukan sekadar baca notes).** v07→v08 split
+diverifikasi persis di level edge (`treats` 8,931 → 6,923 + `has_use` 1,387 +
+`ethnobotanical_use` 407 + `applied_to` 214; node/edge total identik; reversible
+via field `original_edge_type`). Pipeline `step4_apply_ontology` benar ter-wire.
+Figures 18–20 memang tidak ter-regen (no generator) — disclosure jujur, bukan
+regresi. Kerja Mei solid.
+
+**2. Cek catatan "Bidang B Scopus → J. Ethnopharmacology Q2 sprint 6 hari".**
+Di-cek serius dan **tidak direkomendasikan apa adanya**: (a) JEP desk-reject paper
+murni komputasional/database tanpa wet-lab (kebijakan editorial Elsevier,
+verified; manuscript malah mengutip Heinrich 2020 yg jadi dasar aturan itu) →
+risiko desk-reject tinggi terlepas kualitas; (b) 4 cacat manuscript ditemukan:
+konklusi §6 masih angka pra-v08 (85.9%/5,744 vs abstract 85.6%/3,740); figures
+19/20 stale v07 tanpa generator; figure 1 caption self-flag stale; formatting
+Elsevier belum. User memilih **"anggap tanpa deadline"** → paper menunggu sampai
+lebih kuat, target venue cocok nanti (Frontiers in Pharmacology / J. Biomedical
+Informatics / Knowledge-Based Systems / Information Fusion). **4 cacat = utang
+ditunda, tercatat di memori + laporan; jangan disentuh tanpa deliberasi (G1).**
+
+**3. L1 frontier dibuka** (lihat `wiki/labs/L1_centhini_pilot/`). Phase 0+1:
+- Korpus Serat Centhini lengkap **12 volume** (archive `seratcenthini`, 1.1M kata,
+  public domain) → `data/raw/centhini/full12/`.
+- Gold standard Nafayu et al. 2025 (ERA 31): 32 studied species × 11 kategori
+  Staub → `data/processed/centhini_gold_standard_nafayu2025.json`.
+- **28/32** spesies obat Centhini sudah ada di JamuKG (sinyal kontinuitas L3).
+- Dictionary-match baseline: **21/32** recall (≥24 setelah fix leksikon:
+  bĕngle→*Z.montanum*, puyang→*Z.zerumbet*, mungsi→*Nigella*). Presisi eyeball
+  hi-conf ~>0.8 (resep jampi/usada nyata); homonim ambig (jati/kudu/pari) = FP.
+- **KEY**: teks punya tata-bahasa resep `jampi/usada <penyakit> … <bahan> …
+  <verba-olah>` → **Relation Extraction feasible**. Mirror historis jamu-grammar L2.
+- Falsifikasi Manifesto §X (presisi<0.50) **belum diuji formal**; **tidak ada
+  klaim `status:validated`** (G2).
+
+**Next (di `program.md`)**: (1) perbaiki leksikon + drop/context-gate homonim;
+(2) presisi formal via sampel acak berlabel → uji §X resmi; (3) Relation
+Extraction pola resep mulai **vol-3** (paling herbal-dense) → triple (tanaman,
+penyakit, metode) = benih HPKG; (4) cross-map penyakit Jawa ↔ disease_ontology.
+
 ## Resume Prompt (one paragraph, for a clean session)
 
-Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). **Auto-load oleh Claude Code**: `CLAUDE.md` di root → ikut perintahnya untuk baca `wiki/SCHEMA.md` (keystone wiki schema), HANDOFF.md (file ini), dan `wiki/log.md` last 5–10 entries. Wiki paradigm adopted (Karpathy LLM Wiki) dengan tujuh kearifan lokal di SCHEMA §6; autoresearch loop **ditolak** (G6). Konteks tambahan kalau perlu: TRIAGE.md, dua NOTES_2026-04-20_*.md, NOTES_2026-05-03_mazhab_visualization.md, NOTES_2026-05-07_pipeline_integration.md. State saat ini: KG v08 dengan ontology-split edges (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO); 11 mazhab + 5 bridge herbs (consensus-Louvain, plant-part konvergen, taxonomy divergen → jamu grammar functional bukan lineage-based); forbidden pairs lulus null model Z=37.97 dan parameter sweep 99.5% cross-mazhab; MANUSCRIPT.md updated v08 (85.56% dari 3,740 clinical TREATS, 165 priority DDC); **figures 21+22** mazhab network + small multiples; **figures 00–17 regenerated dari v08 (7 Mei 2026)**; **`run_full_pipeline.py` sekarang end-to-end reproducible** dengan ontology step terintegrasi (step1 sync → step2 rebuild → step3 annotate → step4 ontology-split → step5 viz × 3 modul → step6 stats); **wiki/ ter-bootstrap** dengan SCHEMA + 9 halaman seed (concepts, entities, sources, log). **Tujuan HKI**: user ingin satu Hak Cipta DJKI atas Program Komputer + Basis Data dari proyek ini; reproduktibilitas pipeline sudah memenuhi technical bar untuk pendaftaran. Arah lanjutan yang belum dikerjakan: (a) **bridge herb investigation** (Blumea, Curcuma zedoaria, Abrus, Sauropus, Woodfordia) — figure 21 sudah menunjukkan posisi mereka; concept page `wiki/concepts/bridge_herb.md` sudah ada dengan TBD table — kandidat lab pertama; (b) **synergy prediction** dari pairs high-lift + bioenhancement literature; (c) **case study Piperaceae** atau **TCM-island (S8)** sebagai short paper; (d) **PubMed query-quality improvement** (hipotesis 88.5% spesifik-term, masih belum dieksplorasi); (e) **HKI registration prep** — dokumen deskripsi sistem, screenshot pipeline jalan, source archive. Skrip reusable di `src/analysis/`: herb_communities.py, herb_taxonomy.py, herb_communities_robustness.py, apply_disease_ontology.py, visualize_mazhab.py, jamu_grammar.py. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga guardrails yang jangan diulang (juga di `CLAUDE.md` dan `wiki/SCHEMA.md` §G1–G3): (i) edit MANUSCRIPT.md tanpa konteks deliberasi dulu, (ii) menambah analisis baru tanpa robustness test, (iii) narrow exploration selama 3+ sesi — sesekali zoom out dan audit apa yang dihindari. Sesi 7 Mei sudah break dari mazhab orbit (sesi infrastruktur + wiki), jadi sesi berikutnya boleh kembali ke analytical work.
+Lanjutkan JamuKG — proyek masterpiece jangka panjang tentang integrasi farmakopeia Nusantara (lihat MANIFESTO_FARMAKOPE_NUSANTARA.md untuk visi). **Auto-load oleh Claude Code**: `CLAUDE.md` di root → ikut perintahnya untuk baca `wiki/SCHEMA.md` (keystone), HANDOFF.md (file ini), dan `wiki/log.md` last 5–10 entries. Wiki paradigm adopted (Karpathy LLM Wiki), tujuh kearifan lokal di SCHEMA §6; autoresearch loop **ditolak** (G6). **Arah aktif: L1 historical text mining (Serat Centhini)** — baca `wiki/labs/L1_centhini_pilot/program.md` dulu (objektif, temuan Phase 0/1, decision points, kriteria falsifikasi). State L1 saat ini: korpus Centhini 12-volume penuh ada di `data/raw/centhini/full12/` (public domain); gold standard Nafayu et al. 2025 → `data/processed/centhini_gold_standard_nafayu2025.json` (32 studied species); leksikon seed Jawa→Latin + recall baseline 21/32 + konteks → `data/processed/centhini_phase1_*`. **Temuan kunci: teks punya tata-bahasa resep `jampi/usada <penyakit> … <bahan> … <verba-olah>` → Relation Extraction feasible.** Next concrete (di program.md): (1) perbaiki leksikon (tambah bĕngle→*Z.montanum*, puyang→*Z.zerumbet*, mungsi→*Nigella*; drop/context-gate homonim jati/kudu/pari/asem); (2) **presisi formal** via sampel acak ~50 berlabel tangan → uji falsifikasi Manifesto §X (presisi<0.50) secara resmi; (3) **Relation Extraction** pola resep mulai **vol-3** (paling herbal-dense) → triple (tanaman, penyakit, metode) = benih HPKG; (4) cross-map penyakit Jawa (watuk, kuping tuli, lara netra, padharan) ↔ `disease_ontology.json`. **Soal publikasi**: manuscript v08 (`MANUSCRIPT.md`, ~7K kata) sudah ditulis tapi **JANGAN target J. Ethnopharmacology** — JEP desk-reject paper murni komputasional tanpa wet-lab (verified 25 Mei); venue cocok = Frontiers in Pharmacology / J. Biomedical Informatics / Knowledge-Based Systems / Information Fusion. User pilih tanpa deadline → paper **menunggu sampai lebih kuat** (L1 bisa menambah layer historis). **4 cacat manuscript ditunda** (konklusi §6 pra-v08; figures 19/20 stale tanpa generator; figure 1 caption; formatting). Konteks lain kalau perlu: TRIAGE.md, NOTES_2026-04-20_*.md, NOTES_2026-05-0{3,7}_*.md, data_audit_jamu_sources.md (§5 sumber teks historis). State analitis lain (background, sudah selesai): KG v08 ontology-split (6,923 TREATS clinical + 1,387 HAS_USE + 407 ETHNOBOTANICAL_USE + 214 APPLIED_TO; gap 85.56% struktural); 11 mazhab + 5 bridge herbs; forbidden pairs Z=37.97; figures 00–17, 21–22; pipeline end-to-end reproducible. Arah analitis L2 yang masih menggantung (kapan-kapan, bukan prioritas): bridge herb investigation, synergy prediction, case study Piperaceae/S8, PubMed query-quality (hipotesis 88.5%). Tujuan HKI (Hak Cipta DJKI Program Komputer + Basis Data) masih relevan; technical bar terpenuhi. Prinsip user: **santai dalam waktu, serius dalam metodologi** — peneliti boleh salah/gagal/pivot asal tidak bohong. Jangan buru-buru submit paper. Tiga guardrails (CLAUDE.md + SCHEMA §G1–G3): (i) edit MANUSCRIPT.md tanpa deliberasi dulu, (ii) analisis baru tanpa robustness test, (iii) narrow exploration 3+ sesi tanpa zoom-out. Sesi 25 Mei membuka L1 (frontier yang lama dihindari) — jadi prinsip (iii) sudah terjawab; lanjutkan L1 mendalam dengan tenang.
