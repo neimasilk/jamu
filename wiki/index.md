@@ -46,7 +46,7 @@ not exhaustive — see [SCHEMA.md §7](SCHEMA.md#7-roadmap) for what is deferred
 | Page | Records | Size |
 |---|---|---|
 | [knapsack](sources/knapsack.md) | 5,310 formulas | 17 MB |
-| [serat_centhini](sources/serat_centhini.md) | 1 vol (of 12) | 0.6 MB | L1 |
+| [serat_centhini](sources/serat_centhini.md) | 12 vols (1.1M words) | 6.9 MB | L1 |
 
 **Deferred**: duke_ethnobotany (40 MB), pubmed_evidence (3.7 MB), farmakope_indonesia (5.6 MB)
 
@@ -64,7 +64,7 @@ Bounded sub-project workspaces (see [SCHEMA G7](SCHEMA.md#g7-sub-project-labs-ar
 
 | Lab | Status | Layer |
 |---|---|---|
-| [L1_centhini_pilot](labs/L1_centhini_pilot/program.md) | phase1_baseline (21/32 recall; recipe-grammar found) | L1 |
+| [L1_centhini_pilot](labs/L1_centhini_pilot/program.md) | phase1_baseline (26/32 recall, reproducible; recipe-grammar found) | L1 |
 
 **Deferred**: `labs/bridges/` — the 5 bridge herbs have a figure
 (`figures/21_mazhab_network.png`) but no narrative pages yet.
@@ -79,7 +79,7 @@ Bounded sub-project workspaces (see [SCHEMA G7](SCHEMA.md#g7-sub-project-labs-ar
 
 | Layer | Pages in wiki | Notes |
 |---|---|---|
-| L1 (Historical text mining) | labs/L1_centhini_pilot, sources/serat_centhini | **Frontier — opened 2026-05-25.** Phase 1 baseline: full 12-vol corpus + gold standard secured; dictionary recall 21/32; recipe-grammar (`jampi <ailment> … <ingredients> … <prep>`) found → RE feasible. Precision not yet formally tested; no validated claim. |
+| L1 (Historical text mining) | labs/L1_centhini_pilot, sources/serat_centhini | **Frontier — opened 2026-05-25; extractor made reproducible 2026-06-10.** Phase 1 baseline: full 12-vol corpus + gold standard secured; deterministic dictionary recall (`src/analysis/centhini_extract.py`) 26/32 surface (23/32 hi-conf, 18/32 hi-conf+med); recipe-grammar (`jampi <ailment> … <ingredients> … <prep>`) found → RE feasible. Precision not yet formally tested; no validated claim. |
 | L2 (Contemporary digital, KNApSAcK) | concepts/forbidden_pairs, concepts/bridge_herb, entities/herbs/Zingiber_officinale, entities/mazhab/S0, sources/knapsack | Well-developed |
 | L3 (Cross-temporal alignment) | 0 | Needs L1 first |
 | L4 (Validation bridge, PubMed) | concepts/validation_gap | Well-developed in canonical docs (`MANUSCRIPT.md`); only one wiki concept-page so far |

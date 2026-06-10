@@ -12,6 +12,32 @@ where `<kind>` is `ingest`, `query`, `lint`, `analysis`, `manuscript`,
 
 Quick listing: `grep "^## \[" wiki/log.md | tail -10`
 
+## [2026-06-10] analysis | L1 extractor made reproducible; recall revised 21→26/32
+
+Sesi review-driven. Review menyeluruh L1 Phase-1 (semua klaim diverifikasi
+langsung vs data, bukan baca notes) menemukan **isu reproduktibilitas**: angka
+recall di-generate ad-hoc, skrip tidak di-commit; tag provenance `[script:dict-match]`,
+`[script:density-scan]`, `[script:cross-check]` adalah label abstrak, bukan file —
+melanggar SCHEMA §3.3 dan menghalangi goal HKI. Ditutup sesi ini.
+
+- **Skrip baru** `src/analysis/centhini_extract.py` `[script:centhini_extract.py]` —
+  deterministik, beraturan eksplisit (fold ĕ→e, `\bterm\b`, merge interval,
+  med-window 90 char dari jampi/usada/tamba/ginodhog/pipis). Tiga pass:
+  density-scan, dictionary recall, cross-check. Meregenerasi `recall.json` +
+  `contexts.txt` dari korpus.
+- **Recall direvisi (G4, angka lama dipertahankan dicoret)**: surface ~~21/32~~
+  → **26/32**; hi-conf **23/32**; konteks-medis ~~19/32~~ → **21/32**; hi-conf+med
+  **18/32**. Kenaikan = folding e-pepet konsisten memulihkan **5 sebutan nyata**
+  yang terlewat pass tangan: `lĕmpuyang`→*Z. zerumbet*, `cengkeh`→*Syzygium*,
+  `kecipir`→*Psophocarpus*, `kemukus`→*P. cubeba*, `jinten cemeng`→*Nigella*
+  (diverifikasi di daftar bumbu/resep). **Perbaikan, bukan klaim baru** — tidak
+  ada `status:validated` (G2); presisi formal tetap next-step.
+- **Isu #3 (wiki stale)**: [[wiki/sources/serat_centhini.md|source page]] di-update
+  dari "1 vol / 0.6 MB" ke 12-vol / 6.9 MB (data sudah ter-commit sejak Phase 1);
+  index.md ikut.
+- **TIDAK disentuh**: MANUSCRIPT.md (G1; manuscript tak menyebut L1). Utang lama
+  (§6 pra-v08, figures 18–20) tetap ditunda dengan deliberasi.
+
 ## [2026-05-25] analysis | L1 frontier opened — Serat Centhini pilot, Phase 0
 
 Sesi resume setelah lama vakum. Setelah review pekerjaan Mei (mazhab viz +

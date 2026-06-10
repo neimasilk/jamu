@@ -3,7 +3,7 @@ type: lab_program
 status: phase1_baseline
 manifesto_layer: L1
 question: "Can plant→use relations be computationally extracted from the Serat Centhini, measured against a published gold standard, at precision ≥ 0.50?"
-last_updated: 2026-05-25
+last_updated: 2026-06-10
 ---
 
 # Lab: L1 Centhini Pilot
@@ -62,29 +62,59 @@ Centhini*, Ethnobotany Research and Applications 31:1–42. PDF lokal:
 
 1. Korpus vol-1 + gold-standard PDF di-acquire & di-ekstrak.
 2. Gold standard 32-spesies di-strukturkan ke JSON dengan provenance + caveat.
-3. **Konvergensi historis↔kontemporer** `[script:cross-check]`: **28/32** spesies
+3. **Konvergensi historis↔kontemporer** `[script:centhini_extract.py]`: **28/32** spesies
    obat Centhini sudah ada di JamuKG (87.5%). Absen: *Boesenbergia rotunda,
    Limonia acidissima, Quercus infectoria, Zingiber montanum* — kemungkinan ada
    di bawah sinonim (deskriptif, sinonim belum di-resolve; **bukan** klaim
    tervalidasi). Petunjuk awal pertanyaan L3 manifesto "apa yang bertahan?".
 
-## Temuan Phase 1 (baseline ekstraksi, sesi 2026-05-25)
+## Temuan Phase 1 (baseline ekstraksi, sesi 2026-05-25; **direproduksi 2026-06-10**)
 
 Blocker korpus **teratasi**: full 12-volume Centhini di-acquire dari item archive
 `seratcenthini` (1,096,457 kata, 6.9 MB) `[source:archive.org]`.
 
-1. **Densitas**: vol-3 paling kaya herbal (jampi=32, plant-terms=61) `[script:density-scan]`.
-   `lara/loro/wedang` ubikuitus → noisy, bukan penanda resep yang baik.
-2. **Recall baseline** (leksikon seed kasar, regex word-boundary, tanpa tuning)
-   `[script:dict-match]`: **21/32** gold species ter-named; **19/32** dalam
-   konteks medis ketat (dekat jampi/usada/tamba/ginodhog/pipis).
-   `data/processed/centhini_phase1_recall.json`.
-3. **Presisi (eyeball 34 konteks, BUKAN sampel berlabel formal)**: term
-   high-confidence (dlingo, laos, kunci, kunir, adas, kawis, kelor, jae, tumbar,
-   brambang, turi, klapa, jambe, mrica, krokot) mendarat di resep jampi/usada
-   nyata — perkiraan presisi **~>0.8**. Term `ambig` (jati="sejati", kudu="harus",
-   pari="pari-mitra", asem) = false positive homonim (memvalidasi flag conf).
-   `data/processed/centhini_phase1_contexts.txt`.
+> **Reproduksi (2026-06-10).** Angka Phase-1 semula dihitung ad-hoc di sesi
+> interaktif dan skripnya tidak di-commit (tag abstrak `[script:dict-match]` dll.
+> tidak menunjuk file nyata — melanggar SCHEMA §3.3, prasyarat HKI). Sekarang
+> ada satu skrip deterministik `[script:centhini_extract.py]`
+> (`src/analysis/centhini_extract.py`) yang meregenerasi `recall.json` +
+> `contexts.txt` dari korpus. **Aturan eksplisit**: lowercase + fold OCR e-pepet
+> (ĕ→e, satu-satunya huruf non-ASCII di korpus); match `\bterm\b`; interval
+> tumpang-tindih di-merge; `med_ctx` = dalam 90 karakter dari penanda resep
+> (jampi/usada/tamba/ginodhog/pipis).
+
+1. **Densitas**: vol-3 paling kaya herbal — direproduksi `[script:centhini_extract.py]`
+   (jampi=40; 300 plant-term hits dari leksikon 32-spesies; probe lama
+   jampi=32/plant=61 → ranking sama). `lara/loro/wedang` ubikuitus → noisy,
+   bukan penanda resep yang baik.
+2. **Recall baseline** `[script:centhini_extract.py]` (`recall.json`):
+   - **Surface (ada match apa pun)**: ~~21/32~~ → **26/32**.
+   - **High-confidence (drop 3 homonim ambig)**: **23/32**.
+   - **Dalam konteks medis ketat**: ~~19/32~~ → **21/32**.
+   - **Hi-conf DAN konteks medis** (sel paling konservatif): **18/32**.
+
+   > **G4 — kontradiksi tidak dihaluskan.** Angka tangan 25 Mei (21/32 surface,
+   > 19/32 med) **dipertahankan dicoret di atas, bukan dihapus**. Folding e-pepet
+   > yang konsisten menaikkan recall karena memulihkan **5 sebutan nyata** yang
+   > terlewat pass tangan: `lĕmpuyang`→*Z. zerumbet*, `cengkeh`→*Syzygium*,
+   > `kecipir`→*Psophocarpus*, `kemukus`→*P. cubeba*, `jinten cemeng`→*Nigella*
+   > (semua muncul di daftar bumbu/resep nyata — diverifikasi). Ini **perbaikan**,
+   > bukan klaim baru: temuan kualitatif (dictionary match feasible) tidak berubah,
+   > dan **tidak ada klaim `status:validated`** (G2). Beberapa total per-spesies
+   > juga bergeser (Tamarindus asĕm 2→64, Oryza pari 63→119, Tectona jati 303→283,
+   > Limonia kawis 44→33) — semua akibat pass tangan yang folding/boundary-nya
+   > tidak seragam; skrip ini sekarang kanonik.
+
+   > **Catatan jujur lanjutan**: kenaikan Tamarindus (`asĕm-kawak`) ke konteks
+   > medis menegaskan observasi review bahwa flag `ambig` mungkin **under-count
+   > bahan asli** (asem kawak = bahan jamu nyata) — bukan sekadar homonim. Sampel
+   > presisi berlabel formal (next-step #3) tetap gerbang sebenarnya.
+3. **Presisi (eyeball, BUKAN sampel berlabel formal)**: term high-confidence
+   (dlingo, laos, kunci, kunir, adas, kawis, kelor, jae, tumbar, brambang, turi,
+   klapa, jambe, mrica, krokot, + cengkeh/lempuyang/kecipir baru) mendarat di
+   resep jampi/usada nyata — perkiraan presisi **~>0.8**. Term `ambig`
+   (jati="sejati", kudu="harus", pari="pari-mitra") = false positive homonim
+   (memvalidasi flag conf). `data/processed/centhini_phase1_contexts.txt`.
 4. **KEY — tata-bahasa resep**: teks formulaik
    `jampi/usada <penyakit> … <bahan> … <verba-olah (pinipis/ginodhog/inguyup/binorèh)>`.
    Relasi tanaman→penyakit eksplisit (cth: *jampi amĕjahi cacing*=vermifuge → laos,
@@ -126,8 +156,14 @@ Blocker korpus **teratasi**: full 12-volume Centhini di-acquire dari item archiv
 
 1. ~~**[blocker]** Amankan korpus 12-volume penuh~~ → **SELESAI** (item archive
    `seratcenthini`, `data/raw/centhini/full12/`).
-2. **Perbaiki leksikon** (recall sebenarnya > 21/32 — beberapa "absen" hanya
-   salah nama):
+1b. ~~**[reproduktibilitas/HKI]** Commit skrip ekstraksi (tag abstrak →
+   `[script:<file>]`)~~ → **SELESAI 2026-06-10** (`src/analysis/centhini_extract.py`;
+   regen `recall.json` + `contexts.txt` deterministik; surface recall direvisi
+   21/32→26/32 dengan G4).
+2. **Perbaiki leksikon** (sebagian "absen" sudah terjawab oleh folding di langkah
+   1b — *lempuyang/cengkeh/kecipir/kemukus/jinten cemeng* kini ter-named; sisa
+   yang masih nol perlu nama Jawa: Allium sativum, Cinnamomum, Caesalpinia,
+   Cassia, Quercus, Zingiber montanum):
    - Tambah nama Jawa yang ditemukan di teks: `bĕngle`→*Zingiber montanum*,
      `puyang`→*Zingiber zerumbet*, `mungsi`→*Nigella sativa* (ketiganya muncul di
      resep tapi leksikon seed pakai nama salah/modern).
