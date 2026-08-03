@@ -1,7 +1,7 @@
 ---
 type: meta
 description: Chronological log of wiki + project activity. Append-only.
-last_updated: 2026-05-07
+last_updated: 2026-08-03
 ---
 
 # Wiki Log
@@ -11,6 +11,28 @@ where `<kind>` is `ingest`, `query`, `lint`, `analysis`, `manuscript`,
 `recovery`, `wiki-bootstrap`. Recent first.
 
 Quick listing: `grep "^## \[" wiki/log.md | tail -10`
+
+## [2026-08-03] recovery | Rekonsiliasi divergence: local stale vs origin (10 Juni)
+
+User minta review menyeluruh + eksekusi. Review jalan dari local `7f01eea`
+(handoff 25 Mei) tanpa sadar **local tertinggal ~2,5 bulan** — origin sudah di
+`e0998ba` (kerja 10 Juni: extractor reproducible + revisi recall 21→26/32, lihat
+entri [2026-06-10]). Review menemukan kembali hal yang sama (celah reproducibility
++ bug leksikon "Kegelapan Bahasa") dan commit variant sendiri `14ee073` (matcher di
+`src/extract/`, recall 27/32 med_ctx, substring+hyphen-split+line-window gating).
+Push **rejected** → divergence terdeteksi.
+
+**Diagnosis jujur**: bukan dua sesi berlomba — local stale, tak pernah pull kerja
+10 Juni. Kerja redundant (ditemukan independen, diagnosis+fix sama). User pilih
+**adopsi origin** (lebih lengkap: 3 pass vs 1; G4/G2 dijaga). `git reset --hard
+origin/main` → local = `e0998ba`. Variant `14ee073` dibuang tapi di reflog
+(recoverable via `git reset --hard 14ee073` bila ingin bandingkan metodologi
+matching untuk robustness).
+
+**Pelajaran operasional**: `git fetch`/`pull` di awal sesi sebelum kerja — origin =
+sumber kebenaran bersama. **Tanpa analisis baru sesi ini**; G2/G1 dijaga. Lint:
+frontmatter `log.md` (remote tinggalkan `2026-05-07`) → `2026-08-03`; HANDOFF
+RESUME READY (remote tinggalkan "25 Mei"/`36b159d`) → current.
 
 ## [2026-06-10] analysis | L1 extractor made reproducible; recall revised 21→26/32
 
